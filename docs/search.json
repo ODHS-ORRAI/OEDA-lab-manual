@@ -25,42 +25,66 @@
     "href": "products-logos.html",
     "title": "OEDA Logos",
     "section": "",
-    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine."
+    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine.",
+    "crumbs": [
+      "Product development",
+      "OEDA logos"
+    ]
   },
   {
     "objectID": "products-logos.html#primary-vertical-logo---light-mode",
     "href": "products-logos.html#primary-vertical-logo---light-mode",
     "title": "OEDA Logos",
     "section": "Primary (vertical) logo - Light mode",
-    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Product development",
+      "OEDA logos"
+    ]
   },
   {
     "objectID": "products-logos.html#primary-vertical-logo---dark-mode",
     "href": "products-logos.html#primary-vertical-logo---dark-mode",
     "title": "OEDA Logos",
     "section": "Primary (vertical) logo - Dark mode",
-    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Product development",
+      "OEDA logos"
+    ]
   },
   {
     "objectID": "products-logos.html#horizontal-logo---light-mode",
     "href": "products-logos.html#horizontal-logo---light-mode",
     "title": "OEDA Logos",
     "section": "Horizontal logo - Light mode",
-    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Product development",
+      "OEDA logos"
+    ]
   },
   {
     "objectID": "products-logos.html#horizontal-logo---dark-mode",
     "href": "products-logos.html#horizontal-logo---dark-mode",
     "title": "OEDA Logos",
     "section": "Horizontal logo - Dark mode",
-    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Product development",
+      "OEDA logos"
+    ]
   },
   {
     "objectID": "products-logos.html#scaling",
     "href": "products-logos.html#scaling",
     "title": "OEDA Logos",
     "section": "Scaling",
-    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}"
+    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}",
+    "crumbs": [
+      "Product development",
+      "OEDA logos"
+    ]
   },
   {
     "objectID": "index.html",
