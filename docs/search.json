@@ -91,7 +91,7 @@
     "href": "index.html",
     "title": "OEDA - Lab Manual",
     "section": "",
-    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts work without undue intervention, with standards, guidelines, expectations, and resources.",
+    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
     "crumbs": [
       "Home"
     ]
@@ -111,7 +111,7 @@
     "href": "index.html#oedas-mission-draft---proposed-august-2025",
     "title": "OEDA - Lab Manual",
     "section": "OEDA’s Mission (Draft - Proposed August 2025)",
-    "text": "OEDA’s Mission (Draft - Proposed August 2025)\nAugust OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.",
+    "text": "OEDA’s Mission (Draft - Proposed August 2025)\nOEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.",
     "crumbs": [
       "Home"
     ]
@@ -255,6 +255,39 @@
     "crumbs": [
       "Publication & delivery",
       "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "ideation-form.html",
+    "href": "ideation-form.html",
+    "title": "Using the request form",
+    "section": "",
+    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged.",
+    "crumbs": [
+      "Ideation",
+      "Using the request form"
+    ]
+  },
+  {
+    "objectID": "ideation-form.html#intentions",
+    "href": "ideation-form.html#intentions",
+    "title": "Using the request form",
+    "section": "Intentions",
+    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs",
+    "crumbs": [
+      "Ideation",
+      "Using the request form"
+    ]
+  },
+  {
+    "objectID": "ideation-form.html#what-happens-after-submission",
+    "href": "ideation-form.html#what-happens-after-submission",
+    "title": "Using the request form",
+    "section": "What happens after submission",
+    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc.",
+    "crumbs": [
+      "Ideation",
+      "Using the request form"
     ]
   },
   {
