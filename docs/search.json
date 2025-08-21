@@ -1,30 +1,357 @@
 [
   {
+    "objectID": "service-timeliness.html",
+    "href": "service-timeliness.html",
+    "title": "Timeliness of OEDA customer services",
+    "section": "",
+    "text": "Starting November 1, 2025 OEDA follows ODHSOHA 010-033 Customer Service and Response Policy\nAdditional information is available on the OWL page on ODHS Customer Service Policy."
+  },
+  {
+    "objectID": "service-timeliness.html#summary-of-the-policy",
+    "href": "service-timeliness.html#summary-of-the-policy",
+    "title": "Timeliness of OEDA customer services",
+    "section": "Summary of the policy",
+    "text": "Summary of the policy\n\nCustomers\nAccording to the policy customers include the people we serve, partner, and work with. Specifically mentioned in the policy are coworkers within ODHS and OHA.\n\n\nSame-or-next business day: Acknowledge the bid for interaction\nAll interactions–phone call, voice mail, email, instant message, text–should be acknowledged within one-business day. I believe this should also include submissions to request forms.\nIf the one-day response does is not intended to resolve the customer’s issue, the acknowledgement could be\n\nAn auto-reply indicating planned leave, including expected date of return and alternative contacts\nA personal response requesting additional information\nA personal response providing additional information\nA personal response referring the customer to another person, process, or resource\nA personal response with a timeline for future responses to resolve the issue\n\n\n\nWithin 5 business days: Follow up with a plan for resolution\nIf you will not be resolving the request straight away, within 5 business days of the interaction, share plans with the customer with anticipated timelines for completion of the response.\n\n\nWithin 15 or 30 days: Resolution of the interaction\nIn the absence of legislation, rule, policy, CBA, or established processes (like procurement), the policy sets expectations that\n\nMost interactions are complete within 15 business days\nAlmost all interactions are complete within 30 business days\n\n\n\nAdditional expectations\n\nProvide routine status updated when completion timelines are projected to be longer than 30 days\nProvide customers information about current expected timelines, given the amount of work requested, current workloads, and capacity\nProvide customers with links to a webpage with standard timelines, and any current systemic issues impacting likely timelines"
+  },
+  {
+    "objectID": "service-timeliness.html#what-does-this-mean-for-oeda",
+    "href": "service-timeliness.html#what-does-this-mean-for-oeda",
+    "title": "Timeliness of OEDA customer services",
+    "section": "What does this mean for OEDA?",
+    "text": "What does this mean for OEDA?\n\nOur customers are primarily ODHS-OHA coworkers, but we also have interactions with third-parties seeking data or analysis. We should consider our cross-agency partners as customers, as well.\nIndividuals should plan to meet the 1-day expectations for initial handling of emails\nIndividuals should use auto-replies when away on planned leave; tailoring them with applicable dates\n\nSuggested message: “I am out of the office [start date] to [end date]. If your request is an urgent one, please contact my manager, Jason Wallin jason.m.wallin@odhsoha.oregon.gov. Helpful links: Schedule a meeting with ORRAI management or the research teams. Request a research project.”\n\nIf you employ auto-replies in other ways, we will need to review those\nTriaging requests may need a weekly cadence, rather than fortnightly\nWe need to provide regular updates to customers for lengthy projects\nWe will need to consider how OEDA or ORRAI will meet the letter or the spirit of the 15- or 30-day completion expectations or be prepared with alternatives for OEDA projects"
+  },
+  {
+    "objectID": "products-logos.html",
+    "href": "products-logos.html",
+    "title": "OEDA Logos",
+    "section": "",
+    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine."
+  },
+  {
+    "objectID": "products-logos.html#primary-vertical-logo---light-mode",
+    "href": "products-logos.html#primary-vertical-logo---light-mode",
+    "title": "OEDA Logos",
+    "section": "Primary (vertical) logo - Light mode",
+    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+  },
+  {
+    "objectID": "products-logos.html#primary-vertical-logo---dark-mode",
+    "href": "products-logos.html#primary-vertical-logo---dark-mode",
+    "title": "OEDA Logos",
+    "section": "Primary (vertical) logo - Dark mode",
+    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+  },
+  {
+    "objectID": "products-logos.html#horizontal-logo---light-mode",
+    "href": "products-logos.html#horizontal-logo---light-mode",
+    "title": "OEDA Logos",
+    "section": "Horizontal logo - Light mode",
+    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+  },
+  {
+    "objectID": "products-logos.html#horizontal-logo---dark-mode",
+    "href": "products-logos.html#horizontal-logo---dark-mode",
+    "title": "OEDA Logos",
+    "section": "Horizontal logo - Dark mode",
+    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}"
+  },
+  {
+    "objectID": "products-logos.html#scaling",
+    "href": "products-logos.html#scaling",
+    "title": "OEDA Logos",
+    "section": "Scaling",
+    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "OEDA - Lab Manual",
     "section": "",
-    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts work without undue intervention, with standards, guidelines, expectations, and resources."
+    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts work without undue intervention, with standards, guidelines, expectations, and resources.",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
-    "objectID": "index.html#oedas-vision-draft---proposed-july-2025",
-    "href": "index.html#oedas-vision-draft---proposed-july-2025",
+    "objectID": "index.html#oedas-vision-draft---proposed-august-2025",
+    "href": "index.html#oedas-vision-draft---proposed-august-2025",
     "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Vision (Draft - Proposed July 2025)",
-    "text": "OEDA’s Vision (Draft - Proposed July 2025)\nOregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations."
+    "section": "OEDA’s Vision (Draft - Proposed August 2025)",
+    "text": "OEDA’s Vision (Draft - Proposed August 2025)\nOregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
-    "objectID": "index.html#oedas-mission-draft---proposed-july-2025",
-    "href": "index.html#oedas-mission-draft---proposed-july-2025",
+    "objectID": "index.html#oedas-mission-draft---proposed-august-2025",
+    "href": "index.html#oedas-mission-draft---proposed-august-2025",
     "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Mission (Draft - Proposed July 2025)",
-    "text": "OEDA’s Mission (Draft - Proposed July 2025)\nOEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians."
+    "section": "OEDA’s Mission (Draft - Proposed August 2025)",
+    "text": "OEDA’s Mission (Draft - Proposed August 2025)\nAugust OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
-    "objectID": "index.html#oedas-values-adopted-from-orrai-strategic-plan-2024",
-    "href": "index.html#oedas-values-adopted-from-orrai-strategic-plan-2024",
+    "objectID": "index.html#oedas-product-values-adopted-summer-2025",
+    "href": "index.html#oedas-product-values-adopted-summer-2025",
     "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Values (Adopted from ORRAI strategic plan, 2024)",
-    "text": "OEDA’s Values (Adopted from ORRAI strategic plan, 2024)\n\nInclusion, diversity, equity, & access\nConnection & collaboration\nReliability & accuracy\nTransparency & fairness\nResponsiveness & timeliness\nHumility & growth eated in 2024."
+    "section": "OEDA’s Product Values (Adopted Summer 2025)",
+    "text": "OEDA’s Product Values (Adopted Summer 2025)\n\nRelevant and impactful\nEthical\nAccessible, understandable, & approachable\nRigorous & trustworthy\nInnovative",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#oedas-process-values-adopted-summer-2025",
+    "href": "index.html#oedas-process-values-adopted-summer-2025",
+    "title": "OEDA - Lab Manual",
+    "section": "OEDA’s Process Values (Adopted Summer 2025)",
+    "text": "OEDA’s Process Values (Adopted Summer 2025)\n\nCollaborative\nConstructive\nCommunicative\nManaged expectations\nPlays well with others\nProfessional & conscientious",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html",
+    "href": "delivery-publishing-github-pages.html",
+    "title": "Publishing to GitHub pages",
+    "section": "",
+    "text": "Happy Git and GitHub for the useR\nQuarto guidance on publishing to GitHub pages using the docs folder",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#basic-resources",
+    "href": "delivery-publishing-github-pages.html#basic-resources",
+    "title": "Publishing to GitHub pages",
+    "section": "",
+    "text": "Happy Git and GitHub for the useR\nQuarto guidance on publishing to GitHub pages using the docs folder",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#create-a-git-repository-if-one-does-not-already-exist",
+    "href": "delivery-publishing-github-pages.html#create-a-git-repository-if-one-does-not-already-exist",
+    "title": "Publishing to GitHub pages",
+    "section": "Create a git repository if one does not already exist",
+    "text": "Create a git repository if one does not already exist\n\nLogin to: https://github.com/login\nIn the left sidebar, click New to create a new repository\nUnder owner, select ODHS-ORRAI\nSet yourself as owner, and give your repository a name, e.g. this website is OEDA-lab-manual\nSet the visibility of the repository to Public (hosting websites from Private repositories requires an upgraded GitHub account for ORRAI)\nClick Create repository\nClick &lt;&gt;Code in the top ribbon\nCopy the location from the Quick Setup section. For the OEDA Lab Guide (the website you’re reading), this is https://github.com/wallinjm/OEDA-lab-manual.git",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#create-a-new-r-project-associated-with-your-new-repository",
+    "href": "delivery-publishing-github-pages.html#create-a-new-r-project-associated-with-your-new-repository",
+    "title": "Publishing to GitHub pages",
+    "section": "Create a new R project associated with your new repository",
+    "text": "Create a new R project associated with your new repository\n\nStart RStudio\nClick File &gt; New Project\nClick Version Control\nClick Git\nIn the Repository URL field, paste the URL copied from above\nSelect the appropriate path location for the project, and name a new folder to hold the project",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#create-the-docs-subfolder",
+    "href": "delivery-publishing-github-pages.html#create-the-docs-subfolder",
+    "title": "Publishing to GitHub pages",
+    "section": "Create the /docs/ subfolder",
+    "text": "Create the /docs/ subfolder\nWithin the new folder that RStudio should have just created, make a new /docs/ subfolder.",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#create-your-website-files",
+    "href": "delivery-publishing-github-pages.html#create-your-website-files",
+    "title": "Publishing to GitHub pages",
+    "section": "Create your website files",
+    "text": "Create your website files\nYour _quarto.yml and *.qmd files should be saved in your main project folder, not to /docs/.\nWhen these files are rendered the *.html files will be stored in /docs/.\n\n_quarto.yml\nThis should look something like the following. The key thing for publishing to GitHub pages in this way is the specification of output-dir: docs in the project: section.\n\nproject:\n  type: website\n  output-dir: docs\n  \nwebsite:\n  title: \"Site title\"\n  navbar:\n    left:\n      - text: \"Page 1 title\"\n        href: page1.qmd\n      - text: \"Page 2 title\"\n        href: page2.qmd\n\n\nContent pages\nCreate one or more .qmd files with your content. These generally start with:\n---\ntitle: \"Page 1 title\"\n---\n\nYour markdown here.\n  \n\n\nCreate a .nojekyll file\nOpen a Windows Prompt in the Terminal in RStudio to create a .nojekyll file in the root of your git repository. This prevents Github from processing the website in undesirable ways.\nYou’ll do this just once before you publish your site for the first time.\n\ncopy NUL .nojekyll",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#render-your-files-to-docs",
+    "href": "delivery-publishing-github-pages.html#render-your-files-to-docs",
+    "title": "Publishing to GitHub pages",
+    "section": "Render your files to docs",
+    "text": "Render your files to docs\nFirst, render your quarto documents.\n\nIn the RStudio console run quarto::quarto_render()\n\nThen, create a new Git Back terminal.\n\nFind the Terminal tab in RStudio\nClick on the Terminal dropdown\nClick Terminal Options\nIn New terminals open with: select GitBash\nClick OK\nClick on the Terminal dropdown again\nClick New Terminal\n\nIn the terminal, type the following\n\ngit add docs\ngit commit -m \"Commit note\"\ngit push\nReplace “Commit note” with the note that you want to include with this commit. Make sure to use the quote marks.",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#check-in-on-the-commit",
+    "href": "delivery-publishing-github-pages.html#check-in-on-the-commit",
+    "title": "Publishing to GitHub pages",
+    "section": "Check in on the commit",
+    "text": "Check in on the commit\nIf you navigate to your new repository on GitHub– https://github.com/ODHS-ORRAI/your-repository-name-here–you should see a new folder docs in the repository, along with your commit message.",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#configure-the-repository-to-use-the-docs-folder",
+    "href": "delivery-publishing-github-pages.html#configure-the-repository-to-use-the-docs-folder",
+    "title": "Publishing to GitHub pages",
+    "section": "Configure the repository to use the /docs/ folder",
+    "text": "Configure the repository to use the /docs/ folder\nFrom the GitHub.com page for your new repository\n\nClick Settings in the top navigation ribbon\nClick Pages in the left side bar\nUnder Source make sure that Deploy from a branch is selected (it should be the default)\nUnder Branch there is a dropdown box, select main\nA folder dropdown should appear next to the main branch dropdown now. Click it and select /docs.\nClick Save",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#check-the-availability-of-the-new-site",
+    "href": "delivery-publishing-github-pages.html#check-the-availability-of-the-new-site",
+    "title": "Publishing to GitHub pages",
+    "section": "Check the availability of the new site",
+    "text": "Check the availability of the new site\nYour new site should (maybe after a short delay) be available at a URL like the URL for this site:\nhttps://odhs-orrai.github.io/OEDA-lab-manual/\nYou’d replace the last bit with the name of your repository.",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-publishing-github-pages.html#make-your-updates-as-needed",
+    "href": "delivery-publishing-github-pages.html#make-your-updates-as-needed",
+    "title": "Publishing to GitHub pages",
+    "section": "Make your updates as needed",
+    "text": "Make your updates as needed\nWhenever you need to make changes or updates to your website, just follow the routine of the last couple of steps detailed above:\n\nEdit your _quarto.yml and *.qmd files as necessary\nSave the files locally\nIn the RStudio console run quarto::quarto_render()\nRun the following in your terminal\n\n\ngit add docs\ngit commit -m \"Commit note\"\ngit push\nThat should be it. After maybe a little network lag, and perhaps forcing a refresh to escape your browser cache, you should see the changes to the live website.",
+    "crumbs": [
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "meetings-OEDA-team.html",
+    "href": "meetings-OEDA-team.html",
+    "title": "OEDA Team Meetings",
+    "section": "",
+    "text": "Every Tuesday from 1:35 to 2:55",
+    "crumbs": [
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "meetings-OEDA-team.html#cadence",
+    "href": "meetings-OEDA-team.html#cadence",
+    "title": "OEDA Team Meetings",
+    "section": "",
+    "text": "Every Tuesday from 1:35 to 2:55",
+    "crumbs": [
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "meetings-OEDA-team.html#purposes",
+    "href": "meetings-OEDA-team.html#purposes",
+    "title": "OEDA Team Meetings",
+    "section": "Purposes",
+    "text": "Purposes\n\nAlign\n\nDebrief council meetings\nSynthesize and analyze intelligence from OEDA staff, agency partners, and other informants\nShare project progress and blockers\nReview metrics and discuss implicated processes\n\nPlan\n\nDesign projects\nSet OEDA development calendar\n\nProduce\n\nAgendas and agendas for council meetings\nProgress reports for council members and sponsors\nMinutes from council meetings\n\nIdeate\n\nFeedback on proposals, research plans, charters, products, presentations\n\nConnection\n\nGet to know one another better\nCelebrate individual and team successes",
+    "crumbs": [
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "meetings-OEDA-team.html#agendas",
+    "href": "meetings-OEDA-team.html#agendas",
+    "title": "OEDA Team Meetings",
+    "section": "Agendas",
+    "text": "Agendas\n\nStanding agenda\nThis is our general, standing agenda for our weekly meetings.\n\nHot topics: Anything that anyone on the team needs to address at the top of the meeting\nSpecial topics, if scheduled\nSystem 4 Briefings - Briefings from any guests invited for intelligence - Briefings rotating staff on their intelligence areas - Briefings from Jason - Ad hoc briefings from anyone\nSystems 1 & 2 Briefings - Updates from work units on project progress - Identification of any blockers or process issues\nSystem 3 Briefings - Lab manual updates - Housekeeping from HR, Workday, admins, etc. - Review of any dashboards, metrics, Kanban, etc. we’re experimenting with\n\n\n\nSpecial topics\n\nPeriodic special topics\nSchedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.\nOn these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.\n\n\n\nAd hoc events\nAlso during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.",
+    "crumbs": [
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html",
+    "href": "products-palettes.html",
+    "title": "Color Palettes",
+    "section": "",
+    "text": "As our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services.",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html#list-of-basic-palette-colors",
+    "href": "products-palettes.html#list-of-basic-palette-colors",
+    "title": "Color Palettes",
+    "section": "List of basic palette colors",
+    "text": "List of basic palette colors\nThe list below contains the main colors identified in the guidelines.\n\nOEDA_colors &lt;- list(\n  northstar = '#2E3192',\n  glacial = '#B4DCF5',\n  fog = '#F4F2ED',\n  forest = '#184E49',\n  willamette = '#86C679',\n  mist = '#D8E1E5',\n  marionberry = '#A91F50',\n  harvest = '#ECD263',\n  desert = '#EDDFD4',\n  black = '#000000',\n  white = '#FFFFFF',\n  charcoal = '#414042'\n)",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html#roles",
+    "href": "products-palettes.html#roles",
+    "title": "Color Palettes",
+    "section": "Roles",
+    "text": "Roles\nThese are the basic roles assigned to these colors in the publications guide.\n\n\n\nColor\nRole\n\n\n\n\nNorth Star Indigo\nPrimary color\n\n\nForest Green\nSecondary color\n\n\nMarionberry Red\nTertiary color\n\n\nGlacial Blue\nAccent color\n\n\nWillamette Green\nAccent color\n\n\nHarvest Gold\nAccent color\n\n\nFog Gray\nNeutral color\n\n\nMist Gray\nNeutral color\n\n\nDesert Sand\nNeutral color\n\n\nPrimary Black\nCore neutral\n\n\nPrimary White\nCore neutral\n\n\nAshland Charcoal\nCore neutral",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html#meaning-neutral-document-components",
+    "href": "products-palettes.html#meaning-neutral-document-components",
+    "title": "Color Palettes",
+    "section": "Meaning-neutral document components",
+    "text": "Meaning-neutral document components\n\n\n\nDocument\nComponent\nExample\nLight Mode\n\n\n\n\nBrief, memo, web page, blog entry\nBackground\nPage background\nPrimary White\n\n\nBrief, memo, web page, blog entry\nTitle\nHeading 1\nNorth Star Indigo\n\n\nBrief, memo, web page, blog entry\nSection heading\nHeading 2-5\nForest Green\n\n\nBrief, memo, web page, blog entry\nBody text\nBlocks of text (text color)\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCard\nAsides, boxouts, breakout boxes, etc. (background color)\nMist Gray\n\n\nBrief, memo, web page, blog entry\nLines\nHorizontal rules\nAshland Charcoal\n\n\nVisualization\nBackground\nPlot background and panel background\nFog Gray\n\n\nVisualization\nTitle\nPlot title\nNorth Star Indigo\n\n\nVisualization\nBackground\nFacet background\nNorth Star Indigo\n\n\nVisualization\nSection heading\nFacet title\nPrimary White\n\n\nVisualization\nBody text\nSubtitles or captions\nForest Green\n\n\nVisualization\nLines\nBorders, axes, ticks\nAshland Charcoal\n\n\n\nNote: Visualizations should be of a consistent OEDA style, regardless of whether the document overall is produced in dark or light mode.",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html#meaning-conveying-documents-components",
+    "href": "products-palettes.html#meaning-conveying-documents-components",
+    "title": "Color Palettes",
+    "section": "Meaning-conveying documents components",
+    "text": "Meaning-conveying documents components\n\n\n\n\n\n\n\n\n\n\nDocument\nComponent\nMeaning\nBackground\nForeground\n\n\n\n\nBrief, memo, web page, blog entry\nCall out\nNeutral\nGlacial Blue\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nGrowth, meeting expectations, optimistic comparison\nWillamette Green\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nAttention needed, missing expectations, pessimistic comparison\nHarvest Gold\nAshland Charcoal\n\n\nVisualization\nCall out\nNeutral geom\nn/a\nAshland Charcoal\n\n\nVisualization\nCall out\nGeom indicating growth, meeting expectations, optimistic comparison\nn/a\nWillamette Green\n\n\nVisualization\nCall out\nGeom indicating attention needed, missing expectations, pessimistic comparison\nn/a\nHarvest Gold\n\n\n\nText callouts include Quarto call out elements styled using the Custom Callout Quarto extension as well as blockquotes or line blocks.\nVis callouts include the fill color of columns, bars, boxplots, points, etc.",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html#calculating-tints",
+    "href": "products-palettes.html#calculating-tints",
+    "title": "Color Palettes",
+    "section": "Calculating tints",
+    "text": "Calculating tints\nThe function below takes a color from the OEDA palette (or any hex color, really) and computes various tints of it. I have not been able to determine just how the publications office creates their tints, so the tints output from this function do not exactly match the tints displayed in the publication guide.\n\n#' Create a tint of a base color\n#'\n#' This function generates a tint by mixing a base hex color with white in the HSL\n#' (Hue, Saturation, Lightness) color space. This method is perceptually more\n#' uniform than mixing in RGB space. tint_percent = 100 should return the base_hex.\n#' tint_percent = 0 should return pure white (\"#FFFFFF\").\n#'\n#' @param base_hex A character string of the starting hex color (e.g., \"#2E3192\").\n#' @param tint_percent A numeric value from 0 to 100 representing the\n#'   percentage of the original color to retain. A value of 80 creates a tint \n#'   which is 80 parts the base color and 20 parts pure white.\n#'   \n#' @return A character string for the new hex color.\n#' @export\n\n\ncreate_tint &lt;- function(base_hex, tint_percent) {\n  \n  pct_white &lt;- (100 - tint_percent) / 100\n  \n  hsl_start &lt;- plotwidgets::col2hsl(base_hex)\n  hsl_end &lt;- hsl_start\n  hsl_end[3] &lt;- ((1 - hsl_start[3]) * pct_white) + hsl_start[3]\n  \n  col_end &lt;- plotwidgets::hsl2col(hsl_end)\n  \n  return(col_end)\n}\n\n\nExamples of North Star Indigo tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$northstar, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Forest Green tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$forest, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Desert Sand tints\n\nlapply(c(100, 70, 30), function(x) create_tint(OEDA_colors$desert, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
+  },
+  {
+    "objectID": "products-palettes.html#other-vis-palettes",
+    "href": "products-palettes.html#other-vis-palettes",
+    "title": "Color Palettes",
+    "section": "Other vis palettes",
+    "text": "Other vis palettes\nWe will make recommendations for other palettes when comparisons are not between a small number of categories, but are multinomous categorical or continuous (sequential or divergent).",
+    "crumbs": [
+      "Product development",
+      "Color palettes"
+    ]
   }
 ]
