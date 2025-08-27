@@ -87,53 +87,124 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OEDA - Lab Manual",
+    "objectID": "meetings-advisory-council.html",
+    "href": "meetings-advisory-council.html",
+    "title": "OEDA Advisory Council Meetings",
     "section": "",
-    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings to not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
     "crumbs": [
-      "Home"
+      "Meetings",
+      "OEDA Advisory Council Meetings"
     ]
   },
   {
-    "objectID": "index.html#oedas-vision-draft---proposed-august-2025",
-    "href": "index.html#oedas-vision-draft---proposed-august-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Vision (Draft - Proposed August 2025)",
-    "text": "OEDA’s Vision (Draft - Proposed August 2025)\nOregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.",
+    "objectID": "meetings-advisory-council.html#purpose",
+    "href": "meetings-advisory-council.html#purpose",
+    "title": "OEDA Advisory Council Meetings",
+    "section": "",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings to not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
     "crumbs": [
-      "Home"
+      "Meetings",
+      "OEDA Advisory Council Meetings"
     ]
   },
   {
-    "objectID": "index.html#oedas-mission-draft---proposed-august-2025",
-    "href": "index.html#oedas-mission-draft---proposed-august-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Mission (Draft - Proposed August 2025)",
-    "text": "OEDA’s Mission (Draft - Proposed August 2025)\nOEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.",
+    "objectID": "ideation-rubric.html",
+    "href": "ideation-rubric.html",
+    "title": "Proposal scoring rubric",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nThese proposals will be scored using a rubric. Ideally, this rubric reflects the value that OEDA can bring to state government and the values that OEDA brings to our work.\nSome of the rubric items will likely be scored by OEDA researchers and presented to the Advisory Council. For others, the Advisory Council will decide how to score them during a meeting.\nThe rubric will be used to make go/no-go decisions about projects and help set priorities for the OEDA portfolio.",
     "crumbs": [
-      "Home"
+      "Ideation",
+      "Proposal rubric"
     ]
   },
   {
-    "objectID": "index.html#oedas-product-values-adopted-summer-2025",
-    "href": "index.html#oedas-product-values-adopted-summer-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Product Values (Adopted Summer 2025)",
-    "text": "OEDA’s Product Values (Adopted Summer 2025)\n\nRelevant and impactful\nAccessible, understandable, & approachable\nRigorous & trustworthy\nInnovative",
+    "objectID": "ideation-rubric.html#background",
+    "href": "ideation-rubric.html#background",
+    "title": "Proposal scoring rubric",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nThese proposals will be scored using a rubric. Ideally, this rubric reflects the value that OEDA can bring to state government and the values that OEDA brings to our work.\nSome of the rubric items will likely be scored by OEDA researchers and presented to the Advisory Council. For others, the Advisory Council will decide how to score them during a meeting.\nThe rubric will be used to make go/no-go decisions about projects and help set priorities for the OEDA portfolio.",
     "crumbs": [
-      "Home"
+      "Ideation",
+      "Proposal rubric"
     ]
   },
   {
-    "objectID": "index.html#oedas-process-values-adopted-summer-2025",
-    "href": "index.html#oedas-process-values-adopted-summer-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Process Values (Adopted Summer 2025)",
-    "text": "OEDA’s Process Values (Adopted Summer 2025)\n\nEthical\nCollaborative\nConstructive\nCommunicative\nManaged expectations\nPlays well with others\nProfessional & conscientious",
+    "objectID": "ideation-rubric.html#research-proposals",
+    "href": "ideation-rubric.html#research-proposals",
+    "title": "Proposal scoring rubric",
+    "section": "Research proposals",
+    "text": "Research proposals\n\nOEDA projects are cross-agency and collaborative\n\nThe proposal clarifies that agency data will not be disclosed to third parties.  This is a screening item. Proposals must score a TRUE to be brought to the OEDA Advisory Council. [Scoring: T or F]\n\n\n\nOEDA projects are ethical\n\nThe proposal clarifies that agency data will not be disclosed to third parties.  This is a screening item. Proposals must score a TRUE to be brought to the OEDA Advisory Council. [Scoring: T or F]\nThe proposal addresses human subjects protections.  This is a screening item. Proposals must score a TRUE to be brought to the OEDA Advisory Council, and to be scored a TRUE one of the following must be true. [Scoring: T or F]\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\nThe proposal is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\nThe proposal is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation (reasoning, checklist, etc.) from someone other than the investigators that the research is exempt from IRB review.\nThe project is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\nSee Details-IRB, below",
     "crumbs": [
-      "Home"
+      "Ideation",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-rubric.html#oeda-projects-are-relevant-and-impactful",
+    "href": "ideation-rubric.html#oeda-projects-are-relevant-and-impactful",
+    "title": "Proposal scoring rubric",
+    "section": "OEDA projects are relevant and impactful",
+    "text": "OEDA projects are relevant and impactful",
+    "crumbs": [
+      "Ideation",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-rubric.html#relevant-and-impactful",
+    "href": "ideation-rubric.html#relevant-and-impactful",
+    "title": "Proposal scoring rubric",
+    "section": "Relevant and impactful",
+    "text": "Relevant and impactful",
+    "crumbs": [
+      "Ideation",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-rubric.html#accessible-understandable-approachable",
+    "href": "ideation-rubric.html#accessible-understandable-approachable",
+    "title": "Proposal scoring rubric",
+    "section": "Accessible, understandable, & approachable",
+    "text": "Accessible, understandable, & approachable",
+    "crumbs": [
+      "Ideation",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-rubric.html#rigorous-trustworthy",
+    "href": "ideation-rubric.html#rigorous-trustworthy",
+    "title": "Proposal scoring rubric",
+    "section": "Rigorous & trustworthy",
+    "text": "Rigorous & trustworthy",
+    "crumbs": [
+      "Ideation",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-rubric.html#oeda-projects-are-innovative-build-enterprise-capacity",
+    "href": "ideation-rubric.html#oeda-projects-are-innovative-build-enterprise-capacity",
+    "title": "Proposal scoring rubric",
+    "section": "OEDA Projects are innovative & build enterprise capacity",
+    "text": "OEDA Projects are innovative & build enterprise capacity\n\nThe proposal includes data with existing information covered by the OEDA policy library. [Scoring 0 to +2)]\n\nNo; no sources are covered. [Score: 0]\nYes; some, but not all sources are covered. [Score: +1]\nYes; all sources are covered. [Score: +2]\n\nThe proposal leverages an existing agreement. [Scoring: -1 to +2 ]\n\nNo. One or more new agreements are required. [Score: -1]\nn/a. The project does not require an agreement. [Score: 0]\nYes. An applicable ad hoc agreement exists. [Score: +1]\nYes. EMOU or umbrella OEDA agreement applies. [Score: +2]\n\nThe proposal leverages an existing agreement. [Scoring: 0 or 1 ]\n\nNo. [Score: 0]\nYes. [Score: +1]\n\nThe project leverages existing enterprise attribute data, outside of OEDA’s Eventline. [Scoring: 0 or 1]\n\nNo. [Score: 0]\nYes. [Score: +1]",
+    "crumbs": [
+      "Ideation",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-rubric.html#details",
+    "href": "ideation-rubric.html#details",
+    "title": "Proposal scoring rubric",
+    "section": "Details",
+    "text": "Details\n\nIRB\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\n\nResearch means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge [45 CFR 46.102(l)]\n\nMany common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.\nTypical systematic uses of data that are not research include:\n\nInternal program evaluation and quality improvement efforts\nOperational activities\nInformational interviews\n\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\n\nHuman subject means a living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens (ii) Obtains, uses, studies, analyzes, or generates identifiable private information on identifiable biospecimens 45 CFR 46.102(e)\n\nOften, work with administrative data is neither the result of intervention nor interaction.\n\nIntervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject’s environment that are performed for research purposes. 45 CFR 46.102(e)(2)\n\nGenerally, researchers for state agencies are not able to create randomized control trials where Oregonians’ experiences with their government are manipulated to develop strong internal validity for generalizable claims.\n\nInteraction includes communication or interpersonal contact between investigator and subject 45 CFR 46.102(e)(3)\n\nResearchers for state agencies are often working with private information.\n\nPrivate information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (e.g., a medical record).\n\nBut, researchers can often answer meaningful agency questions without using identifiable private inforamtion.\n\nIdentifiable private information is private information for which the identity of the subject is or may readily be ascertained by the investigator or associated with the information.\n\nAnalyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.\nCreating analytical datasets which follow Safe Harbor Regulations is one way to ensure that the analysis does not involve human subjects.\n\n\nThe proposal meets one or more of the requirements for review by the and has received approval from that body\nAny study that meets any of the criteria below must seek review by the Public Health Institutional Review Board.\n\n• The research is sponsored by the PHD (Oregon Public Health Division) or MCHD (Multnomah County Health Department);  • The research is conducted by or under the direction of an employee or agent of PHD or MCHD in connection with his/her agency responsibilities, or using any property or facility of PHD or MCHD;  • The research involves the use of PHD or MCHD’s data;  • The research involves the use of PHD or MCHD’s non-public information to identify or contact human research subjects or prospective subjects;  • Funding for the research will be handled through PHD or MCHD, but the research will be done at another location  Public Health Institutional Review Board (p. 3)\n\n\n\nThe project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nWhile the Federal HHS does not require it, they strong recommend that determinations of exempt status be conducted by individuals other than the investigators.\nFor context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.\nExempt research includes (among other exemptions):\n\nResearch in educational settings involving normal educational practices 45 CFR 46.104(d)(1)\nResearch whose interactions are only educational tests or observation of public behavior 45 CFR 46.104(d)(2)\nResearch whose interventions are benign behavioral interventions 45 CFR 46.104(d)(3)\nSecondary research for which consent is not required 45 CFR 46.104(d)(4), including specifically the following\n\n\nThe research involves only information collection and analysis involving the investigator’s use of identifiable health information when that use is regulated under 45 CFR parts 160 and 164, subparts A and E, for the purposes of “health care operations” or “research” as those terms are defined at 45 CFR 164.501 or for “public health activities and purposes” as described under 45 CFR 164.512(b);\n\nWhere the definitions for health care operations and research defined in 45 CFR 164.501 are\n\nHealth care operations means any of the following activities of the covered entity to the extent that the activities are related to covered functions: (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment; […] (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs; (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and (6) Business management and general administrative activities of the entity, including, but not limited to: (i) Management activities relating to implementation of and compliance with the requirements of this subchapter; (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer. […]   Researchmeans a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
+    "crumbs": [
+      "Ideation",
+      "Proposal rubric"
     ]
   },
   {
@@ -291,52 +362,146 @@
     ]
   },
   {
-    "objectID": "ideation-rubric.html",
-    "href": "ideation-rubric.html",
-    "title": "Proposal scoring rubric",
+    "objectID": "ideation-intelligence.html",
+    "href": "ideation-intelligence.html",
+    "title": "System 4 Intelligence",
     "section": "",
-    "text": "Proposals for OEDA projects will be written by the OEDA economist and researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nThese proposals will be scored using a rubric. Ideally, this rubric reflects the value that OEDA can bring to state government and the values that OEDA brings to our work.\nSome of the rubric items will likely be scored by OEDA researchers and presented to the Advisory Council. For others, the Advisory Council will decide how to score them during a meeting.\nThe rubric will be used to make go/no-go decisions about projects and help set priorities for the OEDA portfolio.\nThe rubric items appear as the numbered items below.",
+    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
     "crumbs": [
       "Ideation",
-      "Proposal rubric"
+      "System 4 Intelligence"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#background",
-    "href": "ideation-rubric.html#background",
-    "title": "Proposal scoring rubric",
+    "objectID": "ideation-intelligence.html#purpose",
+    "href": "ideation-intelligence.html#purpose",
+    "title": "System 4 Intelligence",
     "section": "",
-    "text": "Proposals for OEDA projects will be written by the OEDA economist and researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nThese proposals will be scored using a rubric. Ideally, this rubric reflects the value that OEDA can bring to state government and the values that OEDA brings to our work.\nSome of the rubric items will likely be scored by OEDA researchers and presented to the Advisory Council. For others, the Advisory Council will decide how to score them during a meeting.\nThe rubric will be used to make go/no-go decisions about projects and help set priorities for the OEDA portfolio.\nThe rubric items appear as the numbered items below.",
+    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
     "crumbs": [
       "Ideation",
-      "Proposal rubric"
+      "System 4 Intelligence"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#process-value-ethical",
-    "href": "ideation-rubric.html#process-value-ethical",
-    "title": "Proposal scoring rubric",
-    "section": "Process value: Ethical",
-    "text": "Process value: Ethical\n\nOne of the following must be true:\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\nThe proposal is human subjects research, and meets one or more of the requirements for review by the Public Health Institutional Review Board and has received approval from that body\nThe project is human subjects research, does not meet any of the requirements of (c), above, and provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nThe project provides documentation of approval from an IRB\n\n\nSee details, below",
+    "objectID": "ideation-intelligence.html#internal-oregon-government-documents",
+    "href": "ideation-intelligence.html#internal-oregon-government-documents",
+    "title": "System 4 Intelligence",
+    "section": "Internal Oregon government documents",
+    "text": "Internal Oregon government documents\n\nProgram/agency Ways & Means presentations\nLegislative testimony\nProgram/agency documents: strategic plans, reorg documents, OWL pages, etc.\nSecretary of State Audits",
     "crumbs": [
       "Ideation",
-      "Proposal rubric"
+      "System 4 Intelligence"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#details",
-    "href": "ideation-rubric.html#details",
-    "title": "Proposal scoring rubric",
-    "section": "Details",
-    "text": "Details\n\nEthical\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\n\nResearch means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge [45 CFR 46.102(l)]\n\nMany common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.\nTypical systematic uses of data that are not research include:\n\nInternal program evaluation and quality improvement efforts\nOperational activities\nInformational interviews\n\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\n\nHuman subject means a living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens (ii) Obtains, uses, studies, analyzes, or generates identifiable private information on identifiable biospecimens 45 CFR 46.102(e)\n\nOften, work with administrative data is neither the result of intervention nor interaction.\n\nIntervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject’s environment that are performed for research purposes. 45 CFR 46.102(e)(2)\n\nGenerally, researchers for state agencies are not able to create randomized control trials where Oregonians’ experiences with their government are manipulated to develop strong internal validity for generalizable claims.\n\nInteraction includes communication or interpersonal contact between investigator and subject 45 CFR 46.102(e)(3)\n\nResearchers for state agencies are often working with private information.\n\nPrivate information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (e.g., a medical record).\n\nBut, researchers can often answer meaningful agency questions without using identifiable private inforamtion.\n\nIdentifiable private information is private information for which the identity of the subject is or may readily be ascertained by the investigator or associated with the information.\n\nAnalyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.\nCreating analytical datasets which follow Safe Harbor Regulations is one way to ensure that the analysis does not involve human subjects.\n\n\nThe proposal meets one or more of the requirements for review by the and has received approval from that body\nAny study that meets any of the criteria below must seek review by the Public Health Institutional Review Board.\n\n• The research is sponsored by the PHD (Oregon Public Health Division) or MCHD (Multnomah County Health Department);  • The research is conducted by or under the direction of an employee or agent of PHD or MCHD in connection with his/her agency responsibilities, or using any property or facility of PHD or MCHD;  • The research involves the use of PHD or MCHD’s data;  • The research involves the use of PHD or MCHD’s non-public information to identify or contact human research subjects or prospective subjects;  • Funding for the research will be handled through PHD or MCHD, but the research will be done at another location  Public Health Institutional Review Board (p. 3)\n\n\n\nThe project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nWhile the Federal HHS does not require it, they strong recommend that determinations of exempt status be conducted by individuals other than the investigators.\nFor context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.\nExempt research includes (among other exemptions):\n\nResearch in educational settings involving normal educational practices 45 CFR 46.104(d)(1)\nResearch whose interactions are only educational tests or observation of public behavior 45 CFR 46.104(d)(2)\nResearch whose interventions are benign behavioral interventions 45 CFR 46.104(d)(3)\nSecondary research for which consent is not required 45 CFR 46.104(d)(4), including specifically the following\n\n\nThe research involves only information collection and analysis involving the investigator’s use of identifiable health information when that use is regulated under 45 CFR parts 160 and 164, subparts A and E, for the purposes of “health care operations” or “research” as those terms are defined at 45 CFR 164.501 or for “public health activities and purposes” as described under 45 CFR 164.512(b);\n\nWhere the definitions for health care operations and research defined in 45 CFR 164.501 are\n\nHealth care operations means any of the following activities of the covered entity to the extent that the activities are related to covered functions: (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment; […] (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs; (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and (6) Business management and general administrative activities of the entity, including, but not limited to: (i) Management activities relating to implementation of and compliance with the requirements of this subchapter; (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer. […]",
+    "objectID": "ideation-intelligence.html#think-tanks-policy-research",
+    "href": "ideation-intelligence.html#think-tanks-policy-research",
+    "title": "System 4 Intelligence",
+    "section": "Think tanks & policy research",
+    "text": "Think tanks & policy research\nSources for research reports, briefs, data visualizations, etc. – often with cross-agency topics.\n\nUrban Institute - housing, poverty, TANF, SNAP, justice\nCenter on Budget and Policy Priorities - federal & state budgets, funding streams and policies, SNAP, TANF, Medicaid\nMDRC - evaluations (often randomized controlled trials) of social program - employment, education, family supports\nChild Trends - children & youth, child welfare, juvenile justice\nMathematica - research & evaluation solutions - health, human services, education\nChapin Hall - child welfare, youth homelessness, community-based supports\nCasey Family Programs - child welfare",
     "crumbs": [
       "Ideation",
-      "Proposal rubric"
+      "System 4 Intelligence"
     ]
   },
   {
-    "objectID": "meetings-OEDA-team.html",
-    "href": "meetings-OEDA-team.html",
+    "objectID": "ideation-intelligence.html#clearinghouses",
+    "href": "ideation-intelligence.html#clearinghouses",
+    "title": "System 4 Intelligence",
+    "section": "Clearinghouses",
+    "text": "Clearinghouses\nThese organizations review and rate the evidence for specific programs and practices. These can provide standards of evidence, and can also be a source of ideas worth testing or implementing in Oregon.\n\nWhat Works Clearinghouse - education, including early childhood\nTitle IV-E Prevention Services Clearinghouse - Child welfare; evaluations and ratings of services eligible for federal prevention funding\nCrimeSolutions.gov - Criminal and juvenile justice\nCalifornia Evidence-Based Clearinghouse for Child Welfare - Child welfare.",
+    "crumbs": [
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "ideation-intelligence.html#government-membership-orgs",
+    "href": "ideation-intelligence.html#government-membership-orgs",
+    "title": "System 4 Intelligence",
+    "section": "Government & membership orgs",
+    "text": "Government & membership orgs\nPlaces to learn federal priorities, what other states are doing, and find new data releases.\n\nACF Office of Planning, Research, and Evaluation (OPRE) - research arm of the Administration for Children & Families, TANF, child welfare, early childhood\nUSDA Food and Nutrition Service (FNS) - SNAP and other nutrition programs\nAmerican Public Human Services Association (APHSA) - membership org for state and local agencies., challenges and innovations happening in other states and jurisdictions\nNational Conference of State Legislatures (NCSL) - tracking legislative trends in human services across the US\nNational Data Archive on Child Abuse and Neglect (NDACAN) - child welfare, AFCARS and NCANDS federal files",
+    "crumbs": [
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "ideation-intelligence.html#foundations",
+    "href": "ideation-intelligence.html#foundations",
+    "title": "System 4 Intelligence",
+    "section": "Foundations",
+    "text": "Foundations\nFoundations often fund innovative research and pilot projects years before they become mainstream government practice. Could be a good source for intelligence on what’s on the horizon.\n\nCasey Family Programs - child welfare, juvenile justice, family economic stability Kids Count data center\nRobert Wood Johnson Foundation - health and health care, Medicaid, public health, social determinants of health\nPew Charitable Trusts - health & well-being, communities, economic advancement, federal policy, state government, environment, immigration, demography, race, ethnicity, religion, Pew Research Center\nMarguerite Casey Foundation - grant making foundation to shift power from government to communities, families, and individuals who continue to be excluded from shaping society and sharing in its rewards and freedoms.",
+    "crumbs": [
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "ideation-intelligence.html#journals",
+    "href": "ideation-intelligence.html#journals",
+    "title": "System 4 Intelligence",
+    "section": "Journals",
+    "text": "Journals\n\nThe Future of Children - defunct collab between Princeton and Brookings, each issue is a highy readable deep-dive into a single topic: education, early childhood, culture & economic outcomes, universal health, reducing justice system inequality, etc.\nJournal of Policy Analysis and Management (JPAM) - program evaluation & policy analysis\nSocial Service Review - social problems, policy, social work practice\nBig Data & Society - large-scale data collection, algorithmic decision making, impacts on society, ethics & equity of administrative data\nGateways: International Journal of Community Research and Engagement - empirical & evaluative case studies of community-based research & pedagogy, research with communities rather than on them\nJournal of the Royal Statistical Society: Series A (Statistics in Society) - social and ethical implications of statistical methods, algorithmic fairness, data privacy, measuring inequality\nJournal of Public Administration Research and Theory (JPART) - public administration, representative bureaucracy, administrative burden, implementation of policy by “street-level” bureaucrats\nPublic Administration Review (PAR) - public sector research, theory, and practice, academics & practitioners)\nJournal of Urban Affairs - housing, transportation, economic development, human services, spatial dimensions of inequality, disparate outcomes",
+    "crumbs": [
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OEDA - Lab Manual",
+    "section": "",
+    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#oedas-vision-draft---proposed-august-2025",
+    "href": "index.html#oedas-vision-draft---proposed-august-2025",
+    "title": "OEDA - Lab Manual",
+    "section": "OEDA’s Vision (Draft - Proposed August 2025)",
+    "text": "OEDA’s Vision (Draft - Proposed August 2025)\nOregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#oedas-mission-draft---proposed-august-2025",
+    "href": "index.html#oedas-mission-draft---proposed-august-2025",
+    "title": "OEDA - Lab Manual",
+    "section": "OEDA’s Mission (Draft - Proposed August 2025)",
+    "text": "OEDA’s Mission (Draft - Proposed August 2025)\nOEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#oedas-product-values-adopted-summer-2025",
+    "href": "index.html#oedas-product-values-adopted-summer-2025",
+    "title": "OEDA - Lab Manual",
+    "section": "OEDA’s Product Values (Adopted Summer 2025)",
+    "text": "OEDA’s Product Values (Adopted Summer 2025)\n\nRelevant and impactful\nAccessible, understandable, & approachable\nRigorous & trustworthy\nInnovative",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#oedas-process-values-adopted-summer-2025",
+    "href": "index.html#oedas-process-values-adopted-summer-2025",
+    "title": "OEDA - Lab Manual",
+    "section": "OEDA’s Process Values (Adopted Summer 2025)",
+    "text": "OEDA’s Process Values (Adopted Summer 2025)\n\nEthical\nCollaborative\nConstructive\nCommunicative\nManaged expectations\nPlays well with others\nProfessional & conscientious",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "meetings-oeda-team.html",
+    "href": "meetings-oeda-team.html",
     "title": "OEDA Team Meetings",
     "section": "",
     "text": "Every Tuesday from 1:35 to 2:55",
@@ -346,8 +511,8 @@
     ]
   },
   {
-    "objectID": "meetings-OEDA-team.html#cadence",
-    "href": "meetings-OEDA-team.html#cadence",
+    "objectID": "meetings-oeda-team.html#cadence",
+    "href": "meetings-oeda-team.html#cadence",
     "title": "OEDA Team Meetings",
     "section": "",
     "text": "Every Tuesday from 1:35 to 2:55",
@@ -357,8 +522,8 @@
     ]
   },
   {
-    "objectID": "meetings-OEDA-team.html#purposes",
-    "href": "meetings-OEDA-team.html#purposes",
+    "objectID": "meetings-oeda-team.html#purposes",
+    "href": "meetings-oeda-team.html#purposes",
     "title": "OEDA Team Meetings",
     "section": "Purposes",
     "text": "Purposes\n\nAlign\n\nDebrief council meetings\nSynthesize and analyze intelligence from OEDA staff, agency partners, and other informants\nShare project progress and blockers\nReview metrics and discuss implicated processes\n\nPlan\n\nDesign projects\nSet OEDA development calendar\n\nProduce\n\nAgendas and agendas for council meetings\nProgress reports for council members and sponsors\nMinutes from council meetings\n\nIdeate\n\nFeedback on proposals, research plans, charters, products, presentations\n\nConnection\n\nGet to know one another better\nCelebrate individual and team successes",
@@ -368,8 +533,8 @@
     ]
   },
   {
-    "objectID": "meetings-OEDA-team.html#agendas",
-    "href": "meetings-OEDA-team.html#agendas",
+    "objectID": "meetings-oeda-team.html#agendas",
+    "href": "meetings-oeda-team.html#agendas",
     "title": "OEDA Team Meetings",
     "section": "Agendas",
     "text": "Agendas\n\nStanding agenda\nThis is our general, standing agenda for our weekly meetings.\n\nHot topics: Anything that anyone on the team needs to address at the top of the meeting\nSpecial topics, if scheduled\nSystem 4 Briefings - Briefings from any guests invited for intelligence - Briefings rotating staff on their intelligence areas - Briefings from Jason - Ad hoc briefings from anyone\nSystems 1 & 2 Briefings - Updates from work units on project progress - Identification of any blockers or process issues\nSystem 3 Briefings - Lab manual updates - Housekeeping from HR, Workday, admins, etc. - Review of any dashboards, metrics, Kanban, etc. we’re experimenting with\n\n\n\nSpecial topics\n\nPeriodic special topics\nSchedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.\nOn these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.\n\n\n\nAd hoc events\nAlso during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.",
