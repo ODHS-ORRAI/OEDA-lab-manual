@@ -113,18 +113,7 @@
     "href": "ideation-rubric.html",
     "title": "Proposal scoring rubric",
     "section": "",
-    "text": "This document is very much a",
-    "crumbs": [
-      "Ideation",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "ideation-rubric.html#caveat",
-    "href": "ideation-rubric.html#caveat",
-    "title": "Proposal scoring rubric",
-    "section": "",
-    "text": "This document is very much a",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe matters that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
     "crumbs": [
       "Ideation",
       "Proposal rubric"
@@ -134,74 +123,30 @@
     "objectID": "ideation-rubric.html#background",
     "href": "ideation-rubric.html#background",
     "title": "Proposal scoring rubric",
-    "section": "Background",
-    "text": "Background\nProposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nThese proposals will be scored using a rubric. Ideally, this rubric reflects the value that OEDA can bring to state government and the values that OEDA brings to our work.\nSome of the rubric items will likely be scored by OEDA researchers and presented to the Advisory Council. For others, the Advisory Council will decide how to score them during a meeting.\nThe rubric will be used to make go/no-go decisions about projects and help set priorities for the OEDA portfolio.\nThe focus of this rubric is on the research question and topic, about whether the question feels relevant to cross-agency audiences, and whether the proposed solution seems like a valuable contribution.",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe matters that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
     "crumbs": [
       "Ideation",
       "Proposal rubric"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#research-proposals",
-    "href": "ideation-rubric.html#research-proposals",
+    "objectID": "ideation-rubric.html#screening-proposals",
+    "href": "ideation-rubric.html#screening-proposals",
     "title": "Proposal scoring rubric",
-    "section": "Research proposals",
-    "text": "Research proposals\n\nOEDA projects are cross-agency and collaborative\n\nThe proposal clarifies that agency data will not be disclosed to third parties.  This is a screening item. Proposals must score a TRUE to be brought to the OEDA Advisory Council. [Scoring: T or F]\n\n\n\nOEDA projects are ethical\n\nThe proposal clarifies that agency data will not be disclosed to third parties.  This is a screening item. Proposals must score a TRUE to be brought to the OEDA Advisory Council. [Scoring: T or F]\nThe proposal addresses human subjects protections.  This is a screening item. Proposals must score a TRUE to be brought to the OEDA Advisory Council, and to be scored a TRUE one of the following must be true. [Scoring: T or F]\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\nThe proposal is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\nThe proposal is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation (reasoning, checklist, etc.) from someone other than the investigators that the research is exempt from IRB review.\nThe project is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\nSee Details-IRB, below",
+    "section": "Screening proposals",
+    "text": "Screening proposals\nOEDA staff will screen proposals ensuring that they meet a few must have dimensions required of all OEDA proposals.\n\nScreening item 1: Integrated\n\nText: The proposal is integrative.\nOEDA value: OEDA projects are cross-agency and collaborative\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposed work integrates data from more than one state agency.\n\n\n\n\nFALSE\n\n\nThe proposed work does not integrate data from more than one state agency.\n\n\n\n\n\n\n\nScreening item 2: Redisclosure\n\nText: The proposal addresses disclosure to third-parties.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal explicitly precludes the redisclosure of agency data to anyone other than the contributing agency and OEDA.\n\n\n\n\nFALSE\n\n\nThe proposal does not contain language precluding redisclosure.\n\n\n\n\n\n\n\nScreening item 3: HumanSubjects\n\nText: The proposal addresses human subjects protections.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation from someone other than the investigators that the research is exempt from IRB review.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\n\n\n\nFALSE\n\n\nNone of the above are true; the proposed work does not adequately address human subjects protections.",
     "crumbs": [
       "Ideation",
       "Proposal rubric"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#oeda-projects-are-relevant-and-impactful",
-    "href": "ideation-rubric.html#oeda-projects-are-relevant-and-impactful",
+    "objectID": "ideation-rubric.html#scoring-proposals",
+    "href": "ideation-rubric.html#scoring-proposals",
     "title": "Proposal scoring rubric",
-    "section": "OEDA projects are relevant and impactful",
-    "text": "OEDA projects are relevant and impactful",
-    "crumbs": [
-      "Ideation",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "ideation-rubric.html#relevant-and-impactful",
-    "href": "ideation-rubric.html#relevant-and-impactful",
-    "title": "Proposal scoring rubric",
-    "section": "Relevant and impactful",
-    "text": "Relevant and impactful",
-    "crumbs": [
-      "Ideation",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "ideation-rubric.html#accessible-understandable-approachable",
-    "href": "ideation-rubric.html#accessible-understandable-approachable",
-    "title": "Proposal scoring rubric",
-    "section": "Accessible, understandable, & approachable",
-    "text": "Accessible, understandable, & approachable",
-    "crumbs": [
-      "Ideation",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "ideation-rubric.html#rigorous-trustworthy",
-    "href": "ideation-rubric.html#rigorous-trustworthy",
-    "title": "Proposal scoring rubric",
-    "section": "Rigorous & trustworthy",
-    "text": "Rigorous & trustworthy",
-    "crumbs": [
-      "Ideation",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "ideation-rubric.html#oeda-projects-are-innovative-build-enterprise-capacity",
-    "href": "ideation-rubric.html#oeda-projects-are-innovative-build-enterprise-capacity",
-    "title": "Proposal scoring rubric",
-    "section": "OEDA Projects are innovative & build enterprise capacity",
-    "text": "OEDA Projects are innovative & build enterprise capacity\n\nThe proposal includes data with existing information covered by the OEDA policy library. [Scoring 0 to +2)]\n\nNo; no sources are covered. [Score: 0]\nYes; some, but not all sources are covered. [Score: +1]\nYes; all sources are covered. [Score: +2]\n\nThe proposal leverages an existing agreement. [Scoring: -1 to +2 ]\n\nNo. One or more new agreements are required. [Score: -1]\nn/a. The project does not require an agreement. [Score: 0]\nYes. An applicable ad hoc agreement exists. [Score: +1]\nYes. EMOU or umbrella OEDA agreement applies. [Score: +2]\n\nThe proposal leverages an existing agreement. [Scoring: 0 or 1 ]\n\nNo. [Score: 0]\nYes. [Score: +1]\n\nThe project leverages existing enterprise attribute data, outside of OEDA’s Eventline. [Scoring: 0 or 1]\n\nNo. [Score: 0]\nYes. [Score: +1]",
+    "section": "Scoring proposals",
+    "text": "Scoring proposals\nMembers of the OEDA Advisory Council will score proposals on criteria that relate to the relevance, impact, and urgency of the proposed work.\n\nScored item 1: Importance\n\nText: The current state is important to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe issue is relevant to a small work unit within a single agency and affects tens of clients.\n\n\n\n\n2\n\n\nThe issue is relevant to several employees across one or two agencies and affects hundreds of clients.\n\n\n\n\n3\n\n\nThe issue is relevant to employees across several agencies, relates to a state priority, and affects several hundreds of clients.\n\n\n\n\n4\n\n\nThe issue is widespread across multiple agencies, relates to one or more key state priorities, and affects thousands of clients.\n\n\n\n\n5\n\n\nThe issue is foundational and cross-agency, with substantial relationships to effective service delivery, and affects tens of thousands of clients.\n\n\n\n\n\n\n\nScored item 2: Urgency\n\nText: The current state is urgent to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThere is no immediate need to address this issue. It can be revisited at a later date with little to no consequence.\n\n\n\n\n2\n\n\nThe issue should be addressed within the next two years, but there are no immediate deadlines or critical events tied to it.\n\n\n\n\n3\n\n\nThe issue needs to be addressed within the year to avoid a negative impact on services or a key initiative.\n\n\n\n\n4\n\n\nThe issue needs to be addressed soon to support an upcoming policy change, a legislative mandate, or a critical program launch.\n\n\n\n\n5\n\n\nThe issue requires immediate attention to avoid a substantial negative outcome, such as a service disruption, public harm, or failure to meet a legal deadline.\n\n\n\n\n\n\n\nScored item 3: Impact\n\nText: The future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposed future state offers minimal improvements over the status quo, with little potential to change how agencies operate or serve clients.\n\n\n\n\n2\n\n\nThe future state would represent localized, loosely described improvements within one or two state agencies.\n\n\n\n\n3\n\n\nThe future state would be a clear, measureable improvement in specific processes or services across multiple agencies.\n\n\n\n\n4\n\n\nThe future state would be a significant change in how agencies coordinate or make decisions, a new level of efficiency, service quality, or service equity.\n\n\n\n\n5\n\n\nThe future state is a new paradigm for data-informed decision making across multiple agencies, fundamentally changing how government operates and serves its citizens.\n\n\n\n\n\n\n\nScored item 4: Questions\n\nText: The research questions are meaningful and useful.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe research topics or questions are vague, unrelated to the core problems or opportunities of the current state, or would not meaningfully contribute to achieving the desired future state.\n\n\n\n\n2\n\n\nThe research topics or questions are too broad, too narrow, or would only provide a partial answer. Significant uncertainty would remain.\n\n\n\n\n3\n\n\nThe questions are clear and directly address the gap between current and future states. Answering the questions would provide the necessary insight to move from the current to future state with reasonable confidence.\n\n\n\n\n4\n\n\nThe questions are insightful and precise, pinpointing the critical information needed to make informed decisions. Answering the questions is likely not to just fill the gap, but reveal new opportunities.\n\n\n\n\n5\n\n\nThe questions are incisive, originally, and essential for project success. Answering these questions would eliminate major uncertainties and provide a high degree of confidence that the desired future state can be achieved.\n\n\n\n\n\n\n\nScored item 5: Equity\n\nText: The proposal future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposal does not adequately acknowledge or consider ethical or equity implications; or there are reasons to believe the work will cause harm or perpetuate existing biases.\n\n\n\n\n2\n\n\nThe proposal mentions ethics or equity, but superficially, promising to meet minimum compliance standards, but without specific details or reasoning, and disconnected from the core project.\n\n\n\n\n3\n\n\nThe proposal includes specific plans related to ethics and equity, like data disaggregation, or including thoughts from those with lived experiences. But improving service equity is not a primary focus of the work.\n\n\n\n\n4\n\n\nThe proposal demonstrates a thoughtful understanding of the ethical and equity landscape–clearly identifying regions, communities, populations relevant to the research questions and providing strong rationale for their inclusion. A project aim is improving service equity, fairness, and equality of outcomes.\n\n\n\n\n5\n\n\nThe proposal includes meaningful engagement with clients in different parts of the state, with a variety of lived experiences, and part of different racial, ethnic, cultural, linguistic, and other communities. Specific metrics for measuring equity are incorporated into the proposed work, and improving those measures is key to the work.",
     "crumbs": [
       "Ideation",
       "Proposal rubric"
@@ -370,6 +315,83 @@
     "crumbs": [
       "Publication & delivery",
       "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html",
+    "href": "delivery-qc-research-reports.html",
+    "title": "Quality checks: Research reports",
+    "section": "",
+    "text": "Quarto uses embed-resources: true in the yaml heading so that the document is a single file with no external dependencies\nQuarto compiles without errors and warnings\nAll outputs render: no broken figures, tables\nAll citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected\nAll internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html#document-structure-and-output",
+    "href": "delivery-qc-research-reports.html#document-structure-and-output",
+    "title": "Quality checks: Research reports",
+    "section": "",
+    "text": "Quarto uses embed-resources: true in the yaml heading so that the document is a single file with no external dependencies\nQuarto compiles without errors and warnings\nAll outputs render: no broken figures, tables\nAll citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected\nAll internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html#statistical-and-analytical-integrity",
+    "href": "delivery-qc-research-reports.html#statistical-and-analytical-integrity",
+    "title": "Quality checks: Research reports",
+    "section": "Statistical and analytical integrity",
+    "text": "Statistical and analytical integrity\n\nAll text has been run through the statcheck package, to determine if reported p-values, df, and test statistics align. Any errors or decision errors have been resolved.\nAll tests have effect sizes reported.\nConfidence intervals are included around point estimates.\nData visualizations and text/data/statistics match (e.g. means in the text match the means in the visualization)",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html#reproducibility",
+    "href": "delivery-qc-research-reports.html#reproducibility",
+    "title": "Quality checks: Research reports",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nQuarto project structure follows OEDA standards (TBD: e.g., report.qmd, figures/, data/, scripts/) for transparency.\nDocument makes use of a reproducible environment (TBD: determine the OEDA standard: Docker, renv.lock, etc.?)\nSeeds are set for simulations, resampling, bootstrapping, or other random processes\nScripts and data used in the document are versioned and reproducible\nCode chunks use #| eval: true unless intentionally disabled with a comment as to why\nInput data is described or linked clearly (e.g. source, format, preprocessing). Data are all versioned instances, not SQL pulls from “live” administrative data.",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html#interpretibility-and-clarity",
+    "href": "delivery-qc-research-reports.html#interpretibility-and-clarity",
+    "title": "Quality checks: Research reports",
+    "section": "Interpretibility and clarity",
+    "text": "Interpretibility and clarity\n\nTitle reflects key findings, variables, populations, and time periods\nAbstract reflects key findings, variables, populations, and time periods\nKey findings are clearly stated in plain language\nThe main message is consistent across the title, abstract, results, visualizations, and conclusion\nEffects are described in units meaningful to the audience (counts of individuals, dollars, days in care, etc.)\nAcronyms and technical terms are minimal, and are defined at first use\nAssumptions and limitations are acknowledged as appropriate in introduction, methods, and conclusions, and are addressed in suggestions for future work\nFigures and tables are interpretable without reference to the text",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html#writing-quality-style",
+    "href": "delivery-qc-research-reports.html#writing-quality-style",
+    "title": "Quality checks: Research reports",
+    "section": "Writing quality style",
+    "text": "Writing quality style\n\nNo placeholder text (ADD, TODO, etc.) remains\nGrammar, spelling, and punctuation are correct\nVoice and tense are consistent\nReadability scores have been calculated and are within OEDA adopted thresholds\nTerminology and variable names are consistent throughout",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "delivery-qc-research-reports.html#ethical-legal-and-confidentiality-checks",
+    "href": "delivery-qc-research-reports.html#ethical-legal-and-confidentiality-checks",
+    "title": "Quality checks: Research reports",
+    "section": "Ethical, legal, and confidentiality checks",
+    "text": "Ethical, legal, and confidentiality checks\n\nNo confidential or identifying information is used in any data input\nNo confidential or identifying information appears in any output (text, visualization, table, etc.)\nAppropriate masking is used for all static elements\nAppropriate masking has been tested for with any dynamic elements\nAll data use complies with licenses, access conditions, and consent\nEthics approval, DUA, IAA, etc. are acknowledged if applicable",
+    "crumbs": [
+      "Publication & delivery",
+      "Quality checks-Research reports"
     ]
   },
   {
@@ -559,7 +581,7 @@
     "href": "products-palettes.html",
     "title": "Color Palettes",
     "section": "",
-    "text": "As our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services.",
+    "text": "Warning: package 'dplyr' was built under R version 4.4.3\nAs our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services.",
     "crumbs": [
       "Product development",
       "Color palettes"
