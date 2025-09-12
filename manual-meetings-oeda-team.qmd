@@ -1,0 +1,61 @@
+---
+title: "OEDA Team Meetings"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+  
+## Cadence
+Every Tuesday from 1:35 to 2:55
+
+## Purposes
+
+*   Align
+    *   Debrief council meetings
+    *   Synthesize and analyze intelligence from OEDA staff, agency partners, and other informants
+    *   Share project progress and blockers
+    *   Review metrics and discuss implicated processes
+*   Plan
+    *   Design projects
+    *   Set OEDA development calendar
+*   Produce
+    *   Agendas and agendas for council meetings
+    *   Progress reports for council members and sponsors
+    *   Minutes from council meetings
+*   Ideate
+    *   Feedback on proposals, research plans, charters, products, presentations
+*   Connection
+    *   Get to know one another better
+    *   Celebrate individual and team successes
+    
+## Agendas
+
+### Standing agenda
+
+This is our general, standing agenda for our weekly meetings.
+
+1)    Hot topics: Anything that anyone on the team needs to address at the top of the meeting
+2)    Special topics, if scheduled
+3)    System 4 Briefings
+    -   Briefings from any guests invited for intelligence
+    -   Briefings rotating staff on their intelligence areas
+    -   Briefings from Jason
+    -   Ad hoc briefings from anyone
+4)    Systems 1 & 2 Briefings
+    -   Updates from work units on project progress
+    -   Identification of any blockers or process issues
+5)    System 3 Briefings
+    -   Lab manual updates
+    -   Housekeeping from HR, Workday, admins, etc.
+    -   Review of any dashboards, metrics, Kanban, etc. we're experimenting with
+
+
+### Special topics
+
+#### Periodic special topics
+
+Schedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.
+
+On these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.
+
+### Ad hoc events
+
+Also during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.

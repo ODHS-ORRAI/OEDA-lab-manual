@@ -1,0 +1,73 @@
+---
+title: "System 4 Intelligence"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Purpose
+
+OEDA's System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.
+
+The ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.
+
+## Internal Oregon government documents
+
+* Program/agency Ways & Means presentations
+* Legislative testimony
+* Program/agency documents: strategic plans, reorg documents, OWL pages, etc.
+* [Secretary of State Audits](https://sos.oregon.gov/audits/Pages/default.aspx)
+
+
+## Think tanks & policy research
+Sources for research reports, briefs, data visualizations, etc. -- often with cross-agency topics.
+
+* [Urban Institute](https://www.urban.org/) - housing, poverty, TANF, SNAP, justice
+* [Center on Budget and Policy Priorities](https://www.cbpp.org/) - federal & state budgets, funding streams and policies, SNAP, TANF, Medicaid
+* [MDRC](https://www.mdrc.org/) - evaluations (often randomized controlled trials) of social program - employment, education, family supports
+* [Child Trends](https://www.childtrends.org/) - children & youth, child welfare, juvenile justice
+* [Mathematica](https://www.mathematica.org/solutions/research-and-evaluation) - research & evaluation solutions - health, human services, education
+* [Chapin Hall](https://www.chapinhall.org/) - child welfare, youth homelessness, community-based supports
+* [Casey Family Programs](https://www.casey.org/) - child welfare
+
+## Clearinghouses
+These organizations review and rate the evidence for specific programs and practices. These can provide standards of evidence, and can also be a source of ideas worth testing or implementing in Oregon.
+
+* [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/) - education, including early childhood
+* [Title IV-E Prevention Services Clearinghouse](https://preventionservices.acf.hhs.gov/) - Child welfare; evaluations and ratings of services eligible for federal prevention funding
+* [CrimeSolutions.gov](https://crimesolutions.ojp.gov/) - Criminal and juvenile justice
+* [California Evidence-Based Clearinghouse for Child Welfare](https://www.cebc4cw.org/) - Child welfare.
+
+## Government & membership orgs
+Places to learn federal priorities, what other states are doing, and find new data releases.
+
+* [ACF Office of Planning, Research, and Evaluation (OPRE)](https://acf.gov/opre) - research arm of the Administration for Children & Families, TANF, child welfare, early childhood
+* [USDA Food and Nutrition Service (FNS)](https://www.fns.usda.gov/) - SNAP and other nutrition programs
+* [American Public Human Services Association (APHSA)](https://aphsa.org/) - membership org for state and local agencies., challenges and innovations happening in other states and jurisdictions
+* [National Conference of State Legislatures (NCSL)](https://www.ncsl.org/) - tracking legislative trends in human services across the US
+* [National Data Archive on Child Abuse and Neglect (NDACAN)](https://www.ndacan.acf.hhs.gov/) - child welfare, AFCARS and NCANDS federal files
+
+## Foundations
+Foundations often fund innovative research and pilot projects years before they become mainstream government practice. Could be a good source for intelligence on what's on the horizon.
+
+* [Casey Family Programs](https://www.casey.org/) - child welfare, juvenile justice, family economic stability [Kids Count data center](https://datacenter.aecf.org/)
+* [Robert Wood Johnson Foundation](https://www.rwjf.org/) - health and health care, Medicaid, public health, social determinants of health
+* [Pew Charitable Trusts](https://www.pew.org/en/) - health & well-being, communities, economic advancement, federal policy, state government, environment, immigration, demography, race, ethnicity, religion, [Pew Research Center](https://www.pewresearch.org/)
+* [Marguerite Casey Foundation](https://caseygrants.org/) - grant making foundation to shift power from government to communities, families, and individuals who continue to be excluded from shaping society and sharing in its rewards and freedoms.
+
+
+## Journals
+* [The Future of Children](https://futureofchildren.princeton.edu/) - defunct collab between Princeton and Brookings, each [issue](https://futureofchildren.princeton.edu/publications) is a highy readable deep-dive into a single topic: education, early childhood, culture & economic outcomes, universal health, reducing justice system inequality, etc.
+* [Journal of Policy Analysis and Management (JPAM)](https://onlinelibrary.wiley.com/journal/15206688) - program evaluation & policy analysis
+* [Social Service Review](https://www.journals.uchicago.edu/toc/ssr/current) - social problems, policy, social work practice
+* [Big Data & Society](https://journals.sagepub.com/home/BDS) - large-scale data collection, algorithmic decision making, impacts on society, ethics & equity of administrative data
+* [Gateways: International Journal of Community Research and Engagement](https://epress.lib.uts.edu.au/journals/index.php/ijcre) - empirical & evaluative case studies of community-based research & pedagogy, research _with_ communities rather than _on_ them
+* [Journal of the Royal Statistical Society: Series A (Statistics in Society)](https://academic.oup.com/jrsssa) - social and ethical implications of statistical methods, algorithmic fairness, data privacy, measuring inequality
+* [Journal of Public Administration Research and Theory (JPART)](https://academic.oup.com/jpart) - public administration, representative bureaucracy, administrative burden, implementation of policy by "street-level" bureaucrats
+* [Public Administration Review (PAR)](https://onlinelibrary.wiley.com/journal/15406210) - public sector research, theory, and practice, academics & practitioners) 
+* [Journal of Urban Affairs](https://www.tandfonline.com/journals/ujua20) - housing, transportation, economic development, human services, spatial dimensions of inequality, disparate outcomes
+* [Child Abuse & Neglect](https://www.sciencedirect.com/journal/child-abuse-and-neglect)
+* [Child Maltreatment](https://journals.sagepub.com/home/cmx)
+* [Developmental Child Welfare](https://journals.sagepub.com/home/DCW)
+* [Social Science and Medicine](https://www.sciencedirect.com/journal/social-science-and-medicine)
+* [Journal of Family Violence](https://link.springer.com/journal/10896)
+* [Journal of Marriage and Family](https://onlinelibrary.wiley.com/journal/17413737)
+* [Children and Youth Review Services](https://www.tandfonline.com/journals/wcys20)

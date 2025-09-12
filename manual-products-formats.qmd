@@ -1,0 +1,49 @@
+---
+title: "OEDA Product Formats"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+OEDA produces primarily digital solutions, and has adopted an "HTML-preferred" approach following ODHS and OHA policy ([Digital Accessibility in Content Creation and Sharing](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/me010-029.pdf), OHDSOHA 010-029, #7).
+
+Additionally, OEDA strives to use plain text, open source tools, and open source formats, whenever possible.
+
+## Project notes, meeting agendas, and meeting minutes
+
+Use [Quarto HTML](https://quarto.org/docs/output-formats/html-basics.html) documents, even if they are not routinely rendered to HTML.
+
+Minimal [yaml](https://quarto.org/docs/reference/formats/html.html) elements:
+
+* title
+* date
+* author
+* abstract (optional; suggested for longer or important for longer or important records)
+
+## Memos, briefs, papers
+
+Use [Quarto HTML](https://quarto.org/docs/output-formats/html-basics.html) documents. Final drafts should always be rendered as HTML files and published to the OEDA site.
+
+Minimal [yaml](https://quarto.org/docs/reference/formats/html.html) elements:
+
+* title
+* date
+* author
+* abstract
+
+For [scrollytelling](https://data.europa.eu/apps/data-visualisation-guide/scrollytelling-introduction) visualizations, use the [Closeread extension](https://closeread.dev/) for Quarto.
+
+## Presentations
+
+Use [Quarto Revealjs](https://quarto.org/docs/presentations/revealjs/) presentations.
+
+## Websites
+
+For some public facing projects, or large multi-method projects, use [Quarto website projects](https://quarto.org/docs/reference/projects/websites.html).
+
+As above, for [scrollytelling](https://data.europa.eu/apps/data-visualisation-guide/scrollytelling-introduction) visualizations, use the [Closeread extension](https://closeread.dev/) for Quarto.
+
+
+## (Flat) data files
+
+For small-to-medium, tabular data sets where human-readable data exchange is needed, use CSV (comma-separated values) files.
+
+For anything else--larger analytical working files, data lakes, archiving data for retention schedules, etc.--use [Apache Parquet](https://r4ds.hadley.nz/arrow.html#sec-parquet).

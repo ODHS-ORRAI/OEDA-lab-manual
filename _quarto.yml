@@ -4,7 +4,10 @@ project:
 
 website:
   title: ''
+
+#*******************************************************************************
 # Announcement
+#*******************************************************************************
   announcement:
     icon: info-circle
     dismissable: false
@@ -12,9 +15,11 @@ website:
     type: danger
     position: below-navbar
 
+#*******************************************************************************
 # Top-of-page navigation
+#*******************************************************************************
   navbar: 
-    logo: 'images/OEDA_Logo_Horizontal_Dark.svg'
+    logo: 'images/logos/OEDA_Logo_Horizontal_Dark.svg'
     logo-alt: 'Oregon Enterprise Data Analytics'
     background: dark
     search: true
@@ -30,6 +35,7 @@ website:
       - text: 'Publications'
       - text: 'Blog'
       - text: 'Data profiles'
+        href: data-main.qmd
 
 #*******************************************************************************
 # Left-side navigation
@@ -40,12 +46,12 @@ website:
       style: 'docked'
       background: dark
       contents:
-        - text: 'Council purpose'
+        - text: 'Advisory council home'
           href: council-main.qmd
         - text: 'Council members'
           href: council-members.qmd
         - text: 'Proposal rubric'
-          hred: council-proposal-rubric.qmd
+          href: council-proposal-rubric.qmd
         - section: 'Council meetings'
           href: council-meetings.qmd
           contents:
@@ -69,6 +75,16 @@ website:
           href: projects-main.qmd
         - text: 'Starting a project'
           href: projects-flow-initiation.qmd
+          
+#*******************************************************************************
+# DATA Profiles
+#*******************************************************************************
+    - title: 'Data profiles'
+      contents:
+        - text: 'Data profiles home'
+          href: projects-main.qmd
+        - text: 'Starting a project'
+          href: projects-flow-initiation.qmd
 
 #*******************************************************************************
 # LAB MANUAL
@@ -77,49 +93,30 @@ website:
       contents:
         - text: 'Lab manual home'
           href: manual-main.qmd
+        - section: 'Units'
+          contents:
+            - text: 'Program evaluation'
+              href: manual-progeval.qmd
+        - section: 'Meetings'
+          contents:
+            - text: 'OEDA Team Meetings'
+              href: manual-meetings-oeda-team.qmd
+        - section: 'Ideation'
+          contents:
+            - text: 'System 4 Intelligence'
+              href: manual-ideation-intelligence.qmd
         - section: 'Product development'
           contents:
           - text: Digital formats
-            href: products-formats.qmd
+            href: manual-products-formats.qmd
           - text: 'OEDA logos'
-            href: products-logos.qmd
-
-  # sidebar:
-  #   style: 'docked'
-  #   search: true
-  #   contents:
-  #     - text: 'Home'
-  #       href: index.qmd
-  #     - section: 'Process'
-  #       contents:
-  #         - text: 'Idea to project'
-  #           href: process-early.qmd
-  #     - section: 'Ideation'
-  #       contents:
-  #         - text: 'System 4 Intelligence'
-  #           href: ideation-intelligence.qmd
-  #         - text: 'Using the request form'
-  #           href: ideation-form.qmd
-  #         - text: 'Proposal rubric'
-  #           href: ideation-rubric.qmd
-  #     - section: 'Product development'
-  #       contents:
-  #         - text: 'OEDA logos'
-  #           href: products-logos.qmd
-  #         - text: 'Color palettes'
-  #           href: products-palettes.qmd
-  #     - section: 'Publication & delivery'
-  #       contents:
-  #         - text: 'Quality checks-Research reports'
-  #           href: delivery-qc-research-reports.qmd
-  #         - text: 'GitHub pages websites'
-  #           href: delivery-publishing-github-pages.qmd
-  #     - section: 'Meetings'
-  #       contents:
-  #         - text: 'OEDA Advisory Council Meetings'
-  #           href: meetings-advisory-council.qmd
-  #         - text: 'OEDA Team Meetings'
-  #           href: meetings-oeda-team.qmd
+            href: manual-products-logos.qmd
+        - section: 'Publication & delivery'
+          contents:
+            - text: 'Quality checks-Research reports'
+              href: manual-delivery-qc-research-reports.qmd
+            - text: 'GitHub pages websites'
+              href: manual-delivery-publishing-github-pages.qmd
 
 
 format:

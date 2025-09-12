@@ -21,449 +21,451 @@
     "text": "What does this mean for OEDA?\n\nOur customers are primarily ODHS-OHA coworkers, but we also have interactions with third-parties seeking data or analysis. We should consider our cross-agency partners as customers, as well.\nIndividuals should plan to meet the 1-day expectations for initial handling of emails\nIndividuals should use auto-replies when away on planned leave; tailoring them with applicable dates\n\nSuggested message: “I am out of the office [start date] to [end date]. If your request is an urgent one, please contact my manager, Jason Wallin jason.m.wallin@odhsoha.oregon.gov. Helpful links: Schedule a meeting with ORRAI management or the research teams. Request a research project.”\n\nIf you employ auto-replies in other ways, we will need to review those\nTriaging requests may need a weekly cadence, rather than fortnightly\nWe need to provide regular updates to customers for lengthy projects\nWe will need to consider how OEDA or ORRAI will meet the letter or the spirit of the 15- or 30-day completion expectations or be prepared with alternatives for OEDA projects"
   },
   {
-    "objectID": "products-logos.html",
-    "href": "products-logos.html",
-    "title": "OEDA Logos",
+    "objectID": "projects-flow-initiation.html",
+    "href": "projects-flow-initiation.html",
+    "title": "From Idea to OEDA project",
     "section": "",
-    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine.",
+    "text": "Ideation\nIdeas can come from anywhere. There may be suggestions, requests, or questions voiced in Advisory Council meetings. Researchers may review academic or think tank literature. Agency researchers and subject matter experts may meet with OEDA researchers and discuss ideas. And so on.\nWhen OEDA researchers encounter ideas they work with subject matter experts to create a proposal. Proposals should be relatively quick and easy, requiring just a meeting or two and a few hours of researchers’ time to draft. Much will still be unknown about the practicality, importance, and relevance of the proposed idea. Clarity on those will emerge with the process below.\n\n\n\n\n\nflowchart LR\n  b1@{ shape: stadium, label: 'Idea' }\n  b2@{ shape: rect, label: 'OEDA Ideation Unit' }\n  b3@{ shape: procs, label: 'Agency SMEs' }\n  b4@{ shape: doc, label: 'Proposal' }\n  \n  b1 --&gt; b2 --&gt; b3 --&gt; b4\n\n\n\n\n\n\n\n\n\nAdvisory Council Meeting\nOEDA researchers or the OEDA manager bring proposals to the council. The council members ask clarifying questions about the proposal and perhaps makes suggestions to improve its potential. The council scores the proposal on criteria related to its importance to state government, potential impacts, and more.\n\n\n\n\n\nflowchart LR\n  c1@{ shape: doc, label: 'Proposal' }\n  c2@{ shape: rect, label: 'Advisory Council' }\n  c3@{ shape: doc, label: 'Proposal Portfolio' }\n  \n  c1 --&gt; c2 --&gt; c3\n\n\n\n\n\n\n\n\n\nDesign\nWith the backlog of proposals, researchers can identify the unanswered research questions that are of highest priority to the state. Researchers select the highest priority items and begin the design process. This is simultaneously research design–identifying the methods and materials that will be an efficient, satisficing solution for the study–and project design identifying deliverables, roles and responsibilities, dependencies and threats, and timelines. The result of this work is a draft project charter.\n\n\n\n\n\nflowchart LR\n  d1@{ shape: doc, label: 'Proposal Portfolio'}\n  d2@{ shape: rect, label: 'OEDA Design Unit' }\n  d3@{ shape: doc, label: 'Draft Project Charter' }\n  \n  d1 --&gt; d2 --&gt; d3\n\n\n\n\n\n\n\n\n\nSponsorship\nThe OEDA manager shares the draft charter with the stakeholder agencies. Recipients include the owners and stewards of the data necessary for the work as well as the likely audiences for the study’s findings and deliverables. This begins two parallel processes.\nFirst, the OEDA Integration Unit creates a Data Integration Meeting. Data owners and stewards meet with the Integration Unit to discuss the data needs for the project. If contributing agencies have their own internal processes for interagency data sharing, those can substitute for the Data Integration Meeting. The deliverable from this process is a signed Interagency Agreement, Data Use Agreement or other legally sufficient document to permit the needed data integration and uses.\nSecond, the OEDA manager seeks sponsorship from agency leadership for the project. Sponsoring agencies will be those who will be providing resources for the project: data file preparation, time with subject matter experts, time with research staff, etc.\n\n\n\n\n\nflowchart LR\n  e1@{ shape: doc, label: 'Draft Project Charter' }\n  e2@{ shape: rect, label: 'OEDA Integration Unit' }\n  e3@{ share: rect, label: 'Data Integration Meeting' }\n  e4@{ shape: doc, label: 'Signed agreement' }\n  e5@{ shape: procs, label: 'Program leadership' }\n  e6@{ shape: doc, label: 'Signed project charter' }\n  e7@{ shape: doc, label: 'Project portfolio' }\n  \n  e1 --&gt; e2\n  e2 --&gt; e3 --&gt; e4 --&gt; e7\n  e2 --&gt; e5 --&gt; e6 --&gt; e7\n  \n\n\n\n\n\n\n\n\n\nData preparation\nWith a signed DUA agreement and project charter, data file preparation can begin. The OEDA Integration Unit makes sure agency staff have the final versions of those documents. Agency staff should have both the technical requirements for the files and the authority to disclose those files to OEDA.\nAgency staff prepare the files, and share them back to the Integration Unit. The Integration Unit brings together the data from the various sources, typically identifying the same individual across the different sources, linking records from one system to those from another.\n\n\n\n\n\nflowchart LR\n  f1@{ shape: doc, label: 'Project portfolio' }\n  f2@{ shape: rect, label: 'OEDA Integration Unit' }\n  f3@{ shape: procs, label: 'Agency Data Staff' }\n  f4@{ shape: docs, label: 'Agency data extracts' }\n  f5@{ shape: rect, label: 'OEDA Integration Unit' }\n  f6@{ shape: doc, label: 'Integrated study data set' }\n  \n  f1 --&gt; f2 --&gt; f3 --&gt; f4 --&gt; f5 --&gt; f6\n\n\n\n\n\n\n\n\n\nStudy begins\nThe analysis-ready data are now available to the relevant OEDA units: exploration, description, hypothesis testing, program evaluation, etc. The research portion of the integrated analytics project can begin.\n\n\nSymbol key\n\n\n\n\n\nflowchart RL\n  a1@{ shape: stadium, label: 'stadium' }\n  a1t@{ shape: text, label: 'Start or process trigger'}\n  a2@{ shape: rect, label: 'rectangle' }\n  a2t@{ shape: text, label: 'OEDA work unit or process' }\n  a3@{shape: procs, label: 'procs' }\n  a3t@{shape: text, label: 'Multiple contacts or simultaneous processes'}\n  a4@{ shape: doc, label: 'doc' }\n  a4t@{ shape: text, label: 'Document' }\n  a5@{ shape: docs, label: 'docs' }\n  a5t@{ shape: text, label: 'Multiple files or documents' }\n\n  a1t --&gt; a1\n  a2t --&gt; a2\n  a3t --&gt; a3\n  a4t --&gt; a4\n  a5t --&gt; a5",
     "crumbs": [
-      "Product development",
-      "OEDA logos"
+      "Projects",
+      "Starting a project"
     ]
   },
   {
-    "objectID": "products-logos.html#primary-vertical-logo---light-mode",
-    "href": "products-logos.html#primary-vertical-logo---light-mode",
-    "title": "OEDA Logos",
-    "section": "Primary (vertical) logo - Light mode",
-    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Product development",
-      "OEDA logos"
-    ]
-  },
-  {
-    "objectID": "products-logos.html#primary-vertical-logo---dark-mode",
-    "href": "products-logos.html#primary-vertical-logo---dark-mode",
-    "title": "OEDA Logos",
-    "section": "Primary (vertical) logo - Dark mode",
-    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Product development",
-      "OEDA logos"
-    ]
-  },
-  {
-    "objectID": "products-logos.html#horizontal-logo---light-mode",
-    "href": "products-logos.html#horizontal-logo---light-mode",
-    "title": "OEDA Logos",
-    "section": "Horizontal logo - Light mode",
-    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Product development",
-      "OEDA logos"
-    ]
-  },
-  {
-    "objectID": "products-logos.html#horizontal-logo---dark-mode",
-    "href": "products-logos.html#horizontal-logo---dark-mode",
-    "title": "OEDA Logos",
-    "section": "Horizontal logo - Dark mode",
-    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Product development",
-      "OEDA logos"
-    ]
-  },
-  {
-    "objectID": "products-logos.html#scaling",
-    "href": "products-logos.html#scaling",
-    "title": "OEDA Logos",
-    "section": "Scaling",
-    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}",
-    "crumbs": [
-      "Product development",
-      "OEDA logos"
-    ]
-  },
-  {
-    "objectID": "meetings-oeda-team.html",
-    "href": "meetings-oeda-team.html",
-    "title": "OEDA Team Meetings",
+    "objectID": "manual-products-palettes.html",
+    "href": "manual-products-palettes.html",
+    "title": "Color Palettes",
     "section": "",
-    "text": "Every Tuesday from 1:35 to 2:55",
-    "crumbs": [
-      "Meetings",
-      "OEDA Team Meetings"
-    ]
+    "text": "Warning: package 'dplyr' was built under R version 4.4.3\nAs our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services."
   },
   {
-    "objectID": "meetings-oeda-team.html#cadence",
-    "href": "meetings-oeda-team.html#cadence",
-    "title": "OEDA Team Meetings",
+    "objectID": "manual-products-palettes.html#list-of-basic-palette-colors",
+    "href": "manual-products-palettes.html#list-of-basic-palette-colors",
+    "title": "Color Palettes",
+    "section": "List of basic palette colors",
+    "text": "List of basic palette colors\nThe list below contains the main colors identified in the guidelines.\n\nOEDA_colors &lt;- list(\n  northstar = '#2E3192',\n  glacial = '#B4DCF5',\n  fog = '#F4F2ED',\n  forest = '#184E49',\n  willamette = '#86C679',\n  mist = '#D8E1E5',\n  marionberry = '#A91F50',\n  harvest = '#ECD263',\n  desert = '#EDDFD4',\n  black = '#000000',\n  white = '#FFFFFF',\n  charcoal = '#414042'\n)"
+  },
+  {
+    "objectID": "manual-products-palettes.html#roles",
+    "href": "manual-products-palettes.html#roles",
+    "title": "Color Palettes",
+    "section": "Roles",
+    "text": "Roles\nThese are the basic roles assigned to these colors in the publications guide.\n\n\n\nColor\nRole\n\n\n\n\nNorth Star Indigo\nPrimary color\n\n\nForest Green\nSecondary color\n\n\nMarionberry Red\nTertiary color\n\n\nGlacial Blue\nAccent color\n\n\nWillamette Green\nAccent color\n\n\nHarvest Gold\nAccent color\n\n\nFog Gray\nNeutral color\n\n\nMist Gray\nNeutral color\n\n\nDesert Sand\nNeutral color\n\n\nPrimary Black\nCore neutral\n\n\nPrimary White\nCore neutral\n\n\nAshland Charcoal\nCore neutral"
+  },
+  {
+    "objectID": "manual-products-palettes.html#meaning-neutral-document-components",
+    "href": "manual-products-palettes.html#meaning-neutral-document-components",
+    "title": "Color Palettes",
+    "section": "Meaning-neutral document components",
+    "text": "Meaning-neutral document components\n\n\n\nDocument\nComponent\nExample\nLight Mode\n\n\n\n\nBrief, memo, web page, blog entry\nBackground\nPage background\nPrimary White\n\n\nBrief, memo, web page, blog entry\nTitle\nHeading 1\nNorth Star Indigo\n\n\nBrief, memo, web page, blog entry\nSection heading\nHeading 2-5\nForest Green\n\n\nBrief, memo, web page, blog entry\nBody text\nBlocks of text (text color)\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCard\nAsides, boxouts, breakout boxes, etc. (background color)\nMist Gray\n\n\nBrief, memo, web page, blog entry\nLines\nHorizontal rules\nAshland Charcoal\n\n\nVisualization\nBackground\nPlot background and panel background\nFog Gray\n\n\nVisualization\nTitle\nPlot title\nNorth Star Indigo\n\n\nVisualization\nBackground\nFacet background\nNorth Star Indigo\n\n\nVisualization\nSection heading\nFacet title\nPrimary White\n\n\nVisualization\nBody text\nSubtitles or captions\nForest Green\n\n\nVisualization\nLines\nBorders, axes, ticks\nAshland Charcoal\n\n\n\nNote: Visualizations should be of a consistent OEDA style, regardless of whether the document overall is produced in dark or light mode."
+  },
+  {
+    "objectID": "manual-products-palettes.html#meaning-conveying-documents-components",
+    "href": "manual-products-palettes.html#meaning-conveying-documents-components",
+    "title": "Color Palettes",
+    "section": "Meaning-conveying documents components",
+    "text": "Meaning-conveying documents components\n\n\n\n\n\n\n\n\n\n\nDocument\nComponent\nMeaning\nBackground\nForeground\n\n\n\n\nBrief, memo, web page, blog entry\nCall out\nNeutral\nGlacial Blue\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nGrowth, meeting expectations, optimistic comparison\nWillamette Green\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nAttention needed, missing expectations, pessimistic comparison\nHarvest Gold\nAshland Charcoal\n\n\nVisualization\nCall out\nNeutral geom\nn/a\nAshland Charcoal\n\n\nVisualization\nCall out\nGeom indicating growth, meeting expectations, optimistic comparison\nn/a\nWillamette Green\n\n\nVisualization\nCall out\nGeom indicating attention needed, missing expectations, pessimistic comparison\nn/a\nHarvest Gold\n\n\n\nText callouts include Quarto call out elements styled using the Custom Callout Quarto extension as well as blockquotes or line blocks.\nVis callouts include the fill color of columns, bars, boxplots, points, etc."
+  },
+  {
+    "objectID": "manual-products-palettes.html#calculating-tints",
+    "href": "manual-products-palettes.html#calculating-tints",
+    "title": "Color Palettes",
+    "section": "Calculating tints",
+    "text": "Calculating tints\nThe function below takes a color from the OEDA palette (or any hex color, really) and computes various tints of it. I have not been able to determine just how the publications office creates their tints, so the tints output from this function do not exactly match the tints displayed in the publication guide.\n\n#' Create a tint of a base color\n#'\n#' This function generates a tint by mixing a base hex color with white in the HSL\n#' (Hue, Saturation, Lightness) color space. This method is perceptually more\n#' uniform than mixing in RGB space. tint_percent = 100 should return the base_hex.\n#' tint_percent = 0 should return pure white (\"#FFFFFF\").\n#'\n#' @param base_hex A character string of the starting hex color (e.g., \"#2E3192\").\n#' @param tint_percent A numeric value from 0 to 100 representing the\n#'   percentage of the original color to retain. A value of 80 creates a tint \n#'   which is 80 parts the base color and 20 parts pure white.\n#'   \n#' @return A character string for the new hex color.\n#' @export\n\n\ncreate_tint &lt;- function(base_hex, tint_percent) {\n  \n  pct_white &lt;- (100 - tint_percent) / 100\n  \n  hsl_start &lt;- plotwidgets::col2hsl(base_hex)\n  hsl_end &lt;- hsl_start\n  hsl_end[3] &lt;- ((1 - hsl_start[3]) * pct_white) + hsl_start[3]\n  \n  col_end &lt;- plotwidgets::hsl2col(hsl_end)\n  \n  return(col_end)\n}\n\n\nExamples of North Star Indigo tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$northstar, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Forest Green tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$forest, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Desert Sand tints\n\nlapply(c(100, 70, 30), function(x) create_tint(OEDA_colors$desert, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()"
+  },
+  {
+    "objectID": "manual-products-palettes.html#other-vis-palettes",
+    "href": "manual-products-palettes.html#other-vis-palettes",
+    "title": "Color Palettes",
+    "section": "Other vis palettes",
+    "text": "Other vis palettes\nWe will make recommendations for other palettes when comparisons are not between a small number of categories, but are multinomous categorical or continuous (sequential or divergent)."
+  },
+  {
+    "objectID": "manual-products-formats.html",
+    "href": "manual-products-formats.html",
+    "title": "OEDA Product Formats",
     "section": "",
-    "text": "Every Tuesday from 1:35 to 2:55",
+    "text": "OEDA produces primarily digital solutions, and has adopted an “HTML-preferred” approach following ODHS and OHA policy (Digital Accessibility in Content Creation and Sharing, OHDSOHA 010-029, #7).\nAdditionally, OEDA strives to use plain text, open source tools, and open source formats, whenever possible.",
     "crumbs": [
-      "Meetings",
-      "OEDA Team Meetings"
+      "Lab manual",
+      "Product development",
+      "Digital formats"
     ]
   },
   {
-    "objectID": "meetings-oeda-team.html#purposes",
-    "href": "meetings-oeda-team.html#purposes",
-    "title": "OEDA Team Meetings",
-    "section": "Purposes",
-    "text": "Purposes\n\nAlign\n\nDebrief council meetings\nSynthesize and analyze intelligence from OEDA staff, agency partners, and other informants\nShare project progress and blockers\nReview metrics and discuss implicated processes\n\nPlan\n\nDesign projects\nSet OEDA development calendar\n\nProduce\n\nAgendas and agendas for council meetings\nProgress reports for council members and sponsors\nMinutes from council meetings\n\nIdeate\n\nFeedback on proposals, research plans, charters, products, presentations\n\nConnection\n\nGet to know one another better\nCelebrate individual and team successes",
+    "objectID": "manual-products-formats.html#project-notes-meeting-agendas-and-meeting-minutes",
+    "href": "manual-products-formats.html#project-notes-meeting-agendas-and-meeting-minutes",
+    "title": "OEDA Product Formats",
+    "section": "Project notes, meeting agendas, and meeting minutes",
+    "text": "Project notes, meeting agendas, and meeting minutes\nUse Quarto HTML documents, even if they are not routinely rendered to HTML.\nMinimal yaml elements:\n\ntitle\ndate\nauthor\nabstract (optional; suggested for longer or important for longer or important records)",
     "crumbs": [
-      "Meetings",
-      "OEDA Team Meetings"
+      "Lab manual",
+      "Product development",
+      "Digital formats"
     ]
   },
   {
-    "objectID": "meetings-oeda-team.html#agendas",
-    "href": "meetings-oeda-team.html#agendas",
-    "title": "OEDA Team Meetings",
-    "section": "Agendas",
-    "text": "Agendas\n\nStanding agenda\nThis is our general, standing agenda for our weekly meetings.\n\nHot topics: Anything that anyone on the team needs to address at the top of the meeting\nSpecial topics, if scheduled\nSystem 4 Briefings - Briefings from any guests invited for intelligence - Briefings rotating staff on their intelligence areas - Briefings from Jason - Ad hoc briefings from anyone\nSystems 1 & 2 Briefings - Updates from work units on project progress - Identification of any blockers or process issues\nSystem 3 Briefings - Lab manual updates - Housekeeping from HR, Workday, admins, etc. - Review of any dashboards, metrics, Kanban, etc. we’re experimenting with\n\n\n\nSpecial topics\n\nPeriodic special topics\nSchedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.\nOn these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.\n\n\n\nAd hoc events\nAlso during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.",
+    "objectID": "manual-products-formats.html#memos-briefs-papers",
+    "href": "manual-products-formats.html#memos-briefs-papers",
+    "title": "OEDA Product Formats",
+    "section": "Memos, briefs, papers",
+    "text": "Memos, briefs, papers\nUse Quarto HTML documents. Final drafts should always be rendered as HTML files and published to the OEDA site.\nMinimal yaml elements:\n\ntitle\ndate\nauthor\nabstract\n\nFor scrollytelling visualizations, use the Closeread extension for Quarto.",
     "crumbs": [
-      "Meetings",
-      "OEDA Team Meetings"
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-products-formats.html#presentations",
+    "href": "manual-products-formats.html#presentations",
+    "title": "OEDA Product Formats",
+    "section": "Presentations",
+    "text": "Presentations\nUse Quarto Revealjs presentations.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-products-formats.html#websites",
+    "href": "manual-products-formats.html#websites",
+    "title": "OEDA Product Formats",
+    "section": "Websites",
+    "text": "Websites\nFor some public facing projects, or large multi-method projects, use Quarto website projects.\nAs above, for scrollytelling visualizations, use the Closeread extension for Quarto.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-products-formats.html#flat-data-files",
+    "href": "manual-products-formats.html#flat-data-files",
+    "title": "OEDA Product Formats",
+    "section": "(Flat) data files",
+    "text": "(Flat) data files\nFor small-to-medium, tabular data sets where human-readable data exchange is needed, use CSV (comma-separated values) files.\nFor anything else–larger analytical working files, data lakes, archiving data for retention schedules, etc.–use Apache Parquet.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-main.html",
+    "href": "manual-main.html",
+    "title": "OEDA - Lab Manual",
+    "section": "",
+    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\n\nfacilitate onboarding\nstreamline workflows\nreduce analysis paralysis\nensure data security and integrity\npromote high-quality research\nsupport the timely and transparent delivery of insights for public benefit\n\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
+    "crumbs": [
+      "Lab manual",
+      "Lab manual home"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html",
+    "href": "manual-delivery-qc-research-reports.html",
+    "title": "Quality checks: Research reports",
+    "section": "",
+    "text": "Quarto uses embed-resources: true in the yaml heading so that the document is a single file with no external dependencies\nQuarto compiles without errors and warnings\nAll outputs render: no broken figures, tables\nAll citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected\nAll internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html#document-structure-and-output",
+    "href": "manual-delivery-qc-research-reports.html#document-structure-and-output",
+    "title": "Quality checks: Research reports",
+    "section": "",
+    "text": "Quarto uses embed-resources: true in the yaml heading so that the document is a single file with no external dependencies\nQuarto compiles without errors and warnings\nAll outputs render: no broken figures, tables\nAll citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected\nAll internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html#statistical-and-analytical-integrity",
+    "href": "manual-delivery-qc-research-reports.html#statistical-and-analytical-integrity",
+    "title": "Quality checks: Research reports",
+    "section": "Statistical and analytical integrity",
+    "text": "Statistical and analytical integrity\n\nAll text has been run through the statcheck package, to determine if reported p-values, df, and test statistics align. Any errors or decision errors have been resolved.\nAll tests have effect sizes reported.\nConfidence intervals are included around point estimates.\nData visualizations and text/data/statistics match (e.g. means in the text match the means in the visualization)",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html#reproducibility",
+    "href": "manual-delivery-qc-research-reports.html#reproducibility",
+    "title": "Quality checks: Research reports",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nQuarto project structure follows OEDA standards (TBD: e.g., report.qmd, figures/, data/, scripts/) for transparency.\nDocument makes use of a reproducible environment (TBD: determine the OEDA standard: Docker, renv.lock, etc.?)\nSeeds are set for simulations, resampling, bootstrapping, or other random processes\nScripts and data used in the document are versioned and reproducible\nCode chunks use #| eval: true unless intentionally disabled with a comment as to why\nInput data is described or linked clearly (e.g. source, format, preprocessing). Data are all versioned instances, not SQL pulls from “live” administrative data.",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html#interpretibility-and-clarity",
+    "href": "manual-delivery-qc-research-reports.html#interpretibility-and-clarity",
+    "title": "Quality checks: Research reports",
+    "section": "Interpretibility and clarity",
+    "text": "Interpretibility and clarity\n\nTitle reflects key findings, variables, populations, and time periods\nAbstract reflects key findings, variables, populations, and time periods\nKey findings are clearly stated in plain language\nThe main message is consistent across the title, abstract, results, visualizations, and conclusion\nEffects are described in units meaningful to the audience (counts of individuals, dollars, days in care, etc.)\nAcronyms and technical terms are minimal, and are defined at first use\nAssumptions and limitations are acknowledged as appropriate in introduction, methods, and conclusions, and are addressed in suggestions for future work\nFigures and tables are interpretable without reference to the text",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html#writing-quality-style",
+    "href": "manual-delivery-qc-research-reports.html#writing-quality-style",
+    "title": "Quality checks: Research reports",
+    "section": "Writing quality style",
+    "text": "Writing quality style\n\nNo placeholder text (ADD, TODO, etc.) remains\nGrammar, spelling, and punctuation are correct\nVoice and tense are consistent\nReadability scores have been calculated and are within OEDA adopted thresholds\nTerminology and variable names are consistent throughout",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-research-reports.html#ethical-legal-and-confidentiality-checks",
+    "href": "manual-delivery-qc-research-reports.html#ethical-legal-and-confidentiality-checks",
+    "title": "Quality checks: Research reports",
+    "section": "Ethical, legal, and confidentiality checks",
+    "text": "Ethical, legal, and confidentiality checks\n\nNo confidential or identifying information is used in any data input\nNo confidential or identifying information appears in any output (text, visualization, table, etc.)\nAppropriate masking is used for all static elements\nAppropriate masking has been tested for with any dynamic elements\nAll data use complies with licenses, access conditions, and consent\nEthics approval, DUA, IAA, etc. are acknowledged if applicable",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "Quality checks-Research reports"
     ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "OEDA - Lab Manual",
+    "title": "Oregon Enterprise Data Analytics",
     "section": "",
-    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
-    "crumbs": [
-      "Home"
-    ]
+    "text": "Oregon Enterprise Data Analytics (OEDA) was created by the legislature to “support integration and analysis of client and customer service information across state agencies and programs [and to] provide coordination, consolidation, and clear accountability for that work” (Legislative Fiscal Office, p. 109).\nOEDA is housed within the Oregon Department of Human Services (ODHS). We are a shared service of ODHS and the Oregon Health Authority (OHA)."
   },
   {
-    "objectID": "index.html#oedas-vision-draft---proposed-august-2025",
-    "href": "index.html#oedas-vision-draft---proposed-august-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Vision (Draft - Proposed August 2025)",
-    "text": "OEDA’s Vision (Draft - Proposed August 2025)\nOregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "index.html#oedas-mission-vision-and-values",
+    "href": "index.html#oedas-mission-vision-and-values",
+    "title": "Oregon Enterprise Data Analytics",
+    "section": "OEDA’s Mission, Vision, and Values",
+    "text": "OEDA’s Mission, Vision, and Values\nMission: OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.\nVision: Oregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.\nValues:\nOEDA’s products are\n\nRigorous, transparent, & trustworthy\nRelevant & impactful\nAccessible, understandable, & approachable\nInnovative\n\nWorking with OEDA is\n\nEthical\nConstructive\nCollaborative & communicative\nWell-managed, professional, & conscientious\n\nPhoto credit: Chris Liverani on Unsplash"
   },
   {
-    "objectID": "index.html#oedas-mission-draft---proposed-august-2025",
-    "href": "index.html#oedas-mission-draft---proposed-august-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Mission (Draft - Proposed August 2025)",
-    "text": "OEDA’s Mission (Draft - Proposed August 2025)\nOEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#oedas-product-values-adopted-summer-2025",
-    "href": "index.html#oedas-product-values-adopted-summer-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Product Values (Adopted Summer 2025)",
-    "text": "OEDA’s Product Values (Adopted Summer 2025)\n\nRelevant and impactful\nAccessible, understandable, & approachable\nRigorous & trustworthy\nInnovative",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#oedas-process-values-adopted-summer-2025",
-    "href": "index.html#oedas-process-values-adopted-summer-2025",
-    "title": "OEDA - Lab Manual",
-    "section": "OEDA’s Process Values (Adopted Summer 2025)",
-    "text": "OEDA’s Process Values (Adopted Summer 2025)\n\nEthical\nCollaborative\nConstructive\nCommunicative\nManaged expectations\nPlays well with others\nProfessional & conscientious",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "ideation-intelligence.html",
-    "href": "ideation-intelligence.html",
-    "title": "System 4 Intelligence",
+    "objectID": "data-main.html",
+    "href": "data-main.html",
+    "title": "OEDA Data Profiles",
     "section": "",
-    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
+    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
   },
   {
-    "objectID": "ideation-intelligence.html#purpose",
-    "href": "ideation-intelligence.html#purpose",
-    "title": "System 4 Intelligence",
+    "objectID": "data-main.html#introduction",
+    "href": "data-main.html#introduction",
+    "title": "OEDA Data Profiles",
     "section": "",
-    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
+    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
   },
   {
-    "objectID": "ideation-intelligence.html#internal-oregon-government-documents",
-    "href": "ideation-intelligence.html#internal-oregon-government-documents",
-    "title": "System 4 Intelligence",
-    "section": "Internal Oregon government documents",
-    "text": "Internal Oregon government documents\n\nProgram/agency Ways & Means presentations\nLegislative testimony\nProgram/agency documents: strategic plans, reorg documents, OWL pages, etc.\nSecretary of State Audits",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
+    "objectID": "data-main.html#oregon-enterprise-outcomes",
+    "href": "data-main.html#oregon-enterprise-outcomes",
+    "title": "OEDA Data Profiles",
+    "section": "Oregon Enterprise Outcomes",
+    "text": "Oregon Enterprise Outcomes\n\nEntries into foster care\nExits from foster care\nContacts with the juvenile justice system"
   },
   {
-    "objectID": "ideation-intelligence.html#think-tanks-policy-research",
-    "href": "ideation-intelligence.html#think-tanks-policy-research",
-    "title": "System 4 Intelligence",
-    "section": "Think tanks & policy research",
-    "text": "Think tanks & policy research\nSources for research reports, briefs, data visualizations, etc. – often with cross-agency topics.\n\nUrban Institute - housing, poverty, TANF, SNAP, justice\nCenter on Budget and Policy Priorities - federal & state budgets, funding streams and policies, SNAP, TANF, Medicaid\nMDRC - evaluations (often randomized controlled trials) of social program - employment, education, family supports\nChild Trends - children & youth, child welfare, juvenile justice\nMathematica - research & evaluation solutions - health, human services, education\nChapin Hall - child welfare, youth homelessness, community-based supports\nCasey Family Programs - child welfare",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
+    "objectID": "data-main.html#oeda-stewarded-data",
+    "href": "data-main.html#oeda-stewarded-data",
+    "title": "OEDA Data Profiles",
+    "section": "OEDA Stewarded Data",
+    "text": "OEDA Stewarded Data\n\nChildhood and Adolescent Needs and Strengths (CANS)"
   },
   {
-    "objectID": "ideation-intelligence.html#clearinghouses",
-    "href": "ideation-intelligence.html#clearinghouses",
-    "title": "System 4 Intelligence",
-    "section": "Clearinghouses",
-    "text": "Clearinghouses\nThese organizations review and rate the evidence for specific programs and practices. These can provide standards of evidence, and can also be a source of ideas worth testing or implementing in Oregon.\n\nWhat Works Clearinghouse - education, including early childhood\nTitle IV-E Prevention Services Clearinghouse - Child welfare; evaluations and ratings of services eligible for federal prevention funding\nCrimeSolutions.gov - Criminal and juvenile justice\nCalifornia Evidence-Based Clearinghouse for Child Welfare - Child welfare.",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "ideation-intelligence.html#government-membership-orgs",
-    "href": "ideation-intelligence.html#government-membership-orgs",
-    "title": "System 4 Intelligence",
-    "section": "Government & membership orgs",
-    "text": "Government & membership orgs\nPlaces to learn federal priorities, what other states are doing, and find new data releases.\n\nACF Office of Planning, Research, and Evaluation (OPRE) - research arm of the Administration for Children & Families, TANF, child welfare, early childhood\nUSDA Food and Nutrition Service (FNS) - SNAP and other nutrition programs\nAmerican Public Human Services Association (APHSA) - membership org for state and local agencies., challenges and innovations happening in other states and jurisdictions\nNational Conference of State Legislatures (NCSL) - tracking legislative trends in human services across the US\nNational Data Archive on Child Abuse and Neglect (NDACAN) - child welfare, AFCARS and NCANDS federal files",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "ideation-intelligence.html#foundations",
-    "href": "ideation-intelligence.html#foundations",
-    "title": "System 4 Intelligence",
-    "section": "Foundations",
-    "text": "Foundations\nFoundations often fund innovative research and pilot projects years before they become mainstream government practice. Could be a good source for intelligence on what’s on the horizon.\n\nCasey Family Programs - child welfare, juvenile justice, family economic stability Kids Count data center\nRobert Wood Johnson Foundation - health and health care, Medicaid, public health, social determinants of health\nPew Charitable Trusts - health & well-being, communities, economic advancement, federal policy, state government, environment, immigration, demography, race, ethnicity, religion, Pew Research Center\nMarguerite Casey Foundation - grant making foundation to shift power from government to communities, families, and individuals who continue to be excluded from shaping society and sharing in its rewards and freedoms.",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "ideation-intelligence.html#journals",
-    "href": "ideation-intelligence.html#journals",
-    "title": "System 4 Intelligence",
-    "section": "Journals",
-    "text": "Journals\n\nThe Future of Children - defunct collab between Princeton and Brookings, each issue is a highy readable deep-dive into a single topic: education, early childhood, culture & economic outcomes, universal health, reducing justice system inequality, etc.\nJournal of Policy Analysis and Management (JPAM) - program evaluation & policy analysis\nSocial Service Review - social problems, policy, social work practice\nBig Data & Society - large-scale data collection, algorithmic decision making, impacts on society, ethics & equity of administrative data\nGateways: International Journal of Community Research and Engagement - empirical & evaluative case studies of community-based research & pedagogy, research with communities rather than on them\nJournal of the Royal Statistical Society: Series A (Statistics in Society) - social and ethical implications of statistical methods, algorithmic fairness, data privacy, measuring inequality\nJournal of Public Administration Research and Theory (JPART) - public administration, representative bureaucracy, administrative burden, implementation of policy by “street-level” bureaucrats\nPublic Administration Review (PAR) - public sector research, theory, and practice, academics & practitioners)\nJournal of Urban Affairs - housing, transportation, economic development, human services, spatial dimensions of inequality, disparate outcomes\nChild Abuse & Neglect\nChild Maltreatment\nDevelopmental Child Welfare\nSocial Science and Medicine\nJournal of Family Violence\nJournal of Marriage and Family\nChildren and Youth Review Services",
-    "crumbs": [
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "delivery-qc-research-reports.html",
-    "href": "delivery-qc-research-reports.html",
-    "title": "Quality checks: Research reports",
+    "objectID": "council-members.html",
+    "href": "council-members.html",
+    "title": "OEDA Advisory Council Members",
     "section": "",
-    "text": "Quarto uses embed-resources: true in the yaml heading so that the document is a single file with no external dependencies\nQuarto compiles without errors and warnings\nAll outputs render: no broken figures, tables\nAll citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected\nAll internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content",
+    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship",
     "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
+      "Council",
+      "Council members"
     ]
   },
   {
-    "objectID": "delivery-qc-research-reports.html#document-structure-and-output",
-    "href": "delivery-qc-research-reports.html#document-structure-and-output",
-    "title": "Quality checks: Research reports",
+    "objectID": "council-members.html#agency-representatives",
+    "href": "council-members.html#agency-representatives",
+    "title": "OEDA Advisory Council Members",
     "section": "",
-    "text": "Quarto uses embed-resources: true in the yaml heading so that the document is a single file with no external dependencies\nQuarto compiles without errors and warnings\nAll outputs render: no broken figures, tables\nAll citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected\nAll internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content",
+    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship",
     "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
+      "Council",
+      "Council members"
     ]
   },
   {
-    "objectID": "delivery-qc-research-reports.html#statistical-and-analytical-integrity",
-    "href": "delivery-qc-research-reports.html#statistical-and-analytical-integrity",
-    "title": "Quality checks: Research reports",
-    "section": "Statistical and analytical integrity",
-    "text": "Statistical and analytical integrity\n\nAll text has been run through the statcheck package, to determine if reported p-values, df, and test statistics align. Any errors or decision errors have been resolved.\nAll tests have effect sizes reported.\nConfidence intervals are included around point estimates.\nData visualizations and text/data/statistics match (e.g. means in the text match the means in the visualization)",
+    "objectID": "council-members.html#facilitator",
+    "href": "council-members.html#facilitator",
+    "title": "OEDA Advisory Council Members",
+    "section": "Facilitator",
+    "text": "Facilitator\nJason Wallin, Manager Oregon Enterprise Data Analytics",
     "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
+      "Council",
+      "Council members"
     ]
   },
   {
-    "objectID": "delivery-qc-research-reports.html#reproducibility",
-    "href": "delivery-qc-research-reports.html#reproducibility",
-    "title": "Quality checks: Research reports",
-    "section": "Reproducibility",
-    "text": "Reproducibility\n\nQuarto project structure follows OEDA standards (TBD: e.g., report.qmd, figures/, data/, scripts/) for transparency.\nDocument makes use of a reproducible environment (TBD: determine the OEDA standard: Docker, renv.lock, etc.?)\nSeeds are set for simulations, resampling, bootstrapping, or other random processes\nScripts and data used in the document are versioned and reproducible\nCode chunks use #| eval: true unless intentionally disabled with a comment as to why\nInput data is described or linked clearly (e.g. source, format, preprocessing). Data are all versioned instances, not SQL pulls from “live” administrative data.",
-    "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
-    ]
-  },
-  {
-    "objectID": "delivery-qc-research-reports.html#interpretibility-and-clarity",
-    "href": "delivery-qc-research-reports.html#interpretibility-and-clarity",
-    "title": "Quality checks: Research reports",
-    "section": "Interpretibility and clarity",
-    "text": "Interpretibility and clarity\n\nTitle reflects key findings, variables, populations, and time periods\nAbstract reflects key findings, variables, populations, and time periods\nKey findings are clearly stated in plain language\nThe main message is consistent across the title, abstract, results, visualizations, and conclusion\nEffects are described in units meaningful to the audience (counts of individuals, dollars, days in care, etc.)\nAcronyms and technical terms are minimal, and are defined at first use\nAssumptions and limitations are acknowledged as appropriate in introduction, methods, and conclusions, and are addressed in suggestions for future work\nFigures and tables are interpretable without reference to the text",
-    "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
-    ]
-  },
-  {
-    "objectID": "delivery-qc-research-reports.html#writing-quality-style",
-    "href": "delivery-qc-research-reports.html#writing-quality-style",
-    "title": "Quality checks: Research reports",
-    "section": "Writing quality style",
-    "text": "Writing quality style\n\nNo placeholder text (ADD, TODO, etc.) remains\nGrammar, spelling, and punctuation are correct\nVoice and tense are consistent\nReadability scores have been calculated and are within OEDA adopted thresholds\nTerminology and variable names are consistent throughout",
-    "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
-    ]
-  },
-  {
-    "objectID": "delivery-qc-research-reports.html#ethical-legal-and-confidentiality-checks",
-    "href": "delivery-qc-research-reports.html#ethical-legal-and-confidentiality-checks",
-    "title": "Quality checks: Research reports",
-    "section": "Ethical, legal, and confidentiality checks",
-    "text": "Ethical, legal, and confidentiality checks\n\nNo confidential or identifying information is used in any data input\nNo confidential or identifying information appears in any output (text, visualization, table, etc.)\nAppropriate masking is used for all static elements\nAppropriate masking has been tested for with any dynamic elements\nAll data use complies with licenses, access conditions, and consent\nEthics approval, DUA, IAA, etc. are acknowledged if applicable",
-    "crumbs": [
-      "Publication & delivery",
-      "Quality checks-Research reports"
-    ]
-  },
-  {
-    "objectID": "delivery-publishing-github-pages.html",
-    "href": "delivery-publishing-github-pages.html",
-    "title": "Publishing to GitHub pages",
+    "objectID": "council-meeting-2025-q4.html",
+    "href": "council-meeting-2025-q4.html",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
     "section": "",
-    "text": "Happy Git and GitHub for the useR\nQuarto guidance on publishing to GitHub pages using the docs folder",
+    "text": "Monday, September 29, 2025\n\nIntroductions of the council members\n\nWhat was your path to a research career with Oregon state government?\n\nHistory of OEDA",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Council meetings",
+      "2025-Q4"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#basic-resources",
-    "href": "delivery-publishing-github-pages.html#basic-resources",
-    "title": "Publishing to GitHub pages",
+    "objectID": "council-meeting-2025-q4.html#agenda",
+    "href": "council-meeting-2025-q4.html#agenda",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
     "section": "",
-    "text": "Happy Git and GitHub for the useR\nQuarto guidance on publishing to GitHub pages using the docs folder",
+    "text": "Monday, September 29, 2025\n\nIntroductions of the council members\n\nWhat was your path to a research career with Oregon state government?\n\nHistory of OEDA",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Council meetings",
+      "2025-Q4"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#create-a-git-repository-if-one-does-not-already-exist",
-    "href": "delivery-publishing-github-pages.html#create-a-git-repository-if-one-does-not-already-exist",
-    "title": "Publishing to GitHub pages",
-    "section": "Create a git repository if one does not already exist",
-    "text": "Create a git repository if one does not already exist\n\nLogin to: https://github.com/login\nIn the left sidebar, click New to create a new repository\nUnder owner, select ODHS-ORRAI\nSet yourself as owner, and give your repository a name, e.g. this website is OEDA-lab-manual\nSet the visibility of the repository to Public (hosting websites from Private repositories requires an upgraded GitHub account for ORRAI)\nClick Create repository\nClick &lt;&gt;Code in the top ribbon\nCopy the location from the Quick Setup section. For the OEDA Lab Guide (the website you’re reading), this is https://github.com/wallinjm/OEDA-lab-manual.git",
+    "objectID": "council-meeting-2025-q4.html#notes",
+    "href": "council-meeting-2025-q4.html#notes",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "Notes",
+    "text": "Notes\nText",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Council meetings",
+      "2025-Q4"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#create-a-new-r-project-associated-with-your-new-repository",
-    "href": "delivery-publishing-github-pages.html#create-a-new-r-project-associated-with-your-new-repository",
-    "title": "Publishing to GitHub pages",
-    "section": "Create a new R project associated with your new repository",
-    "text": "Create a new R project associated with your new repository\n\nStart RStudio\nClick File &gt; New Project\nClick Version Control\nClick Git\nIn the Repository URL field, paste the URL copied from above\nSelect the appropriate path location for the project, and name a new folder to hold the project",
+    "objectID": "council-main.html",
+    "href": "council-main.html",
+    "title": "OEDA Advisory Council",
+    "section": "",
+    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Advisory council home"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#create-the-docs-subfolder",
-    "href": "delivery-publishing-github-pages.html#create-the-docs-subfolder",
-    "title": "Publishing to GitHub pages",
-    "section": "Create the /docs/ subfolder",
-    "text": "Create the /docs/ subfolder\nWithin the new folder that RStudio should have just created, make a new /docs/ subfolder.",
+    "objectID": "council-main.html#purpose",
+    "href": "council-main.html#purpose",
+    "title": "OEDA Advisory Council",
+    "section": "",
+    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Advisory council home"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#create-your-website-files",
-    "href": "delivery-publishing-github-pages.html#create-your-website-files",
-    "title": "Publishing to GitHub pages",
-    "section": "Create your website files",
-    "text": "Create your website files\nYour _quarto.yml and *.qmd files should be saved in your main project folder, not to /docs/.\nWhen these files are rendered the *.html files will be stored in /docs/.\n\n_quarto.yml\nThis should look something like the following. The key thing for publishing to GitHub pages in this way is the specification of output-dir: docs in the project: section.\n\nproject:\n  type: website\n  output-dir: docs\n  \nwebsite:\n  title: \"Site title\"\n  navbar:\n    left:\n      - text: \"Page 1 title\"\n        href: page1.qmd\n      - text: \"Page 2 title\"\n        href: page2.qmd\n\n\nContent pages\nCreate one or more .qmd files with your content. These generally start with:\n---\ntitle: \"Page 1 title\"\n---\n\nYour markdown here.\n  \n\n\nCreate a .nojekyll file\nOpen a Windows Prompt in the Terminal in RStudio to create a .nojekyll file in the root of your git repository. This prevents Github from processing the website in undesirable ways.\nYou’ll do this just once before you publish your site for the first time.\n\ncopy NUL .nojekyll",
+    "objectID": "council-meetings.html",
+    "href": "council-meetings.html",
+    "title": "OEDA Advisory Meetings",
+    "section": "",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Council meetings"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#render-your-files-to-docs",
-    "href": "delivery-publishing-github-pages.html#render-your-files-to-docs",
-    "title": "Publishing to GitHub pages",
-    "section": "Render your files to docs",
-    "text": "Render your files to docs\nFirst, render your quarto documents.\n\nIn the RStudio console run quarto::quarto_render()\n\nThen, create a new Git Back terminal.\n\nFind the Terminal tab in RStudio\nClick on the Terminal dropdown\nClick Terminal Options\nIn New terminals open with: select GitBash\nClick OK\nClick on the Terminal dropdown again\nClick New Terminal\n\nIn the terminal, type the following\n\ngit add docs\ngit commit -m \"Commit note\"\ngit push\nReplace “Commit note” with the note that you want to include with this commit. Make sure to use the quote marks.",
+    "objectID": "council-meetings.html#purpose",
+    "href": "council-meetings.html#purpose",
+    "title": "OEDA Advisory Meetings",
+    "section": "",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Council meetings"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#check-in-on-the-commit",
-    "href": "delivery-publishing-github-pages.html#check-in-on-the-commit",
-    "title": "Publishing to GitHub pages",
-    "section": "Check in on the commit",
-    "text": "Check in on the commit\nIf you navigate to your new repository on GitHub– https://github.com/ODHS-ORRAI/your-repository-name-here–you should see a new folder docs in the repository, along with your commit message.",
+    "objectID": "council-meetings.html#agendas-and-notes",
+    "href": "council-meetings.html#agendas-and-notes",
+    "title": "OEDA Advisory Meetings",
+    "section": "Agendas and notes",
+    "text": "Agendas and notes\nYears and quarters are based on calendar years, not state or federal fiscal years.\n\n\n\nYear\nQuarter\nAgenda\nNotes\n\n\n\n\n2025\nQ4\nQ4 Agenda\nQ4 Notes",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Council meetings"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#configure-the-repository-to-use-the-docs-folder",
-    "href": "delivery-publishing-github-pages.html#configure-the-repository-to-use-the-docs-folder",
-    "title": "Publishing to GitHub pages",
-    "section": "Configure the repository to use the /docs/ folder",
-    "text": "Configure the repository to use the /docs/ folder\nFrom the GitHub.com page for your new repository\n\nClick Settings in the top navigation ribbon\nClick Pages in the left side bar\nUnder Source make sure that Deploy from a branch is selected (it should be the default)\nUnder Branch there is a dropdown box, select main\nA folder dropdown should appear next to the main branch dropdown now. Click it and select /docs.\nClick Save",
+    "objectID": "council-proposal-rubric.html",
+    "href": "council-proposal-rubric.html",
+    "title": "Proposal scoring rubric",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe current circumstances that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Proposal rubric"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#check-the-availability-of-the-new-site",
-    "href": "delivery-publishing-github-pages.html#check-the-availability-of-the-new-site",
-    "title": "Publishing to GitHub pages",
-    "section": "Check the availability of the new site",
-    "text": "Check the availability of the new site\nYour new site should (maybe after a short delay) be available at a URL like the URL for this site:\nhttps://odhs-orrai.github.io/OEDA-lab-manual/\nYou’d replace the last bit with the name of your repository.",
+    "objectID": "council-proposal-rubric.html#background",
+    "href": "council-proposal-rubric.html#background",
+    "title": "Proposal scoring rubric",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe current circumstances that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Proposal rubric"
     ]
   },
   {
-    "objectID": "delivery-publishing-github-pages.html#make-your-updates-as-needed",
-    "href": "delivery-publishing-github-pages.html#make-your-updates-as-needed",
-    "title": "Publishing to GitHub pages",
-    "section": "Make your updates as needed",
-    "text": "Make your updates as needed\nWhenever you need to make changes or updates to your website, just follow the routine of the last couple of steps detailed above:\n\nEdit your _quarto.yml and *.qmd files as necessary\nSave the files locally\nIn the RStudio console run quarto::quarto_render()\nRun the following in your terminal\n\n\ngit add docs\ngit commit -m \"Commit note\"\ngit push\nThat should be it. After maybe a little network lag, and perhaps forcing a refresh to escape your browser cache, you should see the changes to the live website.",
+    "objectID": "council-proposal-rubric.html#screening-proposals",
+    "href": "council-proposal-rubric.html#screening-proposals",
+    "title": "Proposal scoring rubric",
+    "section": "Screening proposals",
+    "text": "Screening proposals\nOEDA staff will screen proposals ensuring that they meet a few must-have dimensions required of all OEDA proposals.\n\nScreening item 1: Integrated\n\nText: The proposal integrates data from more than one agency.\nOEDA value: OEDA projects are cross-agency and collaborative\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposed work integrates data from more than one state agency.\n\n\n\n\nFALSE\n\n\nThe proposed work does not integrate data from more than one state agency.\n\n\n\n\n\n\n\nScreening item 2: Redisclosure\n\nText: The proposal precludes redisclosure to third parties.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal explicitly precludes the redisclosure of agency data to anyone other than the contributing agency and OEDA.\n\n\n\n\nFALSE\n\n\nThe proposal does not contain language precluding redisclosure.\n\n\n\n\n\n\n\nScreening item 3: HumanSubjects\n\nText: The proposal addresses human subjects protections.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation from someone other than the investigators that the research is exempt from IRB review.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\n\n\n\nFALSE\n\n\nNone of the above are true; the proposed work does not adequately address human subjects protections.",
     "crumbs": [
-      "Publication & delivery",
-      "GitHub pages websites"
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html#scoring-proposals",
+    "href": "council-proposal-rubric.html#scoring-proposals",
+    "title": "Proposal scoring rubric",
+    "section": "Scoring proposals",
+    "text": "Scoring proposals\nMembers of the OEDA Advisory Council will score proposals on criteria that relate to the relevance, impact, and urgency of the proposed work.\n\nScored item 1: Importance\n\nText: The current state is important to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe issue is relevant to a small work unit within a single agency and affects tens of clients.\n\n\n\n\n2\n\n\nThe issue is relevant to several employees across one or two agencies and affects hundreds of clients.\n\n\n\n\n3\n\n\nThe issue is relevant to employees across several agencies, relates to a state priority, and affects several hundreds of clients.\n\n\n\n\n4\n\n\nThe issue is widespread across multiple agencies, relates to one or more key state priorities, and affects thousands of clients.\n\n\n\n\n5\n\n\nThe issue is foundational and cross-agency, with substantial relationships to effective service delivery, and affects tens of thousands of clients.\n\n\n\n\n\n\n\nScored item 2: Urgency\n\nText: The current state is urgent to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThere is no immediate need to address this issue. It can be revisited at a later date with little to no consequence.\n\n\n\n\n2\n\n\nThe issue should be addressed within the next two years, but there are no immediate deadlines or critical events tied to it.\n\n\n\n\n3\n\n\nThe issue needs to be addressed within the year to avoid a negative impact on services or a key initiative.\n\n\n\n\n4\n\n\nThe issue needs to be addressed soon to support an upcoming policy change, a legislative mandate, or a critical program launch.\n\n\n\n\n5\n\n\nThe issue requires immediate attention to avoid a substantial negative outcome, such as a service disruption, public harm, or failure to meet a legal deadline.\n\n\n\n\n\n\n\nScored item 3: Impact\n\nText: The future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposed future state offers minimal improvements over the status quo, with little potential to change how agencies operate or serve clients.\n\n\n\n\n2\n\n\nThe future state would represent localized, loosely described improvements within one or two state agencies.\n\n\n\n\n3\n\n\nThe future state would be a clear, measureable improvement in specific processes or services across multiple agencies.\n\n\n\n\n4\n\n\nThe future state would be a significant change in how agencies coordinate or make decisions, a new level of efficiency, service quality, or service equity.\n\n\n\n\n5\n\n\nThe future state is a new paradigm for data-informed decision making across multiple agencies, fundamentally changing how government operates and serves its citizens.\n\n\n\n\n\n\n\nScored item 4: Questions\n\nText: The research questions are meaningful and useful.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe research topics or questions are vague, unrelated to the core problems or opportunities of the current state, or would not meaningfully contribute to achieving the desired future state.\n\n\n\n\n2\n\n\nThe research topics or questions are too broad, too narrow, or would only provide a partial answer. Significant uncertainty would remain.\n\n\n\n\n3\n\n\nThe questions are clear and directly address the gap between current and future states. Answering the questions would provide the necessary insight to move from the current to future state with reasonable confidence.\n\n\n\n\n4\n\n\nThe questions are insightful and precise, pinpointing the critical information needed to make informed decisions. Answering the questions is likely not to just fill the gap, but reveal new opportunities.\n\n\n\n\n5\n\n\nThe questions are incisive, originally, and essential for project success. Answering these questions would eliminate major uncertainties and provide a high degree of confidence that the desired future state can be achieved.\n\n\n\n\n\n\n\nScored item 5: Equity\n\nText: The proposal future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposal does not adequately acknowledge or consider ethical or equity implications; or there are reasons to believe the work will cause harm or perpetuate existing biases.\n\n\n\n\n2\n\n\nThe proposal mentions ethics or equity, but superficially, promising to meet minimum compliance standards, but without specific details or reasoning, and disconnected from the core project.\n\n\n\n\n3\n\n\nThe proposal includes specific plans related to ethics and equity, like data disaggregation, or including thoughts from those with lived experiences. But improving service equity is not a primary focus of the work.\n\n\n\n\n4\n\n\nThe proposal demonstrates a thoughtful understanding of the ethical and equity landscape–clearly identifying regions, communities, populations relevant to the research questions and providing strong rationale for their inclusion. A project aim is improving service equity, fairness, and equality of outcomes.\n\n\n\n\n5\n\n\nThe proposal includes meaningful engagement with clients in different parts of the state, with a variety of lived experiences, and part of different racial, ethnic, cultural, linguistic, and other communities. Specific metrics for measuring equity are incorporated into the proposed work, and improving those measures is key to the work.",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html#details",
+    "href": "council-proposal-rubric.html#details",
+    "title": "Proposal scoring rubric",
+    "section": "Details",
+    "text": "Details\n\nIRB\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\n\nResearch means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge [45 CFR 46.102(l)]\n\nMany common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.\nTypical systematic uses of data that are not research include:\n\nInternal program evaluation and quality improvement efforts\nOperational activities\nInformational interviews\n\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\n\nHuman subject means a living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens (ii) Obtains, uses, studies, analyzes, or generates identifiable private information on identifiable biospecimens 45 CFR 46.102(e)\n\nOften, work with administrative data is neither the result of intervention nor interaction.\n\nIntervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject’s environment that are performed for research purposes. 45 CFR 46.102(e)(2)\n\nGenerally, researchers for state agencies are not able to create randomized control trials where Oregonians’ experiences with their government are manipulated to develop strong internal validity for generalizable claims.\n\nInteraction includes communication or interpersonal contact between investigator and subject 45 CFR 46.102(e)(3)\n\nResearchers for state agencies are often working with private information.\n\nPrivate information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (e.g., a medical record). 45 CFR 46.102(e)(4)\n\nBut, researchers can often answer meaningful agency questions without using identifiable private information.\n\nIdentifiable private information is private information for which the identity of the subject is or may readily be ascertained by the investigator or associated with the information. 45 CFR 46.102(e)(5)\n\nAnalyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.\nCreating analytical datasets which follow Safe Harbor Regulations is one way to ensure that the analysis does not involve human subjects.\n\n\nThe proposal meets one or more of the requirements for review by the and has received approval from that body\nAny study that meets any of the criteria below must seek review by the Public Health Institutional Review Board.\n\n• The research is sponsored by the PHD (Oregon Public Health Division) or MCHD (Multnomah County Health Department);  • The research is conducted by or under the direction of an employee or agent of PHD or MCHD in connection with his/her agency responsibilities, or using any property or facility of PHD or MCHD;  • The research involves the use of PHD or MCHD’s data;  • The research involves the use of PHD or MCHD’s non-public information to identify or contact human research subjects or prospective subjects;  • Funding for the research will be handled through PHD or MCHD, but the research will be done at another location  Public Health Institutional Review Board (p. 3)\n\n\n\nThe project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nWhile the Federal HHS does not require it, they strong recommend that determinations of exempt status be conducted by individuals other than the investigators.\nFor context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.\nExempt research includes (among other exemptions):\n\nResearch in educational settings involving normal educational practices 45 CFR 46.104(d)(1)\nResearch whose interactions are only educational tests or observation of public behavior 45 CFR 46.104(d)(2)\nResearch whose interventions are benign behavioral interventions 45 CFR 46.104(d)(3)\nSecondary research for which consent is not required 45 CFR 46.104(d)(4), including specifically the following\n\n\nThe research involves only information collection and analysis involving the investigator’s use of identifiable health information when that use is regulated under 45 CFR parts 160 and 164, subparts A and E, for the purposes of “health care operations” or “research” as those terms are defined at 45 CFR 164.501 or for “public health activities and purposes” as described under 45 CFR 164.512(b);\n\nWhere the definitions for health care operations and research defined in 45 CFR 164.501 are\n\nHealth care operations means any of the following activities of the covered entity to the extent that the activities are related to covered functions: (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment; […] (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs; (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and (6) Business management and general administrative activities of the entity, including, but not limited to: (i) Management activities relating to implementation of and compliance with the requirements of this subchapter; (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer. […]   Researchmeans a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
     ]
   },
   {
@@ -471,120 +473,368 @@
     "href": "ideation-form.html",
     "title": "Using the request form",
     "section": "",
-    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged.",
-    "crumbs": [
-      "Ideation",
-      "Using the request form"
-    ]
+    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged."
   },
   {
     "objectID": "ideation-form.html#intentions",
     "href": "ideation-form.html#intentions",
     "title": "Using the request form",
     "section": "Intentions",
-    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs",
-    "crumbs": [
-      "Ideation",
-      "Using the request form"
-    ]
+    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs"
   },
   {
     "objectID": "ideation-form.html#what-happens-after-submission",
     "href": "ideation-form.html#what-happens-after-submission",
     "title": "Using the request form",
     "section": "What happens after submission",
-    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc.",
-    "crumbs": [
-      "Ideation",
-      "Using the request form"
-    ]
+    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc."
   },
   {
-    "objectID": "ideation-rubric.html",
-    "href": "ideation-rubric.html",
-    "title": "Proposal scoring rubric",
+    "objectID": "manual-delivery-publishing-github-pages.html",
+    "href": "manual-delivery-publishing-github-pages.html",
+    "title": "Publishing to GitHub pages",
     "section": "",
-    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe matters that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
+    "text": "Happy Git and GitHub for the useR\nQuarto guidance on publishing to GitHub pages using the docs folder",
     "crumbs": [
-      "Ideation",
-      "Proposal rubric"
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#background",
-    "href": "ideation-rubric.html#background",
-    "title": "Proposal scoring rubric",
+    "objectID": "manual-delivery-publishing-github-pages.html#basic-resources",
+    "href": "manual-delivery-publishing-github-pages.html#basic-resources",
+    "title": "Publishing to GitHub pages",
     "section": "",
-    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe matters that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
+    "text": "Happy Git and GitHub for the useR\nQuarto guidance on publishing to GitHub pages using the docs folder",
     "crumbs": [
-      "Ideation",
-      "Proposal rubric"
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#screening-proposals",
-    "href": "ideation-rubric.html#screening-proposals",
-    "title": "Proposal scoring rubric",
-    "section": "Screening proposals",
-    "text": "Screening proposals\nOEDA staff will screen proposals ensuring that they meet a few must have dimensions required of all OEDA proposals.\n\nScreening item 1: Importance\n\nText: The current state is important to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe issue is relevant to a small work unit within a single agency and affects tens of clients.\n\n\n\n\n2\n\n\nThe issue is relevant to several employees across one or two agencies and affects hundreds of clients.\n\n\n\n\n3\n\n\nThe issue is relevant to employees across several agencies, relates to a state priority, and affects several hundreds of clients.\n\n\n\n\n4\n\n\nThe issue is widespread across multiple agencies, relates to one or more key state priorities, and affects thousands of clients.\n\n\n\n\n5\n\n\nThe issue is foundational and cross-agency, with substantial relationships to effective service delivery, and affects tens of thousands of clients.\n\n\n\n\n\n\n\nScreening item 2: Urgency\n\nText: The current state is urgent to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThere is no immediate need to address this issue. It can be revisited at a later date with little to no consequence.\n\n\n\n\n2\n\n\nThe issue should be addressed within the next two years, but there are no immediate deadlines or critical events tied to it.\n\n\n\n\n3\n\n\nThe issue needs to be addressed within the year to avoid a negative impact on services or a key initiative.\n\n\n\n\n4\n\n\nThe issue needs to be addressed soon to support an upcoming policy change, a legislative mandate, or a critical program launch.\n\n\n\n\n5\n\n\nThe issue requires immediate attention to avoid a substantial negative outcome, such as a service disruption, public harm, or failure to meet a legal deadline.\n\n\n\n\n\n\n\nScreening item 3: Impact\n\nText: The future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposed future state offers minimal improvements over the status quo, with little potential to change how agencies operate or serve clients.\n\n\n\n\n2\n\n\nThe future state would represent localized, loosely described improvements within one or two state agencies.\n\n\n\n\n3\n\n\nThe future state would be a clear, measureable improvement in specific processes or services across multiple agencies.\n\n\n\n\n4\n\n\nThe future state would be a significant change in how agencies coordinate or make decisions, a new level of efficiency, service quality, or service equity.\n\n\n\n\n5\n\n\nThe future state is a new paradigm for data-informed decision making across multiple agencies, fundamentally changing how government operates and serves its citizens.\n\n\n\n\n\n\n\nScreening item 4: Questions\n\nText: The research questions are meaningful and useful.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe research topics or questions are vague, unrelated to the core problems or opportunities of the current state, or would not meaningfully contribute to achieving the desired future state.\n\n\n\n\n2\n\n\nThe research topics or questions are too broad, too narrow, or would only provide a partial answer. Significant uncertainty would remain.\n\n\n\n\n3\n\n\nThe questions are clear and directly address the gap between current and future states. Answering the questions would provide the necessary insight to move from the current to future state with reasonable confidence.\n\n\n\n\n4\n\n\nThe questions are insightful and precise, pinpointing the critical information needed to make informed decisions. Answering the questions is likely not to just fill the gap, but reveal new opportunities.\n\n\n\n\n5\n\n\nThe questions are incisive, originally, and essential for project success. Answering these questions would eliminate major uncertainties and provide a high degree of confidence that the desired future state can be achieved.\n\n\n\n\n\n\n\nScreening item 5: Equity\n\nText: The proposal future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposal does not adequately acknowledge or consider ethical or equity implications; or there are reasons to believe the work will cause harm or perpetuate existing biases.\n\n\n\n\n2\n\n\nThe proposal mentions ethics or equity, but superficially, promising to meet minimum compliance standards, but without specific details or reasoning, and disconnected from the core project.\n\n\n\n\n3\n\n\nThe proposal includes specific plans related to ethics and equity, like data disaggregation, or including thoughts from those with lived experiences. But improving service equity is not a primary focus of the work.\n\n\n\n\n4\n\n\nThe proposal demonstrates a thoughtful understanding of the ethical and equity landscape–clearly identifying regions, communities, populations relevant to the research questions and providing strong rationale for their inclusion. A project aim is improving service equity, fairness, and equality of outcomes.\n\n\n\n\n5\n\n\nThe proposal includes meaningful engagement with clients in different parts of the state, with a variety of lived experiences, and part of different racial, ethnic, cultural, linguistic, and other communities. Specific metrics for measuring equity are incorporated into the proposed work, and improving those measures is key to the work.",
+    "objectID": "manual-delivery-publishing-github-pages.html#create-a-git-repository-if-one-does-not-already-exist",
+    "href": "manual-delivery-publishing-github-pages.html#create-a-git-repository-if-one-does-not-already-exist",
+    "title": "Publishing to GitHub pages",
+    "section": "Create a git repository if one does not already exist",
+    "text": "Create a git repository if one does not already exist\n\nLogin to: https://github.com/login\nIn the left sidebar, click New to create a new repository\nUnder owner, select ODHS-ORRAI\nSet yourself as owner, and give your repository a name, e.g. this website is OEDA-lab-manual\nSet the visibility of the repository to Public (hosting websites from Private repositories requires an upgraded GitHub account for ORRAI)\nClick Create repository\nClick &lt;&gt;Code in the top ribbon\nCopy the location from the Quick Setup section. For the OEDA Lab Guide (the website you’re reading), this is https://github.com/wallinjm/OEDA-lab-manual.git",
     "crumbs": [
-      "Ideation",
-      "Proposal rubric"
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#scoring-proposals",
-    "href": "ideation-rubric.html#scoring-proposals",
-    "title": "Proposal scoring rubric",
-    "section": "Scoring proposals",
-    "text": "Scoring proposals\nMembers of the OEDA Advisory Council will score proposals on criteria that relate to the relevance, impact, and urgency of the proposed work.\n\nScored item 1: Integrated\n\nText: The proposal integrates data from more than one agency.\nOEDA value: OEDA projects are cross-agency and collaborative\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposed work integrates data from more than one state agency.\n\n\n\n\nFALSE\n\n\nThe proposed work does not integrate data from more than one state agency.\n\n\n\n\n\n\n\nScored item 2: Redisclosure\n\nText: The proposal precludes redisclosure to third parties.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal explicitly precludes the redisclosure of agency data to anyone other than the contributing agency and OEDA.\n\n\n\n\nFALSE\n\n\nThe proposal does not contain language precluding redisclosure.\n\n\n\n\n\n\n\nScored item 3: HumanSubjects\n\nText: The proposal addresses human subjects protections.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation from someone other than the investigators that the research is exempt from IRB review.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\n\n\n\nFALSE\n\n\nNone of the above are true; the proposed work does not adequately address human subjects protections.",
+    "objectID": "manual-delivery-publishing-github-pages.html#create-a-new-r-project-associated-with-your-new-repository",
+    "href": "manual-delivery-publishing-github-pages.html#create-a-new-r-project-associated-with-your-new-repository",
+    "title": "Publishing to GitHub pages",
+    "section": "Create a new R project associated with your new repository",
+    "text": "Create a new R project associated with your new repository\n\nStart RStudio\nClick File &gt; New Project\nClick Version Control\nClick Git\nIn the Repository URL field, paste the URL copied from above\nSelect the appropriate path location for the project, and name a new folder to hold the project",
     "crumbs": [
-      "Ideation",
-      "Proposal rubric"
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
     ]
   },
   {
-    "objectID": "ideation-rubric.html#details",
-    "href": "ideation-rubric.html#details",
-    "title": "Proposal scoring rubric",
-    "section": "Details",
-    "text": "Details\n\nIRB\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\n\nResearch means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge [45 CFR 46.102(l)]\n\nMany common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.\nTypical systematic uses of data that are not research include:\n\nInternal program evaluation and quality improvement efforts\nOperational activities\nInformational interviews\n\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\n\nHuman subject means a living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens (ii) Obtains, uses, studies, analyzes, or generates identifiable private information on identifiable biospecimens 45 CFR 46.102(e)\n\nOften, work with administrative data is neither the result of intervention nor interaction.\n\nIntervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject’s environment that are performed for research purposes. 45 CFR 46.102(e)(2)\n\nGenerally, researchers for state agencies are not able to create randomized control trials where Oregonians’ experiences with their government are manipulated to develop strong internal validity for generalizable claims.\n\nInteraction includes communication or interpersonal contact between investigator and subject 45 CFR 46.102(e)(3)\n\nResearchers for state agencies are often working with private information.\n\nPrivate information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (e.g., a medical record).\n\nBut, researchers can often answer meaningful agency questions without using identifiable private inforamtion.\n\nIdentifiable private information is private information for which the identity of the subject is or may readily be ascertained by the investigator or associated with the information.\n\nAnalyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.\nCreating analytical datasets which follow Safe Harbor Regulations is one way to ensure that the analysis does not involve human subjects.\n\n\nThe proposal meets one or more of the requirements for review by the and has received approval from that body\nAny study that meets any of the criteria below must seek review by the Public Health Institutional Review Board.\n\n• The research is sponsored by the PHD (Oregon Public Health Division) or MCHD (Multnomah County Health Department);  • The research is conducted by or under the direction of an employee or agent of PHD or MCHD in connection with his/her agency responsibilities, or using any property or facility of PHD or MCHD;  • The research involves the use of PHD or MCHD’s data;  • The research involves the use of PHD or MCHD’s non-public information to identify or contact human research subjects or prospective subjects;  • Funding for the research will be handled through PHD or MCHD, but the research will be done at another location  Public Health Institutional Review Board (p. 3)\n\n\n\nThe project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nWhile the Federal HHS does not require it, they strong recommend that determinations of exempt status be conducted by individuals other than the investigators.\nFor context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.\nExempt research includes (among other exemptions):\n\nResearch in educational settings involving normal educational practices 45 CFR 46.104(d)(1)\nResearch whose interactions are only educational tests or observation of public behavior 45 CFR 46.104(d)(2)\nResearch whose interventions are benign behavioral interventions 45 CFR 46.104(d)(3)\nSecondary research for which consent is not required 45 CFR 46.104(d)(4), including specifically the following\n\n\nThe research involves only information collection and analysis involving the investigator’s use of identifiable health information when that use is regulated under 45 CFR parts 160 and 164, subparts A and E, for the purposes of “health care operations” or “research” as those terms are defined at 45 CFR 164.501 or for “public health activities and purposes” as described under 45 CFR 164.512(b);\n\nWhere the definitions for health care operations and research defined in 45 CFR 164.501 are\n\nHealth care operations means any of the following activities of the covered entity to the extent that the activities are related to covered functions: (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment; […] (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs; (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and (6) Business management and general administrative activities of the entity, including, but not limited to: (i) Management activities relating to implementation of and compliance with the requirements of this subchapter; (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer. […]   Researchmeans a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
+    "objectID": "manual-delivery-publishing-github-pages.html#create-the-docs-subfolder",
+    "href": "manual-delivery-publishing-github-pages.html#create-the-docs-subfolder",
+    "title": "Publishing to GitHub pages",
+    "section": "Create the /docs/ subfolder",
+    "text": "Create the /docs/ subfolder\nWithin the new folder that RStudio should have just created, make a new /docs/ subfolder.",
     "crumbs": [
-      "Ideation",
-      "Proposal rubric"
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
     ]
   },
   {
-    "objectID": "meetings-advisory-council.html",
-    "href": "meetings-advisory-council.html",
-    "title": "OEDA Advisory Council Meetings",
+    "objectID": "manual-delivery-publishing-github-pages.html#create-your-website-files",
+    "href": "manual-delivery-publishing-github-pages.html#create-your-website-files",
+    "title": "Publishing to GitHub pages",
+    "section": "Create your website files",
+    "text": "Create your website files\nYour _quarto.yml and *.qmd files should be saved in your main project folder, not to /docs/.\nWhen these files are rendered the *.html files will be stored in /docs/.\n\n_quarto.yml\nThis should look something like the following. The key thing for publishing to GitHub pages in this way is the specification of output-dir: docs in the project: section.\n\nproject:\n  type: website\n  output-dir: docs\n  \nwebsite:\n  title: \"Site title\"\n  navbar:\n    left:\n      - text: \"Page 1 title\"\n        href: page1.qmd\n      - text: \"Page 2 title\"\n        href: page2.qmd\n\n\nContent pages\nCreate one or more .qmd files with your content. These generally start with:\n---\ntitle: \"Page 1 title\"\n---\n\nYour markdown here.\n  \n\n\nCreate a .nojekyll file\nOpen a Windows Prompt in the Terminal in RStudio to create a .nojekyll file in the root of your git repository. This prevents Github from processing the website in undesirable ways.\nYou’ll do this just once before you publish your site for the first time.\n\ncopy NUL .nojekyll",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-publishing-github-pages.html#render-your-files-to-docs",
+    "href": "manual-delivery-publishing-github-pages.html#render-your-files-to-docs",
+    "title": "Publishing to GitHub pages",
+    "section": "Render your files to docs",
+    "text": "Render your files to docs\nFirst, render your quarto documents.\n\nIn the RStudio console run quarto::quarto_render()\n\nThen, create a new Git Back terminal.\n\nFind the Terminal tab in RStudio\nClick on the Terminal dropdown\nClick Terminal Options\nIn New terminals open with: select GitBash\nClick OK\nClick on the Terminal dropdown again\nClick New Terminal\n\nIn the terminal, type the following\n\ngit add docs\ngit commit -m \"Commit note\"\ngit push\nReplace “Commit note” with the note that you want to include with this commit. Make sure to use the quote marks.",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-publishing-github-pages.html#check-in-on-the-commit",
+    "href": "manual-delivery-publishing-github-pages.html#check-in-on-the-commit",
+    "title": "Publishing to GitHub pages",
+    "section": "Check in on the commit",
+    "text": "Check in on the commit\nIf you navigate to your new repository on GitHub– https://github.com/ODHS-ORRAI/your-repository-name-here–you should see a new folder docs in the repository, along with your commit message.",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-publishing-github-pages.html#configure-the-repository-to-use-the-docs-folder",
+    "href": "manual-delivery-publishing-github-pages.html#configure-the-repository-to-use-the-docs-folder",
+    "title": "Publishing to GitHub pages",
+    "section": "Configure the repository to use the /docs/ folder",
+    "text": "Configure the repository to use the /docs/ folder\nFrom the GitHub.com page for your new repository\n\nClick Settings in the top navigation ribbon\nClick Pages in the left side bar\nUnder Source make sure that Deploy from a branch is selected (it should be the default)\nUnder Branch there is a dropdown box, select main\nA folder dropdown should appear next to the main branch dropdown now. Click it and select /docs.\nClick Save",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-publishing-github-pages.html#check-the-availability-of-the-new-site",
+    "href": "manual-delivery-publishing-github-pages.html#check-the-availability-of-the-new-site",
+    "title": "Publishing to GitHub pages",
+    "section": "Check the availability of the new site",
+    "text": "Check the availability of the new site\nYour new site should (maybe after a short delay) be available at a URL like the URL for this site:\nhttps://odhs-orrai.github.io/OEDA-lab-manual/\nYou’d replace the last bit with the name of your repository.",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-publishing-github-pages.html#make-your-updates-as-needed",
+    "href": "manual-delivery-publishing-github-pages.html#make-your-updates-as-needed",
+    "title": "Publishing to GitHub pages",
+    "section": "Make your updates as needed",
+    "text": "Make your updates as needed\nWhenever you need to make changes or updates to your website, just follow the routine of the last couple of steps detailed above:\n\nEdit your _quarto.yml and *.qmd files as necessary\nSave the files locally\nIn the RStudio console run quarto::quarto_render()\nRun the following in your terminal\n\n\ngit add docs\ngit commit -m \"Commit note\"\ngit push\nThat should be it. After maybe a little network lag, and perhaps forcing a refresh to escape your browser cache, you should see the changes to the live website.",
+    "crumbs": [
+      "Lab manual",
+      "Publication & delivery",
+      "GitHub pages websites"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html",
+    "href": "manual-ideation-intelligence.html",
+    "title": "System 4 Intelligence",
     "section": "",
-    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings to not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
+    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
     "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#purpose",
+    "href": "manual-ideation-intelligence.html#purpose",
+    "title": "System 4 Intelligence",
+    "section": "",
+    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#internal-oregon-government-documents",
+    "href": "manual-ideation-intelligence.html#internal-oregon-government-documents",
+    "title": "System 4 Intelligence",
+    "section": "Internal Oregon government documents",
+    "text": "Internal Oregon government documents\n\nProgram/agency Ways & Means presentations\nLegislative testimony\nProgram/agency documents: strategic plans, reorg documents, OWL pages, etc.\nSecretary of State Audits",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#think-tanks-policy-research",
+    "href": "manual-ideation-intelligence.html#think-tanks-policy-research",
+    "title": "System 4 Intelligence",
+    "section": "Think tanks & policy research",
+    "text": "Think tanks & policy research\nSources for research reports, briefs, data visualizations, etc. – often with cross-agency topics.\n\nUrban Institute - housing, poverty, TANF, SNAP, justice\nCenter on Budget and Policy Priorities - federal & state budgets, funding streams and policies, SNAP, TANF, Medicaid\nMDRC - evaluations (often randomized controlled trials) of social program - employment, education, family supports\nChild Trends - children & youth, child welfare, juvenile justice\nMathematica - research & evaluation solutions - health, human services, education\nChapin Hall - child welfare, youth homelessness, community-based supports\nCasey Family Programs - child welfare",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#clearinghouses",
+    "href": "manual-ideation-intelligence.html#clearinghouses",
+    "title": "System 4 Intelligence",
+    "section": "Clearinghouses",
+    "text": "Clearinghouses\nThese organizations review and rate the evidence for specific programs and practices. These can provide standards of evidence, and can also be a source of ideas worth testing or implementing in Oregon.\n\nWhat Works Clearinghouse - education, including early childhood\nTitle IV-E Prevention Services Clearinghouse - Child welfare; evaluations and ratings of services eligible for federal prevention funding\nCrimeSolutions.gov - Criminal and juvenile justice\nCalifornia Evidence-Based Clearinghouse for Child Welfare - Child welfare.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#government-membership-orgs",
+    "href": "manual-ideation-intelligence.html#government-membership-orgs",
+    "title": "System 4 Intelligence",
+    "section": "Government & membership orgs",
+    "text": "Government & membership orgs\nPlaces to learn federal priorities, what other states are doing, and find new data releases.\n\nACF Office of Planning, Research, and Evaluation (OPRE) - research arm of the Administration for Children & Families, TANF, child welfare, early childhood\nUSDA Food and Nutrition Service (FNS) - SNAP and other nutrition programs\nAmerican Public Human Services Association (APHSA) - membership org for state and local agencies., challenges and innovations happening in other states and jurisdictions\nNational Conference of State Legislatures (NCSL) - tracking legislative trends in human services across the US\nNational Data Archive on Child Abuse and Neglect (NDACAN) - child welfare, AFCARS and NCANDS federal files",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#foundations",
+    "href": "manual-ideation-intelligence.html#foundations",
+    "title": "System 4 Intelligence",
+    "section": "Foundations",
+    "text": "Foundations\nFoundations often fund innovative research and pilot projects years before they become mainstream government practice. Could be a good source for intelligence on what’s on the horizon.\n\nCasey Family Programs - child welfare, juvenile justice, family economic stability Kids Count data center\nRobert Wood Johnson Foundation - health and health care, Medicaid, public health, social determinants of health\nPew Charitable Trusts - health & well-being, communities, economic advancement, federal policy, state government, environment, immigration, demography, race, ethnicity, religion, Pew Research Center\nMarguerite Casey Foundation - grant making foundation to shift power from government to communities, families, and individuals who continue to be excluded from shaping society and sharing in its rewards and freedoms.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#journals",
+    "href": "manual-ideation-intelligence.html#journals",
+    "title": "System 4 Intelligence",
+    "section": "Journals",
+    "text": "Journals\n\nThe Future of Children - defunct collab between Princeton and Brookings, each issue is a highy readable deep-dive into a single topic: education, early childhood, culture & economic outcomes, universal health, reducing justice system inequality, etc.\nJournal of Policy Analysis and Management (JPAM) - program evaluation & policy analysis\nSocial Service Review - social problems, policy, social work practice\nBig Data & Society - large-scale data collection, algorithmic decision making, impacts on society, ethics & equity of administrative data\nGateways: International Journal of Community Research and Engagement - empirical & evaluative case studies of community-based research & pedagogy, research with communities rather than on them\nJournal of the Royal Statistical Society: Series A (Statistics in Society) - social and ethical implications of statistical methods, algorithmic fairness, data privacy, measuring inequality\nJournal of Public Administration Research and Theory (JPART) - public administration, representative bureaucracy, administrative burden, implementation of policy by “street-level” bureaucrats\nPublic Administration Review (PAR) - public sector research, theory, and practice, academics & practitioners)\nJournal of Urban Affairs - housing, transportation, economic development, human services, spatial dimensions of inequality, disparate outcomes\nChild Abuse & Neglect\nChild Maltreatment\nDevelopmental Child Welfare\nSocial Science and Medicine\nJournal of Family Violence\nJournal of Marriage and Family\nChildren and Youth Review Services",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-meetings-oeda-team.html",
+    "href": "manual-meetings-oeda-team.html",
+    "title": "OEDA Team Meetings",
+    "section": "",
+    "text": "Every Tuesday from 1:35 to 2:55",
+    "crumbs": [
+      "Lab manual",
       "Meetings",
-      "OEDA Advisory Council Meetings"
+      "OEDA Team Meetings"
     ]
   },
   {
-    "objectID": "meetings-advisory-council.html#purpose",
-    "href": "meetings-advisory-council.html#purpose",
-    "title": "OEDA Advisory Council Meetings",
+    "objectID": "manual-meetings-oeda-team.html#cadence",
+    "href": "manual-meetings-oeda-team.html#cadence",
+    "title": "OEDA Team Meetings",
     "section": "",
-    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings to not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
+    "text": "Every Tuesday from 1:35 to 2:55",
     "crumbs": [
+      "Lab manual",
       "Meetings",
-      "OEDA Advisory Council Meetings"
+      "OEDA Team Meetings"
     ]
   },
   {
-    "objectID": "meetings-advisory-council.html#council-members",
-    "href": "meetings-advisory-council.html#council-members",
-    "title": "OEDA Advisory Council Meetings",
-    "section": "Council members",
-    "text": "Council members\n\n\n\n\n\n\n\n\n\n\nAgency\nFirst\nLast\nRole\nEmail\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, ORRAI\nPeter.G.Sprengelmeyer@odhs.oregon.gov\n\n\nOYA\nMark\nGreenwald\nResearch Manager\nMark.Greenwald@oya.oregon.gov\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\nshannon.myrick@oya.oregon.gov\n\n\nOHA\nAmanda\nPeden\nSHNAP Manager\namanda.m.peden@oha.oregon.gov\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\nelise.cordlekennedy@delc.oregon.gov\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\nlindsay.ollerenshaw@delc.oregon.gov\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research\nrobert.c.uhlenkott@employ.oregon.gov\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\nkelly.j.officer@cjc.oregon.gov\n\n\nCJC\nMichael\nWienerman\nResearch Economist\nmichael.weinerman@cjc.oregon.gov\n\n\nDOC\nKate\nKempany\nResearch Scientist\nkatherine.a.kempany@doc.oregon.gov\n\n\nDOC\nKristen\nBanschbach\nChief of Research\nkristen.a.banschbach@doc.oregon.gov\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\nmegan.bolton@hcs.oregon.gov\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship\nisabella.jacoby@ode.oregon.gov\n\n\nODVA\nTBD",
+    "objectID": "manual-meetings-oeda-team.html#purposes",
+    "href": "manual-meetings-oeda-team.html#purposes",
+    "title": "OEDA Team Meetings",
+    "section": "Purposes",
+    "text": "Purposes\n\nAlign\n\nDebrief council meetings\nSynthesize and analyze intelligence from OEDA staff, agency partners, and other informants\nShare project progress and blockers\nReview metrics and discuss implicated processes\n\nPlan\n\nDesign projects\nSet OEDA development calendar\n\nProduce\n\nAgendas and agendas for council meetings\nProgress reports for council members and sponsors\nMinutes from council meetings\n\nIdeate\n\nFeedback on proposals, research plans, charters, products, presentations\n\nConnection\n\nGet to know one another better\nCelebrate individual and team successes",
     "crumbs": [
+      "Lab manual",
       "Meetings",
-      "OEDA Advisory Council Meetings"
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "manual-meetings-oeda-team.html#agendas",
+    "href": "manual-meetings-oeda-team.html#agendas",
+    "title": "OEDA Team Meetings",
+    "section": "Agendas",
+    "text": "Agendas\n\nStanding agenda\nThis is our general, standing agenda for our weekly meetings.\n\nHot topics: Anything that anyone on the team needs to address at the top of the meeting\nSpecial topics, if scheduled\nSystem 4 Briefings - Briefings from any guests invited for intelligence - Briefings rotating staff on their intelligence areas - Briefings from Jason - Ad hoc briefings from anyone\nSystems 1 & 2 Briefings - Updates from work units on project progress - Identification of any blockers or process issues\nSystem 3 Briefings - Lab manual updates - Housekeeping from HR, Workday, admins, etc. - Review of any dashboards, metrics, Kanban, etc. we’re experimenting with\n\n\n\nSpecial topics\n\nPeriodic special topics\nSchedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.\nOn these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.\n\n\n\nAd hoc events\nAlso during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.",
+    "crumbs": [
+      "Lab manual",
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html",
+    "href": "manual-products-logos.html",
+    "title": "OEDA Logos",
+    "section": "",
+    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "OEDA logos"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html#primary-vertical-logo---light-mode",
+    "href": "manual-products-logos.html#primary-vertical-logo---light-mode",
+    "title": "OEDA Logos",
+    "section": "Primary (vertical) logo - Light mode",
+    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "OEDA logos"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html#primary-vertical-logo---dark-mode",
+    "href": "manual-products-logos.html#primary-vertical-logo---dark-mode",
+    "title": "OEDA Logos",
+    "section": "Primary (vertical) logo - Dark mode",
+    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "OEDA logos"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html#horizontal-logo---light-mode",
+    "href": "manual-products-logos.html#horizontal-logo---light-mode",
+    "title": "OEDA Logos",
+    "section": "Horizontal logo - Light mode",
+    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "OEDA logos"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html#horizontal-logo---dark-mode",
+    "href": "manual-products-logos.html#horizontal-logo---dark-mode",
+    "title": "OEDA Logos",
+    "section": "Horizontal logo - Dark mode",
+    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "OEDA logos"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html#scaling",
+    "href": "manual-products-logos.html#scaling",
+    "title": "OEDA Logos",
+    "section": "Scaling",
+    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "OEDA logos"
     ]
   },
   {
@@ -592,98 +842,65 @@
     "href": "process-early.html",
     "title": "Basic process flow: Idea to OEDA project",
     "section": "",
-    "text": "%% Node shapes: https://docs.mermaidchart.com/mermaid-oss/syntax/flowchart.html#node-shapes\n\n\nflowchart TD\n  idea&gt;Idea]\n  ideation[[Ideation Unit]]\n  proposal&gt;Proposal]\n  council[[Advisory Council]]\n  port1&gt;Proposal Portfolio]\n  design[[Design Unit]]\n  draft&gt;Draft Project Charter]\n  duaunit[[DUA Unit]]\n  dua&gt;Signed DUA]\n  charter&gt;Signed Project Charter]\n  port2&gt;Project Portfolio]\n  it[[Agency Data Staff]]\n  files&gt;Agency Files]\n  int[[Integration Unit]]\n  \n  idea --&gt; ideation --&gt; proposal --&gt; council --&gt; port1 --&gt; design --&gt; draft --&gt; duaunit\n  duaunit --&gt; dua\n  duaunit --&gt; charter\n  dua --&gt; port2\n  charter --&gt; port2\n  port2 --&gt; it --&gt; files --&gt;  int",
-    "crumbs": [
-      "Process",
-      "Idea to project"
-    ]
+    "text": "Symbols\n\n\n\n\n\nflowchart LR\n  a1@{ shape: stadium, label: 'Start or process trigger'}\n  a2@{ shape: rect, label: 'OEDA work unit or process' }\n  a3@{ shape: doc, label: 'Document'}\n\n\n\n\n\n\n\n\n\nIdeation\nIdeas can come from anywhere. There may be suggestions, requests, or questions voiced in Advisory Council meetings. Researchers may review academic or think tank literature. Agency researchers and subject matter experts may meet with OEDA researchers and discuss ideas. And so on.\nWhen OEDA researchers encounter ideas they work with subject matter experts to create a proposal. Proposals should be relatively quick and easy, requiring just a meeting or two and a few hours of researchers’ time to draft. Much will still be unknown about the practicality, importance, and relevance of the proposed idea. Clarity on those will emerge with the process below.\n\n\n\n\n\nflowchart LR\n  b1@{ shape: stadium, label: 'Idea'}\n  b2@{ shape: rect, label: 'OEDA Ideation Unit' }\n  b3@{ shape: doc, label: 'Proposal'}\n  \n  b1 --&gt; b2 --&gt; b3\n\n\n\n\n\n\n\n\n\nAdvisory Council Meeting\nOEDA researchers or the OEDA manager bring proposals to the council. The council members asks clarifying questions about the proposal and perhaps makes suggestions to improve its potential. The council scores the proposal on criteria related to its importance to state government, potential impacts, and more.\n\n\n\n\n\nflowchart LR\n  c1@{ shape: doc, label: 'Proposal'}\n  c2@{ shape: rect, label: 'Advisory Council' }\n  c3@{ shape: doc, label: 'Proposal Portfolio'}\n  \n  c1 --&gt; c2 --&gt; c3\n\n\n\n\n\n\n\n\n\nDesign\nWith the backlog of proposals, researchers can identify the unanswered research questions that are of highest priority to the state. Researchers select the highest priority items and begin the design process. This is simultaneously research design–identifying the methods and materials that will be an efficient, satisficing solution for the study–and project design identifying deliverables, roles and responsibilities, dependencies and threats, and timelines. The result of this work is a draft project charter.\n\n\n\n\n\nflowchart LR\n  d1@{ shape: doc, label: 'Proposal Portfolio'}\n  d2@{ shape: rect, label: 'OEDA Design Unit' }\n  d3@{ shape: doc, label: 'Draft Project Charter'}\n  \n  d1 --&gt; d2 --&gt; d3\n\n\n\n\n\n\n\n\n\nSponsorship\nThe OEDA manager shares the draft charter with the stakeholder agencies. Recipients include the owners and stewards of the data necessary for the work as well as the likely audiences for the study’s findings and deliverables. This begins two parallel processes.\nFirst, the OEDA Integration Unit creates a Data Integration Meeting. Data owners and stewards meet with the Integration Unit to discuss the data needs for the project. If contributing agencies have their own internal processes for interagency data sharing, those can substitute for the Data Integration Meeting. The deliverable from this process is a signed Interagency Agreement, or other legally sufficient document to permit the needed data integration and uses.\nSecond, the OEDA manager seeks sponsorship from agency leadership for the project. Sponsoring agencies will be those who will be providing for the project. The\nlikely audiences for the study’s findings and the data owners With the backlog of proposals, researchers can identify the unanswered research questions that are of highest priority to the state. Researchers select the highest priority items and begin the design process. This is simultaneously research design–identifying the methods and materials that will be an efficient, satisficing solution for the study–and project design identifying deliverables, roles and responsibilities, dependencies and threats, and timelines. The result of this work is a draft project charter.\n\n\n\n\n\nflowchart LR\n  d1@{ shape: doc, label: 'Proposal Portfolio'}\n  d2@{ shape: rect, label: 'OEDA Design Unit' }\n  d3@{ shape: doc, label: 'Draft Project Charter'}\n  \n  d1 --&gt; d2 --&gt; d3"
   },
   {
-    "objectID": "process-early.html#basic-process-flow-for-starting-an-oeda-project",
-    "href": "process-early.html#basic-process-flow-for-starting-an-oeda-project",
-    "title": "Basic process flow: Idea to OEDA project",
+    "objectID": "projects-main.html",
+    "href": "projects-main.html",
+    "title": "Current OEDA Projects",
     "section": "",
-    "text": "%% Node shapes: https://docs.mermaidchart.com/mermaid-oss/syntax/flowchart.html#node-shapes\n\n\nflowchart TD\n  idea&gt;Idea]\n  ideation[[Ideation Unit]]\n  proposal&gt;Proposal]\n  council[[Advisory Council]]\n  port1&gt;Proposal Portfolio]\n  design[[Design Unit]]\n  draft&gt;Draft Project Charter]\n  duaunit[[DUA Unit]]\n  dua&gt;Signed DUA]\n  charter&gt;Signed Project Charter]\n  port2&gt;Project Portfolio]\n  it[[Agency Data Staff]]\n  files&gt;Agency Files]\n  int[[Integration Unit]]\n  \n  idea --&gt; ideation --&gt; proposal --&gt; council --&gt; port1 --&gt; design --&gt; draft --&gt; duaunit\n  duaunit --&gt; dua\n  duaunit --&gt; charter\n  dua --&gt; port2\n  charter --&gt; port2\n  port2 --&gt; it --&gt; files --&gt;  int",
+    "text": "Economic stability outcomes for SSP clients\nStaff scientist(s): Kathryn Iurino, PhD Phase: Research\nAbstract primary goal of this project is to develop individual- and household-level measures of both short-term and long-term economic stability for the purposes of program evaluation and informing policy decisions.\n\n\nFamily reunification among children with incarcerated parents\nStaff scientist(s): Michael Menefee, PhD Phase: Proposal ready\nAbstract This project will work with partners from Child Welfare and Oregon Department of Corrections to identify and improve practices that support family reunification for adults in custody with minor children.\n\n\nSocial support services among formerly incarcerated people\nStaff scientist(s): Michael Menefee, PhD Phase: Proposal ready\nAbstract The goal of this project is to link Medicaid enrollment + SSP records with custody data from the Oregon Department of Corrections to study access and inequities in Medicaid enrollment and social services benefit access/utilization among formerly incarcerated people. The study will also examine whether and to what extent Medicaid enrollment improves wellbeing and positive outcomes for this population. In conjunction with DOC, the study may also consider impact of social support services on short term returns to custody (e.g., 1 year, 3 years).\n\n\nSSP case management model evaluation\nStaff scientist(s): Kathryn Iurino, PhD Phase: Proposal ready\nAbstract SSP leadership is interested in formalizing a move for family coaches, away from regulation and the monitoring of families for eligibility, towards more service integration. This was a topic of a recent (12/17, 1p-5p meeting of SSP leaders, to which ORRAI was invited). To learn whether aspects of this new approach are more likely than the older approach in helping SSP and Oregonians achieve certain goals, SSP leadership is interested in an A/B test between two or more areas in Oregon, one of which represents this newer approach and one of which represents the older approach. Ideally, this work identifies key components of a family coaching logic model or its theory of change: What do family coaches do in this new model and are there artifacts of those activities captured by SSP in their source systems? What outcomes can we add as complements to federal measures in evaluating coaching success–and do relevant data exist for those? What are available, and theoretically or empirically relevant, person-level or district/branch-level matching variables, variables which can strengthen the internal validity of cause-and-effect claims? If solid data exist related to these questions they will help improve the evaluation at hand. If they do not, one deliverable from this work can be recommendations for what SSP will want to collect in the future to gather more convincing evidence in testing their ideas and implementation of those ideas.\n\n\nEntity resolution methods\nStaff scientist(s): Aaron Cochran, MPP Phase: Research\nAbstract Development of custom, open-source methods for the ad hoc linking of project-specific person information to one or more reference sources.\n\n\nBenefits simulation codebase\nStaff scientist(s): Aaron Cochran, MPP; Kathryn Iurino, PhD; Letsogile Mponwane, MPH; Marisol Caceres Lorenzo, MSS, MS; Phase: Research\nAbstract None",
     "crumbs": [
-      "Process",
-      "Idea to project"
+      "Projects",
+      "Current projects"
     ]
   },
   {
-    "objectID": "products-palettes.html",
-    "href": "products-palettes.html",
-    "title": "Color Palettes",
+    "objectID": "manual-progeval.html",
+    "href": "manual-progeval.html",
+    "title": "Program evaluation - Report template",
     "section": "",
-    "text": "Warning: package 'dplyr' was built under R version 4.4.3\nAs our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services.",
+    "text": "These shoudl be created as Quarto HTML documents and published to the OEDA website.",
     "crumbs": [
-      "Product development",
-      "Color palettes"
+      "Lab manual",
+      "Units",
+      "Program evaluation"
     ]
   },
   {
-    "objectID": "products-palettes.html#list-of-basic-palette-colors",
-    "href": "products-palettes.html#list-of-basic-palette-colors",
-    "title": "Color Palettes",
-    "section": "List of basic palette colors",
-    "text": "List of basic palette colors\nThe list below contains the main colors identified in the guidelines.\n\nOEDA_colors &lt;- list(\n  northstar = '#2E3192',\n  glacial = '#B4DCF5',\n  fog = '#F4F2ED',\n  forest = '#184E49',\n  willamette = '#86C679',\n  mist = '#D8E1E5',\n  marionberry = '#A91F50',\n  harvest = '#ECD263',\n  desert = '#EDDFD4',\n  black = '#000000',\n  white = '#FFFFFF',\n  charcoal = '#414042'\n)",
+    "objectID": "manual-progeval.html#evaluation-report-template",
+    "href": "manual-progeval.html#evaluation-report-template",
+    "title": "Program evaluation - Report template",
+    "section": "",
+    "text": "These shoudl be created as Quarto HTML documents and published to the OEDA website.",
     "crumbs": [
-      "Product development",
-      "Color palettes"
+      "Lab manual",
+      "Units",
+      "Program evaluation"
     ]
   },
   {
-    "objectID": "products-palettes.html#roles",
-    "href": "products-palettes.html#roles",
-    "title": "Color Palettes",
-    "section": "Roles",
-    "text": "Roles\nThese are the basic roles assigned to these colors in the publications guide.\n\n\n\nColor\nRole\n\n\n\n\nNorth Star Indigo\nPrimary color\n\n\nForest Green\nSecondary color\n\n\nMarionberry Red\nTertiary color\n\n\nGlacial Blue\nAccent color\n\n\nWillamette Green\nAccent color\n\n\nHarvest Gold\nAccent color\n\n\nFog Gray\nNeutral color\n\n\nMist Gray\nNeutral color\n\n\nDesert Sand\nNeutral color\n\n\nPrimary Black\nCore neutral\n\n\nPrimary White\nCore neutral\n\n\nAshland Charcoal\nCore neutral",
+    "objectID": "manual-progeval.html#yaml-header",
+    "href": "manual-progeval.html#yaml-header",
+    "title": "Program evaluation - Report template",
+    "section": "YAML header",
+    "text": "YAML header\n\ntitle: Adopt a style that clearly indicates the program or intervention, the dependent variable, the size of the observed effect, the location, and the year\n\nE.g. “[Program X] reduces [outcome Y] by [meaningful effect size] (2022-2024 statewide data)”\n\ndate: Publication date of final product\nauthor: Your name and degree\ninstitution: Oregon Enterprise Data Analytics\nabstract: No more than 500 words, briefly describing the evaluation questions, intervention evaluated, and key findings.",
     "crumbs": [
-      "Product development",
-      "Color palettes"
+      "Lab manual",
+      "Units",
+      "Program evaluation"
     ]
   },
   {
-    "objectID": "products-palettes.html#meaning-neutral-document-components",
-    "href": "products-palettes.html#meaning-neutral-document-components",
-    "title": "Color Palettes",
-    "section": "Meaning-neutral document components",
-    "text": "Meaning-neutral document components\n\n\n\nDocument\nComponent\nExample\nLight Mode\n\n\n\n\nBrief, memo, web page, blog entry\nBackground\nPage background\nPrimary White\n\n\nBrief, memo, web page, blog entry\nTitle\nHeading 1\nNorth Star Indigo\n\n\nBrief, memo, web page, blog entry\nSection heading\nHeading 2-5\nForest Green\n\n\nBrief, memo, web page, blog entry\nBody text\nBlocks of text (text color)\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCard\nAsides, boxouts, breakout boxes, etc. (background color)\nMist Gray\n\n\nBrief, memo, web page, blog entry\nLines\nHorizontal rules\nAshland Charcoal\n\n\nVisualization\nBackground\nPlot background and panel background\nFog Gray\n\n\nVisualization\nTitle\nPlot title\nNorth Star Indigo\n\n\nVisualization\nBackground\nFacet background\nNorth Star Indigo\n\n\nVisualization\nSection heading\nFacet title\nPrimary White\n\n\nVisualization\nBody text\nSubtitles or captions\nForest Green\n\n\nVisualization\nLines\nBorders, axes, ticks\nAshland Charcoal\n\n\n\nNote: Visualizations should be of a consistent OEDA style, regardless of whether the document overall is produced in dark or light mode.",
+    "objectID": "manual-progeval.html#executive-summary",
+    "href": "manual-progeval.html#executive-summary",
+    "title": "Program evaluation - Report template",
+    "section": "Executive summary",
+    "text": "Executive summary\nThe Executive Summary should stand alone as a summary of the key sections of the report and should summarize the content of the full report without adding new information.  It should summarize the following key points: evaluation purpose, evaluation questions, intervention being evaluated, evaluation methods, and findings, conclusions, and recommendations.\n\nEvaluation purpose and evaluation questions\nThis should set out the overarching purpose of the evaluation, and how the findings are expected to be used to inform decisions. This section also describes the evaluation questions (which should be limited to just a few key questions). It can also identify key audiences for the evaluation.\n\n\nBackground\nEnough information should be provided to give sufficient context. However, in the Executive Summary this section can receive less emphasis than it might in the overall report so that more attention can be given to the evaluation purpose, design, limitations, and findings. In the main report, the background section should describe the problem being addressed by the strategy, project, activity, or interventions and the logic for why it will lead to better outcomes. This could include a logical framework for the activity if one exists, and the development hypothesis, or causal logic, of the project or program of which the activity is a part.\n\n\nEvaluation design, methods, and limitations\nThis section describes the overall design, specific data collection and analysis methods linked to the evaluation questions, and limitations of the data, methods, or other issues that affected the findings.\n\n\nFindings, conclusions, and recommendations (if applicable)\nThis section should report those findings based on evidence generated by the evaluation data collection and analysis methods. Findings should be fact-based and not rely only on opinion, even of experts. Conclusions are drawn directly from findings and help summarize the “so what” of the findings. Several findings can lead to one or more conclusions. Whenever possible, data should be presented visually in easy-to-read charts, tables, graphs, and maps to demonstrate the evidence that supports conclusions and recommendations.\n\n---\ntitle: 'Title'\nsubtitle: 'Optional subtitle'\ndate: 'yyyy-mm-dd'\nauthor: 'First Last, Degree'\ninstitution: 'Oregon Enterprise Data Analytics'\nabstract: 'Abstract text'\n---\n\n## Executive Summary\n\n### Evaluation purpose and evaluation questions",
     "crumbs": [
-      "Product development",
-      "Color palettes"
-    ]
-  },
-  {
-    "objectID": "products-palettes.html#meaning-conveying-documents-components",
-    "href": "products-palettes.html#meaning-conveying-documents-components",
-    "title": "Color Palettes",
-    "section": "Meaning-conveying documents components",
-    "text": "Meaning-conveying documents components\n\n\n\n\n\n\n\n\n\n\nDocument\nComponent\nMeaning\nBackground\nForeground\n\n\n\n\nBrief, memo, web page, blog entry\nCall out\nNeutral\nGlacial Blue\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nGrowth, meeting expectations, optimistic comparison\nWillamette Green\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nAttention needed, missing expectations, pessimistic comparison\nHarvest Gold\nAshland Charcoal\n\n\nVisualization\nCall out\nNeutral geom\nn/a\nAshland Charcoal\n\n\nVisualization\nCall out\nGeom indicating growth, meeting expectations, optimistic comparison\nn/a\nWillamette Green\n\n\nVisualization\nCall out\nGeom indicating attention needed, missing expectations, pessimistic comparison\nn/a\nHarvest Gold\n\n\n\nText callouts include Quarto call out elements styled using the Custom Callout Quarto extension as well as blockquotes or line blocks.\nVis callouts include the fill color of columns, bars, boxplots, points, etc.",
-    "crumbs": [
-      "Product development",
-      "Color palettes"
-    ]
-  },
-  {
-    "objectID": "products-palettes.html#calculating-tints",
-    "href": "products-palettes.html#calculating-tints",
-    "title": "Color Palettes",
-    "section": "Calculating tints",
-    "text": "Calculating tints\nThe function below takes a color from the OEDA palette (or any hex color, really) and computes various tints of it. I have not been able to determine just how the publications office creates their tints, so the tints output from this function do not exactly match the tints displayed in the publication guide.\n\n#' Create a tint of a base color\n#'\n#' This function generates a tint by mixing a base hex color with white in the HSL\n#' (Hue, Saturation, Lightness) color space. This method is perceptually more\n#' uniform than mixing in RGB space. tint_percent = 100 should return the base_hex.\n#' tint_percent = 0 should return pure white (\"#FFFFFF\").\n#'\n#' @param base_hex A character string of the starting hex color (e.g., \"#2E3192\").\n#' @param tint_percent A numeric value from 0 to 100 representing the\n#'   percentage of the original color to retain. A value of 80 creates a tint \n#'   which is 80 parts the base color and 20 parts pure white.\n#'   \n#' @return A character string for the new hex color.\n#' @export\n\n\ncreate_tint &lt;- function(base_hex, tint_percent) {\n  \n  pct_white &lt;- (100 - tint_percent) / 100\n  \n  hsl_start &lt;- plotwidgets::col2hsl(base_hex)\n  hsl_end &lt;- hsl_start\n  hsl_end[3] &lt;- ((1 - hsl_start[3]) * pct_white) + hsl_start[3]\n  \n  col_end &lt;- plotwidgets::hsl2col(hsl_end)\n  \n  return(col_end)\n}\n\n\nExamples of North Star Indigo tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$northstar, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Forest Green tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$forest, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Desert Sand tints\n\nlapply(c(100, 70, 30), function(x) create_tint(OEDA_colors$desert, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()",
-    "crumbs": [
-      "Product development",
-      "Color palettes"
-    ]
-  },
-  {
-    "objectID": "products-palettes.html#other-vis-palettes",
-    "href": "products-palettes.html#other-vis-palettes",
-    "title": "Color Palettes",
-    "section": "Other vis palettes",
-    "text": "Other vis palettes\nWe will make recommendations for other palettes when comparisons are not between a small number of categories, but are multinomous categorical or continuous (sequential or divergent).",
-    "crumbs": [
-      "Product development",
-      "Color palettes"
+      "Lab manual",
+      "Units",
+      "Program evaluation"
     ]
   }
 ]

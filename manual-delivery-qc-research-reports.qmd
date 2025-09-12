@@ -1,0 +1,58 @@
+---
+title: 'Quality checks: Research reports'
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Document structure and output
+
+(@) Quarto uses `embed-resources: true` in the yaml heading so that the document is a single file with no external dependencies
+(@) Quarto compiles without errors and warnings
+(@) All outputs render: no broken figures, tables
+(@) All citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected
+(@) All internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content
+
+
+## Statistical and analytical integrity
+
+(@) All text has been run through the [statcheck](https://cran.r-project.org/web/packages/statcheck/index.html) package, to determine if reported p-values, df, and test statistics align. Any errors or decision errors have been resolved.
+(@) All tests have effect sizes reported.
+(@) Confidence intervals are included around point estimates.
+(@) Data visualizations and text/data/statistics match (e.g. means in the text match the means in the visualization)
+
+## Reproducibility
+
+(@) Quarto project structure follows OEDA standards (TBD: e.g., report.qmd, figures/, data/, scripts/) for transparency.
+(@) Document makes use of a reproducible environment (TBD: determine the OEDA standard: Docker, renv.lock, etc.?)
+(@) Seeds are set for simulations, resampling, bootstrapping, or other random processes
+(@) Scripts and data used in the document are versioned and reproducible
+(@) Code chunks use `#| eval: true` unless intentionally disabled with a comment as to why
+(@) Input data is described or linked clearly (e.g. source, format, preprocessing). Data are all versioned instances, not SQL pulls from  "live" administrative data.
+
+## Interpretibility and clarity
+
+(@) Title reflects key findings, variables, populations, and time periods
+(@) Abstract reflects key findings, variables, populations, and time periods
+(@) Key findings are clearly stated in plain language
+(@) The main message is consistent across the title, abstract, results, visualizations, and conclusion
+(@) Effects are described in units meaningful to the audience (counts of individuals, dollars, days in care, etc.)
+(@) Acronyms and technical terms are minimal, and are defined at first use
+(@) Assumptions and limitations are acknowledged as appropriate in introduction, methods, and conclusions, and are addressed in suggestions for future work
+(@) Figures and tables are interpretable without reference to the text
+
+## Writing quality style
+
+(@) No placeholder text (ADD, TODO, etc.) remains
+(@) Grammar, spelling, and punctuation are correct
+(@) Voice and tense are consistent
+(@) Readability scores have been calculated and are within OEDA adopted thresholds
+(@) Terminology and variable names are consistent throughout
+
+
+## Ethical, legal, and confidentiality checks
+
+(@) No confidential or identifying information is used in any data input
+(@) No confidential or identifying information appears in any output (text, visualization, table, etc.)
+(@) Appropriate masking is used for all static elements
+(@) Appropriate masking has been tested for with any dynamic elements
+(@) All data use complies with licenses, access conditions, and consent
+(@) Ethics approval, DUA, IAA, etc. are acknowledged if applicable

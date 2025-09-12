@@ -1,0 +1,18 @@
+---
+title: "OEDA Data Profiles"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Introduction
+
+To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data.
+
+## Oregon Enterprise Outcomes
+
+* Entries into foster care
+* Exits from foster care
+* Contacts with the juvenile justice system
+
+## OEDA Stewarded Data
+
+* Childhood and Adolescent Needs and Strengths (CANS) 

@@ -1,0 +1,160 @@
+---
+title: "Publishing to GitHub pages"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Basic resources
+
+*   [Happy Git and GitHub for the useR](https://happygitwithr.com/rstudio-git-github.html)
+*   [Quarto guidance on publishing to GitHub pages using the `docs` folder](https://quarto.org/docs/publishing/github-pages.html#render-to-docs)
+
+## Create a git repository if one does not already exist
+
+*   Login to: [https://github.com/login](https://github.com/login)
+*   In the left sidebar, click `New` to create a new repository
+*   Under owner, select `ODHS-ORRAI`
+*   Set yourself as owner, and give your repository a name, e.g. this website is `OEDA-lab-manual`
+*   Set the visibility of the repository to Public (hosting websites from Private repositories requires an upgraded GitHub account for ORRAI)
+*   Click `Create repository`
+*   Click `<>Code` in the top ribbon
+*   Copy the location from the Quick Setup section. For the OEDA Lab Guide (the website you're reading), this is `https://github.com/wallinjm/OEDA-lab-manual.git`
+
+
+## Create a new R project associated with your new repository
+
+*   Start RStudio
+*   Click `File > New Project`
+*   Click `Version Control`
+*   Click `Git`
+*   In the `Repository URL` field, paste the URL copied from above
+*   Select the appropriate path location for the project, and name a new folder to hold the project
+
+## Create the `/docs/` subfolder
+
+Within the new folder that RStudio should have just created, make a new `/docs/` subfolder.
+
+## Create your website files
+
+Your `_quarto.yml` and `*.qmd` files should be saved in your main project folder, not to `/docs/`.
+
+When these files are rendered the `*.html` files will be stored in `/docs/`.
+
+### `_quarto.yml`
+
+This should look something like the following. The key thing for publishing to GitHub pages in this way is the specification of `output-dir: docs` in the `project:` section.
+
+```yaml
+
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Site title"
+  navbar:
+    left:
+      - text: "Page 1 title"
+        href: page1.qmd
+      - text: "Page 2 title"
+        href: page2.qmd
+```
+
+### Content pages
+
+Create one or more `.qmd` files with your content. These generally start with:
+
+```quarto
+---
+title: "Page 1 title"
+---
+
+Your markdown here.
+  
+```
+
+
+### Create a `.nojekyll` file
+
+Open a Windows Prompt in the  [Terminal in RStudio](https://support.posit.co/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE) to create a `.nojekyll` file in the root of your git repository. This prevents Github from processing the website in undesirable ways.
+
+You'll do this just once before you publish your site for the first time.
+
+```default
+
+copy NUL .nojekyll
+
+```
+## Render your files to `docs`
+
+First, render your quarto documents.
+
+*   In the RStudio console run `quarto::quarto_render()`
+
+Then, create a new Git Back terminal.
+
+*   Find the `Terminal` tab in RStudio
+*   Click on the `Terminal` dropdown
+*   Click `Terminal Options`
+*   In `New terminals open with:` select `GitBash`
+*   Click `OK`
+*   Click on the `Terminal` dropdown again
+*   Click `New Terminal`
+
+In the terminal, type the following
+
+```default
+
+git add docs
+git commit -m "Commit note"
+git push
+
+```
+
+Replace "Commit note" with the note that you want to include with this commit. Make sure to use the quote marks.
+
+
+## Check in on the commit
+
+If you navigate to your new repository on GitHub-- `https://github.com/ODHS-ORRAI/your-repository-name-here`--you should see a new folder docs in the repository, along with your commit message.
+
+## Configure the repository to use the `/docs/` folder 
+
+From the GitHub.com page for your new repository
+
+*   Click `Settings` in the top navigation ribbon
+*   Click `Pages` in the left side bar
+*   Under `Source` make sure that `Deploy from a branch` is selected (it should be the default)
+*   Under `Branch` there is a dropdown box, select `main`
+*   A folder dropdown should appear next to the main branch dropdown now. Click it and select `/docs`.
+*   Click `Save`
+
+## Check the availability of the new site
+
+Your new site should (maybe after a short delay) be available at a URL like the URL for this site:
+
+[https://odhs-orrai.github.io/OEDA-lab-manual/](https://odhs-orrai.github.io/OEDA-lab-manual/)
+
+You'd replace the last bit with the name of your repository.
+
+## Make your updates as needed
+
+Whenever you need to make changes or updates to your website, just follow the routine of the last couple of steps detailed above:
+
+*   Edit your `_quarto.yml` and `*.qmd` files as necessary
+*   Save the files locally
+*   In the RStudio console run `quarto::quarto_render()`
+*   Run the following in your terminal
+
+```default
+
+git add docs
+git commit -m "Commit note"
+git push
+
+```
+
+That should be it. After maybe a little network lag, and perhaps forcing a refresh to escape your browser cache, you should see the changes to the live website.
+
+
+
+
