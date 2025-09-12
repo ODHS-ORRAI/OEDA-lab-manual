@@ -1,0 +1,22 @@
+---
+title: "OEDA Advisory Meetings"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Purpose
+
+The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.
+
+This meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.
+
+These meetings would not seem to meet the definitions of *decision*, *deliberation*, or *governing body* as defined under [ORS 192.610](https://www.oregonlegislature.gov/bills_laws/ors/ors192.html).
+
+## Agendas and notes
+
+Years and quarters are based on calendar years, not state or federal fiscal years.
+
+| Year | Quarter | Agenda | Notes |
+|:----|:----|:--------|:--------|
+| 2025 | Q4 | [Q4 Agenda](council-meeting-2025-q4.qmd#agenda) | [Q4 Notes](council-meeting-2025-q4.qmd#notes) |
+
+

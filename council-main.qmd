@@ -1,0 +1,71 @@
+---
+title: "OEDA Advisory Council"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Purpose
+
+The OEDA Advisory Council provides key **intelligence**, **direction**, and **support** for the OEDA portfolio.
+
+### Vision
+
+The council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA's purpose across time and helps navigate tensions between present operational realities and future needs. They:
+
+* Request, provide feedback on, and approve the mission, vision, and goals for OEDA
+* Conduct a review of the OEDA mission, vision, and goals at least every two years
+* Align advice and direction with the OEDA mission, vision, and goals
+
+### Intelligence
+
+The council shares intelligence among its members and with OEDA. They:
+
+* Share briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions
+* Maintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs
+
+### Reviewing proposals
+
+The council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:
+
+* Identify avenues for the creation of proposals and submission to the committee
+* Adopt criteria for evaluating proposals
+* Evaluate proposals on their alignment with state needs and OEDA's purpose
+
+### Reviewing charters
+
+The council reviews charters of deliverables and timelines for OEDA projects. They:
+
+* Adopt standards of review for OEDA project charters
+* Direct the OEDA team to create project charters to support approved proposals
+* Seek charter sponsorship from council members or their agency leaders
+
+### Championing projects
+
+The council supports the successful completion of OEDA projects. They:
+
+* Sponsor and shepherd interagency agreements to integrate data.
+* Secure resources for projects: time with agency data experts and subject matter experts
+* Provide active intervention to remove obstacles in projects
+
+### Receiving deliverables
+
+The council is a primary audience for deliverables and findings from OEDA projects. They:
+
+* Bring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions
+* Report back to one another and OEDA on the impacts of projects
+
+### Supporting continuous improvement
+
+The council provides feedback and guidance. They:
+
+* Comment on project quality, resource use, and processes
+* Suggest metrics to evaluate OEDA's level of service to the enterprise
+
+### Advocating for independent, objective research & analysis
+
+The council safeguards projects from ideation, to chartering, to communication of findings. They:
+
+* Provide an officer tasked with monitoring research independence
+* Provide an avenue for escalating issues jeopardizing objectivity and independence
+
+
+

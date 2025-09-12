@@ -1,0 +1,215 @@
+---
+title: "Proposal scoring rubric"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+``` {r text.elements}
+#| echo: false
+#| error: false
+#| message: false
+#| warning: false
+
+
+library(tidyverse)
+
+tbl_Scored <- read_rds('data/scoring_rubric.rds')
+tbl_Screened <- read_rds('data/screening_rubric.rds')
+
+
+```
+
+## Background
+
+Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.
+
+Proposals focus on
+
+* the current circumstances that partner agencies face: successes, problems, and opportunities
+* the future state that agencies would like to see, if those matters are addressed
+* the research questions that, when answered, can help achieve the future state
+* the research solutions that, when complete, will provide answers to the research questions
+
+## Screening proposals
+
+OEDA staff will screen proposals ensuring that they meet a few must-have dimensions required of all OEDA proposals.
+
+```{r}
+#| echo: false
+#| output: asis
+
+for(item in seq_len(nrow(tbl_Screened))) {
+  cur_row <- tbl_Screened |> filter(row_number() == item)
+  id <- cur_row |> pull(id)
+  text <- cur_row |> pull(text)
+  category <- cur_row |> pull(category)
+  tbl_Scores <- cur_row |> 
+    select(scoring) |> 
+    unnest(scoring) |> 
+    select(Score = score,
+           Desc = desc)
+  
+  cat(
+    glue::glue("
+    ### Screening item {item}: {id}
+    
+    * Text: {text}
+    * OEDA value: {category}
+
+    {gt::as_raw_html(gt::gt(tbl_Scores))}
+    ")
+  )
+}
+
+```
+
+## Scoring proposals
+
+Members of the OEDA Advisory Council will score proposals on criteria that relate to the relevance, impact, and urgency of the proposed work. 
+
+```{r}
+#| echo: false
+#| output: asis
+
+for(item in seq_len(nrow(tbl_Scored))) {
+  cur_row <- tbl_Scored |> filter(row_number() == item)
+  id <- cur_row |> pull(id)
+  text <- cur_row |> pull(text)
+  category <- cur_row |> pull(category)
+  tbl_Scores <- cur_row |> 
+    select(scoring) |> 
+    unnest(scoring) |> 
+    select(Score = score,
+           Desc = desc)
+  
+  cat(
+    glue::glue("
+    ### Scored item {item}: {id}
+    
+    * Text: {text}
+    * OEDA value: {category}
+
+    {gt::as_raw_html(gt::gt(tbl_Scores))}
+    ")
+  )
+}
+
+```
+
+
+## Details
+
+### IRB{#irb}
+
+#### The proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required
+
+> **Research** means a systematic investigation, including research development, 
+> testing, and evaluation, designed to develop or contribute 
+> to generalizable knowledge
+> [[45 CFR 46.102(l)](https://www.ecfr.gov/current/title-45/part-46#p-46.102(l))]
+
+Many common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.
+
+Typical systematic uses of data that are not research include:
+
+*   Internal program evaluation and [quality improvement efforts](https://www.hhs.gov/ohrp/regulations-and-policy/guidance/faq/quality-improvement-activities/index.html) 
+*   Operational activities
+*   Informational interviews
+
+
+#### The proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required
+
+> **Human subject** means a living individual about whom an investigator
+> (whether professional or student) conducting research:
+>   (i) Obtains information or biospecimens through intervention or interaction
+>       with the individual, and uses, studies, or analyzes the information or 
+>       biospecimens
+>  (ii) Obtains, uses, studies, analyzes, or generates identifiable private
+>       information on identifiable biospecimens
+> [45 CFR 46.102(e)](https://www.ecfr.gov/current/title-45/part-46#p-46.102(e))
+
+Often, work with administrative data is neither the result of *intervention* nor *interaction*.
+
+> **Intervention** includes both physical procedures by which information or 
+> biospecimens are gathered (e.g., venipuncture) and manipulations of the 
+> subject or the subject's environment that are performed for research purposes.
+> [45 CFR 46.102(e)(2)](https://www.ecfr.gov/current/title-45/part-46#p-46.102(e)(2))
+
+Generally, researchers for state agencies are not able to create randomized control trials where Oregonians' experiences with their government are manipulated to develop strong internal validity for generalizable claims.
+
+> **Interaction** includes communication or interpersonal contact between 
+> investigator and subject
+> [45 CFR 46.102(e)(3)](https://www.ecfr.gov/current/title-45/part-46#p-46.102(e)(3))
+
+Researchers for state agencies *are* often working with *private information*.
+
+> **Private information** includes information about behavior that occurs in a 
+> context in which an individual can reasonably expect that no observation or 
+> recording is taking place, and information that has been provided for 
+> specific purposes by an individual and that the individual can reasonably 
+> expect will not be made public (e.g., a medical record).
+> [45 CFR 46.102(e)(4)](https://www.ecfr.gov/current/title-45/part-46#p-46.102(e)(4))
+
+But, researchers can often answer meaningful agency questions without using *identifiable private information*.
+
+> **Identifiable private information** is private information for which the 
+> identity of the subject is or may readily be ascertained by the investigator 
+> or associated with the information.
+> [45 CFR 46.102(e)(5)](https://www.ecfr.gov/current/title-45/part-46#p-46.102(e)(5))
+
+Analyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.
+
+Creating analytical datasets which follow [Safe Harbor Regulations](https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html) is one way to ensure that the analysis does not involve human subjects.
+
+#### The proposal meets one or more of the requirements for review by the and has received approval from that body
+
+Any study that meets any of the criteria below must seek review by the [Public Health Institutional Review Board](https://www.oregon.gov/oha/ph/providerpartnerresources/evaluationresearch/institutionalreviewboard/pages/index.aspx).
+
+> • The research is sponsored by the PHD (Oregon Public Health Division) or MCHD 
+>   (Multnomah County Health Department); </br>
+> • The research is conducted by or under the direction of an employee or agent
+>   of PHD or MCHD in connection with his/her agency responsibilities, or using
+>   any property or facility of PHD or MCHD; </br>
+> • The research involves the use of PHD or MCHD’s data; </br>
+> • The research involves the use of PHD or MCHD’s non-public information to 
+>   identify or contact human research subjects or prospective subjects; </br>
+> • Funding for the research will be handled through PHD or MCHD, but the 
+>   research will be done at another location </br>
+> [Public Health Institutional Review Board (p. 3)](https://www.oregon.gov/oha/PH/PROVIDERPARTNERRESOURCES/EVALUATIONRESEARCH/INSTITUTIONALREVIEWBOARD/Documents/Policy_1_7_2019FinalRuleImplemented_revSept22.pdf)
+
+#### The project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review
+
+While the Federal HHS does not require it, they strong recommend that [determinations of exempt status be conducted by individuals other than the investigators](https://www.hhs.gov/ohrp/regulations-and-policy/guidance/faq/exempt-research-determination/index.html).
+
+For context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.
+
+[Exempt research](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.104) includes (among other exemptions):
+
+*   Research in educational settings involving normal educational practices [45 CFR 46.104(d)(1)](https://www.ecfr.gov/current/title-45/part-46/section-46.104#p-46.104(d)(1))
+*   Research whose interactions are only educational tests or observation of public behavior [45 CFR 46.104(d)(2)](https://www.ecfr.gov/current/title-45/part-46/section-46.104#p-46.104(d)(2))
+*   Research whose interventions are benign behavioral interventions [45 CFR 46.104(d)(3)](https://www.ecfr.gov/current/title-45/part-46/section-46.104#p-46.104(d)(3))
+*   Secondary research for which consent is not required [45 CFR 46.104(d)(4)](https://www.ecfr.gov/current/title-45/part-46/section-46.104#p-46.104(d)(4)), including specifically the following
+
+> The research involves only information collection and analysis involving the 
+> investigator's use of identifiable health information when that use is 
+> regulated under 45 CFR parts [160](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160) and 164, subparts [A](https://www.ecfr.gov/current/title-45/part-164/subpart-A) and [E](https://www.ecfr.gov/current/title-45/part-164/subpart-E), for the purposes 
+> of “health care operations” or “research” as those terms are defined at 
+> [45 CFR 164.501](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501) or for “public health activities and purposes” as described 
+> under [45 CFR 164.512(b)](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512#p-164.512(b));
+
+Where the definitions for *health care operations* and *research* defined in [45 CFR 164.501](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501) are 
+
+> **Health care operations** means any of the following activities of the 
+> covered entity to the extent that the activities are related to covered 
+> functions:</br>
+> (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment;</br>
+> [...]</br>
+> (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs;</br>
+> (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and</br>
+> (6) Business management and general administrative activities of the entity, including, but not limited to:</br>
+> (i) Management activities relating to implementation of and compliance with the requirements of this subchapter;</br>
+> (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer.</br>
+> [...]
+</br>
+</br>
+> **Research**means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.
+

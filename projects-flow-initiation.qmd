@@ -1,0 +1,134 @@
+---
+title: "From Idea to OEDA project"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+
+
+### Ideation
+
+Ideas can come from anywhere. There may be suggestions, requests, or questions voiced in Advisory Council meetings. Researchers may review academic or think tank literature. Agency researchers and subject matter experts may meet with OEDA researchers and discuss ideas. And so on.
+
+When OEDA researchers encounter ideas they work with subject matter experts to create a proposal. Proposals should be relatively quick and easy, requiring just a meeting or two and a few hours of researchers' time to draft. Much will still be unknown about the practicality, importance, and relevance of the proposed idea. Clarity on those will emerge with the process below.
+
+```{mermaid fc.b}
+
+flowchart LR
+  b1@{ shape: stadium, label: 'Idea' }
+  b2@{ shape: rect, label: 'OEDA Ideation Unit' }
+  b3@{ shape: procs, label: 'Agency SMEs' }
+  b4@{ shape: doc, label: 'Proposal' }
+  
+  b1 --> b2 --> b3 --> b4
+
+```
+
+### Advisory Council Meeting
+
+OEDA researchers or the OEDA manager bring proposals to the council. The council members ask clarifying questions about the proposal and perhaps makes suggestions to improve its potential. The council scores the proposal on criteria related to its importance to state government, potential impacts, and more.
+
+```{mermaid fc.c}
+
+flowchart LR
+  c1@{ shape: doc, label: 'Proposal' }
+  c2@{ shape: rect, label: 'Advisory Council' }
+  c3@{ shape: doc, label: 'Proposal Portfolio' }
+  
+  c1 --> c2 --> c3
+
+```
+
+### Design
+
+With the backlog of proposals, researchers can identify the unanswered research questions that are of highest priority to the state. Researchers select the highest priority items and begin the design process. This is simultaneously *research design*--identifying the methods and materials that will be an efficient, satisficing solution for the study--and *project design* identifying deliverables, roles and responsibilities, dependencies and threats, and timelines. The result of this work is a draft project charter.
+
+
+```{mermaid fc.d}
+
+flowchart LR
+  d1@{ shape: doc, label: 'Proposal Portfolio'}
+  d2@{ shape: rect, label: 'OEDA Design Unit' }
+  d3@{ shape: doc, label: 'Draft Project Charter' }
+  
+  d1 --> d2 --> d3
+
+```
+
+
+### Sponsorship
+
+The OEDA manager shares the draft charter with the stakeholder agencies. Recipients include the owners and stewards of the data necessary for the work as well as the likely audiences for the study's findings and deliverables. This begins two parallel processes.
+
+First, the OEDA Integration Unit creates a Data Integration Meeting. Data owners and stewards meet with the Integration Unit to discuss the data needs for the project. If contributing agencies have their own internal processes for interagency data sharing, those can substitute for the Data Integration Meeting. The deliverable from this process is a signed Interagency Agreement, Data Use Agreement or other legally sufficient document to permit the needed data integration and uses.
+
+Second, the OEDA manager seeks sponsorship from agency leadership for the project. Sponsoring agencies will be those who  will be providing resources for the project: data file preparation, time with subject matter experts, time with research staff, etc.
+
+
+```{mermaid fc.e}
+
+flowchart LR
+  e1@{ shape: doc, label: 'Draft Project Charter' }
+  e2@{ shape: rect, label: 'OEDA Integration Unit' }
+  e3@{ share: rect, label: 'Data Integration Meeting' }
+  e4@{ shape: doc, label: 'Signed agreement' }
+  e5@{ shape: procs, label: 'Program leadership' }
+  e6@{ shape: doc, label: 'Signed project charter' }
+  e7@{ shape: doc, label: 'Project portfolio' }
+  
+  e1 --> e2
+  e2 --> e3 --> e4 --> e7
+  e2 --> e5 --> e6 --> e7
+  
+
+```
+
+### Data preparation
+
+With a signed DUA agreement and project charter, data file preparation can begin. The OEDA Integration Unit makes sure agency staff have the final versions of those documents. Agency staff should have both the technical requirements for the files and the authority to disclose those files to OEDA.
+
+Agency staff prepare the files, and share them back to the Integration Unit. The Integration Unit brings together the data from the various sources, typically identifying the same individual across the different sources, linking records from one system to those from another.
+
+
+```{mermaid fc.f}
+
+flowchart LR
+  f1@{ shape: doc, label: 'Project portfolio' }
+  f2@{ shape: rect, label: 'OEDA Integration Unit' }
+  f3@{ shape: procs, label: 'Agency Data Staff' }
+  f4@{ shape: docs, label: 'Agency data extracts' }
+  f5@{ shape: rect, label: 'OEDA Integration Unit' }
+  f6@{ shape: doc, label: 'Integrated study data set' }
+  
+  f1 --> f2 --> f3 --> f4 --> f5 --> f6
+
+```
+
+### Study begins
+
+The analysis-ready data are now available to the relevant OEDA units: exploration, description, hypothesis testing, program evaluation, etc. The research portion of the integrated analytics project can begin.
+
+
+### Symbol key
+
+```{mermaid fc.a}
+
+flowchart RL
+  a1@{ shape: stadium, label: 'stadium' }
+  a1t@{ shape: text, label: 'Start or process trigger'}
+  a2@{ shape: rect, label: 'rectangle' }
+  a2t@{ shape: text, label: 'OEDA work unit or process' }
+  a3@{shape: procs, label: 'procs' }
+  a3t@{shape: text, label: 'Multiple contacts or simultaneous processes'}
+  a4@{ shape: doc, label: 'doc' }
+  a4t@{ shape: text, label: 'Document' }
+  a5@{ shape: docs, label: 'docs' }
+  a5t@{ shape: text, label: 'Multiple files or documents' }
+
+  a1t --> a1
+  a2t --> a2
+  a3t --> a3
+  a4t --> a4
+  a5t --> a5
+  
+
+```

@@ -1,0 +1,57 @@
+---
+title: "Timeliness of OEDA customer services"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+  
+Starting November 1, 2025 OEDA follows ODHSOHA 010-033 [Customer Service and Response Policy](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/me010-033-01.pdf)
+
+Additional information is available on the [OWL page on ODHS Customer Service Policy](https://dhsoha.sharepoint.com/teams/Hub-ODHS-DO-BWBI/SitePages/ODHS-Customer-Service-Policy.aspx).
+
+## Summary of the policy
+
+### Customers
+
+According to the policy customers include the people we serve, partner, and work with. Specifically mentioned in the policy are coworkers within ODHS and OHA.
+
+### Same-or-next business day: Acknowledge the bid for interaction
+
+All interactions--phone call, voice mail, email, instant message, text--should be acknowledged within one-business day. I believe this should also include submissions to request forms.
+
+If the one-day response does is not intended to resolve the customer's issue, the acknowledgement could be
+
+*   An auto-reply indicating planned leave, including expected date of return and alternative contacts
+*   A personal response requesting additional information
+*   A personal response providing additional information
+*   A personal response referring the customer to another person, process, or resource
+*   A personal response with a timeline for future responses to resolve the issue
+
+### Within 5 business days: Follow up with a plan for resolution
+
+If you will not be resolving the request straight away, within 5 business days of the interaction, share plans with the customer with anticipated timelines for completion of the response.
+
+### Within 15 or 30 days: Resolution of the interaction
+
+In the absence of legislation, rule, policy, CBA, or established processes (like procurement), the policy sets expectations that
+
+*   Most interactions are complete within 15 business days
+*   Almost all interactions are complete within 30 business days
+
+### Additional expectations
+
+*   Provide routine status updated when completion timelines are projected to be longer than 30 days
+*   Provide customers information about current expected timelines, given the amount of work requested, current workloads, and capacity
+*   Provide customers with links to a webpage with standard timelines, and any current systemic issues impacting likely timelines
+
+## What does this mean for OEDA?
+
+*   Our __customers__ are primarily __ODHS-OHA coworkers__, but we also have interactions with __third-parties__ seeking data or analysis. We should consider our cross-agency partners as customers, as well.
+*   Individuals should plan to __meet the 1-day expectations__ for initial handling of emails
+*   Individuals should __use auto-replies when away on planned leave__; tailoring them with applicable dates
+    *   Suggested message: "I am out of the office [start date] to [end date]. If your request is an urgent one, please contact my manager, Jason Wallin <jason.m.wallin@odhsoha.oregon.gov>. Helpful links: [Schedule a meeting with ORRAI management or the research teams](https://forms.office.com/g/9CkzA9Z3C9). [Request a research project](https://forms.office.com/g/mz2QtMbVLf)."
+*   If you employ auto-replies in other ways, we will need to review those
+*   Triaging requests may need a weekly cadence, rather than fortnightly
+*   We need to provide regular updates to customers for lengthy projects
+*   We will need to consider how OEDA or ORRAI will meet the letter or the spirit of the 15- or 30-day completion expectations or be prepared with alternatives for OEDA projects
+
+
+

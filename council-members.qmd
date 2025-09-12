@@ -1,0 +1,28 @@
+---
+title: "OEDA Advisory Council Members"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+## Agency representatives
+
+| Agency | First | Last | Role |
+|:--|:----|:----|:--------------|
+| ODHS | Peter    | Sprengelmeyer  | Director, Office of Reporting, Research, Analytics, and Implementation | 
+| OYA	 | Mark     | Greenwald      | Research Manager |
+| OYA	 | Shannon  | Myrick         | Assistant Director of Development Services |
+| OHA	 | Amanda   | Peden		       | Manager, Social Health Needs and Analytics Project	|
+| DELC | Elise    | Cordle Kennedy | Chief Research, Analytics, and Data Officer	| 
+| DELC | Lindsay  | Ollerenshaw	   | Research & Evaluation Manager	| 
+| OED	 | Robert   | Uhlenkott		   | Director, Workforce & Economic Research Division	| 
+| CJC	 | Kelly    | Officer		     | Director, Statistical Analysis Center	| 
+| CJC	 | Michael  | Wienerman  	   | Research Economist |	
+| DOC	 | Kristen  | Banschbach		 | Chief of Research	 | 
+| DOC	 | Kate     | Kempany		     | Research Scientist |	
+| OHCS | Megan    | Bolton         | Assistant Director of Research |	
+| ODE  | Isabella | Jacoby         | Agency Director of Data Stewardship | 
+
+
+## Facilitator
+
+Jason Wallin, Manager
+Oregon Enterprise Data Analytics

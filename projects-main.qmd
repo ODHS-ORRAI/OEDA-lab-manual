@@ -1,0 +1,47 @@
+---
+title: "Current OEDA Projects"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+### Economic stability outcomes for SSP clients
+**Staff scientist(s):** Kathryn Iurino, PhD</br>
+**Phase:** Research
+
+**Abstract**</br>
+primary goal of this project is to develop individual- and household-level measures of both short-term and long-term economic stability for the purposes of program evaluation and informing policy decisions.
+
+
+### Family reunification among children with incarcerated parents
+**Staff scientist(s):** Michael Menefee, PhD</br>
+**Phase:** Proposal ready
+
+**Abstract**</br>
+This project will work with partners from Child Welfare and Oregon Department of Corrections to identify and improve practices that support family reunification for adults in custody with minor children.
+
+### Social support services among formerly incarcerated people
+**Staff scientist(s):** Michael Menefee, PhD</br>
+**Phase:** Proposal ready
+
+**Abstract**</br>
+The goal of this project is to link Medicaid enrollment + SSP records with custody data from the Oregon Department of Corrections to study access and inequities in Medicaid enrollment and social services benefit access/utilization among formerly incarcerated people. The study will also examine whether and to what extent Medicaid enrollment improves wellbeing and positive outcomes for this population. In conjunction with DOC, the study may also consider impact of social support services on short term returns to custody (e.g., 1 year, 3 years).
+
+### SSP case management model evaluation
+**Staff scientist(s):** Kathryn Iurino, PhD</br>
+**Phase:** Proposal ready
+
+**Abstract**</br>
+SSP leadership is interested in formalizing a move for family coaches, away from regulation and the monitoring of families for eligibility, towards more service integration. This was a topic of a recent (12/17, 1p-5p meeting of SSP leaders, to which ORRAI was invited). To learn whether aspects of this new approach are more likely than the older approach in helping SSP and Oregonians achieve certain goals, SSP leadership is interested in an A/B test between two or more areas in Oregon, one of which represents this newer approach and one of which represents the older approach. Ideally, this work identifies key components of a family coaching logic model or its theory of change: What do family coaches _do_ in this new model and are there artifacts of those activities captured by SSP in their source systems? What outcomes can we add as complements to federal measures in evaluating coaching success--and do relevant data exist for those? What are available, and theoretically or empirically relevant, person-level or district/branch-level matching variables, variables which can strengthen the internal validity of cause-and-effect claims? If solid data exist related to these questions they will help improve the evaluation at hand. If they do not, one deliverable from this work can be recommendations for what SSP will want to collect in the future to gather more convincing evidence in testing their ideas and implementation of those ideas.
+
+### Entity resolution methods
+**Staff scientist(s):** Aaron Cochran, MPP</br>
+**Phase:** Research
+
+**Abstract**</br>
+Development of custom, open-source methods for the *ad hoc* linking of project-specific person information to one or more reference sources.
+
+### Benefits simulation codebase
+**Staff scientist(s):** Aaron Cochran, MPP; Kathryn Iurino, PhD; Letsogile Mponwane, MPH; Marisol Caceres Lorenzo, MSS, MS;
+**Phase:** Research</br>
+
+**Abstract**</br>
+None

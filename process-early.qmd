@@ -1,0 +1,87 @@
+---
+title: "Basic process flow: Idea to OEDA project"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+### Symbols
+
+```{mermaid fc01}
+
+flowchart LR
+  a1@{ shape: stadium, label: 'Start or process trigger'}
+  a2@{ shape: rect, label: 'OEDA work unit or process' }
+  a3@{ shape: doc, label: 'Document'}
+
+```
+
+### Ideation
+
+Ideas can come from anywhere. There may be suggestions, requests, or questions voiced in Advisory Council meetings. Researchers may review academic or think tank literature. Agency researchers and subject matter experts may meet with OEDA researchers and discuss ideas. And so on.
+
+When OEDA researchers encounter ideas they work with subject matter experts to create a proposal. Proposals should be relatively quick and easy, requiring just a meeting or two and a few hours of researchers' time to draft. Much will still be unknown about the practicality, importance, and relevance of the proposed idea. Clarity on those will emerge with the process below.
+
+```{mermaid fc02}
+
+flowchart LR
+  b1@{ shape: stadium, label: 'Idea'}
+  b2@{ shape: rect, label: 'OEDA Ideation Unit' }
+  b3@{ shape: doc, label: 'Proposal'}
+  
+  b1 --> b2 --> b3
+
+```
+
+### Advisory Council Meeting
+
+OEDA researchers or the OEDA manager bring proposals to the council. The council members asks clarifying questions about the proposal and perhaps makes suggestions to improve its potential. The council scores the proposal on criteria related to its importance to state government, potential impacts, and more.
+
+```{mermaid fc02}
+
+flowchart LR
+  c1@{ shape: doc, label: 'Proposal'}
+  c2@{ shape: rect, label: 'Advisory Council' }
+  c3@{ shape: doc, label: 'Proposal Portfolio'}
+  
+  c1 --> c2 --> c3
+
+```
+
+### Design
+
+With the backlog of proposals, researchers can identify the unanswered research questions that are of highest priority to the state. Researchers select the highest priority items and begin the design process. This is simultaneously *research design*--identifying the methods and materials that will be an efficient, satisficing solution for the study--and *project design* identifying deliverables, roles and responsibilities, dependencies and threats, and timelines. The result of this work is a draft project charter.
+
+
+```{mermaid fc03}
+
+flowchart LR
+  d1@{ shape: doc, label: 'Proposal Portfolio'}
+  d2@{ shape: rect, label: 'OEDA Design Unit' }
+  d3@{ shape: doc, label: 'Draft Project Charter'}
+  
+  d1 --> d2 --> d3
+
+```
+
+
+### Sponsorship
+
+The OEDA manager shares the draft charter with the stakeholder agencies. Recipients include the owners and stewards of the data necessary for the work as well as the likely audiences for the study's findings and deliverables. This begins two parallel processes.
+
+First, the OEDA Integration Unit creates a Data Integration Meeting. Data owners and stewards meet with the Integration Unit to discuss the data needs for the project. If contributing agencies have their own internal processes for interagency data sharing, those can substitute for the Data Integration Meeting. The deliverable from this process is a signed Interagency Agreement, or other legally sufficient document to permit the needed data integration and uses.
+
+Second, the OEDA manager seeks sponsorship from agency leadership for the project. Sponsoring agencies will be those who  will be providing   for the project. The 
+
+
+likely audiences for the study's findings and the data owners With the backlog of proposals, researchers can identify the unanswered research questions that are of highest priority to the state. Researchers select the highest priority items and begin the design process. This is simultaneously *research design*--identifying the methods and materials that will be an efficient, satisficing solution for the study--and *project design* identifying deliverables, roles and responsibilities, dependencies and threats, and timelines. The result of this work is a draft project charter.
+
+
+```{mermaid fc03}
+
+flowchart LR
+  d1@{ shape: doc, label: 'Proposal Portfolio'}
+  d2@{ shape: rect, label: 'OEDA Design Unit' }
+  d3@{ shape: doc, label: 'Draft Project Charter'}
+  
+  d1 --> d2 --> d3
+
+```
