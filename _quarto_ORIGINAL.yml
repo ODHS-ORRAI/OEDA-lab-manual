@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "OEDA - Lab Manual"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - section: "Process"
+        contents:
+          - text: "Idea to project"
+            href: process-early.qmd
+      - section: "Ideation"
+        contents:
+          - text: "System 4 Intelligence"
+            href: ideation-intelligence.qmd
+          - text: "Using the request form"
+            href: ideation-form.qmd
+          - text: "Proposal rubric"
+            href: ideation-rubric.qmd
+      - section: "Product development"
+        contents:
+          - text: "OEDA logos"
+            href: products-logos.qmd
+          - text: "Color palettes"
+            href: products-palettes.qmd
+      - section: "Publication & delivery"
+        contents:
+          - text: "Quality checks-Research reports"
+            href: delivery-qc-research-reports.qmd
+          - text: "GitHub pages websites"
+            href: delivery-publishing-github-pages.qmd
+      - section: "Meetings"
+        contents:
+          - text: "OEDA Advisory Council Meetings"
+            href: meetings-advisory-council.qmd
+          - text: "OEDA Team Meetings"
+            href: meetings-oeda-team.qmd
+
+      # - section: "Customer service"
+      #   contents:
+      #     - text: "Timeliness"
+      #       href: service-timeliness.qmd
+
+format:
+  html:
+    theme: oeda.scss
+    toc: true
+    code-tools: true
+    highlight-style: github
+
+

@@ -1,0 +1,130 @@
+---
+title: "Quality Control - Visualization"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+  
+## Checklist
+
+This checklist is intended for visualizations before they go "in-production", and are distributed or presented to peers, stakeholders, the public, etc. This level of scrutiny is not appropriate for early stages, exploratory data analysis.
+
+### Planning: Before writing `gglot()`
+
+(@) **Audience:** Who is the audience for this visualization: expert peers, stakeholders, general audience, etc.? This should influence complexity, jargon, annotations, etc. 
+
+(@) **Core message:** What is the single, primary insight this vis conveys? Write it in one sentence. 
+
+(@) **Data:** Have you selected the minimal data necessary to support the core message?
+
+### Tibble to be plotted
+
+(@) **Filtering:** Have the data been correctly filtered for the specific message of this plot? Are you accidentally including or excluding data that could change the conclusion?
+
+(@) **Data types:** Confirm numeric, factor, and date types are correct. Are ordinal or nominal variables formatted as factors with sensible ordering: (`mutate(Category = ordered(Category, levels = c('Low', 'Medium', 'High')))`)? 
+
+(@) **Missingness:** Have you made a conscious decision about `NA` values: remove, impute, display? Note the decision and justification (if `NA` are not displayed) in a caption. `ggplot2()` often throws a warning about removing rows with missing values. Do not ignore this. Will removing rows with missing values affect your interpretation?
+
+(@) **Outliers:** Have you investigated outliers? Are they genuine data points or errors? Decide whether to include or exclude. Note the decision and justify it in a caption or annotation.
+
+
+### `aes()`
+
+(@) **Mappings:** Have you sensibly mapped tibble columns to vis aesthetics?
+    * Are your most important variables mapped to the most prominent aesthetics: `aes(x = col, y = col)`?
+    * When the study includes an independent, quasi-independent, or predictor variable, is that mapped to `aes(x = col)`?
+    * Is the dependent variable, outcome variable, or response mapped to `aes(y = col)`?
+    * Are secondary variables mapped to `aes(color = col)`, `aes(size = col)`, `aes(shape = col)`, or `aes(alpha = col)`?
+
+### `geom_*`
+
+(@) **Geom:** Have you selected an appropriate geom for your primary insight?
+    * `geom_boxplot()` for comparing two or more distributions
+    * `geom_line()` for time series
+    * `geom_point()` for bivariate relationships on two quantitative axes
+
+(@) **Data density:** For large datasets, have you addressed overplotting: `geom_*(alpha = num)`, `geom_jitter()`, `geom_hex()`, or `geom_density2d()`? Alternatively, consider aggregating and reflecting overplotting with `geom_*(size = num)`.
+
+(@) **Representing variation or uncertainty along with central tendency:** If visualizing summary statistics (means, medians, etc.) have you also displayed uncertainty: e.g. `geom_errorbar()` or `geom_ribbon()` for confidence intervals, `geom_boxplot()` for IQR, or `geom_point()`/`geom_jitter()` to overlay the full distribution?
+
+### `scale_*`
+
+(@) **Axis limits:** When the y-axis is continuous and positive, does it include zero?
+    * `scale_y_continuous(limits = c(0, upper_limit))` will remove data points outside the range `(0, upper_limit)`. This will influence any statistical calculations, for example the IQR hinges for `geom_boxplot()`.
+    * `coord_cartesian(ylim = c(0, upper_limit))` will "zoom" the visible viewport without changing statistical properties.
+    
+(@) **Facet axes:** Are the *y-axis* limits the same across facets (especially when the main message involves comparing specific y-axis values between facets)? E.g. prefer `facet_grid(scales = 'fixed')` to `facet_grid(scales = 'free_y')`.
+
+(@) **Breaks & grids:** Are axis ticks (`scale_*(breaks = vec)`)
+    * at logical intervals? E.g. weeks for a time series, rather than every 10 days. (`scale_x_date(date_breaks = '1 week', date_labels = '%W-@y')`)
+    * or at tidy intervals, e.g. c(0, 5, 10, 15, 20) rather than c(0, 7.3, 14.6, ...)
+
+### `theme()`
+
+(@) **Grids:** Are gridlines subtle and supportive, not distracting? (`theme(panel.grid.* = element_line(color = hex, linewidth = num, linetype = string))`)
+
+### `guides()`
+
+(@) **Legends:** Generally, consider removing scale legends altogether--`guides(color = 'none')` or `theme(legend.position = 'none')`--and instead directly labeling on the plot, when possible.
+    * For instance: Consider the case of plotting a time series (say a tibble named `tbl_Series`), with a separate, differently colored `geom_line()` for each level of the variable `Group` using `aes(color = 'Group')`. You might try passing a filtered tibble to `geom_label()` with just the last time point for each Group, to create a label for the series on the far right side of the figure.
+    
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| error: false
+
+library(tidyverse)
+
+tbl_Series <- tibble(
+  Date = rep(seq(ymd('2025-01-01'), ymd('2025-01-31'), by = '1 day'), times = 3),
+  Group = rep(LETTERS[1:3], each = 31),
+  Value = c(runif(31, 10, 12), runif(31, 2, 5), runif(31, 6,8))
+) |>
+  mutate(Group = as.factor(Group))
+
+ggplot(data = tbl_Series) +
+  aes(x = Date, y = Value, group = Group) +
+  geom_line(aes(color = Group)) +
+  guides(color = 'none') +
+  geom_label(aes(label = Group),
+             data = tbl_Series |>
+               filter(Date == max(Date), .by = Group),
+             nudge_x = 1, # Move the labels 1 day to the right of the last date in each series
+             size = 4)
+
+```
+
+### `labs()` and `annotate`
+
+(@) Does the title ([`labs(title = 'string')`](https://ggplot2.tidyverse.org/reference/annotate.html)) clearly communicate the major finding?
+
+(@) Does the subtitle ([`labs(subtitle = 'string')`](https://ggplot2.tidyverse.org/reference/annotate.html)) and/or caption ([`labs(caption = )`](https://ggplot2.tidyverse.org/reference/annotate.html)) provide necessary context?
+    * data source
+    * analysis time frame
+    * population
+    * geographic region
+
+(@) Are axis labels...
+    * necessary? E.g. when the x-axis is `geom_boxplot()` with a different boxplot for each group, is it necessary to have an x-axis label that says "Group" when each boxplot is already labeled on the axis tick mark? Consider `labs(x = '')` or `theme(axis.title.x = element_blank())`
+    * descriptive? Does it include units, units which are meaningful to practice: individuals, cases, dollars, length of stay--rather than percentages, odds ratios, etc.? `labs(y = 'Length of stay (days)')`
+
+### Interpretation
+
+(@) **Message match:** Look at the plot without any other context. Does it convey the core message?
+
+(@) **Narrative flow:** If part of a series, does the vis fit logically and stylistically with the others? Is the use of color and symbols consistent? (E.g. do you use the same color to highlight the control group, or to indicate a positive effect, etc.?)
+
+(@) **Misinterpretation:** Could any aspect of the vis mislead a good-faith observer? Look for truncated axes, effects of aspect ratio, interpretations of colors? Are you visually exaggerating a non-significant effect?
+
+(@) **Peer review:** Show the vis to a colleague unfamiliar with the project. Ask them what they think the main takeaway is. Does their interpretation match yours?
+
+### Finalization & delivery
+
+(@) **Reproducibility:** If you restart R (`ctrl+shift+F10`), will running your .R file top-to-bottom return the intended visualization without any errors?
+
+(@) **Code style:** Is your data prep and `ggplot2()` code readable, with comments explaining any complex steps? Have you followed OEDA standards for code style?
+
+(@) **Accessibility:** Have you followed OEDA standards for visual contrast, font selection, font size, use of color?
+
+(@) **Export:** If the image is being exported as a stand-alone file, use a vector format (`ggsave(file = 'myplot.svg')` or `ggsave(file = 'myplot.pdf'`) for print or PDF publications. Use a raster format (`ggsave(file = 'myplot.png')`) for web or presentations.
+
+(@) **Dimensions:** Specify dimensions `height`, `width`, and `units` to match the target medium and avoid distortion:  `ggsave(filename, plot, height = , width = , units = )`

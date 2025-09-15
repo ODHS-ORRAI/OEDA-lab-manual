@@ -32,135 +32,315 @@
     ]
   },
   {
-    "objectID": "manual-products-palettes.html",
-    "href": "manual-products-palettes.html",
-    "title": "Color Palettes",
+    "objectID": "manual-system1-progeval.html",
+    "href": "manual-system1-progeval.html",
+    "title": "Program evaluation - Report template",
     "section": "",
-    "text": "Warning: package 'dplyr' was built under R version 4.4.3\nAs our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services."
+    "text": "These should be created as Quarto HTML documents and published to the OEDA website.",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-palettes.html#list-of-basic-palette-colors",
-    "href": "manual-products-palettes.html#list-of-basic-palette-colors",
-    "title": "Color Palettes",
-    "section": "List of basic palette colors",
-    "text": "List of basic palette colors\nThe list below contains the main colors identified in the guidelines.\n\nOEDA_colors &lt;- list(\n  northstar = '#2E3192',\n  glacial = '#B4DCF5',\n  fog = '#F4F2ED',\n  forest = '#184E49',\n  willamette = '#86C679',\n  mist = '#D8E1E5',\n  marionberry = '#A91F50',\n  harvest = '#ECD263',\n  desert = '#EDDFD4',\n  black = '#000000',\n  white = '#FFFFFF',\n  charcoal = '#414042'\n)"
+    "objectID": "manual-system1-progeval.html#yaml-header",
+    "href": "manual-system1-progeval.html#yaml-header",
+    "title": "Program evaluation - Report template",
+    "section": "YAML header",
+    "text": "YAML header\n\ntitle: Adopt a title style that clearly indicates the program or intervention, the dependent variable, the size of the observed effect, the location, and the year\n\nE.g. “[Program X] reduces [outcome Y] by [meaningful effect size] (2022-2024 statewide data)”\n\ndate: Publication date of final product\nauthor: Your name and degree\ninstitution: Oregon Enterprise Data Analytics\nabstract: No more than 500 words, briefly describing the evaluation questions, intervention evaluated, and key findings.",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-palettes.html#roles",
-    "href": "manual-products-palettes.html#roles",
-    "title": "Color Palettes",
-    "section": "Roles",
-    "text": "Roles\nThese are the basic roles assigned to these colors in the publications guide.\n\n\n\nColor\nRole\n\n\n\n\nNorth Star Indigo\nPrimary color\n\n\nForest Green\nSecondary color\n\n\nMarionberry Red\nTertiary color\n\n\nGlacial Blue\nAccent color\n\n\nWillamette Green\nAccent color\n\n\nHarvest Gold\nAccent color\n\n\nFog Gray\nNeutral color\n\n\nMist Gray\nNeutral color\n\n\nDesert Sand\nNeutral color\n\n\nPrimary Black\nCore neutral\n\n\nPrimary White\nCore neutral\n\n\nAshland Charcoal\nCore neutral"
+    "objectID": "manual-system1-progeval.html#executive-summary",
+    "href": "manual-system1-progeval.html#executive-summary",
+    "title": "Program evaluation - Report template",
+    "section": "Executive Summary",
+    "text": "Executive Summary\nThe Executive Summary should stand alone as a summary of the key sections of the report and should summarize the content of the full report without adding new information.\n\nEvaluation Purpose and Evaluation Questions\nFindings, Conclusions, and Recommendations\nBackground\nEvaluation Design, Methods, and Limitations\n\nConsider the presentation order above, which is out-of-order relative to the full report below. Give more focus and space to purpose, questions, findings, conclusions, and recommendations; less to background, design, methods, and limitations.",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-palettes.html#meaning-neutral-document-components",
-    "href": "manual-products-palettes.html#meaning-neutral-document-components",
-    "title": "Color Palettes",
-    "section": "Meaning-neutral document components",
-    "text": "Meaning-neutral document components\n\n\n\nDocument\nComponent\nExample\nLight Mode\n\n\n\n\nBrief, memo, web page, blog entry\nBackground\nPage background\nPrimary White\n\n\nBrief, memo, web page, blog entry\nTitle\nHeading 1\nNorth Star Indigo\n\n\nBrief, memo, web page, blog entry\nSection heading\nHeading 2-5\nForest Green\n\n\nBrief, memo, web page, blog entry\nBody text\nBlocks of text (text color)\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCard\nAsides, boxouts, breakout boxes, etc. (background color)\nMist Gray\n\n\nBrief, memo, web page, blog entry\nLines\nHorizontal rules\nAshland Charcoal\n\n\nVisualization\nBackground\nPlot background and panel background\nFog Gray\n\n\nVisualization\nTitle\nPlot title\nNorth Star Indigo\n\n\nVisualization\nBackground\nFacet background\nNorth Star Indigo\n\n\nVisualization\nSection heading\nFacet title\nPrimary White\n\n\nVisualization\nBody text\nSubtitles or captions\nForest Green\n\n\nVisualization\nLines\nBorders, axes, ticks\nAshland Charcoal\n\n\n\nNote: Visualizations should be of a consistent OEDA style, regardless of whether the document overall is produced in dark or light mode."
+    "objectID": "manual-system1-progeval.html#evaluation-purpose-and-evaluation-questions",
+    "href": "manual-system1-progeval.html#evaluation-purpose-and-evaluation-questions",
+    "title": "Program evaluation - Report template",
+    "section": "Evaluation Purpose and Evaluation Questions",
+    "text": "Evaluation Purpose and Evaluation Questions\nThis should set out the overarching purpose of the evaluation, and how the findings are expected to be used to inform decisions. This section also describes the evaluation questions (which should be limited to just a few key questions). It can also identify key audiences for the evaluation.\n\nEvaluation purpose\nClearly describe why the evaluation is being conducted now. Describe the primary and any secondary audiences for the evaluation. Include anticipated uses, including any specific decisions that will be informed by the evaluation.\n\n\nEvaluation questions\nList the evaluation questions, linking them to the evaluation purpose. Impact evaluations should include questions about measuring the direction and magnitude of change in specific outcomes attributable to what is being evaluated.",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-palettes.html#meaning-conveying-documents-components",
-    "href": "manual-products-palettes.html#meaning-conveying-documents-components",
-    "title": "Color Palettes",
-    "section": "Meaning-conveying documents components",
-    "text": "Meaning-conveying documents components\n\n\n\n\n\n\n\n\n\n\nDocument\nComponent\nMeaning\nBackground\nForeground\n\n\n\n\nBrief, memo, web page, blog entry\nCall out\nNeutral\nGlacial Blue\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nGrowth, meeting expectations, optimistic comparison\nWillamette Green\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nAttention needed, missing expectations, pessimistic comparison\nHarvest Gold\nAshland Charcoal\n\n\nVisualization\nCall out\nNeutral geom\nn/a\nAshland Charcoal\n\n\nVisualization\nCall out\nGeom indicating growth, meeting expectations, optimistic comparison\nn/a\nWillamette Green\n\n\nVisualization\nCall out\nGeom indicating attention needed, missing expectations, pessimistic comparison\nn/a\nHarvest Gold\n\n\n\nText callouts include Quarto call out elements styled using the Custom Callout Quarto extension as well as blockquotes or line blocks.\nVis callouts include the fill color of columns, bars, boxplots, points, etc."
+    "objectID": "manual-system1-progeval.html#background",
+    "href": "manual-system1-progeval.html#background",
+    "title": "Program evaluation - Report template",
+    "section": "Background",
+    "text": "Background\nName the relevant agencies, divisions, providers, implementing partners, etc. Describe what is being evaluated: a strategy, intermediate result, project, activity, or intervention.\nDescribe the problem being addressed by the strategy, project, activity, or interventions and the hypothesis for why it will lead to better outcomes. This could include a logical framework for the activity if one exists, and the development hypothesis, or causal logic, of the project or program of which the activity is a part.\nDescribe the beneficiary population and the geographic area of the intervention.\nConsider, too:\n\ntimeline showing dates of implementation of what is being evaluated\nmajor events impacting implementation of what is being evaluated\nfunding levels\nchanges that have occurred in the program or context since the intervention started\ndeviations in implementation or model fidelity that may confound interpretation of effects",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-palettes.html#calculating-tints",
-    "href": "manual-products-palettes.html#calculating-tints",
-    "title": "Color Palettes",
-    "section": "Calculating tints",
-    "text": "Calculating tints\nThe function below takes a color from the OEDA palette (or any hex color, really) and computes various tints of it. I have not been able to determine just how the publications office creates their tints, so the tints output from this function do not exactly match the tints displayed in the publication guide.\n\n#' Create a tint of a base color\n#'\n#' This function generates a tint by mixing a base hex color with white in the HSL\n#' (Hue, Saturation, Lightness) color space. This method is perceptually more\n#' uniform than mixing in RGB space. tint_percent = 100 should return the base_hex.\n#' tint_percent = 0 should return pure white (\"#FFFFFF\").\n#'\n#' @param base_hex A character string of the starting hex color (e.g., \"#2E3192\").\n#' @param tint_percent A numeric value from 0 to 100 representing the\n#'   percentage of the original color to retain. A value of 80 creates a tint \n#'   which is 80 parts the base color and 20 parts pure white.\n#'   \n#' @return A character string for the new hex color.\n#' @export\n\n\ncreate_tint &lt;- function(base_hex, tint_percent) {\n  \n  pct_white &lt;- (100 - tint_percent) / 100\n  \n  hsl_start &lt;- plotwidgets::col2hsl(base_hex)\n  hsl_end &lt;- hsl_start\n  hsl_end[3] &lt;- ((1 - hsl_start[3]) * pct_white) + hsl_start[3]\n  \n  col_end &lt;- plotwidgets::hsl2col(hsl_end)\n  \n  return(col_end)\n}\n\n\nExamples of North Star Indigo tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$northstar, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Forest Green tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$forest, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Desert Sand tints\n\nlapply(c(100, 70, 30), function(x) create_tint(OEDA_colors$desert, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()"
+    "objectID": "manual-system1-progeval.html#evaluation-methods-and-limitations",
+    "href": "manual-system1-progeval.html#evaluation-methods-and-limitations",
+    "title": "Program evaluation - Report template",
+    "section": "Evaluation Methods and Limitations",
+    "text": "Evaluation Methods and Limitations\nThis section describes the overall design, specific data collection and analysis methods linked to the evaluation questions, and limitations of the data, methods, or other issues that affected the findings. Describe the methods used and why those methods were chosen, including their strengths and limitations. If your methods and limitations approaches three pages or more, consider using an appendix for all the methodological detail, and providing a very concise summary here.\nFor impact evaluations, describe in detail the method (and data, if applicable) of deriving the comparison (control or quasi-control) group.\nConsider:\n\nSampling strategy\nField work (duration, field team composition, field team activities)",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-palettes.html#other-vis-palettes",
-    "href": "manual-products-palettes.html#other-vis-palettes",
-    "title": "Color Palettes",
-    "section": "Other vis palettes",
-    "text": "Other vis palettes\nWe will make recommendations for other palettes when comparisons are not between a small number of categories, but are multinomous categorical or continuous (sequential or divergent)."
+    "objectID": "manual-system1-progeval.html#findings-conclusions-and-recommendations",
+    "href": "manual-system1-progeval.html#findings-conclusions-and-recommendations",
+    "title": "Program evaluation - Report template",
+    "section": "Findings, Conclusions, and Recommendations",
+    "text": "Findings, Conclusions, and Recommendations\nThis section should report those findings based on evidence generated by the evaluation data collection and analysis methods. Findings should be fact-based and not rely only on opinion, even of experts. Conclusions are drawn directly from findings and help summarize the “so what” of the findings. Several findings can lead to one or more conclusions. Whenever possible, data should be presented visually in easy-to-read charts, tables, graphs, and maps to demonstrate the evidence that supports conclusions and recommendations.\n\nFindings\nFindings are empirical facts based on data collected during the evaluation and should not rely only on opinion, even of experts.\n\n\nConclusions\nConclusions synthesize and interpret findings and make judgments supported by one or more specific findings.\nThe reader should be able to discern what evidence supports the conclusions. Whenever possible, data should be presented visually in easy-to-read charts, tables, graphs, and maps to demonstrate the evidence that supports conclusions. All graphics must have a title, be clearly labeled, and include a caption.\n\n\nRecommendations\nRecommendations are included if requested in the evaluation statement of work. They are specific actions the evaluation team proposes be taken by program management that are based on findings and conclusions. The reader should be able to discern what evidence supports the conclusions and recommendations.",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
   },
   {
-    "objectID": "manual-products-formats.html",
-    "href": "manual-products-formats.html",
-    "title": "OEDA Product Formats",
+    "objectID": "manual-system1-progeval.html#appendices",
+    "href": "manual-system1-progeval.html#appendices",
+    "title": "Program evaluation - Report template",
+    "section": "Appendices",
+    "text": "Appendices\n\nTimeline of Data Collection\nTimeline showing dates of data collection, baseline and subsequent data collection, if applicable.\n\n\nMethodological Details\nAdditional detail not covered in the main body of the report, if needed.\n\n\nData Collection Tools\nAny data collection tools employed: questionnaires, checklists, survey instruments, discussion guides, etc.\n\n\nSources of Information\nOutside of the material specifically cited in the body of the report, all additional sources of information that informed the evaluation: agency strategy documents, project documents, reporting, monitoring data, etc.\n\n\n\n\n---\ntitle: 'Title'\nsubtitle: 'Optional subtitle'\ndate: 'yyyy-mm-dd'\nauthor: 'First Last, Degree'\ninstitution: 'Oregon Enterprise Data Analytics'\nabstract: 'Abstract text'\n---\n\n## Executive Summary\n\n### Evaluation purpose and evaluation questions\n  \n\n## Unnumbered heading {.unnumbered}",
+    "crumbs": [
+      "Lab manual",
+      "Units",
+      "Program evaluation"
+    ]
+  },
+  {
+    "objectID": "manual-products-logos.html",
+    "href": "manual-products-logos.html",
+    "title": "OEDA Logos",
     "section": "",
-    "text": "OEDA produces primarily digital solutions, and has adopted an “HTML-preferred” approach following ODHS and OHA policy (Digital Accessibility in Content Creation and Sharing, OHDSOHA 010-029, #7).\nAdditionally, OEDA strives to use plain text, open source tools, and open source formats, whenever possible.",
+    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine.",
     "crumbs": [
       "Lab manual",
       "Product development",
-      "Digital formats"
+      "OEDA logos"
     ]
   },
   {
-    "objectID": "manual-products-formats.html#project-notes-meeting-agendas-and-meeting-minutes",
-    "href": "manual-products-formats.html#project-notes-meeting-agendas-and-meeting-minutes",
-    "title": "OEDA Product Formats",
-    "section": "Project notes, meeting agendas, and meeting minutes",
-    "text": "Project notes, meeting agendas, and meeting minutes\nUse Quarto HTML documents, even if they are not routinely rendered to HTML.\nMinimal yaml elements:\n\ntitle\ndate\nauthor\nabstract (optional; suggested for longer or important for longer or important records)",
+    "objectID": "manual-products-logos.html#primary-vertical-logo---light-mode",
+    "href": "manual-products-logos.html#primary-vertical-logo---light-mode",
+    "title": "OEDA Logos",
+    "section": "Primary (vertical) logo - Light mode",
+    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
     "crumbs": [
       "Lab manual",
       "Product development",
-      "Digital formats"
+      "OEDA logos"
     ]
   },
   {
-    "objectID": "manual-products-formats.html#memos-briefs-papers",
-    "href": "manual-products-formats.html#memos-briefs-papers",
-    "title": "OEDA Product Formats",
-    "section": "Memos, briefs, papers",
-    "text": "Memos, briefs, papers\nUse Quarto HTML documents. Final drafts should always be rendered as HTML files and published to the OEDA site.\nMinimal yaml elements:\n\ntitle\ndate\nauthor\nabstract\n\nFor scrollytelling visualizations, use the Closeread extension for Quarto.",
+    "objectID": "manual-products-logos.html#primary-vertical-logo---dark-mode",
+    "href": "manual-products-logos.html#primary-vertical-logo---dark-mode",
+    "title": "OEDA Logos",
+    "section": "Primary (vertical) logo - Dark mode",
+    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
     "crumbs": [
       "Lab manual",
       "Product development",
-      "Digital formats"
+      "OEDA logos"
     ]
   },
   {
-    "objectID": "manual-products-formats.html#presentations",
-    "href": "manual-products-formats.html#presentations",
-    "title": "OEDA Product Formats",
-    "section": "Presentations",
-    "text": "Presentations\nUse Quarto Revealjs presentations.",
+    "objectID": "manual-products-logos.html#horizontal-logo---light-mode",
+    "href": "manual-products-logos.html#horizontal-logo---light-mode",
+    "title": "OEDA Logos",
+    "section": "Horizontal logo - Light mode",
+    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
     "crumbs": [
       "Lab manual",
       "Product development",
-      "Digital formats"
+      "OEDA logos"
     ]
   },
   {
-    "objectID": "manual-products-formats.html#websites",
-    "href": "manual-products-formats.html#websites",
-    "title": "OEDA Product Formats",
-    "section": "Websites",
-    "text": "Websites\nFor some public facing projects, or large multi-method projects, use Quarto website projects.\nAs above, for scrollytelling visualizations, use the Closeread extension for Quarto.",
+    "objectID": "manual-products-logos.html#horizontal-logo---dark-mode",
+    "href": "manual-products-logos.html#horizontal-logo---dark-mode",
+    "title": "OEDA Logos",
+    "section": "Horizontal logo - Dark mode",
+    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
     "crumbs": [
       "Lab manual",
       "Product development",
-      "Digital formats"
+      "OEDA logos"
     ]
   },
   {
-    "objectID": "manual-products-formats.html#flat-data-files",
-    "href": "manual-products-formats.html#flat-data-files",
-    "title": "OEDA Product Formats",
-    "section": "(Flat) data files",
-    "text": "(Flat) data files\nFor small-to-medium, tabular data sets where human-readable data exchange is needed, use CSV (comma-separated values) files.\nFor anything else–larger analytical working files, data lakes, archiving data for retention schedules, etc.–use Apache Parquet.",
+    "objectID": "manual-products-logos.html#scaling",
+    "href": "manual-products-logos.html#scaling",
+    "title": "OEDA Logos",
+    "section": "Scaling",
+    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}",
     "crumbs": [
       "Lab manual",
       "Product development",
-      "Digital formats"
+      "OEDA logos"
     ]
   },
   {
-    "objectID": "manual-main.html",
-    "href": "manual-main.html",
-    "title": "OEDA - Lab Manual",
+    "objectID": "manual-meetings-oeda-team.html",
+    "href": "manual-meetings-oeda-team.html",
+    "title": "OEDA Team Meetings",
     "section": "",
-    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\n\nfacilitate onboarding\nstreamline workflows\nreduce analysis paralysis\nensure data security and integrity\npromote high-quality research\nsupport the timely and transparent delivery of insights for public benefit\n\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
+    "text": "Every Tuesday from 1:35 to 2:55",
     "crumbs": [
       "Lab manual",
-      "Lab manual home"
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "manual-meetings-oeda-team.html#cadence",
+    "href": "manual-meetings-oeda-team.html#cadence",
+    "title": "OEDA Team Meetings",
+    "section": "",
+    "text": "Every Tuesday from 1:35 to 2:55",
+    "crumbs": [
+      "Lab manual",
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "manual-meetings-oeda-team.html#purposes",
+    "href": "manual-meetings-oeda-team.html#purposes",
+    "title": "OEDA Team Meetings",
+    "section": "Purposes",
+    "text": "Purposes\n\nAlign\n\nDebrief council meetings\nSynthesize and analyze intelligence from OEDA staff, agency partners, and other informants\nShare project progress and blockers\nReview metrics and discuss implicated processes\n\nPlan\n\nDesign projects\nSet OEDA development calendar\n\nProduce\n\nAgendas and agendas for council meetings\nProgress reports for council members and sponsors\nMinutes from council meetings\n\nIdeate\n\nFeedback on proposals, research plans, charters, products, presentations\n\nConnection\n\nGet to know one another better\nCelebrate individual and team successes",
+    "crumbs": [
+      "Lab manual",
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "manual-meetings-oeda-team.html#agendas",
+    "href": "manual-meetings-oeda-team.html#agendas",
+    "title": "OEDA Team Meetings",
+    "section": "Agendas",
+    "text": "Agendas\n\nStanding agenda\nThis is our general, standing agenda for our weekly meetings.\n\nHot topics: Anything that anyone on the team needs to address at the top of the meeting\nSpecial topics, if scheduled\nSystem 4 Briefings - Briefings from any guests invited for intelligence - Briefings rotating staff on their intelligence areas - Briefings from Jason - Ad hoc briefings from anyone\nSystems 1 & 2 Briefings - Updates from work units on project progress - Identification of any blockers or process issues\nSystem 3 Briefings - Lab manual updates - Housekeeping from HR, Workday, admins, etc. - Review of any dashboards, metrics, Kanban, etc. we’re experimenting with\n\n\n\nSpecial topics\n\nPeriodic special topics\nSchedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.\nOn these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.\n\n\n\nAd hoc events\nAlso during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.",
+    "crumbs": [
+      "Lab manual",
+      "Meetings",
+      "OEDA Team Meetings"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html",
+    "href": "manual-ideation-intelligence.html",
+    "title": "System 4 Intelligence",
+    "section": "",
+    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#purpose",
+    "href": "manual-ideation-intelligence.html#purpose",
+    "title": "System 4 Intelligence",
+    "section": "",
+    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#internal-oregon-government-documents",
+    "href": "manual-ideation-intelligence.html#internal-oregon-government-documents",
+    "title": "System 4 Intelligence",
+    "section": "Internal Oregon government documents",
+    "text": "Internal Oregon government documents\n\nProgram/agency Ways & Means presentations\nLegislative testimony\nProgram/agency documents: strategic plans, reorg documents, OWL pages, etc.\nSecretary of State Audits",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#think-tanks-policy-research",
+    "href": "manual-ideation-intelligence.html#think-tanks-policy-research",
+    "title": "System 4 Intelligence",
+    "section": "Think tanks & policy research",
+    "text": "Think tanks & policy research\nSources for research reports, briefs, data visualizations, etc. – often with cross-agency topics.\n\nUrban Institute - housing, poverty, TANF, SNAP, justice\nCenter on Budget and Policy Priorities - federal & state budgets, funding streams and policies, SNAP, TANF, Medicaid\nMDRC - evaluations (often randomized controlled trials) of social program - employment, education, family supports\nChild Trends - children & youth, child welfare, juvenile justice\nMathematica - research & evaluation solutions - health, human services, education\nChapin Hall - child welfare, youth homelessness, community-based supports\nCasey Family Programs - child welfare",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#clearinghouses",
+    "href": "manual-ideation-intelligence.html#clearinghouses",
+    "title": "System 4 Intelligence",
+    "section": "Clearinghouses",
+    "text": "Clearinghouses\nThese organizations review and rate the evidence for specific programs and practices. These can provide standards of evidence, and can also be a source of ideas worth testing or implementing in Oregon.\n\nWhat Works Clearinghouse - education, including early childhood\nTitle IV-E Prevention Services Clearinghouse - Child welfare; evaluations and ratings of services eligible for federal prevention funding\nCrimeSolutions.gov - Criminal and juvenile justice\nCalifornia Evidence-Based Clearinghouse for Child Welfare - Child welfare.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#government-membership-orgs",
+    "href": "manual-ideation-intelligence.html#government-membership-orgs",
+    "title": "System 4 Intelligence",
+    "section": "Government & membership orgs",
+    "text": "Government & membership orgs\nPlaces to learn federal priorities, what other states are doing, and find new data releases.\n\nACF Office of Planning, Research, and Evaluation (OPRE) - research arm of the Administration for Children & Families, TANF, child welfare, early childhood\nUSDA Food and Nutrition Service (FNS) - SNAP and other nutrition programs\nAmerican Public Human Services Association (APHSA) - membership org for state and local agencies., challenges and innovations happening in other states and jurisdictions\nNational Conference of State Legislatures (NCSL) - tracking legislative trends in human services across the US\nNational Data Archive on Child Abuse and Neglect (NDACAN) - child welfare, AFCARS and NCANDS federal files",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#foundations",
+    "href": "manual-ideation-intelligence.html#foundations",
+    "title": "System 4 Intelligence",
+    "section": "Foundations",
+    "text": "Foundations\nFoundations often fund innovative research and pilot projects years before they become mainstream government practice. Could be a good source for intelligence on what’s on the horizon.\n\nCasey Family Programs - child welfare, juvenile justice, family economic stability Kids Count data center\nRobert Wood Johnson Foundation - health and health care, Medicaid, public health, social determinants of health\nPew Charitable Trusts - health & well-being, communities, economic advancement, federal policy, state government, environment, immigration, demography, race, ethnicity, religion, Pew Research Center\nMarguerite Casey Foundation - grant making foundation to shift power from government to communities, families, and individuals who continue to be excluded from shaping society and sharing in its rewards and freedoms.",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
+    ]
+  },
+  {
+    "objectID": "manual-ideation-intelligence.html#journals",
+    "href": "manual-ideation-intelligence.html#journals",
+    "title": "System 4 Intelligence",
+    "section": "Journals",
+    "text": "Journals\n\nThe Future of Children - defunct collab between Princeton and Brookings, each issue is a highy readable deep-dive into a single topic: education, early childhood, culture & economic outcomes, universal health, reducing justice system inequality, etc.\nJournal of Policy Analysis and Management (JPAM) - program evaluation & policy analysis\nSocial Service Review - social problems, policy, social work practice\nBig Data & Society - large-scale data collection, algorithmic decision making, impacts on society, ethics & equity of administrative data\nGateways: International Journal of Community Research and Engagement - empirical & evaluative case studies of community-based research & pedagogy, research with communities rather than on them\nJournal of the Royal Statistical Society: Series A (Statistics in Society) - social and ethical implications of statistical methods, algorithmic fairness, data privacy, measuring inequality\nJournal of Public Administration Research and Theory (JPART) - public administration, representative bureaucracy, administrative burden, implementation of policy by “street-level” bureaucrats\nPublic Administration Review (PAR) - public sector research, theory, and practice, academics & practitioners)\nJournal of Urban Affairs - housing, transportation, economic development, human services, spatial dimensions of inequality, disparate outcomes\nChild Abuse & Neglect\nChild Maltreatment\nDevelopmental Child Welfare\nSocial Science and Medicine\nJournal of Family Violence\nJournal of Marriage and Family\nChildren and Youth Review Services",
+    "crumbs": [
+      "Lab manual",
+      "Ideation",
+      "System 4 Intelligence"
     ]
   },
   {
@@ -248,170 +428,37 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oregon Enterprise Data Analytics",
+    "objectID": "manual-access-desktop-admin.html",
+    "href": "manual-access-desktop-admin.html",
+    "title": "System Access - Desktop admin accounts",
     "section": "",
-    "text": "Oregon Enterprise Data Analytics (OEDA) was created by the legislature to “support integration and analysis of client and customer service information across state agencies and programs [and to] provide coordination, consolidation, and clear accountability for that work” (Legislative Fiscal Office, p. 109).\nOEDA is housed within the Oregon Department of Human Services (ODHS). We are a shared service of ODHS and the Oregon Health Authority (OHA)."
-  },
-  {
-    "objectID": "index.html#oedas-mission-vision-and-values",
-    "href": "index.html#oedas-mission-vision-and-values",
-    "title": "Oregon Enterprise Data Analytics",
-    "section": "OEDA’s Mission, Vision, and Values",
-    "text": "OEDA’s Mission, Vision, and Values\nMission: OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.\nVision: Oregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.\nValues:\nOEDA’s products are\n\nRigorous, transparent, & trustworthy\nRelevant & impactful\nAccessible, understandable, & approachable\nInnovative\n\nWorking with OEDA is\n\nEthical\nConstructive\nCollaborative & communicative\nWell-managed, professional, & conscientious\n\nPhoto credit: Chris Liverani on Unsplash"
-  },
-  {
-    "objectID": "data-main.html",
-    "href": "data-main.html",
-    "title": "OEDA Data Profiles",
-    "section": "",
-    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
-  },
-  {
-    "objectID": "data-main.html#introduction",
-    "href": "data-main.html#introduction",
-    "title": "OEDA Data Profiles",
-    "section": "",
-    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
-  },
-  {
-    "objectID": "data-main.html#oregon-enterprise-outcomes",
-    "href": "data-main.html#oregon-enterprise-outcomes",
-    "title": "OEDA Data Profiles",
-    "section": "Oregon Enterprise Outcomes",
-    "text": "Oregon Enterprise Outcomes\n\nEntries into foster care\nExits from foster care\nContacts with the juvenile justice system"
-  },
-  {
-    "objectID": "data-main.html#oeda-stewarded-data",
-    "href": "data-main.html#oeda-stewarded-data",
-    "title": "OEDA Data Profiles",
-    "section": "OEDA Stewarded Data",
-    "text": "OEDA Stewarded Data\n\nChildhood and Adolescent Needs and Strengths (CANS)"
-  },
-  {
-    "objectID": "council-members.html",
-    "href": "council-members.html",
-    "title": "OEDA Advisory Council Members",
-    "section": "",
-    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship",
+    "text": "Gaining local administrator access to your physical or virtual machine can be helpful in allowing you to install R, RStudio/Positron, Python, etc.\n\nLog into the OIS helpdesk ticketing system\nSelect More\nSelect Individual Access Request (IAR) MSC 0786\nIndicate that you are requesting access for yourself\nSet an effective date (the current date should be fine, or some time in the near future)\nIndicate DHS as your employer\nIn section VI, select “Need an administrator local workstation account”\nProvide your computer name, e.g. “DHSXXXXXXXX”\nIdentify your manager by OR number or search by name\nClick Submit\n\nThe ticket system should automatically send the request to your manager when you submit.\nLocal admin accounts require frequent password changes. The accounts can be difficult to regain access to if you let them lapse; so keep up with password change requirements.",
     "crumbs": [
-      "Council",
-      "Council members"
+      "Lab manual",
+      "Access",
+      "Desktop admin accounts"
     ]
   },
   {
-    "objectID": "council-members.html#agency-representatives",
-    "href": "council-members.html#agency-representatives",
-    "title": "OEDA Advisory Council Members",
+    "objectID": "ideation-form.html",
+    "href": "ideation-form.html",
+    "title": "Using the request form",
     "section": "",
-    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship",
-    "crumbs": [
-      "Council",
-      "Council members"
-    ]
+    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged."
   },
   {
-    "objectID": "council-members.html#facilitator",
-    "href": "council-members.html#facilitator",
-    "title": "OEDA Advisory Council Members",
-    "section": "Facilitator",
-    "text": "Facilitator\nJason Wallin, Manager Oregon Enterprise Data Analytics",
-    "crumbs": [
-      "Council",
-      "Council members"
-    ]
+    "objectID": "ideation-form.html#intentions",
+    "href": "ideation-form.html#intentions",
+    "title": "Using the request form",
+    "section": "Intentions",
+    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs"
   },
   {
-    "objectID": "council-meeting-2025-q4.html",
-    "href": "council-meeting-2025-q4.html",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "",
-    "text": "Monday, September 29, 2025\n\nIntroductions of the council members\n\nWhat was your path to a research career with Oregon state government?\n\nHistory of OEDA",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html#agenda",
-    "href": "council-meeting-2025-q4.html#agenda",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "",
-    "text": "Monday, September 29, 2025\n\nIntroductions of the council members\n\nWhat was your path to a research career with Oregon state government?\n\nHistory of OEDA",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html#notes",
-    "href": "council-meeting-2025-q4.html#notes",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "Notes",
-    "text": "Notes\nText",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-main.html",
-    "href": "council-main.html",
-    "title": "OEDA Advisory Council",
-    "section": "",
-    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
-    "crumbs": [
-      "Council",
-      "Advisory council home"
-    ]
-  },
-  {
-    "objectID": "council-main.html#purpose",
-    "href": "council-main.html#purpose",
-    "title": "OEDA Advisory Council",
-    "section": "",
-    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
-    "crumbs": [
-      "Council",
-      "Advisory council home"
-    ]
-  },
-  {
-    "objectID": "council-meetings.html",
-    "href": "council-meetings.html",
-    "title": "OEDA Advisory Meetings",
-    "section": "",
-    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
-    "crumbs": [
-      "Council",
-      "Council meetings"
-    ]
-  },
-  {
-    "objectID": "council-meetings.html#purpose",
-    "href": "council-meetings.html#purpose",
-    "title": "OEDA Advisory Meetings",
-    "section": "",
-    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
-    "crumbs": [
-      "Council",
-      "Council meetings"
-    ]
-  },
-  {
-    "objectID": "council-meetings.html#agendas-and-notes",
-    "href": "council-meetings.html#agendas-and-notes",
-    "title": "OEDA Advisory Meetings",
-    "section": "Agendas and notes",
-    "text": "Agendas and notes\nYears and quarters are based on calendar years, not state or federal fiscal years.\n\n\n\nYear\nQuarter\nAgenda\nNotes\n\n\n\n\n2025\nQ4\nQ4 Agenda\nQ4 Notes",
-    "crumbs": [
-      "Council",
-      "Council meetings"
-    ]
+    "objectID": "ideation-form.html#what-happens-after-submission",
+    "href": "ideation-form.html#what-happens-after-submission",
+    "title": "Using the request form",
+    "section": "What happens after submission",
+    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc."
   },
   {
     "objectID": "council-proposal-rubric.html",
@@ -469,25 +516,170 @@
     ]
   },
   {
-    "objectID": "ideation-form.html",
-    "href": "ideation-form.html",
-    "title": "Using the request form",
+    "objectID": "council-meetings.html",
+    "href": "council-meetings.html",
+    "title": "OEDA Advisory Meetings",
     "section": "",
-    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged."
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
+    "crumbs": [
+      "Council",
+      "Council meetings"
+    ]
   },
   {
-    "objectID": "ideation-form.html#intentions",
-    "href": "ideation-form.html#intentions",
-    "title": "Using the request form",
-    "section": "Intentions",
-    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs"
+    "objectID": "council-meetings.html#purpose",
+    "href": "council-meetings.html#purpose",
+    "title": "OEDA Advisory Meetings",
+    "section": "",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
+    "crumbs": [
+      "Council",
+      "Council meetings"
+    ]
   },
   {
-    "objectID": "ideation-form.html#what-happens-after-submission",
-    "href": "ideation-form.html#what-happens-after-submission",
-    "title": "Using the request form",
-    "section": "What happens after submission",
-    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc."
+    "objectID": "council-meetings.html#agendas-and-notes",
+    "href": "council-meetings.html#agendas-and-notes",
+    "title": "OEDA Advisory Meetings",
+    "section": "Agendas and notes",
+    "text": "Agendas and notes\nYears and quarters are based on calendar years, not state or federal fiscal years.\n\n\n\nYear\nQuarter\nAgenda\nNotes\n\n\n\n\n2025\nQ4\nQ4 Agenda\nQ4 Notes",
+    "crumbs": [
+      "Council",
+      "Council meetings"
+    ]
+  },
+  {
+    "objectID": "council-main.html",
+    "href": "council-main.html",
+    "title": "OEDA Advisory Council",
+    "section": "",
+    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
+    "crumbs": [
+      "Council",
+      "Advisory council home"
+    ]
+  },
+  {
+    "objectID": "council-main.html#purpose",
+    "href": "council-main.html#purpose",
+    "title": "OEDA Advisory Council",
+    "section": "",
+    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
+    "crumbs": [
+      "Council",
+      "Advisory council home"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html",
+    "href": "council-meeting-2025-q4.html",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "",
+    "text": "Monday, September 29, 2025\n\nIntroductions of the council members\n\nWhat was your path to a research career with Oregon state government?\n\nHistory of OEDA",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html#agenda",
+    "href": "council-meeting-2025-q4.html#agenda",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "",
+    "text": "Monday, September 29, 2025\n\nIntroductions of the council members\n\nWhat was your path to a research career with Oregon state government?\n\nHistory of OEDA",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html#notes",
+    "href": "council-meeting-2025-q4.html#notes",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "Notes",
+    "text": "Notes\nText",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-members.html",
+    "href": "council-members.html",
+    "title": "OEDA Advisory Council Members",
+    "section": "",
+    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship",
+    "crumbs": [
+      "Council",
+      "Council members"
+    ]
+  },
+  {
+    "objectID": "council-members.html#agency-representatives",
+    "href": "council-members.html#agency-representatives",
+    "title": "OEDA Advisory Council Members",
+    "section": "",
+    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship",
+    "crumbs": [
+      "Council",
+      "Council members"
+    ]
+  },
+  {
+    "objectID": "council-members.html#facilitator",
+    "href": "council-members.html#facilitator",
+    "title": "OEDA Advisory Council Members",
+    "section": "Facilitator",
+    "text": "Facilitator\nJason Wallin, Manager Oregon Enterprise Data Analytics",
+    "crumbs": [
+      "Council",
+      "Council members"
+    ]
+  },
+  {
+    "objectID": "data-main.html",
+    "href": "data-main.html",
+    "title": "OEDA Data Profiles",
+    "section": "",
+    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
+  },
+  {
+    "objectID": "data-main.html#introduction",
+    "href": "data-main.html#introduction",
+    "title": "OEDA Data Profiles",
+    "section": "",
+    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
+  },
+  {
+    "objectID": "data-main.html#oregon-enterprise-outcomes",
+    "href": "data-main.html#oregon-enterprise-outcomes",
+    "title": "OEDA Data Profiles",
+    "section": "Oregon Enterprise Outcomes",
+    "text": "Oregon Enterprise Outcomes\n\nEntries into foster care\nExits from foster care\nContacts with the juvenile justice system"
+  },
+  {
+    "objectID": "data-main.html#oeda-stewarded-data",
+    "href": "data-main.html#oeda-stewarded-data",
+    "title": "OEDA Data Profiles",
+    "section": "OEDA Stewarded Data",
+    "text": "OEDA Stewarded Data\n\nChildhood and Adolescent Needs and Strengths (CANS)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oregon Enterprise Data Analytics",
+    "section": "",
+    "text": "Oregon Enterprise Data Analytics (OEDA) was created by the legislature to “support integration and analysis of client and customer service information across state agencies and programs [and to] provide coordination, consolidation, and clear accountability for that work” (Legislative Fiscal Office, p. 109).\nOEDA is housed within the Oregon Department of Human Services (ODHS). We are a shared service of ODHS and the Oregon Health Authority (OHA)."
+  },
+  {
+    "objectID": "index.html#oedas-mission-vision-and-values",
+    "href": "index.html#oedas-mission-vision-and-values",
+    "title": "Oregon Enterprise Data Analytics",
+    "section": "OEDA’s Mission, Vision, and Values",
+    "text": "OEDA’s Mission, Vision, and Values\nMission: OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.\nVision: Oregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.\nValues:\nOEDA’s products are\n\nRigorous, transparent, & trustworthy\nRelevant & impactful\nAccessible, understandable, & approachable\nInnovative\n\nWorking with OEDA is\n\nEthical\nConstructive\nCollaborative & communicative\nWell-managed, professional, & conscientious\n\nPhoto credit: Chris Liverani on Unsplash"
   },
   {
     "objectID": "manual-delivery-publishing-github-pages.html",
@@ -622,220 +814,160 @@
     ]
   },
   {
-    "objectID": "manual-ideation-intelligence.html",
-    "href": "manual-ideation-intelligence.html",
-    "title": "System 4 Intelligence",
+    "objectID": "manual-delivery-qc-vis.html",
+    "href": "manual-delivery-qc-vis.html",
+    "title": "Quality Control - Visualization",
     "section": "",
-    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
+    "text": "This checklist is intended for visualizations before they go “in-production”, and are distributed or presented to peers, stakeholders, the public, etc. This level of scrutiny is not appropriate for early stages, exploratory data analysis.\n\n\n\nAudience: Who is the audience for this visualization: expert peers, stakeholders, general audience, etc.? This should influence complexity, jargon, annotations, etc.\nCore message: What is the single, primary insight this vis conveys? Write it in one sentence.\nData: Have you selected the minimal data necessary to support the core message?\n\n\n\n\n\nFiltering: Have the data been correctly filtered for the specific message of this plot? Are you accidentally including or excluding data that could change the conclusion?\nData types: Confirm numeric, factor, and date types are correct. Are ordinal or nominal variables formatted as factors with sensible ordering: (mutate(Category = ordered(Category, levels = c('Low', 'Medium', 'High'))))?\nMissingness: Have you made a conscious decision about NA values: remove, impute, display? Note the decision and justification (if NA are not displayed) in a caption. ggplot2() often throws a warning about removing rows with missing values. Do not ignore this. Will removing rows with missing values affect your interpretation?\nOutliers: Have you investigated outliers? Are they genuine data points or errors? Decide whether to include or exclude. Note the decision and justify it in a caption or annotation.\n\n\n\n\n\nMappings: Have you sensibly mapped tibble columns to vis aesthetics?\n\nAre your most important variables mapped to the most prominent aesthetics: aes(x = col, y = col)?\nWhen the study includes an independent, quasi-independent, or predictor variable, is that mapped to aes(x = col)?\nIs the dependent variable, outcome variable, or response mapped to aes(y = col)?\nAre secondary variables mapped to aes(color = col), aes(size = col), aes(shape = col), or aes(alpha = col)?\n\n\n\n\n\n\nGeom: Have you selected an appropriate geom for your primary insight?\n\ngeom_boxplot() for comparing two or more distributions\ngeom_line() for time series\ngeom_point() for bivariate relationships on two quantitative axes\n\nData density: For large datasets, have you addressed overplotting: geom_*(alpha = num), geom_jitter(), geom_hex(), or geom_density2d()? Alternatively, consider aggregating and reflecting overplotting with geom_*(size = num).\nRepresenting variation or uncertainty along with central tendency: If visualizing summary statistics (means, medians, etc.) have you also displayed uncertainty: e.g. geom_errorbar() or geom_ribbon() for confidence intervals, geom_boxplot() for IQR, or geom_point()/geom_jitter() to overlay the full distribution?\n\n\n\n\n\nAxis limits: When the y-axis is continuous and positive, does it include zero?\n\nscale_y_continuous(limits = c(0, upper_limit)) will remove data points outside the range (0, upper_limit). This will influence any statistical calculations, for example the IQR hinges for geom_boxplot().\ncoord_cartesian(ylim = c(0, upper_limit)) will “zoom” the visible viewport without changing statistical properties.\n\nFacet axes: Are the y-axis limits the same across facets (especially when the main message involves comparing specific y-axis values between facets)? E.g. prefer facet_grid(scales = 'fixed') to facet_grid(scales = 'free_y').\nBreaks & grids: Are axis ticks (scale_*(breaks = vec))\n\nat logical intervals? E.g. weeks for a time series, rather than every 10 days. (scale_x_date(date_breaks = '1 week', date_labels = '%W-@y'))\nor at tidy intervals, e.g. c(0, 5, 10, 15, 20) rather than c(0, 7.3, 14.6, …)\n\n\n\n\n\n\nGrids: Are gridlines subtle and supportive, not distracting? (theme(panel.grid.* = element_line(color = hex, linewidth = num, linetype = string)))\n\n\n\n\n\nLegends: Generally, consider removing scale legends altogether–guides(color = 'none') or theme(legend.position = 'none')–and instead directly labeling on the plot, when possible.\n\nFor instance: Consider the case of plotting a time series (say a tibble named tbl_Series), with a separate, differently colored geom_line() for each level of the variable Group using aes(color = 'Group'). You might try passing a filtered tibble to geom_label() with just the last time point for each Group, to create a label for the series on the far right side of the figure.\n\n\n\nlibrary(tidyverse)\n\ntbl_Series &lt;- tibble(\n  Date = rep(seq(ymd('2025-01-01'), ymd('2025-01-31'), by = '1 day'), times = 3),\n  Group = rep(LETTERS[1:3], each = 31),\n  Value = c(runif(31, 10, 12), runif(31, 2, 5), runif(31, 6,8))\n) |&gt;\n  mutate(Group = as.factor(Group))\n\nggplot(data = tbl_Series) +\n  aes(x = Date, y = Value, group = Group) +\n  geom_line(aes(color = Group)) +\n  guides(color = 'none') +\n  geom_label(aes(label = Group),\n             data = tbl_Series |&gt;\n               filter(Date == max(Date), .by = Group),\n             nudge_x = 1, # Move the labels 1 day to the right of the last date in each series\n             size = 4)\n\n\n\n\n\n\n\n\n\n\n\n\nDoes the title (labs(title = 'string')) clearly communicate the major finding?\nDoes the subtitle (labs(subtitle = 'string')) and/or caption (labs(caption = )) provide necessary context?\n\ndata source\nanalysis time frame\npopulation\ngeographic region\n\nAre axis labels…\n\nnecessary? E.g. when the x-axis is geom_boxplot() with a different boxplot for each group, is it necessary to have an x-axis label that says “Group” when each boxplot is already labeled on the axis tick mark? Consider labs(x = '') or theme(axis.title.x = element_blank())\ndescriptive? Does it include units, units which are meaningful to practice: individuals, cases, dollars, length of stay–rather than percentages, odds ratios, etc.? labs(y = 'Length of stay (days)')\n\n\n\n\n\n\nMessage match: Look at the plot without any other context. Does it convey the core message?\nNarrative flow: If part of a series, does the vis fit logically and stylistically with the others? Is the use of color and symbols consistent? (E.g. do you use the same color to highlight the control group, or to indicate a positive effect, etc.?)\nMisinterpretation: Could any aspect of the vis mislead a good-faith observer? Look for truncated axes, effects of aspect ratio, interpretations of colors? Are you visually exaggerating a non-significant effect?\nPeer review: Show the vis to a colleague unfamiliar with the project. Ask them what they think the main takeaway is. Does their interpretation match yours?\n\n\n\n\n\nReproducibility: If you restart R (ctrl+shift+F10), will running your .R file top-to-bottom return the intended visualization without any errors?\nCode style: Is your data prep and ggplot2() code readable, with comments explaining any complex steps? Have you followed OEDA standards for code style?\nAccessibility: Have you followed OEDA standards for visual contrast, font selection, font size, use of color?\nExport: If the image is being exported as a stand-alone file, use a vector format (ggsave(file = 'myplot.svg') or ggsave(file = 'myplot.pdf') for print or PDF publications. Use a raster format (ggsave(file = 'myplot.png')) for web or presentations.\nDimensions: Specify dimensions height, width, and units to match the target medium and avoid distortion: ggsave(filename, plot, height = , width = , units = )",
     "crumbs": [
       "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
+      "Publication & delivery",
+      "Quality checks-Visualizations"
     ]
   },
   {
-    "objectID": "manual-ideation-intelligence.html#purpose",
-    "href": "manual-ideation-intelligence.html#purpose",
-    "title": "System 4 Intelligence",
+    "objectID": "manual-delivery-qc-vis.html#checklist",
+    "href": "manual-delivery-qc-vis.html#checklist",
+    "title": "Quality Control - Visualization",
     "section": "",
-    "text": "OEDA’s System 4 are the activities that help bring our attention outside our immediate context and our day-to-day work. System 4 brings us knowledge of the external environment and potential futures. These help improve the viability of OEDA, by helping us course correct our work for changing environments and to plan for the future.\nThe ORRAI director is an important source of System 4 intelligence for ODHS and the OEDA Advisory Council is an important source of intelligence for partner agencies. But, the economist and researchers within OEDA can also bring intelligence to the team, if they are given occasional time outside of the day-to-day work to encounter new findings, innovative ideas, and different perspectives.",
+    "text": "This checklist is intended for visualizations before they go “in-production”, and are distributed or presented to peers, stakeholders, the public, etc. This level of scrutiny is not appropriate for early stages, exploratory data analysis.\n\n\n\nAudience: Who is the audience for this visualization: expert peers, stakeholders, general audience, etc.? This should influence complexity, jargon, annotations, etc.\nCore message: What is the single, primary insight this vis conveys? Write it in one sentence.\nData: Have you selected the minimal data necessary to support the core message?\n\n\n\n\n\nFiltering: Have the data been correctly filtered for the specific message of this plot? Are you accidentally including or excluding data that could change the conclusion?\nData types: Confirm numeric, factor, and date types are correct. Are ordinal or nominal variables formatted as factors with sensible ordering: (mutate(Category = ordered(Category, levels = c('Low', 'Medium', 'High'))))?\nMissingness: Have you made a conscious decision about NA values: remove, impute, display? Note the decision and justification (if NA are not displayed) in a caption. ggplot2() often throws a warning about removing rows with missing values. Do not ignore this. Will removing rows with missing values affect your interpretation?\nOutliers: Have you investigated outliers? Are they genuine data points or errors? Decide whether to include or exclude. Note the decision and justify it in a caption or annotation.\n\n\n\n\n\nMappings: Have you sensibly mapped tibble columns to vis aesthetics?\n\nAre your most important variables mapped to the most prominent aesthetics: aes(x = col, y = col)?\nWhen the study includes an independent, quasi-independent, or predictor variable, is that mapped to aes(x = col)?\nIs the dependent variable, outcome variable, or response mapped to aes(y = col)?\nAre secondary variables mapped to aes(color = col), aes(size = col), aes(shape = col), or aes(alpha = col)?\n\n\n\n\n\n\nGeom: Have you selected an appropriate geom for your primary insight?\n\ngeom_boxplot() for comparing two or more distributions\ngeom_line() for time series\ngeom_point() for bivariate relationships on two quantitative axes\n\nData density: For large datasets, have you addressed overplotting: geom_*(alpha = num), geom_jitter(), geom_hex(), or geom_density2d()? Alternatively, consider aggregating and reflecting overplotting with geom_*(size = num).\nRepresenting variation or uncertainty along with central tendency: If visualizing summary statistics (means, medians, etc.) have you also displayed uncertainty: e.g. geom_errorbar() or geom_ribbon() for confidence intervals, geom_boxplot() for IQR, or geom_point()/geom_jitter() to overlay the full distribution?\n\n\n\n\n\nAxis limits: When the y-axis is continuous and positive, does it include zero?\n\nscale_y_continuous(limits = c(0, upper_limit)) will remove data points outside the range (0, upper_limit). This will influence any statistical calculations, for example the IQR hinges for geom_boxplot().\ncoord_cartesian(ylim = c(0, upper_limit)) will “zoom” the visible viewport without changing statistical properties.\n\nFacet axes: Are the y-axis limits the same across facets (especially when the main message involves comparing specific y-axis values between facets)? E.g. prefer facet_grid(scales = 'fixed') to facet_grid(scales = 'free_y').\nBreaks & grids: Are axis ticks (scale_*(breaks = vec))\n\nat logical intervals? E.g. weeks for a time series, rather than every 10 days. (scale_x_date(date_breaks = '1 week', date_labels = '%W-@y'))\nor at tidy intervals, e.g. c(0, 5, 10, 15, 20) rather than c(0, 7.3, 14.6, …)\n\n\n\n\n\n\nGrids: Are gridlines subtle and supportive, not distracting? (theme(panel.grid.* = element_line(color = hex, linewidth = num, linetype = string)))\n\n\n\n\n\nLegends: Generally, consider removing scale legends altogether–guides(color = 'none') or theme(legend.position = 'none')–and instead directly labeling on the plot, when possible.\n\nFor instance: Consider the case of plotting a time series (say a tibble named tbl_Series), with a separate, differently colored geom_line() for each level of the variable Group using aes(color = 'Group'). You might try passing a filtered tibble to geom_label() with just the last time point for each Group, to create a label for the series on the far right side of the figure.\n\n\n\nlibrary(tidyverse)\n\ntbl_Series &lt;- tibble(\n  Date = rep(seq(ymd('2025-01-01'), ymd('2025-01-31'), by = '1 day'), times = 3),\n  Group = rep(LETTERS[1:3], each = 31),\n  Value = c(runif(31, 10, 12), runif(31, 2, 5), runif(31, 6,8))\n) |&gt;\n  mutate(Group = as.factor(Group))\n\nggplot(data = tbl_Series) +\n  aes(x = Date, y = Value, group = Group) +\n  geom_line(aes(color = Group)) +\n  guides(color = 'none') +\n  geom_label(aes(label = Group),\n             data = tbl_Series |&gt;\n               filter(Date == max(Date), .by = Group),\n             nudge_x = 1, # Move the labels 1 day to the right of the last date in each series\n             size = 4)\n\n\n\n\n\n\n\n\n\n\n\n\nDoes the title (labs(title = 'string')) clearly communicate the major finding?\nDoes the subtitle (labs(subtitle = 'string')) and/or caption (labs(caption = )) provide necessary context?\n\ndata source\nanalysis time frame\npopulation\ngeographic region\n\nAre axis labels…\n\nnecessary? E.g. when the x-axis is geom_boxplot() with a different boxplot for each group, is it necessary to have an x-axis label that says “Group” when each boxplot is already labeled on the axis tick mark? Consider labs(x = '') or theme(axis.title.x = element_blank())\ndescriptive? Does it include units, units which are meaningful to practice: individuals, cases, dollars, length of stay–rather than percentages, odds ratios, etc.? labs(y = 'Length of stay (days)')\n\n\n\n\n\n\nMessage match: Look at the plot without any other context. Does it convey the core message?\nNarrative flow: If part of a series, does the vis fit logically and stylistically with the others? Is the use of color and symbols consistent? (E.g. do you use the same color to highlight the control group, or to indicate a positive effect, etc.?)\nMisinterpretation: Could any aspect of the vis mislead a good-faith observer? Look for truncated axes, effects of aspect ratio, interpretations of colors? Are you visually exaggerating a non-significant effect?\nPeer review: Show the vis to a colleague unfamiliar with the project. Ask them what they think the main takeaway is. Does their interpretation match yours?\n\n\n\n\n\nReproducibility: If you restart R (ctrl+shift+F10), will running your .R file top-to-bottom return the intended visualization without any errors?\nCode style: Is your data prep and ggplot2() code readable, with comments explaining any complex steps? Have you followed OEDA standards for code style?\nAccessibility: Have you followed OEDA standards for visual contrast, font selection, font size, use of color?\nExport: If the image is being exported as a stand-alone file, use a vector format (ggsave(file = 'myplot.svg') or ggsave(file = 'myplot.pdf') for print or PDF publications. Use a raster format (ggsave(file = 'myplot.png')) for web or presentations.\nDimensions: Specify dimensions height, width, and units to match the target medium and avoid distortion: ggsave(filename, plot, height = , width = , units = )",
     "crumbs": [
       "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
+      "Publication & delivery",
+      "Quality checks-Visualizations"
     ]
   },
   {
-    "objectID": "manual-ideation-intelligence.html#internal-oregon-government-documents",
-    "href": "manual-ideation-intelligence.html#internal-oregon-government-documents",
-    "title": "System 4 Intelligence",
-    "section": "Internal Oregon government documents",
-    "text": "Internal Oregon government documents\n\nProgram/agency Ways & Means presentations\nLegislative testimony\nProgram/agency documents: strategic plans, reorg documents, OWL pages, etc.\nSecretary of State Audits",
-    "crumbs": [
-      "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "manual-ideation-intelligence.html#think-tanks-policy-research",
-    "href": "manual-ideation-intelligence.html#think-tanks-policy-research",
-    "title": "System 4 Intelligence",
-    "section": "Think tanks & policy research",
-    "text": "Think tanks & policy research\nSources for research reports, briefs, data visualizations, etc. – often with cross-agency topics.\n\nUrban Institute - housing, poverty, TANF, SNAP, justice\nCenter on Budget and Policy Priorities - federal & state budgets, funding streams and policies, SNAP, TANF, Medicaid\nMDRC - evaluations (often randomized controlled trials) of social program - employment, education, family supports\nChild Trends - children & youth, child welfare, juvenile justice\nMathematica - research & evaluation solutions - health, human services, education\nChapin Hall - child welfare, youth homelessness, community-based supports\nCasey Family Programs - child welfare",
-    "crumbs": [
-      "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "manual-ideation-intelligence.html#clearinghouses",
-    "href": "manual-ideation-intelligence.html#clearinghouses",
-    "title": "System 4 Intelligence",
-    "section": "Clearinghouses",
-    "text": "Clearinghouses\nThese organizations review and rate the evidence for specific programs and practices. These can provide standards of evidence, and can also be a source of ideas worth testing or implementing in Oregon.\n\nWhat Works Clearinghouse - education, including early childhood\nTitle IV-E Prevention Services Clearinghouse - Child welfare; evaluations and ratings of services eligible for federal prevention funding\nCrimeSolutions.gov - Criminal and juvenile justice\nCalifornia Evidence-Based Clearinghouse for Child Welfare - Child welfare.",
-    "crumbs": [
-      "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "manual-ideation-intelligence.html#government-membership-orgs",
-    "href": "manual-ideation-intelligence.html#government-membership-orgs",
-    "title": "System 4 Intelligence",
-    "section": "Government & membership orgs",
-    "text": "Government & membership orgs\nPlaces to learn federal priorities, what other states are doing, and find new data releases.\n\nACF Office of Planning, Research, and Evaluation (OPRE) - research arm of the Administration for Children & Families, TANF, child welfare, early childhood\nUSDA Food and Nutrition Service (FNS) - SNAP and other nutrition programs\nAmerican Public Human Services Association (APHSA) - membership org for state and local agencies., challenges and innovations happening in other states and jurisdictions\nNational Conference of State Legislatures (NCSL) - tracking legislative trends in human services across the US\nNational Data Archive on Child Abuse and Neglect (NDACAN) - child welfare, AFCARS and NCANDS federal files",
-    "crumbs": [
-      "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "manual-ideation-intelligence.html#foundations",
-    "href": "manual-ideation-intelligence.html#foundations",
-    "title": "System 4 Intelligence",
-    "section": "Foundations",
-    "text": "Foundations\nFoundations often fund innovative research and pilot projects years before they become mainstream government practice. Could be a good source for intelligence on what’s on the horizon.\n\nCasey Family Programs - child welfare, juvenile justice, family economic stability Kids Count data center\nRobert Wood Johnson Foundation - health and health care, Medicaid, public health, social determinants of health\nPew Charitable Trusts - health & well-being, communities, economic advancement, federal policy, state government, environment, immigration, demography, race, ethnicity, religion, Pew Research Center\nMarguerite Casey Foundation - grant making foundation to shift power from government to communities, families, and individuals who continue to be excluded from shaping society and sharing in its rewards and freedoms.",
-    "crumbs": [
-      "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "manual-ideation-intelligence.html#journals",
-    "href": "manual-ideation-intelligence.html#journals",
-    "title": "System 4 Intelligence",
-    "section": "Journals",
-    "text": "Journals\n\nThe Future of Children - defunct collab between Princeton and Brookings, each issue is a highy readable deep-dive into a single topic: education, early childhood, culture & economic outcomes, universal health, reducing justice system inequality, etc.\nJournal of Policy Analysis and Management (JPAM) - program evaluation & policy analysis\nSocial Service Review - social problems, policy, social work practice\nBig Data & Society - large-scale data collection, algorithmic decision making, impacts on society, ethics & equity of administrative data\nGateways: International Journal of Community Research and Engagement - empirical & evaluative case studies of community-based research & pedagogy, research with communities rather than on them\nJournal of the Royal Statistical Society: Series A (Statistics in Society) - social and ethical implications of statistical methods, algorithmic fairness, data privacy, measuring inequality\nJournal of Public Administration Research and Theory (JPART) - public administration, representative bureaucracy, administrative burden, implementation of policy by “street-level” bureaucrats\nPublic Administration Review (PAR) - public sector research, theory, and practice, academics & practitioners)\nJournal of Urban Affairs - housing, transportation, economic development, human services, spatial dimensions of inequality, disparate outcomes\nChild Abuse & Neglect\nChild Maltreatment\nDevelopmental Child Welfare\nSocial Science and Medicine\nJournal of Family Violence\nJournal of Marriage and Family\nChildren and Youth Review Services",
-    "crumbs": [
-      "Lab manual",
-      "Ideation",
-      "System 4 Intelligence"
-    ]
-  },
-  {
-    "objectID": "manual-meetings-oeda-team.html",
-    "href": "manual-meetings-oeda-team.html",
-    "title": "OEDA Team Meetings",
+    "objectID": "manual-main.html",
+    "href": "manual-main.html",
+    "title": "OEDA - Lab Manual",
     "section": "",
-    "text": "Every Tuesday from 1:35 to 2:55",
+    "text": "This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to\n\nfacilitate onboarding\nstreamline workflows\nreduce analysis paralysis\nensure data security and integrity\npromote high-quality research\nsupport the timely and transparent delivery of insights for public benefit\n\nIn Beer’s Viable Systems Model, OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA’s research analysts and economist work without undue intervention, with standards, guidelines, expectations, and resources.",
     "crumbs": [
       "Lab manual",
-      "Meetings",
-      "OEDA Team Meetings"
+      "Lab manual home"
     ]
   },
   {
-    "objectID": "manual-meetings-oeda-team.html#cadence",
-    "href": "manual-meetings-oeda-team.html#cadence",
-    "title": "OEDA Team Meetings",
+    "objectID": "manual-products-formats.html",
+    "href": "manual-products-formats.html",
+    "title": "OEDA Product Formats",
     "section": "",
-    "text": "Every Tuesday from 1:35 to 2:55",
+    "text": "OEDA produces primarily digital solutions, and has adopted an “HTML-preferred” approach following ODHS and OHA policy (Digital Accessibility in Content Creation and Sharing, OHDSOHA 010-029, #7).\nAdditionally, OEDA strives to use plain text, open source tools, and open source formats, whenever possible.",
     "crumbs": [
       "Lab manual",
-      "Meetings",
-      "OEDA Team Meetings"
+      "Product development",
+      "Digital formats"
     ]
   },
   {
-    "objectID": "manual-meetings-oeda-team.html#purposes",
-    "href": "manual-meetings-oeda-team.html#purposes",
-    "title": "OEDA Team Meetings",
-    "section": "Purposes",
-    "text": "Purposes\n\nAlign\n\nDebrief council meetings\nSynthesize and analyze intelligence from OEDA staff, agency partners, and other informants\nShare project progress and blockers\nReview metrics and discuss implicated processes\n\nPlan\n\nDesign projects\nSet OEDA development calendar\n\nProduce\n\nAgendas and agendas for council meetings\nProgress reports for council members and sponsors\nMinutes from council meetings\n\nIdeate\n\nFeedback on proposals, research plans, charters, products, presentations\n\nConnection\n\nGet to know one another better\nCelebrate individual and team successes",
+    "objectID": "manual-products-formats.html#project-notes-meeting-agendas-and-meeting-minutes",
+    "href": "manual-products-formats.html#project-notes-meeting-agendas-and-meeting-minutes",
+    "title": "OEDA Product Formats",
+    "section": "Project notes, meeting agendas, and meeting minutes",
+    "text": "Project notes, meeting agendas, and meeting minutes\nUse Quarto HTML documents, even if they are not routinely rendered to HTML.\nMinimal yaml elements:\n\ntitle\ndate\nauthor\nabstract (optional; suggested for longer or important for longer or important records)",
     "crumbs": [
       "Lab manual",
-      "Meetings",
-      "OEDA Team Meetings"
+      "Product development",
+      "Digital formats"
     ]
   },
   {
-    "objectID": "manual-meetings-oeda-team.html#agendas",
-    "href": "manual-meetings-oeda-team.html#agendas",
-    "title": "OEDA Team Meetings",
-    "section": "Agendas",
-    "text": "Agendas\n\nStanding agenda\nThis is our general, standing agenda for our weekly meetings.\n\nHot topics: Anything that anyone on the team needs to address at the top of the meeting\nSpecial topics, if scheduled\nSystem 4 Briefings - Briefings from any guests invited for intelligence - Briefings rotating staff on their intelligence areas - Briefings from Jason - Ad hoc briefings from anyone\nSystems 1 & 2 Briefings - Updates from work units on project progress - Identification of any blockers or process issues\nSystem 3 Briefings - Lab manual updates - Housekeeping from HR, Workday, admins, etc. - Review of any dashboards, metrics, Kanban, etc. we’re experimenting with\n\n\n\nSpecial topics\n\nPeriodic special topics\nSchedule is TBD, but we will have a set of period meetings that will occasionally occupy our OEDA Team Meeting time. These will include sessions to debrief from a recent council meeting, sessions to plan for coming council meetings, sessions to create monthly progress reports for the council, etc.\nOn these dates, we will reserve the last 30 minutes for (at least) scheduled System 4 briefings, any blockers that need management or System 2 supports, and any System 3 urgent or housekeeping updates from Jason.\n\n\n\nAd hoc events\nAlso during our weekly sessions, we will occasionally schedule time requested by anyone on the team or by guests to engage the team: align on complex info that needs discussion and clarifying questions, make decisions, create products, or get to know one another better and build connection and rapport.",
+    "objectID": "manual-products-formats.html#memos-briefs-papers",
+    "href": "manual-products-formats.html#memos-briefs-papers",
+    "title": "OEDA Product Formats",
+    "section": "Memos, briefs, papers",
+    "text": "Memos, briefs, papers\nUse Quarto HTML documents. Final drafts should always be rendered as HTML files and published to the OEDA site.\nMinimal yaml elements:\n\ntitle\ndate\nauthor\nabstract\n\nFor scrollytelling visualizations, use the Closeread extension for Quarto.",
     "crumbs": [
       "Lab manual",
-      "Meetings",
-      "OEDA Team Meetings"
+      "Product development",
+      "Digital formats"
     ]
   },
   {
-    "objectID": "manual-products-logos.html",
-    "href": "manual-products-logos.html",
-    "title": "OEDA Logos",
+    "objectID": "manual-products-formats.html#presentations",
+    "href": "manual-products-formats.html#presentations",
+    "title": "OEDA Product Formats",
+    "section": "Presentations",
+    "text": "Presentations\nUse Quarto Revealjs presentations.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-products-formats.html#websites",
+    "href": "manual-products-formats.html#websites",
+    "title": "OEDA Product Formats",
+    "section": "Websites",
+    "text": "Websites\nFor some public facing projects, or large multi-method projects, use Quarto website projects.\nAs above, for scrollytelling visualizations, use the Closeread extension for Quarto.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-products-formats.html#flat-data-files",
+    "href": "manual-products-formats.html#flat-data-files",
+    "title": "OEDA Product Formats",
+    "section": "(Flat) data files",
+    "text": "(Flat) data files\nFor small-to-medium, tabular data sets where human-readable data exchange is needed, use CSV (comma-separated values) files.\nFor anything else–larger analytical working files, data lakes, archiving data for retention schedules, etc.–use Apache Parquet.",
+    "crumbs": [
+      "Lab manual",
+      "Product development",
+      "Digital formats"
+    ]
+  },
+  {
+    "objectID": "manual-products-palettes.html",
+    "href": "manual-products-palettes.html",
+    "title": "Color Palettes",
     "section": "",
-    "text": "OEDA logos are available as .svg files, which Quarto handles natively for HTML files. These are vector graphics files with transparent backgrounds, so they should be able to scale well and be legible in most settings.\nYou can right click on any of the images below and select save as to save them locally on your machine.",
-    "crumbs": [
-      "Lab manual",
-      "Product development",
-      "OEDA logos"
-    ]
+    "text": "Warning: package 'dplyr' was built under R version 4.4.3\nAs our “good enough for now” set of colors, we will adopt the new ODHS color palette as our primary palette for most OEDA publications. The palette is detailed in Brand Guidelines (pp. 41-47; p. 54), available from Publications and Creative Services."
   },
   {
-    "objectID": "manual-products-logos.html#primary-vertical-logo---light-mode",
-    "href": "manual-products-logos.html#primary-vertical-logo---light-mode",
-    "title": "OEDA Logos",
-    "section": "Primary (vertical) logo - Light mode",
-    "text": "Primary (vertical) logo - Light mode\n![](images/OEDA_Logo_Primary.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Lab manual",
-      "Product development",
-      "OEDA logos"
-    ]
+    "objectID": "manual-products-palettes.html#list-of-basic-palette-colors",
+    "href": "manual-products-palettes.html#list-of-basic-palette-colors",
+    "title": "Color Palettes",
+    "section": "List of basic palette colors",
+    "text": "List of basic palette colors\nThe list below contains the main colors identified in the guidelines.\n\nOEDA_colors &lt;- list(\n  northstar = '#2E3192',\n  glacial = '#B4DCF5',\n  fog = '#F4F2ED',\n  forest = '#184E49',\n  willamette = '#86C679',\n  mist = '#D8E1E5',\n  marionberry = '#A91F50',\n  harvest = '#ECD263',\n  desert = '#EDDFD4',\n  black = '#000000',\n  white = '#FFFFFF',\n  charcoal = '#414042'\n)"
   },
   {
-    "objectID": "manual-products-logos.html#primary-vertical-logo---dark-mode",
-    "href": "manual-products-logos.html#primary-vertical-logo---dark-mode",
-    "title": "OEDA Logos",
-    "section": "Primary (vertical) logo - Dark mode",
-    "text": "Primary (vertical) logo - Dark mode\n![](images/OEDA_Logo_Primary_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Lab manual",
-      "Product development",
-      "OEDA logos"
-    ]
+    "objectID": "manual-products-palettes.html#roles",
+    "href": "manual-products-palettes.html#roles",
+    "title": "Color Palettes",
+    "section": "Roles",
+    "text": "Roles\nThese are the basic roles assigned to these colors in the publications guide.\n\n\n\nColor\nRole\n\n\n\n\nNorth Star Indigo\nPrimary color\n\n\nForest Green\nSecondary color\n\n\nMarionberry Red\nTertiary color\n\n\nGlacial Blue\nAccent color\n\n\nWillamette Green\nAccent color\n\n\nHarvest Gold\nAccent color\n\n\nFog Gray\nNeutral color\n\n\nMist Gray\nNeutral color\n\n\nDesert Sand\nNeutral color\n\n\nPrimary Black\nCore neutral\n\n\nPrimary White\nCore neutral\n\n\nAshland Charcoal\nCore neutral"
   },
   {
-    "objectID": "manual-products-logos.html#horizontal-logo---light-mode",
-    "href": "manual-products-logos.html#horizontal-logo---light-mode",
-    "title": "OEDA Logos",
-    "section": "Horizontal logo - Light mode",
-    "text": "Horizontal logo - Light mode\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Lab manual",
-      "Product development",
-      "OEDA logos"
-    ]
+    "objectID": "manual-products-palettes.html#meaning-neutral-document-components",
+    "href": "manual-products-palettes.html#meaning-neutral-document-components",
+    "title": "Color Palettes",
+    "section": "Meaning-neutral document components",
+    "text": "Meaning-neutral document components\n\n\n\nDocument\nComponent\nExample\nLight Mode\n\n\n\n\nBrief, memo, web page, blog entry\nBackground\nPage background\nPrimary White\n\n\nBrief, memo, web page, blog entry\nTitle\nHeading 1\nNorth Star Indigo\n\n\nBrief, memo, web page, blog entry\nSection heading\nHeading 2-5\nForest Green\n\n\nBrief, memo, web page, blog entry\nBody text\nBlocks of text (text color)\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCard\nAsides, boxouts, breakout boxes, etc. (background color)\nMist Gray\n\n\nBrief, memo, web page, blog entry\nLines\nHorizontal rules\nAshland Charcoal\n\n\nVisualization\nBackground\nPlot background and panel background\nFog Gray\n\n\nVisualization\nTitle\nPlot title\nNorth Star Indigo\n\n\nVisualization\nBackground\nFacet background\nNorth Star Indigo\n\n\nVisualization\nSection heading\nFacet title\nPrimary White\n\n\nVisualization\nBody text\nSubtitles or captions\nForest Green\n\n\nVisualization\nLines\nBorders, axes, ticks\nAshland Charcoal\n\n\n\nNote: Visualizations should be of a consistent OEDA style, regardless of whether the document overall is produced in dark or light mode."
   },
   {
-    "objectID": "manual-products-logos.html#horizontal-logo---dark-mode",
-    "href": "manual-products-logos.html#horizontal-logo---dark-mode",
-    "title": "OEDA Logos",
-    "section": "Horizontal logo - Dark mode",
-    "text": "Horizontal logo - Dark mode\n![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\"}",
-    "crumbs": [
-      "Lab manual",
-      "Product development",
-      "OEDA logos"
-    ]
+    "objectID": "manual-products-palettes.html#meaning-conveying-documents-components",
+    "href": "manual-products-palettes.html#meaning-conveying-documents-components",
+    "title": "Color Palettes",
+    "section": "Meaning-conveying documents components",
+    "text": "Meaning-conveying documents components\n\n\n\n\n\n\n\n\n\n\nDocument\nComponent\nMeaning\nBackground\nForeground\n\n\n\n\nBrief, memo, web page, blog entry\nCall out\nNeutral\nGlacial Blue\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nGrowth, meeting expectations, optimistic comparison\nWillamette Green\nAshland Charcoal\n\n\nBrief, memo, web page, blog entry\nCall out\nAttention needed, missing expectations, pessimistic comparison\nHarvest Gold\nAshland Charcoal\n\n\nVisualization\nCall out\nNeutral geom\nn/a\nAshland Charcoal\n\n\nVisualization\nCall out\nGeom indicating growth, meeting expectations, optimistic comparison\nn/a\nWillamette Green\n\n\nVisualization\nCall out\nGeom indicating attention needed, missing expectations, pessimistic comparison\nn/a\nHarvest Gold\n\n\n\nText callouts include Quarto call out elements styled using the Custom Callout Quarto extension as well as blockquotes or line blocks.\nVis callouts include the fill color of columns, bars, boxplots, points, etc."
   },
   {
-    "objectID": "manual-products-logos.html#scaling",
-    "href": "manual-products-logos.html#scaling",
-    "title": "OEDA Logos",
-    "section": "Scaling",
-    "text": "Scaling\nYou can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=10%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=30%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=50%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" width=70%}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=100px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=300px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=500px}\n\n![](images/OEDA_Logo_Horizontal.svg){fig-alt=\"Oregon Enterprise Data Analytics Logo\" height=700px}",
-    "crumbs": [
-      "Lab manual",
-      "Product development",
-      "OEDA logos"
-    ]
+    "objectID": "manual-products-palettes.html#calculating-tints",
+    "href": "manual-products-palettes.html#calculating-tints",
+    "title": "Color Palettes",
+    "section": "Calculating tints",
+    "text": "Calculating tints\nThe function below takes a color from the OEDA palette (or any hex color, really) and computes various tints of it. I have not been able to determine just how the publications office creates their tints, so the tints output from this function do not exactly match the tints displayed in the publication guide.\n\n#' Create a tint of a base color\n#'\n#' This function generates a tint by mixing a base hex color with white in the HSL\n#' (Hue, Saturation, Lightness) color space. This method is perceptually more\n#' uniform than mixing in RGB space. tint_percent = 100 should return the base_hex.\n#' tint_percent = 0 should return pure white (\"#FFFFFF\").\n#'\n#' @param base_hex A character string of the starting hex color (e.g., \"#2E3192\").\n#' @param tint_percent A numeric value from 0 to 100 representing the\n#'   percentage of the original color to retain. A value of 80 creates a tint \n#'   which is 80 parts the base color and 20 parts pure white.\n#'   \n#' @return A character string for the new hex color.\n#' @export\n\n\ncreate_tint &lt;- function(base_hex, tint_percent) {\n  \n  pct_white &lt;- (100 - tint_percent) / 100\n  \n  hsl_start &lt;- plotwidgets::col2hsl(base_hex)\n  hsl_end &lt;- hsl_start\n  hsl_end[3] &lt;- ((1 - hsl_start[3]) * pct_white) + hsl_start[3]\n  \n  col_end &lt;- plotwidgets::hsl2col(hsl_end)\n  \n  return(col_end)\n}\n\n\nExamples of North Star Indigo tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$northstar, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Forest Green tints\n\nlapply(seq(100,0,-20), function(x) create_tint(OEDA_colors$forest, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\n\n\nExamples of Desert Sand tints\n\nlapply(c(100, 70, 30), function(x) create_tint(OEDA_colors$desert, x)) |&gt; \n  unlist() |&gt; \n  as_tibble() |&gt;\n  mutate(x = row_number()) |&gt; \n  mutate(y = 1) |&gt; \n  ggplot() +\n  aes(x = x, y = y, fill = value) +\n  geom_tile() +\n  scale_fill_identity()"
+  },
+  {
+    "objectID": "manual-products-palettes.html#other-vis-palettes",
+    "href": "manual-products-palettes.html#other-vis-palettes",
+    "title": "Color Palettes",
+    "section": "Other vis palettes",
+    "text": "Other vis palettes\nWe will make recommendations for other palettes when comparisons are not between a small number of categories, but are multinomous categorical or continuous (sequential or divergent)."
   },
   {
     "objectID": "process-early.html",
@@ -853,54 +985,6 @@
     "crumbs": [
       "Projects",
       "Current projects"
-    ]
-  },
-  {
-    "objectID": "manual-progeval.html",
-    "href": "manual-progeval.html",
-    "title": "Program evaluation - Report template",
-    "section": "",
-    "text": "These shoudl be created as Quarto HTML documents and published to the OEDA website.",
-    "crumbs": [
-      "Lab manual",
-      "Units",
-      "Program evaluation"
-    ]
-  },
-  {
-    "objectID": "manual-progeval.html#evaluation-report-template",
-    "href": "manual-progeval.html#evaluation-report-template",
-    "title": "Program evaluation - Report template",
-    "section": "",
-    "text": "These shoudl be created as Quarto HTML documents and published to the OEDA website.",
-    "crumbs": [
-      "Lab manual",
-      "Units",
-      "Program evaluation"
-    ]
-  },
-  {
-    "objectID": "manual-progeval.html#yaml-header",
-    "href": "manual-progeval.html#yaml-header",
-    "title": "Program evaluation - Report template",
-    "section": "YAML header",
-    "text": "YAML header\n\ntitle: Adopt a style that clearly indicates the program or intervention, the dependent variable, the size of the observed effect, the location, and the year\n\nE.g. “[Program X] reduces [outcome Y] by [meaningful effect size] (2022-2024 statewide data)”\n\ndate: Publication date of final product\nauthor: Your name and degree\ninstitution: Oregon Enterprise Data Analytics\nabstract: No more than 500 words, briefly describing the evaluation questions, intervention evaluated, and key findings.",
-    "crumbs": [
-      "Lab manual",
-      "Units",
-      "Program evaluation"
-    ]
-  },
-  {
-    "objectID": "manual-progeval.html#executive-summary",
-    "href": "manual-progeval.html#executive-summary",
-    "title": "Program evaluation - Report template",
-    "section": "Executive summary",
-    "text": "Executive summary\nThe Executive Summary should stand alone as a summary of the key sections of the report and should summarize the content of the full report without adding new information.  It should summarize the following key points: evaluation purpose, evaluation questions, intervention being evaluated, evaluation methods, and findings, conclusions, and recommendations.\n\nEvaluation purpose and evaluation questions\nThis should set out the overarching purpose of the evaluation, and how the findings are expected to be used to inform decisions. This section also describes the evaluation questions (which should be limited to just a few key questions). It can also identify key audiences for the evaluation.\n\n\nBackground\nEnough information should be provided to give sufficient context. However, in the Executive Summary this section can receive less emphasis than it might in the overall report so that more attention can be given to the evaluation purpose, design, limitations, and findings. In the main report, the background section should describe the problem being addressed by the strategy, project, activity, or interventions and the logic for why it will lead to better outcomes. This could include a logical framework for the activity if one exists, and the development hypothesis, or causal logic, of the project or program of which the activity is a part.\n\n\nEvaluation design, methods, and limitations\nThis section describes the overall design, specific data collection and analysis methods linked to the evaluation questions, and limitations of the data, methods, or other issues that affected the findings.\n\n\nFindings, conclusions, and recommendations (if applicable)\nThis section should report those findings based on evidence generated by the evaluation data collection and analysis methods. Findings should be fact-based and not rely only on opinion, even of experts. Conclusions are drawn directly from findings and help summarize the “so what” of the findings. Several findings can lead to one or more conclusions. Whenever possible, data should be presented visually in easy-to-read charts, tables, graphs, and maps to demonstrate the evidence that supports conclusions and recommendations.\n\n---\ntitle: 'Title'\nsubtitle: 'Optional subtitle'\ndate: 'yyyy-mm-dd'\nauthor: 'First Last, Degree'\ninstitution: 'Oregon Enterprise Data Analytics'\nabstract: 'Abstract text'\n---\n\n## Executive Summary\n\n### Evaluation purpose and evaluation questions",
-    "crumbs": [
-      "Lab manual",
-      "Units",
-      "Program evaluation"
     ]
   }
 ]

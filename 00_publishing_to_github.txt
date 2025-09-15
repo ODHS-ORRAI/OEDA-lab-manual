@@ -1,0 +1,52 @@
+#*******************************************************************************
+# Bringing remote Github files to local machine
+#*******************************************************************************
+
+## `git pull` is a shortcut for two other git commands
+## `git fetch` - downloads the latest changes from the remote repository, but doesn't automatically merge those into working files
+## `git merge` - takes changes fetched from the remote and merges them into the local brach## Check for any changes and pull those in
+
+git pull
+
+
+#*******************************************************************************
+# Render before staging
+#*******************************************************************************
+
+quarto::quarto_render(as_job = FALSE)
+
+#*******************************************************************************
+# Getting files from local machine to Github repository
+#*******************************************************************************
+
+git config --global core.autocrlf true
+
+## Stage the .qmd and resource files
+
+git add *.qmd
+git add oeda.scss
+git add _quarto.yml
+git add data
+git add images
+
+## Stage the rendered website files
+
+
+git add docs
+
+## Commit and push
+
+git commit -m "Commit note"
+git push
+
+# Getting files from local machine to Github repository
+
+
+
+## Remove staged files
+git restore --staged <file>
+
+
+
+
+

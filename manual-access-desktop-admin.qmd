@@ -1,0 +1,21 @@
+---
+title: "System Access - Desktop admin accounts"
+author: "Jason Wallin, OEDA-GIS Manager"
+---
+
+Gaining local administrator access to your physical or virtual machine can be helpful in allowing you to install R, RStudio/Positron, Python, etc.
+
+* Log into the [OIS helpdesk ticketing system](https://itservices.odhsoha.oregon.gov/casm.html#/bui/home)
+* Select `More`
+* Select `Individual Access Request (IAR) MSC 0786`
+* Indicate that you are requesting access for yourself
+* Set an effective date (the current date should be fine, or some time in the near future)
+* Indicate DHS as your employer
+* In section VI, select "Need an administrator local workstation account"
+* Provide your computer name, e.g. "DHSXXXXXXXX"
+* Identify your manager by OR number or search by name
+* Click `Submit`
+
+The ticket system should automatically send the request to your manager when you submit.
+
+Local admin accounts require frequent password changes. The accounts can be difficult to regain access to if you let them lapse; so keep up with password change requirements.

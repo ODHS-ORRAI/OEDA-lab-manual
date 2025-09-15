@@ -57,15 +57,7 @@ website:
           contents:
             - text: '2025-Q4'
               href: council-meeting-2025-q4.qmd
-            - text: '2026-Q1'
-              href: council-meeting-2026-q1.qmd
-            - text: '2026-Q2'
-              href: council-meeting-2026-q2.qmd
-            - text: '2026-Q3'
-              href: council-meeting-2026-q3.qmd
-            - text: '2026-Q4'
-              href: council-meeting-2026-q4.qmd
-              
+
 #*******************************************************************************
 # PROJECTS
 #*******************************************************************************
@@ -96,7 +88,11 @@ website:
         - section: 'Units'
           contents:
             - text: 'Program evaluation'
-              href: manual-progeval.qmd
+              href: manual-system1-progeval.qmd
+        - section: 'Access'
+          contents:
+            - text: 'Desktop admin accounts'
+              href: manual-access-desktop-admin.qmd
         - section: 'Meetings'
           contents:
             - text: 'OEDA Team Meetings'
@@ -115,6 +111,8 @@ website:
           contents:
             - text: 'Quality checks-Research reports'
               href: manual-delivery-qc-research-reports.qmd
+            - text: 'Quality checks-Visualizations'
+              href: manual-delivery-qc-vis.qmd
             - text: 'GitHub pages websites'
               href: manual-delivery-publishing-github-pages.qmd
 

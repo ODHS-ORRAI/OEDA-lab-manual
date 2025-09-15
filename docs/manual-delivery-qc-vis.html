@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jason Wallin, OEDA-GIS Manager">
+
+<title>Quality Control - Visualization</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f914bfcded85c39274bb79ec5eb7e1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-331700db1a7af1cffa2421ccea9d1f8a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logos/OEDA_Logo_Horizontal_Dark.svg" alt="Oregon Enterprise Data Analytics" class="navbar-logo light-content">
+    <img src="./images/logos/OEDA_Logo_Horizontal_Dark.svg" alt="Oregon Enterprise Data Analytics" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./manual-main.html"> 
+<span class="menu-text">Lab manual</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./council-main.html"> 
+<span class="menu-text">Council</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects-main.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Publications</span>
+    </span>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Blog</span>
+    </span>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data-main.html"> 
+<span class="menu-text">Data profiles</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./manual-delivery-qc-research-reports.html">Publication &amp; delivery</a></li><li class="breadcrumb-item"><a href="./manual-delivery-qc-vis.html">Quality checks-Visualizations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="eda769c73adf54b764e0e590b8c3399b" class="alert alert-danger hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>DRAFT</strong> - This website is currently being created and tested. URLs will likely be unstable for some time. Please do not quote from or cite this material.</p>
+</div></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-main.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab manual home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Units</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-system1-progeval.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Program evaluation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Access</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-access-desktop-admin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Desktop admin accounts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Meetings</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-meetings-oeda-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OEDA Team Meetings</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ideation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-ideation-intelligence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">System 4 Intelligence</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Product development</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-products-formats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Digital formats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-products-logos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OEDA logos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Publication &amp; delivery</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-delivery-qc-research-reports.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quality checks-Research reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-delivery-qc-vis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Quality checks-Visualizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./manual-delivery-publishing-github-pages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub pages websites</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link active" data-scroll-target="#checklist">Checklist</a>
+  <ul class="collapse">
+  <li><a href="#planning-before-writing-gglot" id="toc-planning-before-writing-gglot" class="nav-link" data-scroll-target="#planning-before-writing-gglot">Planning: Before writing <code>gglot()</code></a></li>
+  <li><a href="#tibble-to-be-plotted" id="toc-tibble-to-be-plotted" class="nav-link" data-scroll-target="#tibble-to-be-plotted">Tibble to be plotted</a></li>
+  <li><a href="#aes" id="toc-aes" class="nav-link" data-scroll-target="#aes"><code>aes()</code></a></li>
+  <li><a href="#geom_" id="toc-geom_" class="nav-link" data-scroll-target="#geom_"><code>geom_*</code></a></li>
+  <li><a href="#scale_" id="toc-scale_" class="nav-link" data-scroll-target="#scale_"><code>scale_*</code></a></li>
+  <li><a href="#theme" id="toc-theme" class="nav-link" data-scroll-target="#theme"><code>theme()</code></a></li>
+  <li><a href="#guides" id="toc-guides" class="nav-link" data-scroll-target="#guides"><code>guides()</code></a></li>
+  <li><a href="#labs-and-annotate" id="toc-labs-and-annotate" class="nav-link" data-scroll-target="#labs-and-annotate"><code>labs()</code> and <code>annotate</code></a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#finalization-delivery" id="toc-finalization-delivery" class="nav-link" data-scroll-target="#finalization-delivery">Finalization &amp; delivery</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./manual-delivery-qc-research-reports.html">Publication &amp; delivery</a></li><li class="breadcrumb-item"><a href="./manual-delivery-qc-vis.html">Quality checks-Visualizations</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Quality Control - Visualization</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jason Wallin, OEDA-GIS Manager </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="checklist" class="level2">
+<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
+<p>This checklist is intended for visualizations before they go “in-production”, and are distributed or presented to peers, stakeholders, the public, etc. This level of scrutiny is not appropriate for early stages, exploratory data analysis.</p>
+<section id="planning-before-writing-gglot" class="level3">
+<h3 class="anchored" data-anchor-id="planning-before-writing-gglot">Planning: Before writing <code>gglot()</code></h3>
+<ol class="example" type="1">
+<li><p><strong>Audience:</strong> Who is the audience for this visualization: expert peers, stakeholders, general audience, etc.? This should influence complexity, jargon, annotations, etc.</p></li>
+<li><p><strong>Core message:</strong> What is the single, primary insight this vis conveys? Write it in one sentence.</p></li>
+<li><p><strong>Data:</strong> Have you selected the minimal data necessary to support the core message?</p></li>
+</ol>
+</section>
+<section id="tibble-to-be-plotted" class="level3">
+<h3 class="anchored" data-anchor-id="tibble-to-be-plotted">Tibble to be plotted</h3>
+<ol start="4" class="example" type="1">
+<li><p><strong>Filtering:</strong> Have the data been correctly filtered for the specific message of this plot? Are you accidentally including or excluding data that could change the conclusion?</p></li>
+<li><p><strong>Data types:</strong> Confirm numeric, factor, and date types are correct. Are ordinal or nominal variables formatted as factors with sensible ordering: (<code>mutate(Category = ordered(Category, levels = c('Low', 'Medium', 'High')))</code>)?</p></li>
+<li><p><strong>Missingness:</strong> Have you made a conscious decision about <code>NA</code> values: remove, impute, display? Note the decision and justification (if <code>NA</code> are not displayed) in a caption. <code>ggplot2()</code> often throws a warning about removing rows with missing values. Do not ignore this. Will removing rows with missing values affect your interpretation?</p></li>
+<li><p><strong>Outliers:</strong> Have you investigated outliers? Are they genuine data points or errors? Decide whether to include or exclude. Note the decision and justify it in a caption or annotation.</p></li>
+</ol>
+</section>
+<section id="aes" class="level3">
+<h3 class="anchored" data-anchor-id="aes"><code>aes()</code></h3>
+<ol start="8" class="example" type="1">
+<li><strong>Mappings:</strong> Have you sensibly mapped tibble columns to vis aesthetics?
+<ul>
+<li>Are your most important variables mapped to the most prominent aesthetics: <code>aes(x = col, y = col)</code>?</li>
+<li>When the study includes an independent, quasi-independent, or predictor variable, is that mapped to <code>aes(x = col)</code>?</li>
+<li>Is the dependent variable, outcome variable, or response mapped to <code>aes(y = col)</code>?</li>
+<li>Are secondary variables mapped to <code>aes(color = col)</code>, <code>aes(size = col)</code>, <code>aes(shape = col)</code>, or <code>aes(alpha = col)</code>?</li>
+</ul></li>
+</ol>
+</section>
+<section id="geom_" class="level3">
+<h3 class="anchored" data-anchor-id="geom_"><code>geom_*</code></h3>
+<ol start="9" class="example" type="1">
+<li><p><strong>Geom:</strong> Have you selected an appropriate geom for your primary insight?</p>
+<ul>
+<li><code>geom_boxplot()</code> for comparing two or more distributions</li>
+<li><code>geom_line()</code> for time series</li>
+<li><code>geom_point()</code> for bivariate relationships on two quantitative axes</li>
+</ul></li>
+<li><p><strong>Data density:</strong> For large datasets, have you addressed overplotting: <code>geom_*(alpha = num)</code>, <code>geom_jitter()</code>, <code>geom_hex()</code>, or <code>geom_density2d()</code>? Alternatively, consider aggregating and reflecting overplotting with <code>geom_*(size = num)</code>.</p></li>
+<li><p><strong>Representing variation or uncertainty along with central tendency:</strong> If visualizing summary statistics (means, medians, etc.) have you also displayed uncertainty: e.g.&nbsp;<code>geom_errorbar()</code> or <code>geom_ribbon()</code> for confidence intervals, <code>geom_boxplot()</code> for IQR, or <code>geom_point()</code>/<code>geom_jitter()</code> to overlay the full distribution?</p></li>
+</ol>
+</section>
+<section id="scale_" class="level3">
+<h3 class="anchored" data-anchor-id="scale_"><code>scale_*</code></h3>
+<ol start="12" class="example" type="1">
+<li><p><strong>Axis limits:</strong> When the y-axis is continuous and positive, does it include zero?</p>
+<ul>
+<li><code>scale_y_continuous(limits = c(0, upper_limit))</code> will remove data points outside the range <code>(0, upper_limit)</code>. This will influence any statistical calculations, for example the IQR hinges for <code>geom_boxplot()</code>.</li>
+<li><code>coord_cartesian(ylim = c(0, upper_limit))</code> will “zoom” the visible viewport without changing statistical properties.</li>
+</ul></li>
+<li><p><strong>Facet axes:</strong> Are the <em>y-axis</em> limits the same across facets (especially when the main message involves comparing specific y-axis values between facets)? E.g. prefer <code>facet_grid(scales = 'fixed')</code> to <code>facet_grid(scales = 'free_y')</code>.</p></li>
+<li><p><strong>Breaks &amp; grids:</strong> Are axis ticks (<code>scale_*(breaks = vec)</code>)</p>
+<ul>
+<li>at logical intervals? E.g. weeks for a time series, rather than every 10 days. (<code>scale_x_date(date_breaks = '1 week', date_labels = '%W-@y')</code>)</li>
+<li>or at tidy intervals, e.g.&nbsp;c(0, 5, 10, 15, 20) rather than c(0, 7.3, 14.6, …)</li>
+</ul></li>
+</ol>
+</section>
+<section id="theme" class="level3">
+<h3 class="anchored" data-anchor-id="theme"><code>theme()</code></h3>
+<ol start="15" class="example" type="1">
+<li><strong>Grids:</strong> Are gridlines subtle and supportive, not distracting? (<code>theme(panel.grid.* = element_line(color = hex, linewidth = num, linetype = string))</code>)</li>
+</ol>
+</section>
+<section id="guides" class="level3">
+<h3 class="anchored" data-anchor-id="guides"><code>guides()</code></h3>
+<ol start="16" class="example" type="1">
+<li><strong>Legends:</strong> Generally, consider removing scale legends altogether–<code>guides(color = 'none')</code> or <code>theme(legend.position = 'none')</code>–and instead directly labeling on the plot, when possible.
+<ul>
+<li>For instance: Consider the case of plotting a time series (say a tibble named <code>tbl_Series</code>), with a separate, differently colored <code>geom_line()</code> for each level of the variable <code>Group</code> using <code>aes(color = 'Group')</code>. You might try passing a filtered tibble to <code>geom_label()</code> with just the last time point for each Group, to create a label for the series on the far right side of the figure.</li>
+</ul></li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>tbl_Series <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Date =</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="fu">ymd</span>(<span class="st">'2025-01-01'</span>), <span class="fu">ymd</span>(<span class="st">'2025-01-31'</span>), <span class="at">by =</span> <span class="st">'1 day'</span>), <span class="at">times =</span> <span class="dv">3</span>),</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Group =</span> <span class="fu">rep</span>(LETTERS[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>], <span class="at">each =</span> <span class="dv">31</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Value =</span> <span class="fu">c</span>(<span class="fu">runif</span>(<span class="dv">31</span>, <span class="dv">10</span>, <span class="dv">12</span>), <span class="fu">runif</span>(<span class="dv">31</span>, <span class="dv">2</span>, <span class="dv">5</span>), <span class="fu">runif</span>(<span class="dv">31</span>, <span class="dv">6</span>,<span class="dv">8</span>))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Group =</span> <span class="fu">as.factor</span>(Group))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> tbl_Series) <span class="sc">+</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Value, <span class="at">group =</span> Group) <span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">color =</span> Group)) <span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="st">'none'</span>) <span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">label =</span> Group),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>             <span class="at">data =</span> tbl_Series <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>               <span class="fu">filter</span>(Date <span class="sc">==</span> <span class="fu">max</span>(Date), <span class="at">.by =</span> Group),</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>             <span class="at">nudge_x =</span> <span class="dv">1</span>, <span class="co"># Move the labels 1 day to the right of the last date in each series</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="manual-delivery-qc-vis_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="labs-and-annotate" class="level3">
+<h3 class="anchored" data-anchor-id="labs-and-annotate"><code>labs()</code> and <code>annotate</code></h3>
+<ol start="17" class="example" type="1">
+<li><p>Does the title (<a href="https://ggplot2.tidyverse.org/reference/annotate.html"><code>labs(title = 'string')</code></a>) clearly communicate the major finding?</p></li>
+<li><p>Does the subtitle (<a href="https://ggplot2.tidyverse.org/reference/annotate.html"><code>labs(subtitle = 'string')</code></a>) and/or caption (<a href="https://ggplot2.tidyverse.org/reference/annotate.html"><code>labs(caption = )</code></a>) provide necessary context?</p>
+<ul>
+<li>data source</li>
+<li>analysis time frame</li>
+<li>population</li>
+<li>geographic region</li>
+</ul></li>
+<li><p>Are axis labels…</p>
+<ul>
+<li>necessary? E.g. when the x-axis is <code>geom_boxplot()</code> with a different boxplot for each group, is it necessary to have an x-axis label that says “Group” when each boxplot is already labeled on the axis tick mark? Consider <code>labs(x = '')</code> or <code>theme(axis.title.x = element_blank())</code></li>
+<li>descriptive? Does it include units, units which are meaningful to practice: individuals, cases, dollars, length of stay–rather than percentages, odds ratios, etc.? <code>labs(y = 'Length of stay (days)')</code></li>
+</ul></li>
+</ol>
+</section>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
+<ol start="20" class="example" type="1">
+<li><p><strong>Message match:</strong> Look at the plot without any other context. Does it convey the core message?</p></li>
+<li><p><strong>Narrative flow:</strong> If part of a series, does the vis fit logically and stylistically with the others? Is the use of color and symbols consistent? (E.g. do you use the same color to highlight the control group, or to indicate a positive effect, etc.?)</p></li>
+<li><p><strong>Misinterpretation:</strong> Could any aspect of the vis mislead a good-faith observer? Look for truncated axes, effects of aspect ratio, interpretations of colors? Are you visually exaggerating a non-significant effect?</p></li>
+<li><p><strong>Peer review:</strong> Show the vis to a colleague unfamiliar with the project. Ask them what they think the main takeaway is. Does their interpretation match yours?</p></li>
+</ol>
+</section>
+<section id="finalization-delivery" class="level3">
+<h3 class="anchored" data-anchor-id="finalization-delivery">Finalization &amp; delivery</h3>
+<ol start="24" class="example" type="1">
+<li><p><strong>Reproducibility:</strong> If you restart R (<code>ctrl+shift+F10</code>), will running your .R file top-to-bottom return the intended visualization without any errors?</p></li>
+<li><p><strong>Code style:</strong> Is your data prep and <code>ggplot2()</code> code readable, with comments explaining any complex steps? Have you followed OEDA standards for code style?</p></li>
+<li><p><strong>Accessibility:</strong> Have you followed OEDA standards for visual contrast, font selection, font size, use of color?</p></li>
+<li><p><strong>Export:</strong> If the image is being exported as a stand-alone file, use a vector format (<code>ggsave(file = 'myplot.svg')</code> or <code>ggsave(file = 'myplot.pdf'</code>) for print or PDF publications. Use a raster format (<code>ggsave(file = 'myplot.png')</code>) for web or presentations.</p></li>
+<li><p><strong>Dimensions:</strong> Specify dimensions <code>height</code>, <code>width</code>, and <code>units</code> to match the target medium and avoid distortion: <code>ggsave(filename, plot, height = , width = , units = )</code></p></li>
+</ol>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Quality Control - Visualization"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Jason Wallin, OEDA-GIS Manager"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Checklist</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>This checklist is intended for visualizations before they go "in-production", and are distributed or presented to peers, stakeholders, the public, etc. This level of scrutiny is not appropriate for early stages, exploratory data analysis.</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">### Planning: Before writing `gglot()`</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>(@) **Audience:** Who is the audience for this visualization: expert peers, stakeholders, general audience, etc.? This should influence complexity, jargon, annotations, etc. </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>(@) **Core message:** What is the single, primary insight this vis conveys? Write it in one sentence. </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>(@) **Data:** Have you selected the minimal data necessary to support the core message?</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tibble to be plotted</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>(@) **Filtering:** Have the data been correctly filtered for the specific message of this plot? Are you accidentally including or excluding data that could change the conclusion?</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>(@) **Data types:** Confirm numeric, factor, and date types are correct. Are ordinal or nominal variables formatted as factors with sensible ordering: (<span class="in">`mutate(Category = ordered(Category, levels = c('Low', 'Medium', 'High')))`</span>)? </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>(@) **Missingness:** Have you made a conscious decision about <span class="in">`NA`</span> values: remove, impute, display? Note the decision and justification (if <span class="in">`NA`</span> are not displayed) in a caption. <span class="in">`ggplot2()`</span> often throws a warning about removing rows with missing values. Do not ignore this. Will removing rows with missing values affect your interpretation?</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>(@) **Outliers:** Have you investigated outliers? Are they genuine data points or errors? Decide whether to include or exclude. Note the decision and justify it in a caption or annotation.</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="fu">### `aes()`</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>(@) **Mappings:** Have you sensibly mapped tibble columns to vis aesthetics?</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Are your most important variables mapped to the most prominent aesthetics: <span class="in">`aes(x = col, y = col)`</span>?</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>When the study includes an independent, quasi-independent, or predictor variable, is that mapped to <span class="in">`aes(x = col)`</span>?</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Is the dependent variable, outcome variable, or response mapped to <span class="in">`aes(y = col)`</span>?</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Are secondary variables mapped to <span class="in">`aes(color = col)`</span>, <span class="in">`aes(size = col)`</span>, <span class="in">`aes(shape = col)`</span>, or <span class="in">`aes(alpha = col)`</span>?</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="fu">### `geom_*`</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>(@) **Geom:** Have you selected an appropriate geom for your primary insight?</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="in">`geom_boxplot()`</span> for comparing two or more distributions</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="in">`geom_line()`</span> for time series</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="in">`geom_point()`</span> for bivariate relationships on two quantitative axes</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>(@) **Data density:** For large datasets, have you addressed overplotting: <span class="in">`geom_*(alpha = num)`</span>, <span class="in">`geom_jitter()`</span>, <span class="in">`geom_hex()`</span>, or <span class="in">`geom_density2d()`</span>? Alternatively, consider aggregating and reflecting overplotting with <span class="in">`geom_*(size = num)`</span>.</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>(@) **Representing variation or uncertainty along with central tendency:** If visualizing summary statistics (means, medians, etc.) have you also displayed uncertainty: e.g. <span class="in">`geom_errorbar()`</span> or <span class="in">`geom_ribbon()`</span> for confidence intervals, <span class="in">`geom_boxplot()`</span> for IQR, or <span class="in">`geom_point()`</span>/<span class="in">`geom_jitter()`</span> to overlay the full distribution?</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="fu">### `scale_*`</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>(@) **Axis limits:** When the y-axis is continuous and positive, does it include zero?</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="in">`scale_y_continuous(limits = c(0, upper_limit))`</span> will remove data points outside the range <span class="in">`(0, upper_limit)`</span>. This will influence any statistical calculations, for example the IQR hinges for <span class="in">`geom_boxplot()`</span>.</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span><span class="in">`coord_cartesian(ylim = c(0, upper_limit))`</span> will "zoom" the visible viewport without changing statistical properties.</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>(@) **Facet axes:** Are the *y-axis* limits the same across facets (especially when the main message involves comparing specific y-axis values between facets)? E.g. prefer <span class="in">`facet_grid(scales = 'fixed')`</span> to <span class="in">`facet_grid(scales = 'free_y')`</span>.</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>(@) **Breaks &amp; grids:** Are axis ticks (<span class="in">`scale_*(breaks = vec)`</span>)</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>at logical intervals? E.g. weeks for a time series, rather than every 10 days. (<span class="in">`scale_x_date(date_breaks = '1 week', date_labels = '%W-@y')`</span>)</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>or at tidy intervals, e.g. c(0, 5, 10, 15, 20) rather than c(0, 7.3, 14.6, ...)</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="fu">### `theme()`</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>(@) **Grids:** Are gridlines subtle and supportive, not distracting? (<span class="in">`theme(panel.grid.* = element_line(color = hex, linewidth = num, linetype = string))`</span>)</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="fu">### `guides()`</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>(@) **Legends:** Generally, consider removing scale legends altogether--<span class="in">`guides(color = 'none')`</span> or <span class="in">`theme(legend.position = 'none')`</span>--and instead directly labeling on the plot, when possible.</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>For instance: Consider the case of plotting a time series (say a tibble named <span class="in">`tbl_Series`</span>), with a separate, differently colored <span class="in">`geom_line()`</span> for each level of the variable <span class="in">`Group`</span> using <span class="in">`aes(color = 'Group')`</span>. You might try passing a filtered tibble to <span class="in">`geom_label()`</span> with just the last time point for each Group, to create a label for the series on the far right side of the figure.</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="co">#| error: false</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>tbl_Series <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>  <span class="at">Date =</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="fu">ymd</span>(<span class="st">'2025-01-01'</span>), <span class="fu">ymd</span>(<span class="st">'2025-01-31'</span>), <span class="at">by =</span> <span class="st">'1 day'</span>), <span class="at">times =</span> <span class="dv">3</span>),</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>  <span class="at">Group =</span> <span class="fu">rep</span>(LETTERS[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>], <span class="at">each =</span> <span class="dv">31</span>),</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>  <span class="at">Value =</span> <span class="fu">c</span>(<span class="fu">runif</span>(<span class="dv">31</span>, <span class="dv">10</span>, <span class="dv">12</span>), <span class="fu">runif</span>(<span class="dv">31</span>, <span class="dv">2</span>, <span class="dv">5</span>), <span class="fu">runif</span>(<span class="dv">31</span>, <span class="dv">6</span>,<span class="dv">8</span>))</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Group =</span> <span class="fu">as.factor</span>(Group))</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> tbl_Series) <span class="sc">+</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Value, <span class="at">group =</span> Group) <span class="sc">+</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">color =</span> Group)) <span class="sc">+</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="st">'none'</span>) <span class="sc">+</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">label =</span> Group),</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>             <span class="at">data =</span> tbl_Series <span class="sc">|&gt;</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>               <span class="fu">filter</span>(Date <span class="sc">==</span> <span class="fu">max</span>(Date), <span class="at">.by =</span> Group),</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>             <span class="at">nudge_x =</span> <span class="dv">1</span>, <span class="co"># Move the labels 1 day to the right of the last date in each series</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">4</span>)</span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="fu">### `labs()` and `annotate`</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>(@) Does the title (<span class="co">[</span><span class="ot">`labs(title = 'string')`</span><span class="co">](https://ggplot2.tidyverse.org/reference/annotate.html)</span>) clearly communicate the major finding?</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>(@) Does the subtitle (<span class="co">[</span><span class="ot">`labs(subtitle = 'string')`</span><span class="co">](https://ggplot2.tidyverse.org/reference/annotate.html)</span>) and/or caption (<span class="co">[</span><span class="ot">`labs(caption = )`</span><span class="co">](https://ggplot2.tidyverse.org/reference/annotate.html)</span>) provide necessary context?</span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>data source</span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>analysis time frame</span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>population</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>geographic region</span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>(@) Are axis labels...</span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>necessary? E.g. when the x-axis is <span class="in">`geom_boxplot()`</span> with a different boxplot for each group, is it necessary to have an x-axis label that says "Group" when each boxplot is already labeled on the axis tick mark? Consider <span class="in">`labs(x = '')`</span> or <span class="in">`theme(axis.title.x = element_blank())`</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>descriptive? Does it include units, units which are meaningful to practice: individuals, cases, dollars, length of stay--rather than percentages, odds ratios, etc.? <span class="in">`labs(y = 'Length of stay (days)')`</span></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### Interpretation</span></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>(@) **Message match:** Look at the plot without any other context. Does it convey the core message?</span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>(@) **Narrative flow:** If part of a series, does the vis fit logically and stylistically with the others? Is the use of color and symbols consistent? (E.g. do you use the same color to highlight the control group, or to indicate a positive effect, etc.?)</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>(@) **Misinterpretation:** Could any aspect of the vis mislead a good-faith observer? Look for truncated axes, effects of aspect ratio, interpretations of colors? Are you visually exaggerating a non-significant effect?</span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>(@) **Peer review:** Show the vis to a colleague unfamiliar with the project. Ask them what they think the main takeaway is. Does their interpretation match yours?</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="fu">### Finalization &amp; delivery</span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>(@) **Reproducibility:** If you restart R (<span class="in">`ctrl+shift+F10`</span>), will running your .R file top-to-bottom return the intended visualization without any errors?</span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>(@) **Code style:** Is your data prep and <span class="in">`ggplot2()`</span> code readable, with comments explaining any complex steps? Have you followed OEDA standards for code style?</span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>(@) **Accessibility:** Have you followed OEDA standards for visual contrast, font selection, font size, use of color?</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a>(@) **Export:** If the image is being exported as a stand-alone file, use a vector format (<span class="in">`ggsave(file = 'myplot.svg')`</span> or <span class="in">`ggsave(file = 'myplot.pdf'`</span>) for print or PDF publications. Use a raster format (<span class="in">`ggsave(file = 'myplot.png')`</span>) for web or presentations.</span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>(@) **Dimensions:** Specify dimensions <span class="in">`height`</span>, <span class="in">`width`</span>, and <span class="in">`units`</span> to match the target medium and avoid distortion:  <span class="in">`ggsave(filename, plot, height = , width = , units = )`</span></span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
