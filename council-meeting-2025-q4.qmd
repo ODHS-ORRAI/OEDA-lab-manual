@@ -3,13 +3,44 @@ title: "OEDA Advisory Council Meeting - 2025 - Q4"
 author: "Jason Wallin, OEDA-GIS Manager"
 ---
 
-## Agenda{#agenda}
+## Monday, September 29, 2025
 
-Monday, September 29, 2025
+Microsoft Teams meeting
 
-* Introductions of the council members
-    * What was your path to a research career with Oregon state government?
-* History of OEDA
+## Agenda {#agenda}
+
+**Meeting goal:** To establish a shared understanding of OEDA's renewed purpose and to activate the OEDA Advisory Council as strategic partners in cross-agency collaboration.
+
+| Time | Topic | Lead | Objective |
+|:-|:----|:--|:--------|
+| 2:35 | Welcome | Jason | Tech check; outline the agenda; start recording and transcription, with consent |
+| 2:40 | Introductions: Our winding paths | All | Connection: What was your path to a data/research career with Oregon state government? |
+| 3:15 | Setting the stage: OEDA's purpose & potential | Jason | The research team's mission, vision, values; our history and challenges |
+| 3:20 | Our request: Defining the council's role | Jason | OEDA's need for intelligence, insight, and interaction |
+| 3:30 | Cross-agency insights | All | Brainstorm: Real-world opportunities & challenges
+| 3:50 | Closing & next steps | Jason | Next time: OEDA team, council charter, OEDA processes |
+
+
+
+
+## Invitees {#invitees}
+
+* Kelly Officer, CJC
+* Michael Wienerman, CJC
+* Elise Cordle Kennedy, DELC
+* Lindsay Ollenrenshaw, DELC
+* Kristen Banschbach, DOC
+* Kate Kempany, DOC
+* Isabella Jacoby, ODE
+* David Kampff, ODVA
+* Robert Uhlenkott, OED
+* Peter Sprengelmeyer, ODHS
+* Amanda Peden, OHA
+* Megan Bolton, OHCS
+* Jason Wallin, OEDA
+* Mark Greenwald, OYA
+* Shannon Myrick, OYA
+
 
 
 ## Notes{#notes}

@@ -1,0 +1,98 @@
+---
+title: ''
+author: ''
+format:
+  revealjs:
+    theme:
+      oeda-revealjs.scss
+---
+
+:::{.columns}
+
+:::{.column width='50%'}
+
+![](../images/logos/OEDA_Logo_Primary_Dark.svg)
+
+<!-- End column 1 -->
+:::
+
+:::{.column width='50%'}
+
+# Welcome!
+
+**OEDA Advisory Council Kickoff**</br>
+Monday, September 29, 2025, 2:35-3:55
+
+:::{style="font-size: 0.5em;"}
+
+**Meeting goal:** To establish a shared understanding of OEDA's renewed purpose and to activate the OEDA Advisory Council as strategic partners in cross-agency collaboration.
+
+| Time | Topic | Lead | Objective |
+|:-|:----|:--|:--------|
+| 2:35 | Welcome | Jason | Tech check; outline the agenda; start recording and transcription, with consent |
+| 2:40 | Introductions: Our winding paths | All | Connection: What was your path to a data/research career with Oregon state government? |
+| 3:15 | Setting the stage: OEDA's purpose & potential | Jason | The research team's mission, vision, values; our history and challenges |
+| 3:20 | Our request: Defining the council's role | Jason | OEDA's need for intelligence, insight, and interaction |
+| 3:30 | Cross-agency insights | All | Brainstorm: Real-world opportunities & challenges
+| 3:50 | Closing & next steps | Jason | Next time: OEDA team, council charter, OEDA processes |
+
+<!-- End smaller font size -->
+::: 
+
+<!-- End column 2 -->
+::: 
+
+<!-- End column section -->
+::: 
+
+:::{.notes}
+"Thank you all for making the time to be here. I am very excited for this council; I believe this can be a powerful catalyst for data-informed work across the state."
+
+Make sure everyone's sound and video are working. Please feel free to use the 'raise hand' feature. Chat is a great place to drop links to resources and information, share documents, etc. If you find yourself typing a paragraph, though--consider raising your hand instead. It can be difficult to have a spoken conversation and half a dozen written conversations happening simultaneously!
+
+"Would everyone be okay if I started a video, transcription, and enabled Copilot for this meeting?"
+
+<!-- End notes -->
+:::
+
+# Our winding paths
+
+:::{.columns}
+
+:::{.column width='50%'}
+
+In under 2 minutes:
+
+* Name
+* Pronouns if you like
+* Agency
+* Role
+* Short story of the winding path that brought you to data/research in Oregon
+
+<!-- End column 1 -->
+:::
+
+:::{.column width='50%'}
+
+![](assets/01_Full labyrinth_Cover_541_edited.avif){height='400px'}
+
+:::{style="font-size: 0.3em;"}
+
+Photo credit [Circles in the Sand, Bandon](https://www.sandypathbandon.com/)
+<!-- End smaller font size -->
+:::
+
+
+<!-- End column 2 -->
+:::
+
+<!-- End column section -->
+:::
+
+
+:::{.notes}
+"Let's start with some introductions. I'll go down the list of attendees. Please start with the usual--your name, agency, role, and pronouns if you like. Then, we'd love to hear the short story of the winding path that brought you to your current role. In under two minutes, could you  you share some a little of your history? Any pivots, unexpected turns, or surprising steps that led you here?
+
+!IMPORTANT: Use the timer feature in Teams.
+:::
+

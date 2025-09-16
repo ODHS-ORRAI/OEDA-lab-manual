@@ -20,6 +20,7 @@ author: "Jason Wallin, OEDA-GIS Manager"
 | DOC	 | Kate     | Kempany		     | Research Scientist |	
 | OHCS | Megan    | Bolton         | Assistant Director of Research |	
 | ODE  | Isabella | Jacoby         | Agency Director of Data Stewardship | 
+| ODVA | David    | Kampff         | Chief Information Officer |
 
 
 ## Facilitator
