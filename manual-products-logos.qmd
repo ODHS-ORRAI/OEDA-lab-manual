@@ -11,39 +11,39 @@ You can right click on any of the images below and select save as to save them l
 ## Primary (vertical) logo - Light mode
 
 ```quarto
-![](images/OEDA_Logo_Primary.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
+![](images/logos/OEDA_Logo_Primary.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
 ```
 
-![](images/OEDA_Logo_Primary.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
+![](images/logos/OEDA_Logo_Primary.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
 
 
 ## Primary (vertical) logo - Dark mode
 
 ```quarto
-![](images/OEDA_Logo_Primary_Dark.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
+![](images/logos/OEDA_Logo_Primary_Dark.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
 ```
 
 <div style="background-color:#314042; padding:1em;">
-  <img src="images/OEDA_Logo_Primary_Dark.svg" alt="Oregon Enterprise Data Analytics Logo" width=50%>
+  <img src="images/logos/OEDA_Logo_Primary_Dark.svg" alt="Oregon Enterprise Data Analytics Logo" width=50%>
 </div>
 
 
 ## Horizontal logo - Light mode
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
 
 
 ## Horizontal logo - Dark mode
 
 ```quarto
-![](images/OEDA_Logo_Horizontal_Dark.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
+![](images/logos/OEDA_Logo_Horizontal_Dark.svg){fig-alt="Oregon Enterprise Data Analytics Logo"}
 ```
 
 <div style="background-color:#314042; padding:1em;">
-  <img src="images/OEDA_Logo_Horizontal_Dark.svg" alt="Oregon Enterprise Data Analytics Logo" width="50%">
+  <img src="images/logos/OEDA_Logo_Horizontal_Dark.svg" alt="Oregon Enterprise Data Analytics Logo" width="50%">
 </div>
 
 ## Scaling
@@ -51,47 +51,47 @@ You can right click on any of the images below and select save as to save them l
 You can scale images using either height or width. To prevent distortion, set only one or the other and let the browser work out the other dimension to keep the aspect ratio of the original. You can use absolute pixel sizes or relative percentages.
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=10%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=10%}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=10%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=10%}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=30%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=30%}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=30%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=30%}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=50%}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=70%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=70%}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=70%}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" width=70%}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=100px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=100px}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=100px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=100px}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=300px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=300px}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=300px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=300px}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=500px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=500px}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=500px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=500px}
 
 ```quarto
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=700px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=700px}
 ```
-![](images/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=700px}
+![](images/logos/OEDA_Logo_Horizontal.svg){fig-alt="Oregon Enterprise Data Analytics Logo" height=700px}
 

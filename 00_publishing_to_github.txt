@@ -13,7 +13,7 @@ git pull
 # Render before staging
 #*******************************************************************************
 
-quarto::quarto_render(as_job = FALSE)
+quarto::quarto_render()
 
 #*******************************************************************************
 # Getting files from local machine to Github repository
@@ -38,8 +38,6 @@ git add docs
 
 git commit -m "Commit note"
 git push
-
-# Getting files from local machine to Github repository
 
 
 
