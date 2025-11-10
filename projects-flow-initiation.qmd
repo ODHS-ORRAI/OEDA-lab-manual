@@ -3,8 +3,6 @@ title: "From Idea to OEDA project"
 author: "Jason Wallin, OEDA-GIS Manager"
 ---
 
-
-
 ### Ideation
 
 Ideas can come from anywhere. There may be suggestions, requests, or questions voiced in Advisory Council meetings. Researchers may review academic or think tank literature. Agency researchers and subject matter experts may meet with OEDA researchers and discuss ideas. And so on.
