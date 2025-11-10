@@ -57,15 +57,23 @@ If you've rendered your .qmd to .html, here is a workflow that can help you meas
 library(rvest)
 library(sylcount)
 
-doc_path <- "docs/projects-flow-initiation.html"
+# You can use a local path or a web-based path. I'll use a Wikipedia page on Oregon as an example
+doc_path <- "https://en.wikipedia.org/wiki/Oregon"
+
+# Identify the elements that contain the major body text in your document
+# Usually these are <p> HTML elements
+# If you want to ignore headings in your readability stats, remove the h1, h2, etc. 
 element_set <- "p, h1, h2, h3, h4"
-# Remove the h1, h2, etc. if you want to ignore headings in your measures
+
 # Add any additional container elements in your document. For instance, if you've incorporated text-heavy tables, you might add td to this set
 
 page <- rvest::read_html(doc_path)
 elements <- rvest::html_elements(page, element_set)
 text <- rvest::html_text(elements) |> 
   paste(collapse = '\n')
+
+sylcount::readability(text) |> 
+  knitr::kable()
 
 
 # The Flesch reading ease score

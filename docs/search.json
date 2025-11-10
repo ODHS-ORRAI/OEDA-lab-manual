@@ -432,7 +432,7 @@
     "href": "manual-delivery-qc-research-reports.html#writing-quality-style",
     "title": "Quality checks: Research reports",
     "section": "Writing quality style",
-    "text": "Writing quality style\n\nNo placeholder text (ADD, TODO, etc.) remains\nGrammar, spelling, and punctuation are correct\n\ngramr provides a writing style linter\nChatGPT Grammar Checker might be an option; untested at time of writing\n\nVoice and tense are consistent\nTerminology and variable names are consistent throughout\nReadability scores have been calculated and are within OEDA adopted thresholds\n\nIf you’ve rendered your .qmd to .html, here is a workflow that can help you measure readability scores:\n\nlibrary(rvest)\n\nWarning: package 'rvest' was built under R version 4.4.3\n\nlibrary(sylcount)\n\ndoc_path &lt;- \"docs/projects-flow-initiation.html\"\nelement_set &lt;- \"p, h1, h2, h3, h4\"\n# Remove the h1, h2, etc. if you want to ignore headings in your measures\n# Add any additional container elements in your document. For instance, if you've incorporated text-heavy tables, you might add td to this set\n\npage &lt;- rvest::read_html(doc_path)\nelements &lt;- rvest::html_elements(page, element_set)\ntext &lt;- rvest::html_text(elements) |&gt; \n  paste(collapse = '\\n')\n\n\n# The Flesch reading ease score\n# https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch_reading_ease\nsylcount::readability(text)$re\n\n[1] 42.84879\n\n# The Flesch-Kincaid grade level score\n# https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch%E2%80%93Kincaid_grade_level\nsylcount::readability(text)$gl\n\n[1] 9.209871\n\n# Simple Measure of Gobbledygook (SMOG) score\n# https://en.wikipedia.org/wiki/SMOG\nsylcount::readability(text)$smog\n\n[1] 10.94415",
+    "text": "Writing quality style\n\nNo placeholder text (ADD, TODO, etc.) remains\nGrammar, spelling, and punctuation are correct\n\ngramr provides a writing style linter\nChatGPT Grammar Checker might be an option; untested at time of writing\n\nVoice and tense are consistent\nTerminology and variable names are consistent throughout\nReadability scores have been calculated and are within OEDA adopted thresholds\n\nIf you’ve rendered your .qmd to .html, here is a workflow that can help you measure readability scores:\n\nlibrary(rvest)\n\nWarning: package 'rvest' was built under R version 4.4.3\n\nlibrary(sylcount)\n\n# You can use a local path or a web-based path. I'll use a Wikipedia page on Oregon as an example\ndoc_path &lt;- \"https://en.wikipedia.org/wiki/Oregon\"\n\n# Identify the elements that contain the major body text in your document\n# Usually these are &lt;p&gt; HTML elements\n# If you want to ignore headings in your readability stats, remove the h1, h2, etc. \nelement_set &lt;- \"p, h1, h2, h3, h4\"\n\n# Add any additional container elements in your document. For instance, if you've incorporated text-heavy tables, you might add td to this set\n\npage &lt;- rvest::read_html(doc_path)\nelements &lt;- rvest::html_elements(page, element_set)\ntext &lt;- rvest::html_text(elements) |&gt; \n  paste(collapse = '\\n')\n\nsylcount::readability(text) |&gt; \n  knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nchars\nwordchars\nwords\nnonwords\nsents\nsylls\npolys\nre\ngl\nari\nsmog\ncl\n\n\n\n\n62779\n50341\n10344\n0\n940\n17460\n2065\n52.86638\n8.619293\n7\n11.59632\n10.12625\n\n\n\n\n# The Flesch reading ease score\n# https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch_reading_ease\nsylcount::readability(text)$re\n\n[1] 52.86638\n\n# The Flesch-Kincaid grade level score\n# https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch%E2%80%93Kincaid_grade_level\nsylcount::readability(text)$gl\n\n[1] 8.619293\n\n# Simple Measure of Gobbledygook (SMOG) score\n# https://en.wikipedia.org/wiki/SMOG\nsylcount::readability(text)$smog\n\n[1] 11.59632",
     "crumbs": [
       "Lab manual",
       "Publication & delivery",
@@ -450,291 +450,6 @@
       "Publication & delivery",
       "Quality checks-Research reports"
     ]
-  },
-  {
-    "objectID": "manual-access-desktop-admin.html",
-    "href": "manual-access-desktop-admin.html",
-    "title": "System Access - Desktop admin accounts",
-    "section": "",
-    "text": "Gaining local administrator access to your physical or virtual machine can be helpful in allowing you to install R, RStudio/Positron, Python, etc.\n\nLog into the OIS helpdesk ticketing system\nSelect More\nSelect Individual Access Request (IAR) MSC 0786\nIndicate that you are requesting access for yourself\nSet an effective date (the current date should be fine, or some time in the near future)\nIndicate DHS as your employer\nIn section VI, select “Need an administrator local workstation account”\nProvide your computer name, e.g. “DHSXXXXXXXX”\nIdentify your manager by OR number or search by name\nClick Submit\n\nThe ticket system should automatically send the request to your manager when you submit.\nLocal admin accounts require frequent password changes. The accounts can be difficult to regain access to if you let them lapse; so keep up with password change requirements.",
-    "crumbs": [
-      "Lab manual",
-      "Access",
-      "Desktop admin accounts"
-    ]
-  },
-  {
-    "objectID": "ideation-form.html",
-    "href": "ideation-form.html",
-    "title": "Using the request form",
-    "section": "",
-    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged."
-  },
-  {
-    "objectID": "ideation-form.html#intentions",
-    "href": "ideation-form.html#intentions",
-    "title": "Using the request form",
-    "section": "Intentions",
-    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs"
-  },
-  {
-    "objectID": "ideation-form.html#what-happens-after-submission",
-    "href": "ideation-form.html#what-happens-after-submission",
-    "title": "Using the request form",
-    "section": "What happens after submission",
-    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc."
-  },
-  {
-    "objectID": "council-proposal-rubric.html",
-    "href": "council-proposal-rubric.html",
-    "title": "Proposal scoring rubric",
-    "section": "",
-    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe current circumstances that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
-    "crumbs": [
-      "Council",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "council-proposal-rubric.html#background",
-    "href": "council-proposal-rubric.html#background",
-    "title": "Proposal scoring rubric",
-    "section": "",
-    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe current circumstances that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
-    "crumbs": [
-      "Council",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "council-proposal-rubric.html#screening-proposals",
-    "href": "council-proposal-rubric.html#screening-proposals",
-    "title": "Proposal scoring rubric",
-    "section": "Screening proposals",
-    "text": "Screening proposals\nOEDA staff will screen proposals ensuring that they meet a few must-have dimensions required of all OEDA proposals.\n\nScreening item 1: Integrated\n\nText: The proposal integrates data from more than one agency.\nOEDA value: OEDA projects are cross-agency and collaborative\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposed work integrates data from more than one state agency.\n\n\n\n\nFALSE\n\n\nThe proposed work does not integrate data from more than one state agency.\n\n\n\n\n\n\n\nScreening item 2: Redisclosure\n\nText: The proposal precludes redisclosure to third parties.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal explicitly precludes the redisclosure of agency data to anyone other than the contributing agency and OEDA.\n\n\n\n\nFALSE\n\n\nThe proposal does not contain language precluding redisclosure.\n\n\n\n\n\n\n\nScreening item 3: HumanSubjects\n\nText: The proposal addresses human subjects protections.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation from someone other than the investigators that the research is exempt from IRB review.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\n\n\n\nFALSE\n\n\nNone of the above are true; the proposed work does not adequately address human subjects protections.",
-    "crumbs": [
-      "Council",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "council-proposal-rubric.html#scoring-proposals",
-    "href": "council-proposal-rubric.html#scoring-proposals",
-    "title": "Proposal scoring rubric",
-    "section": "Scoring proposals",
-    "text": "Scoring proposals\nMembers of the OEDA Advisory Council will score proposals on criteria that relate to the relevance, impact, and urgency of the proposed work.\n\nScored item 1: Importance\n\nText: The current state is important to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe issue is relevant to a small work unit within a single agency and affects tens of clients.\n\n\n\n\n2\n\n\nThe issue is relevant to several employees across one or two agencies and affects hundreds of clients.\n\n\n\n\n3\n\n\nThe issue is relevant to employees across several agencies, relates to a state priority, and affects several hundreds of clients.\n\n\n\n\n4\n\n\nThe issue is widespread across multiple agencies, relates to one or more key state priorities, and affects thousands of clients.\n\n\n\n\n5\n\n\nThe issue is foundational and cross-agency, with substantial relationships to effective service delivery, and affects tens of thousands of clients.\n\n\n\n\n\n\n\nScored item 2: Urgency\n\nText: The current state is urgent to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThere is no immediate need to address this issue. It can be revisited at a later date with little to no consequence.\n\n\n\n\n2\n\n\nThe issue should be addressed within the next two years, but there are no immediate deadlines or critical events tied to it.\n\n\n\n\n3\n\n\nThe issue needs to be addressed within the year to avoid a negative impact on services or a key initiative.\n\n\n\n\n4\n\n\nThe issue needs to be addressed soon to support an upcoming policy change, a legislative mandate, or a critical program launch.\n\n\n\n\n5\n\n\nThe issue requires immediate attention to avoid a substantial negative outcome, such as a service disruption, public harm, or failure to meet a legal deadline.\n\n\n\n\n\n\n\nScored item 3: Impact\n\nText: The future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposed future state offers minimal improvements over the status quo, with little potential to change how agencies operate or serve clients.\n\n\n\n\n2\n\n\nThe future state would represent localized, loosely described improvements within one or two state agencies.\n\n\n\n\n3\n\n\nThe future state would be a clear, measureable improvement in specific processes or services across multiple agencies.\n\n\n\n\n4\n\n\nThe future state would be a significant change in how agencies coordinate or make decisions, a new level of efficiency, service quality, or service equity.\n\n\n\n\n5\n\n\nThe future state is a new paradigm for data-informed decision making across multiple agencies, fundamentally changing how government operates and serves its citizens.\n\n\n\n\n\n\n\nScored item 4: Questions\n\nText: The research questions are meaningful and useful.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe research topics or questions are vague, unrelated to the core problems or opportunities of the current state, or would not meaningfully contribute to achieving the desired future state.\n\n\n\n\n2\n\n\nThe research topics or questions are too broad, too narrow, or would only provide a partial answer. Significant uncertainty would remain.\n\n\n\n\n3\n\n\nThe questions are clear and directly address the gap between current and future states. Answering the questions would provide the necessary insight to move from the current to future state with reasonable confidence.\n\n\n\n\n4\n\n\nThe questions are insightful and precise, pinpointing the critical information needed to make informed decisions. Answering the questions is likely not to just fill the gap, but reveal new opportunities.\n\n\n\n\n5\n\n\nThe questions are incisive, originally, and essential for project success. Answering these questions would eliminate major uncertainties and provide a high degree of confidence that the desired future state can be achieved.\n\n\n\n\n\n\n\nScored item 5: Equity\n\nText: The proposal future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposal does not adequately acknowledge or consider ethical or equity implications; or there are reasons to believe the work will cause harm or perpetuate existing biases.\n\n\n\n\n2\n\n\nThe proposal mentions ethics or equity, but superficially, promising to meet minimum compliance standards, but without specific details or reasoning, and disconnected from the core project.\n\n\n\n\n3\n\n\nThe proposal includes specific plans related to ethics and equity, like data disaggregation, or including thoughts from those with lived experiences. But improving service equity is not a primary focus of the work.\n\n\n\n\n4\n\n\nThe proposal demonstrates a thoughtful understanding of the ethical and equity landscape–clearly identifying regions, communities, populations relevant to the research questions and providing strong rationale for their inclusion. A project aim is improving service equity, fairness, and equality of outcomes.\n\n\n\n\n5\n\n\nThe proposal includes meaningful engagement with clients in different parts of the state, with a variety of lived experiences, and part of different racial, ethnic, cultural, linguistic, and other communities. Specific metrics for measuring equity are incorporated into the proposed work, and improving those measures is key to the work.",
-    "crumbs": [
-      "Council",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "council-proposal-rubric.html#details",
-    "href": "council-proposal-rubric.html#details",
-    "title": "Proposal scoring rubric",
-    "section": "Details",
-    "text": "Details\n\nIRB\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\n\nResearch means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge [45 CFR 46.102(l)]\n\nMany common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.\nTypical systematic uses of data that are not research include:\n\nInternal program evaluation and quality improvement efforts\nOperational activities\nInformational interviews\n\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\n\nHuman subject means a living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens (ii) Obtains, uses, studies, analyzes, or generates identifiable private information on identifiable biospecimens 45 CFR 46.102(e)\n\nOften, work with administrative data is neither the result of intervention nor interaction.\n\nIntervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject’s environment that are performed for research purposes. 45 CFR 46.102(e)(2)\n\nGenerally, researchers for state agencies are not able to create randomized control trials where Oregonians’ experiences with their government are manipulated to develop strong internal validity for generalizable claims.\n\nInteraction includes communication or interpersonal contact between investigator and subject 45 CFR 46.102(e)(3)\n\nResearchers for state agencies are often working with private information.\n\nPrivate information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (e.g., a medical record). 45 CFR 46.102(e)(4)\n\nBut, researchers can often answer meaningful agency questions without using identifiable private information.\n\nIdentifiable private information is private information for which the identity of the subject is or may readily be ascertained by the investigator or associated with the information. 45 CFR 46.102(e)(5)\n\nAnalyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.\nCreating analytical datasets which follow Safe Harbor Regulations is one way to ensure that the analysis does not involve human subjects.\n\n\nThe proposal meets one or more of the requirements for review by the and has received approval from that body\nAny study that meets any of the criteria below must seek review by the Public Health Institutional Review Board.\n\n• The research is sponsored by the PHD (Oregon Public Health Division) or MCHD (Multnomah County Health Department);  • The research is conducted by or under the direction of an employee or agent of PHD or MCHD in connection with his/her agency responsibilities, or using any property or facility of PHD or MCHD;  • The research involves the use of PHD or MCHD’s data;  • The research involves the use of PHD or MCHD’s non-public information to identify or contact human research subjects or prospective subjects;  • Funding for the research will be handled through PHD or MCHD, but the research will be done at another location  Public Health Institutional Review Board (p. 3)\n\n\n\nThe project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nWhile the Federal HHS does not require it, they strong recommend that determinations of exempt status be conducted by individuals other than the investigators.\nFor context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.\nExempt research includes (among other exemptions):\n\nResearch in educational settings involving normal educational practices 45 CFR 46.104(d)(1)\nResearch whose interactions are only educational tests or observation of public behavior 45 CFR 46.104(d)(2)\nResearch whose interventions are benign behavioral interventions 45 CFR 46.104(d)(3)\nSecondary research for which consent is not required 45 CFR 46.104(d)(4), including specifically the following\n\n\nThe research involves only information collection and analysis involving the investigator’s use of identifiable health information when that use is regulated under 45 CFR parts 160 and 164, subparts A and E, for the purposes of “health care operations” or “research” as those terms are defined at 45 CFR 164.501 or for “public health activities and purposes” as described under 45 CFR 164.512(b);\n\nWhere the definitions for health care operations and research defined in 45 CFR 164.501 are\n\nHealth care operations means any of the following activities of the covered entity to the extent that the activities are related to covered functions: (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment; […] (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs; (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and (6) Business management and general administrative activities of the entity, including, but not limited to: (i) Management activities relating to implementation of and compliance with the requirements of this subchapter; (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer. […]   Researchmeans a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
-    "crumbs": [
-      "Council",
-      "Proposal rubric"
-    ]
-  },
-  {
-    "objectID": "council-meetings.html",
-    "href": "council-meetings.html",
-    "title": "OEDA Advisory Meetings",
-    "section": "",
-    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
-    "crumbs": [
-      "Council",
-      "Council meetings"
-    ]
-  },
-  {
-    "objectID": "council-meetings.html#purpose",
-    "href": "council-meetings.html#purpose",
-    "title": "OEDA Advisory Meetings",
-    "section": "",
-    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
-    "crumbs": [
-      "Council",
-      "Council meetings"
-    ]
-  },
-  {
-    "objectID": "council-meetings.html#agendas-and-notes",
-    "href": "council-meetings.html#agendas-and-notes",
-    "title": "OEDA Advisory Meetings",
-    "section": "Agendas and notes",
-    "text": "Agendas and notes\nYears and quarters are based on calendar years, not state or federal fiscal years.\n\n\n\nYear\nQuarter\nAgenda\nNotes\n\n\n\n\n2025\nQ4\nQ4 Agenda\nQ4 Notes",
-    "crumbs": [
-      "Council",
-      "Council meetings"
-    ]
-  },
-  {
-    "objectID": "council-main.html",
-    "href": "council-main.html",
-    "title": "OEDA Advisory Council",
-    "section": "",
-    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
-    "crumbs": [
-      "Council",
-      "Advisory council home"
-    ]
-  },
-  {
-    "objectID": "council-main.html#purpose",
-    "href": "council-main.html#purpose",
-    "title": "OEDA Advisory Council",
-    "section": "",
-    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
-    "crumbs": [
-      "Council",
-      "Advisory council home"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html",
-    "href": "council-meeting-2025-q4.html",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "",
-    "text": "Microsoft Teams meeting",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html#monday-september-29-2025",
-    "href": "council-meeting-2025-q4.html#monday-september-29-2025",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "",
-    "text": "Microsoft Teams meeting",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html#agenda",
-    "href": "council-meeting-2025-q4.html#agenda",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "Agenda",
-    "text": "Agenda\nMeeting goal: To establish a shared understanding of OEDA’s renewed purpose and to activate the OEDA Advisory Council as strategic partners in cross-agency collaboration.\n\n\n\n\n\n\n\n\n\nTime\nTopic\nLead\nObjective\n\n\n\n\n2:35\nWelcome\nJason\nTech check; outline the agenda; start recording and transcription, with consent\n\n\n2:40\nIntroductions: Our winding paths\nAll\nConnection: What was your path to a data/research career with Oregon state government?\n\n\n3:15\nSetting the stage: OEDA’s purpose & potential\nJason\nThe research team’s mission, vision, values; our history and challenges\n\n\n3:20\nOur request: Defining the council’s role\nJason\nOEDA’s need for intelligence, insight, and interaction\n\n\n3:30\nCross-agency insights\nAll\nBrainstorm: Real-world opportunities & challenges\n\n\n3:50\nClosing & next steps\nJason\nNext time: OEDA team, council charter, OEDA processes",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html#invitees",
-    "href": "council-meeting-2025-q4.html#invitees",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "Invitees",
-    "text": "Invitees\n\nKelly Officer, CJC\nMichael Wienerman, CJC\nElise Cordle Kennedy, DELC\nLindsay Ollenrenshaw, DELC\nKristen Banschbach, DOC\nKate Kempany, DOC\nIsabella Jacoby, ODE\nDavid Kampff, ODVA\nRobert Uhlenkott, OED\nPeter Sprengelmeyer, ODHS\nAmanda Peden, OHA\nMegan Bolton, OHCS\nJason Wallin, OEDA\nMark Greenwald, OYA\nShannon Myrick, OYA",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-meeting-2025-q4.html#notes",
-    "href": "council-meeting-2025-q4.html#notes",
-    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
-    "section": "Notes",
-    "text": "Notes\nText",
-    "crumbs": [
-      "Council",
-      "Council meetings",
-      "2025-Q4"
-    ]
-  },
-  {
-    "objectID": "council-members.html",
-    "href": "council-members.html",
-    "title": "OEDA Advisory Council Members",
-    "section": "",
-    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship\n\n\nODVA\nDavid\nKampff\nChief Information Officer",
-    "crumbs": [
-      "Council",
-      "Council members"
-    ]
-  },
-  {
-    "objectID": "council-members.html#agency-representatives",
-    "href": "council-members.html#agency-representatives",
-    "title": "OEDA Advisory Council Members",
-    "section": "",
-    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship\n\n\nODVA\nDavid\nKampff\nChief Information Officer",
-    "crumbs": [
-      "Council",
-      "Council members"
-    ]
-  },
-  {
-    "objectID": "council-members.html#facilitator",
-    "href": "council-members.html#facilitator",
-    "title": "OEDA Advisory Council Members",
-    "section": "Facilitator",
-    "text": "Facilitator\nJason Wallin, Manager Oregon Enterprise Data Analytics",
-    "crumbs": [
-      "Council",
-      "Council members"
-    ]
-  },
-  {
-    "objectID": "data-main.html",
-    "href": "data-main.html",
-    "title": "OEDA Data Profiles",
-    "section": "",
-    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
-  },
-  {
-    "objectID": "data-main.html#introduction",
-    "href": "data-main.html#introduction",
-    "title": "OEDA Data Profiles",
-    "section": "",
-    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
-  },
-  {
-    "objectID": "data-main.html#oregon-enterprise-outcomes",
-    "href": "data-main.html#oregon-enterprise-outcomes",
-    "title": "OEDA Data Profiles",
-    "section": "Oregon Enterprise Outcomes",
-    "text": "Oregon Enterprise Outcomes\n\nEntries into foster care\nExits from foster care\nContacts with the juvenile justice system"
-  },
-  {
-    "objectID": "data-main.html#oeda-stewarded-data",
-    "href": "data-main.html#oeda-stewarded-data",
-    "title": "OEDA Data Profiles",
-    "section": "OEDA Stewarded Data",
-    "text": "OEDA Stewarded Data\n\nChildhood and Adolescent Needs and Strengths (CANS)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oregon Enterprise Data Analytics",
-    "section": "",
-    "text": "Oregon Enterprise Data Analytics (OEDA) was created by the legislature to “support integration and analysis of client and customer service information across state agencies and programs [and to] provide coordination, consolidation, and clear accountability for that work” (Legislative Fiscal Office, p. 109).\nOEDA is housed within the Oregon Department of Human Services (ODHS). We are a shared service of ODHS and the Oregon Health Authority (OHA)."
-  },
-  {
-    "objectID": "index.html#oedas-mission-vision-and-values",
-    "href": "index.html#oedas-mission-vision-and-values",
-    "title": "Oregon Enterprise Data Analytics",
-    "section": "OEDA’s Mission, Vision, and Values",
-    "text": "OEDA’s Mission, Vision, and Values\n\nMission\nOEDA provides timely, objective, and independent research and analytics with integrated data. We enable Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.\n\n\nVision\nOregon state agencies integrating data to measure performance, evaluate services, test ideas, and improve operations."
-  },
-  {
-    "objectID": "index.html#values",
-    "href": "index.html#values",
-    "title": "Oregon Enterprise Data Analytics",
-    "section": "Values",
-    "text": "Values\nOEDA’s products are\n\nRigorous, transparent, & trustworthy\nRelevant & impactful\nAccessible, understandable, & approachable\nInnovative\n\nWorking with OEDA is\n\nEthical\nConstructive\nCollaborative & communicative\nWell-managed, professional, & conscientious\n\nPhoto credit: Chris Liverani on Unsplash"
   },
   {
     "objectID": "manual-delivery-publishing-github-pages.html",
@@ -867,6 +582,319 @@
       "Publication & delivery",
       "GitHub pages websites"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oregon Enterprise Data Analytics",
+    "section": "",
+    "text": "Oregon Enterprise Data Analytics (OEDA) was created by the legislature to “support integration and analysis of client and customer service information across state agencies and programs [and to] provide coordination, consolidation, and clear accountability for that work” (Legislative Fiscal Office, p. 109).\nOEDA is housed within the Oregon Department of Human Services (ODHS). We are a shared service of ODHS and the Oregon Health Authority (OHA)."
+  },
+  {
+    "objectID": "index.html#oedas-mission-vision-and-values",
+    "href": "index.html#oedas-mission-vision-and-values",
+    "title": "Oregon Enterprise Data Analytics",
+    "section": "OEDA’s Mission, Vision, and Values",
+    "text": "OEDA’s Mission, Vision, and Values\n\nMission\nOEDA provides timely, objective, and independent research and analytics with integrated data. We enable Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.\n\n\nVision\nOregon state agencies integrating data to measure performance, evaluate services, test ideas, and improve operations."
+  },
+  {
+    "objectID": "index.html#values",
+    "href": "index.html#values",
+    "title": "Oregon Enterprise Data Analytics",
+    "section": "Values",
+    "text": "Values\nOEDA’s products are\n\nRigorous, transparent, & trustworthy\nRelevant & impactful\nAccessible, understandable, & approachable\nInnovative\n\nWorking with OEDA is\n\nEthical\nConstructive\nCollaborative & communicative\nWell-managed, professional, & conscientious\n\nPhoto credit: Chris Liverani on Unsplash"
+  },
+  {
+    "objectID": "data-main.html",
+    "href": "data-main.html",
+    "title": "OEDA Data Profiles",
+    "section": "",
+    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
+  },
+  {
+    "objectID": "data-main.html#introduction",
+    "href": "data-main.html#introduction",
+    "title": "OEDA Data Profiles",
+    "section": "",
+    "text": "To do: Introduce the types of OEDA data: things we receive, things we create and steward. Introduce how we profile these data."
+  },
+  {
+    "objectID": "data-main.html#oregon-enterprise-outcomes",
+    "href": "data-main.html#oregon-enterprise-outcomes",
+    "title": "OEDA Data Profiles",
+    "section": "Oregon Enterprise Outcomes",
+    "text": "Oregon Enterprise Outcomes\n\nEntries into foster care\nExits from foster care\nContacts with the juvenile justice system"
+  },
+  {
+    "objectID": "data-main.html#oeda-stewarded-data",
+    "href": "data-main.html#oeda-stewarded-data",
+    "title": "OEDA Data Profiles",
+    "section": "OEDA Stewarded Data",
+    "text": "OEDA Stewarded Data\n\nChildhood and Adolescent Needs and Strengths (CANS)"
+  },
+  {
+    "objectID": "council-members.html",
+    "href": "council-members.html",
+    "title": "OEDA Advisory Council Members",
+    "section": "",
+    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship\n\n\nODVA\nDavid\nKampff\nChief Information Officer",
+    "crumbs": [
+      "Council",
+      "Council members"
+    ]
+  },
+  {
+    "objectID": "council-members.html#agency-representatives",
+    "href": "council-members.html#agency-representatives",
+    "title": "OEDA Advisory Council Members",
+    "section": "",
+    "text": "Agency\nFirst\nLast\nRole\n\n\n\n\nODHS\nPeter\nSprengelmeyer\nDirector, Office of Reporting, Research, Analytics, and Implementation\n\n\nOYA\nMark\nGreenwald\nResearch Manager\n\n\nOYA\nShannon\nMyrick\nAssistant Director of Development Services\n\n\nOHA\nAmanda\nPeden\nManager, Social Health Needs and Analytics Project\n\n\nDELC\nElise\nCordle Kennedy\nChief Research, Analytics, and Data Officer\n\n\nDELC\nLindsay\nOllerenshaw\nResearch & Evaluation Manager\n\n\nOED\nRobert\nUhlenkott\nDirector, Workforce & Economic Research Division\n\n\nCJC\nKelly\nOfficer\nDirector, Statistical Analysis Center\n\n\nCJC\nMichael\nWienerman\nResearch Economist\n\n\nDOC\nKristen\nBanschbach\nChief of Research\n\n\nDOC\nKate\nKempany\nResearch Scientist\n\n\nOHCS\nMegan\nBolton\nAssistant Director of Research\n\n\nODE\nIsabella\nJacoby\nAgency Director of Data Stewardship\n\n\nODVA\nDavid\nKampff\nChief Information Officer",
+    "crumbs": [
+      "Council",
+      "Council members"
+    ]
+  },
+  {
+    "objectID": "council-members.html#facilitator",
+    "href": "council-members.html#facilitator",
+    "title": "OEDA Advisory Council Members",
+    "section": "Facilitator",
+    "text": "Facilitator\nJason Wallin, Manager Oregon Enterprise Data Analytics",
+    "crumbs": [
+      "Council",
+      "Council members"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html",
+    "href": "council-meeting-2025-q4.html",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "",
+    "text": "Microsoft Teams meeting",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html#monday-september-29-2025",
+    "href": "council-meeting-2025-q4.html#monday-september-29-2025",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "",
+    "text": "Microsoft Teams meeting",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html#agenda",
+    "href": "council-meeting-2025-q4.html#agenda",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "Agenda",
+    "text": "Agenda\nMeeting goal: To establish a shared understanding of OEDA’s renewed purpose and to activate the OEDA Advisory Council as strategic partners in cross-agency collaboration.\n\n\n\n\n\n\n\n\n\nTime\nTopic\nLead\nObjective\n\n\n\n\n2:35\nWelcome\nJason\nTech check; outline the agenda; start recording and transcription, with consent\n\n\n2:40\nIntroductions: Our winding paths\nAll\nConnection: What was your path to a data/research career with Oregon state government?\n\n\n3:15\nSetting the stage: OEDA’s purpose & potential\nJason\nThe research team’s mission, vision, values; our history and challenges\n\n\n3:20\nOur request: Defining the council’s role\nJason\nOEDA’s need for intelligence, insight, and interaction\n\n\n3:30\nCross-agency insights\nAll\nBrainstorm: Real-world opportunities & challenges\n\n\n3:50\nClosing & next steps\nJason\nNext time: OEDA team, council charter, OEDA processes",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html#invitees",
+    "href": "council-meeting-2025-q4.html#invitees",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "Invitees",
+    "text": "Invitees\n\nKelly Officer, CJC\nMichael Wienerman, CJC\nElise Cordle Kennedy, DELC\nLindsay Ollenrenshaw, DELC\nKristen Banschbach, DOC\nKate Kempany, DOC\nIsabella Jacoby, ODE\nDavid Kampff, ODVA\nRobert Uhlenkott, OED\nPeter Sprengelmeyer, ODHS\nAmanda Peden, OHA\nMegan Bolton, OHCS\nJason Wallin, OEDA\nMark Greenwald, OYA\nShannon Myrick, OYA",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-meeting-2025-q4.html#notes",
+    "href": "council-meeting-2025-q4.html#notes",
+    "title": "OEDA Advisory Council Meeting - 2025 - Q4",
+    "section": "Notes",
+    "text": "Notes\nText",
+    "crumbs": [
+      "Council",
+      "Council meetings",
+      "2025-Q4"
+    ]
+  },
+  {
+    "objectID": "council-main.html",
+    "href": "council-main.html",
+    "title": "OEDA Advisory Council",
+    "section": "",
+    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
+    "crumbs": [
+      "Council",
+      "Advisory council home"
+    ]
+  },
+  {
+    "objectID": "council-main.html#purpose",
+    "href": "council-main.html#purpose",
+    "title": "OEDA Advisory Council",
+    "section": "",
+    "text": "The OEDA Advisory Council provides key intelligence, direction, and support for the OEDA portfolio.\n\n\nThe council plays a key role in maintaining the overall coherence and identity of OEDA by ensuring alignment with long-term strategic goals, values, and mission. The council serves as a steward of OEDA’s purpose across time and helps navigate tensions between present operational realities and future needs. They:\n\nRequest, provide feedback on, and approve the mission, vision, and goals for OEDA\nConduct a review of the OEDA mission, vision, and goals at least every two years\nAlign advice and direction with the OEDA mission, vision, and goals\n\n\n\n\nThe council shares intelligence among its members and with OEDA. They:\n\nShare briefings about initiatives, problems, opportunities, changes, and trends within agencies, Oregon government, and peer jurisdictions\nMaintain an active horizon scanning function to monitor developments in government policy, data science, technology, and public needs\n\n\n\n\nThe council supports the intake, evaluation, and prioritization of proposals for the OEDA research portfolio. They:\n\nIdentify avenues for the creation of proposals and submission to the committee\nAdopt criteria for evaluating proposals\nEvaluate proposals on their alignment with state needs and OEDA’s purpose\n\n\n\n\nThe council reviews charters of deliverables and timelines for OEDA projects. They:\n\nAdopt standards of review for OEDA project charters\nDirect the OEDA team to create project charters to support approved proposals\nSeek charter sponsorship from council members or their agency leaders\n\n\n\n\nThe council supports the successful completion of OEDA projects. They:\n\nSponsor and shepherd interagency agreements to integrate data.\nSecure resources for projects: time with agency data experts and subject matter experts\nProvide active intervention to remove obstacles in projects\n\n\n\n\nThe council is a primary audience for deliverables and findings from OEDA projects. They:\n\nBring findings back to their agencies to inform recommendations, policy changes, practice changes, and agency decisions\nReport back to one another and OEDA on the impacts of projects\n\n\n\n\nThe council provides feedback and guidance. They:\n\nComment on project quality, resource use, and processes\nSuggest metrics to evaluate OEDA’s level of service to the enterprise\n\n\n\n\nThe council safeguards projects from ideation, to chartering, to communication of findings. They:\n\nProvide an officer tasked with monitoring research independence\nProvide an avenue for escalating issues jeopardizing objectivity and independence",
+    "crumbs": [
+      "Council",
+      "Advisory council home"
+    ]
+  },
+  {
+    "objectID": "council-meetings.html",
+    "href": "council-meetings.html",
+    "title": "OEDA Advisory Meetings",
+    "section": "",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
+    "crumbs": [
+      "Council",
+      "Council meetings"
+    ]
+  },
+  {
+    "objectID": "council-meetings.html#purpose",
+    "href": "council-meetings.html#purpose",
+    "title": "OEDA Advisory Meetings",
+    "section": "",
+    "text": "The OEDA Advisory Council meetings are internal, cross-agency coordination meetings for research, analytics, and evaluation staff. The purpose is to share information, build mutual understanding of topics with cross-agency impacts, and explore opportunities for collaboration.\nThis meeting is not convened to deliberate toward decisions or to make formal recommendations on policy or administrative matters to any of the participating agencies. Any ideas or insights generated will be shared with appropriate decision-making bodies through established channels with each agency.\nThese meetings would not seem to meet the definitions of decision, deliberation, or governing body as defined under ORS 192.610.",
+    "crumbs": [
+      "Council",
+      "Council meetings"
+    ]
+  },
+  {
+    "objectID": "council-meetings.html#agendas-and-notes",
+    "href": "council-meetings.html#agendas-and-notes",
+    "title": "OEDA Advisory Meetings",
+    "section": "Agendas and notes",
+    "text": "Agendas and notes\nYears and quarters are based on calendar years, not state or federal fiscal years.\n\n\n\nYear\nQuarter\nAgenda\nNotes\n\n\n\n\n2025\nQ4\nQ4 Agenda\nQ4 Notes",
+    "crumbs": [
+      "Council",
+      "Council meetings"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html",
+    "href": "council-proposal-rubric.html",
+    "title": "Proposal scoring rubric",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe current circumstances that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html#background",
+    "href": "council-proposal-rubric.html#background",
+    "title": "Proposal scoring rubric",
+    "section": "",
+    "text": "Proposals for OEDA projects will be written by the OEDA researchers, generally in collaboration with researchers, data experts, or subject matter experts from partner agencies.\nProposals focus on\n\nthe current circumstances that partner agencies face: successes, problems, and opportunities\nthe future state that agencies would like to see, if those matters are addressed\nthe research questions that, when answered, can help achieve the future state\nthe research solutions that, when complete, will provide answers to the research questions",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html#screening-proposals",
+    "href": "council-proposal-rubric.html#screening-proposals",
+    "title": "Proposal scoring rubric",
+    "section": "Screening proposals",
+    "text": "Screening proposals\nOEDA staff will screen proposals ensuring that they meet a few must-have dimensions required of all OEDA proposals.\n\nScreening item 1: Integrated\n\nText: The proposal integrates data from more than one agency.\nOEDA value: OEDA projects are cross-agency and collaborative\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposed work integrates data from more than one state agency.\n\n\n\n\nFALSE\n\n\nThe proposed work does not integrate data from more than one state agency.\n\n\n\n\n\n\n\nScreening item 2: Redisclosure\n\nText: The proposal precludes redisclosure to third parties.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal explicitly precludes the redisclosure of agency data to anyone other than the contributing agency and OEDA.\n\n\n\n\nFALSE\n\n\nThe proposal does not contain language precluding redisclosure.\n\n\n\n\n\n\n\nScreening item 3: HumanSubjects\n\nText: The proposal addresses human subjects protections.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and meets one or more of the requirements for review by the Public Health Institutional Review Board. The proposal indicates that chartered work will need review from that body.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research, does not meet any of the requirements for review by the PH-IRB, but includes an attestation from someone other than the investigators that the research is exempt from IRB review.\n\n\n\n\nTRUE\n\n\nThe proposed work is human subjects research and is not exempt. The proposal indicates that chartered work will need review from an IRB.\n\n\n\n\nFALSE\n\n\nNone of the above are true; the proposed work does not adequately address human subjects protections.",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html#scoring-proposals",
+    "href": "council-proposal-rubric.html#scoring-proposals",
+    "title": "Proposal scoring rubric",
+    "section": "Scoring proposals",
+    "text": "Scoring proposals\nMembers of the OEDA Advisory Council will score proposals on criteria that relate to the relevance, impact, and urgency of the proposed work.\n\nScored item 1: Importance\n\nText: The current state is important to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe issue is relevant to a small work unit within a single agency and affects tens of clients.\n\n\n\n\n2\n\n\nThe issue is relevant to several employees across one or two agencies and affects hundreds of clients.\n\n\n\n\n3\n\n\nThe issue is relevant to employees across several agencies, relates to a state priority, and affects several hundreds of clients.\n\n\n\n\n4\n\n\nThe issue is widespread across multiple agencies, relates to one or more key state priorities, and affects thousands of clients.\n\n\n\n\n5\n\n\nThe issue is foundational and cross-agency, with substantial relationships to effective service delivery, and affects tens of thousands of clients.\n\n\n\n\n\n\n\nScored item 2: Urgency\n\nText: The current state is urgent to address.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThere is no immediate need to address this issue. It can be revisited at a later date with little to no consequence.\n\n\n\n\n2\n\n\nThe issue should be addressed within the next two years, but there are no immediate deadlines or critical events tied to it.\n\n\n\n\n3\n\n\nThe issue needs to be addressed within the year to avoid a negative impact on services or a key initiative.\n\n\n\n\n4\n\n\nThe issue needs to be addressed soon to support an upcoming policy change, a legislative mandate, or a critical program launch.\n\n\n\n\n5\n\n\nThe issue requires immediate attention to avoid a substantial negative outcome, such as a service disruption, public harm, or failure to meet a legal deadline.\n\n\n\n\n\n\n\nScored item 3: Impact\n\nText: The future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposed future state offers minimal improvements over the status quo, with little potential to change how agencies operate or serve clients.\n\n\n\n\n2\n\n\nThe future state would represent localized, loosely described improvements within one or two state agencies.\n\n\n\n\n3\n\n\nThe future state would be a clear, measureable improvement in specific processes or services across multiple agencies.\n\n\n\n\n4\n\n\nThe future state would be a significant change in how agencies coordinate or make decisions, a new level of efficiency, service quality, or service equity.\n\n\n\n\n5\n\n\nThe future state is a new paradigm for data-informed decision making across multiple agencies, fundamentally changing how government operates and serves its citizens.\n\n\n\n\n\n\n\nScored item 4: Questions\n\nText: The research questions are meaningful and useful.\nOEDA value: OEDA projects are relevant and impactful\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe research topics or questions are vague, unrelated to the core problems or opportunities of the current state, or would not meaningfully contribute to achieving the desired future state.\n\n\n\n\n2\n\n\nThe research topics or questions are too broad, too narrow, or would only provide a partial answer. Significant uncertainty would remain.\n\n\n\n\n3\n\n\nThe questions are clear and directly address the gap between current and future states. Answering the questions would provide the necessary insight to move from the current to future state with reasonable confidence.\n\n\n\n\n4\n\n\nThe questions are insightful and precise, pinpointing the critical information needed to make informed decisions. Answering the questions is likely not to just fill the gap, but reveal new opportunities.\n\n\n\n\n5\n\n\nThe questions are incisive, originally, and essential for project success. Answering these questions would eliminate major uncertainties and provide a high degree of confidence that the desired future state can be achieved.\n\n\n\n\n\n\n\nScored item 5: Equity\n\nText: The proposal future state is an improvement to agency operations and client services.\nOEDA value: OEDA projects are ethical\n\n\n\n\n\n\nScore\n\n\nDesc\n\n\n\n\n\n\n1\n\n\nThe proposal does not adequately acknowledge or consider ethical or equity implications; or there are reasons to believe the work will cause harm or perpetuate existing biases.\n\n\n\n\n2\n\n\nThe proposal mentions ethics or equity, but superficially, promising to meet minimum compliance standards, but without specific details or reasoning, and disconnected from the core project.\n\n\n\n\n3\n\n\nThe proposal includes specific plans related to ethics and equity, like data disaggregation, or including thoughts from those with lived experiences. But improving service equity is not a primary focus of the work.\n\n\n\n\n4\n\n\nThe proposal demonstrates a thoughtful understanding of the ethical and equity landscape–clearly identifying regions, communities, populations relevant to the research questions and providing strong rationale for their inclusion. A project aim is improving service equity, fairness, and equality of outcomes.\n\n\n\n\n5\n\n\nThe proposal includes meaningful engagement with clients in different parts of the state, with a variety of lived experiences, and part of different racial, ethnic, cultural, linguistic, and other communities. Specific metrics for measuring equity are incorporated into the proposed work, and improving those measures is key to the work.",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "council-proposal-rubric.html#details",
+    "href": "council-proposal-rubric.html#details",
+    "title": "Proposal scoring rubric",
+    "section": "Details",
+    "text": "Details\n\nIRB\n\nThe proposal provides reasoning that the project does not meet the federal definition of research, so IRB review is not required\n\nResearch means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge [45 CFR 46.102(l)]\n\nMany common state agency analytics projects involve development and evaluation, but are nonetheless not research. This is generally because they are not designed to develop or contribute to generalizable knowledge. That is, they are not seeking findings that can be applied to populations or situations beyond those studied.\nTypical systematic uses of data that are not research include:\n\nInternal program evaluation and quality improvement efforts\nOperational activities\nInformational interviews\n\n\n\nThe proposal provides reasoning that the project is research, but does not include human subjects, so IRB review is not required\n\nHuman subject means a living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens (ii) Obtains, uses, studies, analyzes, or generates identifiable private information on identifiable biospecimens 45 CFR 46.102(e)\n\nOften, work with administrative data is neither the result of intervention nor interaction.\n\nIntervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject’s environment that are performed for research purposes. 45 CFR 46.102(e)(2)\n\nGenerally, researchers for state agencies are not able to create randomized control trials where Oregonians’ experiences with their government are manipulated to develop strong internal validity for generalizable claims.\n\nInteraction includes communication or interpersonal contact between investigator and subject 45 CFR 46.102(e)(3)\n\nResearchers for state agencies are often working with private information.\n\nPrivate information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (e.g., a medical record). 45 CFR 46.102(e)(4)\n\nBut, researchers can often answer meaningful agency questions without using identifiable private information.\n\nIdentifiable private information is private information for which the identity of the subject is or may readily be ascertained by the investigator or associated with the information. 45 CFR 46.102(e)(5)\n\nAnalyses using deidentified data, which cannot be reasonably reidentified by the investigator, are generally not considered human subjects, as individual humans can no long be connected to the attributes being studied.\nCreating analytical datasets which follow Safe Harbor Regulations is one way to ensure that the analysis does not involve human subjects.\n\n\nThe proposal meets one or more of the requirements for review by the and has received approval from that body\nAny study that meets any of the criteria below must seek review by the Public Health Institutional Review Board.\n\n• The research is sponsored by the PHD (Oregon Public Health Division) or MCHD (Multnomah County Health Department);  • The research is conducted by or under the direction of an employee or agent of PHD or MCHD in connection with his/her agency responsibilities, or using any property or facility of PHD or MCHD;  • The research involves the use of PHD or MCHD’s data;  • The research involves the use of PHD or MCHD’s non-public information to identify or contact human research subjects or prospective subjects;  • Funding for the research will be handled through PHD or MCHD, but the research will be done at another location  Public Health Institutional Review Board (p. 3)\n\n\n\nThe project is human subjects research, but provides a checklist or attestation from someone other than the investigators that the research is exempt from IRB review\nWhile the Federal HHS does not require it, they strong recommend that determinations of exempt status be conducted by individuals other than the investigators.\nFor context, the PH and MCHD Institutional Review Board requires expedited review by the Board to determine whether a protocol is exempt.\nExempt research includes (among other exemptions):\n\nResearch in educational settings involving normal educational practices 45 CFR 46.104(d)(1)\nResearch whose interactions are only educational tests or observation of public behavior 45 CFR 46.104(d)(2)\nResearch whose interventions are benign behavioral interventions 45 CFR 46.104(d)(3)\nSecondary research for which consent is not required 45 CFR 46.104(d)(4), including specifically the following\n\n\nThe research involves only information collection and analysis involving the investigator’s use of identifiable health information when that use is regulated under 45 CFR parts 160 and 164, subparts A and E, for the purposes of “health care operations” or “research” as those terms are defined at 45 CFR 164.501 or for “public health activities and purposes” as described under 45 CFR 164.512(b);\n\nWhere the definitions for health care operations and research defined in 45 CFR 164.501 are\n\nHealth care operations means any of the following activities of the covered entity to the extent that the activities are related to covered functions: (1) Conducting quality assessment and improvement activities, including outcomes evaluation and development of clinical guidelines, provided that the obtaining of generalizable knowledge is not the primary purpose of any studies resulting from such activities; patient safety activities (as defined in 42 CFR 3.20); population-based activities relating to improving health or reducing health care costs, protocol development, case management and care coordination, contacting of health care providers and patients with information about treatment alternatives; and related functions that do not include treatment; […] (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs; (5) Business planning and development, such as conducting cost-management and planning-related analyses related to managing and operating the entity, including formulary development and administration, development or improvement of methods of payment or coverage policies; and (6) Business management and general administrative activities of the entity, including, but not limited to: (i) Management activities relating to implementation of and compliance with the requirements of this subchapter; (ii) Customer service, including the provision of data analyses for policy holders, plan sponsors, or other customers, provided that protected health information is not disclosed to such policy holder, plan sponsor, or customer. […]   Researchmeans a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
+    "crumbs": [
+      "Council",
+      "Proposal rubric"
+    ]
+  },
+  {
+    "objectID": "ideation-form.html",
+    "href": "ideation-form.html",
+    "title": "Using the request form",
+    "section": "",
+    "text": "Useful research often starts with a spark–an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.\nTo make sure we don’t miss valuable opportunities, any time that you hear, see, or think of something that could become a research question, project idea, or line of inquiry, please drop it into the request form.\nDon’t worry about polish. Rough ideas are welcome and encouraged."
+  },
+  {
+    "objectID": "ideation-form.html#intentions",
+    "href": "ideation-form.html#intentions",
+    "title": "Using the request form",
+    "section": "Intentions",
+    "text": "Intentions\n\nLighten the mental load - no need to remember every idea; we can just drop it in and move on\nGet credit for insights - contributions help shape research agendas and demonstrate thought leadership from program staff, OEDA staff, and others\nBuild momentum - even vague or early-stage ideas can become important projects when they are shared and inspire others\nStay aligned - a shared backlog should help us prioritize, avoid duplication, and be more aware of the changing landscape and emerging needs"
+  },
+  {
+    "objectID": "ideation-form.html#what-happens-after-submission",
+    "href": "ideation-form.html#what-happens-after-submission",
+    "title": "Using the request form",
+    "section": "What happens after submission",
+    "text": "What happens after submission\nWe’ll triage submissions regularly–currently fortnightly on Tuesday mornings. In these sessions, we introduce the submissions, open the floor for clarifying questions or early comments, and then we might assign ideas to staff for further development, consultation with subject matter experts, etc."
+  },
+  {
+    "objectID": "manual-access-desktop-admin.html",
+    "href": "manual-access-desktop-admin.html",
+    "title": "System Access - Desktop admin accounts",
+    "section": "",
+    "text": "Gaining local administrator access to your physical or virtual machine can be helpful in allowing you to install R, RStudio/Positron, Python, etc.\n\nLog into the OIS helpdesk ticketing system\nSelect More\nSelect Individual Access Request (IAR) MSC 0786\nIndicate that you are requesting access for yourself\nSet an effective date (the current date should be fine, or some time in the near future)\nIndicate DHS as your employer\nIn section VI, select “Need an administrator local workstation account”\nProvide your computer name, e.g. “DHSXXXXXXXX”\nIdentify your manager by OR number or search by name\nClick Submit\n\nThe ticket system should automatically send the request to your manager when you submit.\nLocal admin accounts require frequent password changes. The accounts can be difficult to regain access to if you let them lapse; so keep up with password change requirements.",
+    "crumbs": [
+      "Lab manual",
+      "Access",
+      "Desktop admin accounts"
+    ]
+  },
+  {
+    "objectID": "manual-delivery-qc-adhoc.html",
+    "href": "manual-delivery-qc-adhoc.html",
+    "title": "Ad hoc request delivery checklist",
+    "section": "",
+    "text": "Ensure that all ad hoc, rapid response deliverables (data files, memos, maps, quick analyses) meet minimum quality standards.\n\n\n\nComplete this checklist for every ad hoc, rapid response deliverable before delivery to stakeholders. For multi-file deliveries, complete this one per package.\n\n\n\nIf these standard operating procedures are practiced throughout creating the solution, running through this checklist to verify those should take 5-15 additional minutes, depending on complexity."
+  },
+  {
+    "objectID": "manual-delivery-qc-adhoc.html#background",
+    "href": "manual-delivery-qc-adhoc.html#background",
+    "title": "Ad hoc request delivery checklist",
+    "section": "",
+    "text": "Ensure that all ad hoc, rapid response deliverables (data files, memos, maps, quick analyses) meet minimum quality standards.\n\n\n\nComplete this checklist for every ad hoc, rapid response deliverable before delivery to stakeholders. For multi-file deliveries, complete this one per package.\n\n\n\nIf these standard operating procedures are practiced throughout creating the solution, running through this checklist to verify those should take 5-15 additional minutes, depending on complexity."
+  },
+  {
+    "objectID": "manual-delivery-qc-adhoc.html#checklist",
+    "href": "manual-delivery-qc-adhoc.html#checklist",
+    "title": "Ad hoc request delivery checklist",
+    "section": "Checklist",
+    "text": "Checklist\n\nRequest clarity and scope\nReview the original requirements (see guidance on Ad hoc request intake for structuring requirements for ad hoc requests)\n\nDeliverable matches scope\nPermissions verified - confirmed requestor is authorized to receive these data (especially for sensitive/protected data)\n\n\n\nData quality\n\nData source & freshness\n\nData source documented: e.g. “warehoused ORKids records”, “SNAP data model”, “OFRA caseload forecasts”\nData refresh data identified: “data from [date range], drawn on [draw date]”\nKnown data limitations acknowledged\nTimeframe matches request and makes sense\n\n\n\nData integrity\n\nRow counts in analytics files and totals in deliverables are reasonable given expectations (see note, below)\nNo obvious duplicates — check your analysis file for duplicate IDs, caes, or clients (unless duplication is expected)\nMissing data assessed — checked for unsual amounts or patterns of NULL/missing values\nOutliers reviewed — data eyeballed for extreme values that seem wrong (negative ages, future dates, etc.)\nCategories complete — if using categories, factors, or groups, confirmed that all expected groups are present in the analysis file and deliverable\n\n\n\nCalculations and logic\n\nCalculations verified — spot check any computed fields, percentages, or aggregations\nCalculations documented — any calculations explained, or formulas provided, in methodology notes\nTotals reconcile — row and column totals add up correctly; if deviations persist because of rounding, make a note of that in a caption or footnote\nDenominators appropriate — check that percentages/rates use correct base populations\n\n\n\nPeer review\n\nAnother team member spot-checked the key findings (10-15 minute review)\n\n\n\n\nPrivacy & confidentiality\n\nPII/PHI review completed — verify that names, SSNs, DOBs, address, case numbers, etc. are not part of either the analytics files or the delivered products. Exceptions are when one or more of these is explicitly part of the business requirements of the solution.\nSmall cell suppression applied — cells with counts smaller than the most restrictive agency policy are masked or combined with other cells. Pay extra attention to the possibility of small cell counts with dynamic, filterable content.\nGeographic detail appropriate — location data are aggregated to a safe level, e.g. no addresses available in deliverable, and no precise, address-level symbology present unless authorized\nPerson-level or case-level sensitive variables (diagnoses, abuse indicators, etc.) not available in the deliverable, unless authorized\nData sharing agreement verified — confirmed any external sharing complies with MOUs/DUAs\n\n\n\nFile/document quality checks\n\nFor data files (CSV, Excel, Parquet, .rds)\n\nFile format appropriate – matches stakeholder’s technical capacity and stated preference\nVariable names clear and descriptive — column names are understandable without a codebook\nDates consistently formatted — all dates use YYYY-MM-DD format\nNo hidden columns/rows — hidden columns are either unhidden or removed from the deliverable\nFilters cleared – any active filters that might hide rows are removed\nData follow tidy data principles:\n\nEach variable is a column; each column is a variable\nEach observation is a row; each row is an observation\nEach value is a cell; each cell is a single value\nImplication: no cells are merged to span multiple columns or row; no cells are used as comments or guidance for the full sheet, etc.\n\n\n\n\nFor memos/documents\n\nFindings clearly stated — key numbers/answers highlighted upfront in the document\nProfessional formatting - uses ORRAI/OEDA template\nPlain language - follows ODHS guidance for writing in plain language\nRequest context included — brief statement of what was asked for, and why\nMethodology described — brief statement of how you got the answer (data source, filters or selection criteria, calculations)\nLimitations noted — any caveats, known or suspected data quality issues, or scope boundaries\nContact information included — note who to follow up with for questions\nSpelling and grammar checked — remove typos, briefly revise for clarity and professional tone\n\n\n\nFor maps and visualizations\n\nORRAI logo included\nSymbols and geoms are labeled in a legend, or directly on the geom\nData source and date are noted in a title, subtitle, caption, or inset note\n\n\n\n\nCommunication & documentation\n\nDeliverable package\n\nAll promised files included\nMethodology documentation attached\nFile name is descriptive — includes the topic, date range, creation date (e.g. SNAP_enrollment_2024Q3_20250108.csv)\nData dictionary included — if a data file is a deliverable and file has codes or abbreviations\nEmail/memo written professionally - clear subject line, polite tone, body of email summarizes key findings and lists the attached documents\n\n\n\nInternal documentation\n\nQueries saved to shared location or git\nAnalysis code saved to shared location or git\nTicket/tracker updated\nLessons learned noted — any issues/insights for similar future requests\n\n\n\n\nFinal checks before sending\n\nAttachments correct — open and view each file to make sure its the right one\nRecipients correct — Confirmed email addresses\nTone appropriate — email is helpful, professional, not defensive of dismissive\nManage expectations — email highlights contributions of the team, strengths of the work process, apprecition for data-informed appraoches; notes any limitations, caveats, or follow-up recommendations\nInternal notifications sent — email cc’s project manager, unit manager, ORRAI director, as appropriate"
+  },
+  {
+    "objectID": "manual-delivery-qc-adhoc.html#reasonable",
+    "href": "manual-delivery-qc-adhoc.html#reasonable",
+    "title": "Ad hoc request delivery checklist",
+    "section": "Checking for reasonableness",
+    "text": "Checking for reasonableness\nVerifying that basic counts (for example) are reasonable are some of the hardest checks, because they require domain knowledge and context, not just technical data science skills. Here are some options that OEDA can consider:\n\nBuild institutional memory\n\nCreate a “reference numbers” cheat sheet for each major program\n\nSNAP: ~225,000 households enrolled (as of [date])\nTANF: ~18,000 households (as of [date])\nCW: ~5,000 children in care (as of [date])\nEtc.\n\n\nThis could be updated quarterly. If your analysis includes only 10K SNAP cases, you know you’re off by an order of magnitude.\n\n\nBuild a database of past requests\nWhen new requests come in, we could search for similar past requests. If the results of the current pull is wildly different, investigate why.\n\n\n\n\n\n\n\n\n\n\nRequest ID\nTopic\nDate Range\nKey Values\nData Source\n\n\n\n\n2024-REQ001\nSNAP households, by county\nJan-Mar 2024\nTotal: 224,124\nSNAP data model, EDW_Model.ssp.ssp_dim_BenefitStatus\n\n\n\n\n\nTriangulation\n\nPull from multiple source is possible. Does your summary from warehoused data match a report generated from the source system?\nCompare to published reports or dashboard numbers\nCheck with SMEs against their unofficial, mental running counts\n\n\n\nYear-over-year/Month-over-month\n\nIf this month shows 15,000 cases, but previous work shows 45,000 last month, that might be a red flag\nPlot a simple time series–look for sudden spikes/drops as indicators of data issues\n\nKnown policy or practice changes might be an exception\n\n\n\n\nPopulation limits\n\nStatewide cases should probably not be greater than the population of Oregon (4.2 million)\nCounts of cases by county should not be greater than the population of those counties\n\n\n\nPhone a friend\n\nOEDA can identify 1-2 program staff in each division who understand their populations\nQuick Teams message or email asking whether your counts are in the ballpark\n\n\n\nWeekly team huddle\n\nRapid responders share what they are working on\n\n“I’m pulling CW placement counts and got 3,200 new placements in a month, does that sound right?”\n\n\n\n\nAutomated alerts\n\nIf OEDA has automated processes to create monthly or quarterly analysis-ready datasets, set up data quality monitoring\n\nE.g. create an automated alert that messages the research systems specialist if SNAP enrollment changes more than 10% month-to-month"
   },
   {
     "objectID": "manual-delivery-qc-vis.html",

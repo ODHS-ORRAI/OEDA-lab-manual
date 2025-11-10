@@ -1,0 +1,189 @@
+---
+title: 'Ad hoc request delivery checklist'
+author: 'Jason Wallin, Manager'
+---
+
+## Background
+
+### Purpose
+
+Ensure that all *ad hoc*, rapid response deliverables (data files, memos, maps, 
+quick analyses) meet minimum quality standards.
+
+### When to use
+
+Complete this checklist for every *ad hoc*, rapid response deliverable *before* 
+delivery to stakeholders. For multi-file deliveries, complete this one per package.
+
+### Time required
+
+If these standard operating procedures are practiced throughout creating the solution, 
+running through this checklist to verify those should take 5-15 additional minutes, depending 
+on complexity.
+
+## Checklist
+
+### Request clarity and scope
+
+Review the original requirements (see guidance on [Ad hoc request intake](manual-ideation-adhoc.qmd) 
+for structuring requirements for ad hoc requests)
+
+* [ ] Deliverable matches scope
+* [ ] Permissions verified - confirmed requestor is authorized to receive these data (especially for sensitive/protected data)
+
+### Data quality
+
+#### Data source & freshness
+
+* [ ] Data source documented: e.g. "warehoused ORKids records", "SNAP data model", "OFRA caseload forecasts"
+* [ ] Data refresh data identified: "data from [date range], drawn on [draw date]"
+* [ ] Known data limitations acknowledged
+* [ ] Timeframe matches request and makes sense
+
+#### Data integrity
+
+* [ ] Row counts in analytics files and totals in deliverables are reasonable given expectations (see [note](#reasonable), below)
+* [ ] No obvious duplicates --- check your analysis file for duplicate IDs, caes, or clients (unless duplication is expected)
+* [ ] Missing data assessed --- checked for unsual amounts or patterns of NULL/missing values
+* [ ] Outliers reviewed --- data eyeballed for extreme values that seem wrong (negative ages, future dates, etc.)
+* [ ] Categories complete --- if using categories, factors, or groups, confirmed that all expected groups are present in the analysis file and deliverable
+
+#### Calculations and logic
+
+* [ ] Calculations verified --- spot check any computed fields, percentages, or aggregations
+* [ ] Calculations documented --- any calculations explained, or formulas provided, in methodology notes
+* [ ] Totals reconcile --- row and column totals add up correctly; if deviations persist because of rounding, make a note of that in a caption or footnote
+* [ ] Denominators appropriate --- check that percentages/rates use correct base populations
+
+
+#### Peer review
+
+* [ ] Another team member spot-checked the key findings (10-15 minute review)
+
+### Privacy & confidentiality
+
+* [ ] PII/PHI review completed --- verify that names, SSNs, DOBs, address, case numbers, etc. are not part of either the analytics files or the delivered products. Exceptions are when one or more of these is explicitly part of the business requirements of the solution.
+* [ ] Small cell suppression applied --- cells with counts smaller than the most restrictive agency policy are masked or combined with other cells. Pay extra attention to the possibility of small cell counts with dynamic, filterable content.
+* [ ] Geographic detail appropriate --- location data are aggregated to a safe level, e.g. no addresses available in deliverable, and no precise, address-level symbology present unless authorized
+* [ ] Person-level or case-level sensitive variables (diagnoses, abuse indicators, etc.) not available in the deliverable, unless authorized
+* [ ] Data sharing agreement verified --- confirmed any external sharing complies with MOUs/DUAs
+
+
+### File/document quality checks
+
+
+#### For data files (CSV, Excel, Parquet, .rds)
+
+* [ ] File format appropriate -- matches stakeholder's technical capacity and stated preference
+* [ ] Variable names clear and descriptive --- column names are understandable without a codebook
+* [ ] Dates consistently formatted --- all dates use YYYY-MM-DD format
+* [ ] No hidden columns/rows --- hidden columns are either unhidden or removed from the deliverable
+* [ ] Filters cleared -- any active filters that might hide rows are removed
+* [ ] Data follow [tidy data principles](https://r4ds.hadley.nz/data-tidy.html#sec-tidy-data):
+    * Each variable is a column; each column is a variable
+    * Each observation is a row; each row is an observation
+    * Each value is a cell; each cell is a single value
+    * Implication: no cells are merged to span multiple columns or row; no cells are used as comments or guidance for the full sheet, etc.
+
+
+#### For memos/documents
+
+* [ ] Findings clearly stated --- key numbers/answers highlighted upfront in the document
+* [ ] Professional formatting - uses ORRAI/OEDA template
+* [ ] Plain language - follows ODHS guidance for [writing in plain language](https://dhsoha.sharepoint.com/teams/Hub-ODHSOHA-PCS/SitePages/Plain-Language-Resources.aspx)
+* [ ] Request context included --- brief statement of what was asked for, and why
+* [ ] Methodology described --- brief statement of how you got the answer (data source, filters or selection criteria, calculations)
+* [ ] Limitations noted --- any caveats, known or suspected data quality issues, or scope boundaries
+* [ ] Contact information included --- note who to follow up with for questions
+* [ ] Spelling and grammar checked --- remove typos, briefly revise for clarity and professional tone
+
+#### For maps and visualizations
+
+* [ ] ORRAI logo included
+* [ ] Symbols and geoms are labeled in a legend, or directly on the geom
+* [ ] Data source and date are noted in a title, subtitle, caption, or inset note
+
+
+### Communication & documentation
+
+#### Deliverable package
+
+* [ ] All promised files included
+* [ ] Methodology documentation attached
+* [ ] File name is descriptive --- includes the topic, date range, creation date (e.g. SNAP_enrollment_2024Q3_20250108.csv)
+* [ ] Data dictionary included --- if a data file is a deliverable and file has codes or abbreviations
+* [ ] Email/memo written professionally - clear subject line, polite tone, body of email summarizes key findings and lists the attached documents
+
+#### Internal documentation
+
+* [ ] Queries saved to shared location or git
+* [ ] Analysis code saved to shared location or git
+* [ ] Ticket/tracker updated
+* [ ] Lessons learned noted --- any issues/insights for similar future requests
+
+### Final checks before sending
+
+* [ ] Attachments correct --- open and view each file to make sure its the right one
+* [ ] Recipients correct --- Confirmed email addresses
+* [ ] Tone appropriate --- email is helpful, professional, not defensive of dismissive
+* [ ] Manage expectations --- email highlights contributions of the team, strengths of the work process, apprecition for data-informed appraoches; notes any limitations, caveats, or follow-up recommendations
+* [ ] Internal notifications sent --- email cc's project manager, unit manager, ORRAI director, as appropriate
+
+## Checking for reasonableness {#reasonable}
+
+Verifying that basic counts (for example) are reasonable are some of the hardest 
+checks, because they require domain knowledge and context, not just technical 
+data science skills. Here are some options that OEDA can consider:
+
+### Build institutional memory
+
+* Create a "reference numbers" cheat sheet for each major program
+    * SNAP: ~225,000 households enrolled (as of [date])
+    * TANF: ~18,000 households (as of [date])
+    * CW: ~5,000 children in care (as of [date])
+    * Etc.
+
+This could be updated quarterly. If your analysis includes only 10K SNAP cases, 
+you know you're off by an order of magnitude.
+
+### Build a database of past requests
+
+When new requests come in, we could search for similar past requests. If the results of the current pull is wildly different, investigate why.
+
+| Request ID | Topic | Date Range | Key Values | Data Source |
+|:----|:----|:----|:----|:----|
+| 2024-REQ001 | SNAP households, by county | Jan-Mar 2024 | Total: 224,124 | SNAP data model, EDW_Model.ssp.ssp_dim_BenefitStatus |
+
+
+### Triangulation
+
+* Pull from multiple source is possible. Does your summary from warehoused data match a report generated from the source system?
+* Compare to published reports or dashboard numbers
+* Check with SMEs against their unofficial, mental running counts
+
+### Year-over-year/Month-over-month
+
+* If this month shows 15,000 cases, but previous work shows 45,000 last month, that might be a red flag
+* Plot a simple time series--look for sudden spikes/drops as indicators of data issues
+    * Known policy or practice changes might be an exception
+
+### Population limits
+
+* Statewide cases should probably not be greater than the population of Oregon (4.2 million)
+* Counts of cases by county should not be greater than the [population of those counties](https://www.pdx.edu/population-research/population-estimate-reports)
+
+### Phone a friend
+
+* OEDA can identify 1-2 program staff in each division who understand their populations
+* Quick Teams message or email asking whether your counts are in the ballpark
+
+
+### Weekly team huddle
+
+* Rapid responders share what they are working on
+    * "I'm pulling CW placement counts and got 3,200 new placements in a month, does that sound right?"
+
+### Automated alerts
+
+* If OEDA has automated processes to create monthly or quarterly analysis-ready datasets, set up data quality monitoring
+    * E.g. create an automated alert that messages the research systems specialist if SNAP enrollment changes more than 10% month-to-month
