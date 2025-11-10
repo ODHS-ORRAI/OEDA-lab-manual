@@ -1,6 +1,6 @@
 ---
 title: "Using the request form"
-author: "Jason Wallin, OEDA-GIS Manager"
+author: "Jason Wallin, OEDA Manager"
 ---
   
 Useful research often starts with a spark--an observation, a question, a comment in a meeting, or a pattern in some data. These sparks can come from anywhere: stakeholders ,audits, internal conversations, or your own insights. But, if they say in our heads or scatterd across notebooks or OneNote pages, we risk losing them.

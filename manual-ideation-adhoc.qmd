@@ -1,0 +1,270 @@
+---
+title: 'Ad hoc request intake'
+author: 'Jason Wallin, Manager'
+---
+
+## Purpose {.unnumbered}
+
+For OEDA staff, *ad hoc* data and analytics requests are most likely interim 
+deliverables during a longer-term project. As OEDA analysts are familiarizing 
+themselves with an integrated dataset---for evaluation, hypothesis testing, tool 
+development, etc.---they may spin off these interim products to keep up 
+communication with stakeholders or at stakeholder request.
+
+Eventually, the contents of this page may be available as a Quarto template for 
+OEDA staff, or maybe even a web-based form for requesters to submit tickets. 
+Until then, use this page to help you structure your requirements gathering 
+for these *ad hoc* requests.
+
+This request process assumes that analysis-ready, OEDA stewarded data files are 
+already available to the OEDA analyst. The process is not appropriate for 
+projects that require new data coming into OEDA systems or the integration of new 
+cross-agency data.
+
+**Good fit for rapid response, ad hoc requests**
+
+* Count of cases/clients meeting specific criteria
+* Data extract with defined fields and population, from OEDA stewarded analysis files
+* Simple breakdown or crosstab by 1 or 2 variables
+* Update to a previously completed request
+* Basic map of program locations or service areas
+* Straightforward comparison between two time periods, areas of the state, offices, etc.
+
+**Poor fit, requiring full project request**
+
+* Program evaluation; outcome/impact analysis
+* Quality improvement projects
+* Statistical modeling or testing (beyond t-test or ANOVA-level comparisons)
+* New data collection (surveys, interviews, focus groups, observation, document review)
+* Predictive analytics
+* Machine learning
+* Text analysis
+* Complex, multi-system data linkage/integration
+* Ongoing/recurring reports or dashboards
+* Requests requiring substantial stakeholder engagement or multiple iterations
+* Exploratory analysis without a clear question
+
+
+## Intake Form
+
+### Requester or recipient
+
+* Request ID
+* Request date
+* Requester's name
+* Requester's agency
+* Requester's division/unit
+* Requester's email
+
+### Request details
+
+#### Describe the request, in plain language
+
+Run your plain language translation of the request past the requester or recipient
+
+* What question are you trying to answer?
+* What information do you need?
+
+#### What will you use this information for?
+
+Ask about any of these intended uses.
+
+* Executive briefing or talking points
+* Response to an external inquiry: legislature, media, litigation, advcoate
+* Internal program monitoring
+* Compliance or grant reporting
+* Budget or planning
+* Presentation to stakeholders
+* Background for a larger project
+* Other
+
+#### What are the basic components of this request?
+
+* **Data extract or data file** (e.g. "raw" person- or case-level data; may or may not be deidentified)
+* **Counts or percentages of values of a single variable**
+* **Single variable summary or estimation** (e.g. mean + standard error)
+* **Multiple variable count(s)** (e.g. crosstabs, breakdown, drilldown)
+* **Multiple variable analytics** (e.g. tests of basic trends over time; comparisons between offices, areas of the state, providers, time periods, case characteristics, etc.)
+* **Other** (describe)
+
+### Scope & specifications
+
+#### Time period needed
+
+This is about the date(s) for the data draw for this request. If the *report* or 
+other deliverable needs to be further broken out by year, quarter, month, etc. 
+that is interrogated in a different section, below.
+
+* Snapshot as a specific date
+* Specific date range: From _____ to _____
+* Most recent complete month/quarter/year
+* Multiple time periods for comparison
+* Unsure, looking for OEDA advice (may require a full project workup)
+
+#### Population/program
+
+* Agency
+* Division
+* Program
+* Service area
+
+#### Geographic level needed
+
+Ask whether data on any of the following geographies are needed for the analysis or deliverable
+
+* Statewide
+* County
+* Zip code
+* City
+* Census division
+* Agency region, district, branch (specify)
+* Legislative region or district (specify)
+* Other administrative region, district, or area (specify)
+* Other (specify)
+
+#### Breakdowns/groupings/disaggregations requested
+
+* By demographics (age, race/ethnicity, sex, gender, language, etc.)
+* By time period (monthly, quarterly, yearly) (specify)
+* By case/client characteristics
+* By worker/caseload
+* By program participation/component
+* No breakdowns needed, just totals
+* Other (specify)
+
+#### Fields/variables needed
+
+Reiterate crosstabs/disaggregations or breakdowns if helpful for clarity
+
+E.g. "Client ID, application date, approval date, household size, county"
+
+E.g. "Total spending by category"
+
+E.g. "Number of investigations by allegation type"
+
+
+### Delivery preferences
+
+#### Deliverables
+
+OEDA will always provide a caption or short memo about the data drawn, data 
+preparation, time frames, population, etc.
+
+* **Summary** --- Key numbers/findings in a brief memo of visualization
+* **Data file** -- Recipient or others will do the analysis, only a data file is necessary
+* **Detailed explanation** --- More extensive details about the methodology, interpretation, and findings 
+* **Data documentation** --- Details about how the data were pulled and analyzed, details about calculations, etc.
+* **Data dictionary** --- Variables, field definitions, data types, code explanations
+* **Visualization** -- chart, graph, map, etc.
+
+#### Preferred format
+
+* Excel workbook
+* CSV file
+* HTML/Quarto file
+* PDF memo/summary
+* PNG or other image file
+* PowerPoint slide
+* Word document
+* No preference; OEDA decision is fine
+
+#### Timeline
+
+* Preferred delivery date
+* Hard deadline (after which the information will no longer be helpful)
+* Nature of the timeline
+    * Urgent external request (legislature, media, legal action, director)
+    * Time sensitive (describe specific reason)
+    * Routine, standard business need
+* What happens if the deadline cannot be met?
+    * A project or initiative cannot proceed without this information
+    * Requester would prefer to wait for complete/accurate data
+    * Requester can work with partial data or interim good-enough-for-now deliverable
+    * There is flexibility in the due date
+    * Other (describe)
+
+### Data access & permissions
+
+#### Do the deliverables include sensitive or protected data?
+
+These topics are not about what the OEDA analyst needs to access to complete the work. 
+Instead, they are about the contents of the *deliverable* which will be provided to the requester.
+
+* Does the deliverable need to include PII?
+* Does the deliverable need to include PHI?
+* Does the deliverable contain information about minors?
+* Does the deliverable contain CJIS information or information about abuse/neglect allegations, determinations, etc.?
+* None of the above, standard administrative data
+
+#### Is the requester authorized to receive information of this type?
+* Yes - consuming this information is a responsibility and expectation of the requester's job
+* Yes - the requester has approval from _____ (specify)
+* Not sure - verification is necessary before delivery
+
+#### Will the requester share the information outside their unit?
+* No - Internal use only within the unit
+* Yes - Within their division (e.g. Public Health, Medicaid, SSP, OEP, CW)
+* Yes - Within their agency (e.g. OHA, OHDS, DELC)
+* Yes - With other state agencies
+* Yes - With external partners
+* Yes - Public release (website, report, media)
+
+### Additional info
+
+#### Data challenges
+
+* Are there any known data challenges? E.g. 
+    * Known changes to the source data since the last request
+    * Known changes to the source data over the request time period
+    * Data quality issues with a previous version of the request
+    * Other (specify)
+    
+#### Supporting information
+
+Are any of the following available, or anything similarly helpful?
+
+* Related policy or non-ORRAI project document (executive summary of initiative, PMO project charter, etc.)
+* Previous version of the requested data/report
+* Example of desired output format
+* List of specific clients/cases of interest
+* Email chain with background information
+* List of subject matter experts
+* Access to worker portal for source system
+
+#### Anything else?
+
+Any other special considerations for this request? 
+
+### Internal assessment/meta-info
+
+#### Estimated effort
+
+* < 4 hours (same day possible)
+* 4-8 hours (1-2 days)
+* 8-24 hours (2-4 days)
+* >24 hours (4-5 days)
+* Exceeds rapid response of <= 5 days - refer to full project intake
+
+#### Service line classification
+
+* Basic report/cross tab
+* Data extract (research systems specialist consult)
+* Map (GIS consult)
+* Analysis (research team consult)
+
+#### Priority level
+
+* Urgent (external/executive request)
+* High (time-sensitive request)
+* Standard
+
+#### Potential issue flags
+
+* Unclear scope - needs a clarification call before work begins
+* Requester may not have access to/permission for data - needs manager-manager clarity
+* Data source unavailable/incomplete - needs referred to full project intake
+* Requires specialized skills - needs consult with specialist
+* Sensitive data - needs consult with research systems specialist
+
+
+

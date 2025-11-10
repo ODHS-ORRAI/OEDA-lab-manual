@@ -8,7 +8,7 @@ author: "Jason Wallin, OEDA-GIS Manager"
 (@) Quarto uses `embed-resources: true` in the yaml heading so that the document is a single file with no external dependencies
 (@) Quarto compiles without errors and warnings
 (@) All outputs render: no broken figures, tables
-(@) All citations and bibliography entries appear without breaking, are formatted correctly, and links function as expected
+(@) All [citations and bibliography entries](https://quarto.org/docs/visual-editor/technical.html#citations-from-zotero) appear without breaking, are formatted correctly, and links function as expected
 (@) All internal links and references (e.g. Table X, Figure Y, Section Z) work and point to the right content
 
 
@@ -23,10 +23,10 @@ author: "Jason Wallin, OEDA-GIS Manager"
 
 (@) Quarto project structure follows OEDA standards (TBD: e.g., report.qmd, figures/, data/, scripts/) for transparency.
 (@) Document makes use of a reproducible environment (TBD: determine the OEDA standard: Docker, renv.lock, etc.?)
-(@) Seeds are set for simulations, resampling, bootstrapping, or other random processes
+(@) Seeds are set explicitly for simulations, resampling, bootstrapping, or other random processes
 (@) Scripts and data used in the document are versioned and reproducible
 (@) Code chunks use `#| eval: true` unless intentionally disabled with a comment as to why
-(@) Input data is described or linked clearly (e.g. source, format, preprocessing). Data are all versioned instances, not SQL pulls from  "live" administrative data.
+(@) Input data is described or linked clearly (e.g. source, format, preprocessing). Data are all versioned instances (e.g. a flatfile, csv, Parquet, etc.), not SQL pulls from  "live" administrative data.
 
 ## Interpretibility and clarity
 
@@ -35,7 +35,7 @@ author: "Jason Wallin, OEDA-GIS Manager"
 (@) Key findings are clearly stated in plain language
 (@) The main message is consistent across the title, abstract, results, visualizations, and conclusion
 (@) Effects are described in units meaningful to the audience (counts of individuals, dollars, days in care, etc.)
-(@) Acronyms and technical terms are minimal, and are defined at first use
+(@) Acronyms and technical terms are minimal, and are [defined at first use](https://rchaput.github.io/acronymsdown/)
 (@) Assumptions and limitations are acknowledged as appropriate in introduction, methods, and conclusions, and are addressed in suggestions for future work
 (@) Figures and tables are interpretable without reference to the text
 
@@ -43,10 +43,45 @@ author: "Jason Wallin, OEDA-GIS Manager"
 
 (@) No placeholder text (ADD, TODO, etc.) remains
 (@) Grammar, spelling, and punctuation are correct
+    * [gramr](https://github.com/jasdumas/gramr) provides a writing style linter
+    * [ChatGPT Grammar Checker](https://chatgpt.com/g/g-kfkNLRrwD-grammar-checker) might be an option; untested at time of writing
 (@) Voice and tense are consistent
-(@) Readability scores have been calculated and are within OEDA adopted thresholds
 (@) Terminology and variable names are consistent throughout
+(@) Readability scores have been calculated and are within OEDA adopted thresholds
 
+If you've rendered your .qmd to .html, here is a workflow that can help you measure readability scores:
+
+```{r}
+#| label: readability
+
+library(rvest)
+library(sylcount)
+
+doc_path <- "docs/projects-flow-initiation.html"
+element_set <- "p, h1, h2, h3, h4"
+# Remove the h1, h2, etc. if you want to ignore headings in your measures
+# Add any additional container elements in your document. For instance, if you've incorporated text-heavy tables, you might add td to this set
+
+page <- rvest::read_html(doc_path)
+elements <- rvest::html_elements(page, element_set)
+text <- rvest::html_text(elements) |> 
+  paste(collapse = '\n')
+
+
+# The Flesch reading ease score
+# https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch_reading_ease
+sylcount::readability(text)$re
+
+# The Flesch-Kincaid grade level score
+# https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch%E2%80%93Kincaid_grade_level
+sylcount::readability(text)$gl
+
+# Simple Measure of Gobbledygook (SMOG) score
+# https://en.wikipedia.org/wiki/SMOG
+sylcount::readability(text)$smog
+
+
+```
 
 ## Ethical, legal, and confidentiality checks
 

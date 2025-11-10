@@ -20,20 +20,24 @@ OEDA is housed within the [Oregon Department of Human Services](https://www.oreg
 
 ## OEDA's Mission, Vision, and Values
 
-**Mission:** OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.
+### Mission
 
-**Vision:** Oregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.
+OEDA provides timely, objective, and independent research and analytics with integrated data. We enable Oregon's human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.
 
-**Values:**
+### Vision
 
-OEDA's products are
+Oregon state agencies integrating data to measure performance, evaluate services, test ideas, and improve operations.
+
+## Values
+
+**OEDA's products are**
 
 * Rigorous, transparent, & trustworthy
 * Relevant & impactful
 * Accessible, understandable, & approachable
 * Innovative
 
-Working with OEDA is
+**Working with OEDA is**
 
 * Ethical
 * Constructive
